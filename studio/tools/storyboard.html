@@ -79,6 +79,35 @@ button.link { border: 0; padding: 0; background: none; text-decoration: underlin
 .was { font-size: 0.9rem; color: var(--muted); border-left: 3px solid var(--rule); padding-left: 0.6rem; }
 .was b { font-family: var(--mono); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; margin-right: 0.4rem; }
 .empty-note { font-family: var(--mono); font-size: 0.8rem; color: var(--muted); }
+/* Recording: shown only when the desk runs locally (studio/tools/desk.py) */
+.local-only { display: none !important; }
+body.local .local-only { display: revert !important; }
+body.local .takes.local-only { display: flex !important; }
+button.rec { border-color: var(--a); color: var(--a-text); }
+button.rec:hover { background: var(--a); color: var(--bg); }
+.takes { flex-wrap: wrap; gap: 0.3rem 0.6rem; align-items: center; font-family: var(--mono); font-size: 0.75rem; color: var(--muted); }
+.take { display: inline-flex; gap: 0.3rem; align-items: center; border: 1px solid var(--rule); padding: 0.1rem 0.35rem; }
+.take.chosen { border-color: var(--a); color: var(--fg); }
+.take button { font-size: 0.7rem; padding: 0 0.35rem; border-width: 1px; }
+.prompter { position: fixed; inset: 0; z-index: 20; background: var(--bg); display: grid; grid-template-rows: auto 1fr auto;
+            padding: calc(env(safe-area-inset-top, 0px) + 1rem) max(16px, 4vw) calc(env(safe-area-inset-bottom, 0px) + 1rem); gap: 1rem; }
+.prompter[hidden] { display: none !important; }
+.prompter .top { display: flex; flex-wrap: wrap; gap: 0.5rem 1.2rem; align-items: center; font-family: var(--mono); font-size: 0.85rem; }
+.prompter .rec-dot { width: 0.8rem; height: 0.8rem; border-radius: 50%; background: var(--a); }
+.prompter.live .rec-dot { animation: blink 1s steps(2, start) infinite; }
+@keyframes blink { to { visibility: hidden; } }
+.prompter .meter { flex: 1 1 10rem; height: 0.6rem; background: var(--bg-2); border: 1px solid var(--rule); position: relative; min-width: 8rem; }
+.prompter .meter i { position: absolute; left: 0; top: 0; bottom: 0; width: 0; background: var(--mint); }
+.prompter .meter.hot i { background: var(--a); }
+.prompter .script { overflow-y: auto; max-width: 48rem; width: 100%; margin: 0 auto; display: grid; gap: 1.4rem; align-content: start;
+                    font-size: clamp(1.4rem, 3.2vw, 2.1rem); line-height: 1.45; }
+.prompter .script p small { display: block; font-family: var(--mono); font-size: 0.8rem; color: var(--muted); }
+.prompter .script .pause { color: var(--a-text); font-family: var(--mono); font-weight: 600; }
+.prompter .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; }
+.prompter .actions button { font-size: 1rem; padding: 0.5rem 1.2rem; }
+.prompter .actions button.primary { background: var(--fg); color: var(--bg); }
+.prompter .msg { font-family: var(--mono); font-size: 0.85rem; color: var(--warn); }
+@media (prefers-reduced-motion: reduce) { .prompter.live .rec-dot { animation: none; } }
 @media (max-width: 40rem) {
   .line, .line.vertical { grid-template-columns: 1fr; }
   .line:not(.vertical) .frames { grid-template-columns: 1fr 1fr; }
@@ -92,6 +121,7 @@ button.link { border: 0; padding: 0; background: none; text-decoration: underlin
     <h1>Script desk</h1>
     <p>Every line of narration, beside what is on screen as it starts and as it ends in the current draft. Rewrite any line; your changes save as you type, and Claude reads them from here. The play button reads the line in the current AI voice.</p>
     <div class="marks"><span><code>/</code> short pause</span><span><code>//</code> long pause</span><span><code>*word*</code> stress this word</span></div>
+    <p class="local-only">Recording: <b>● Record scene</b> reads a whole scene in one take, with your marks shown large; <b>● Record line</b> redoes a single line. Pause, then read; if you stumble, pause and start the sentence again. Your newest take is used unless you pick another.</p>
     <p class="muted" style="font-size:0.95rem;color:var(--muted)">Numbers are checked as you type against the claim each line cites. A flagged line isn't wrong for sure; it means the number isn't in that claim yet, and Claude will check it or find it a claim.</p>
   </header>
 
@@ -111,6 +141,13 @@ button.link { border: 0; padding: 0; background: none; text-decoration: underlin
   <div id="board"></div>
 </main>
 <audio id="player" preload="none"></audio>
+<div class="prompter" id="prompter" hidden role="dialog" aria-modal="true" aria-labelledby="p-title">
+  <div class="top"><span class="rec-dot" aria-hidden="true"></span><strong id="p-title"></strong><span id="p-time">0:00</span>
+    <div class="meter" id="p-meter" aria-hidden="true"><i></i></div><span id="p-level">Waiting for the microphone…</span></div>
+  <div class="script" id="p-script"></div>
+  <div class="actions"><span class="msg" id="p-msg"></span>
+    <button type="button" id="p-discard">Discard</button><button type="button" class="primary" id="p-stop">Stop and save</button></div>
+</div>
 
 <script id="data" type="application/json">__DATA__</script>
 <script>
@@ -165,7 +202,9 @@ button.link { border: 0; padding: 0; background: none; text-decoration: underlin
       groups.forEach(function (g) {
         var first = g.lines[0], last = g.lines[g.lines.length - 1];
         html += '<div class="scene" id="s-' + g.id + '"><div class="scene-head"><h3>' + esc(g.heading) + '</h3><span class="meta">' +
-          clock(first.start) + '–' + clock(last.end) + ' in the draft · <span id="slen-' + g.id + '"></span></span></div>';
+          clock(first.start) + '–' + clock(last.end) + ' in the draft · <span id="slen-' + g.id + '"></span></span>' +
+          '<button type="button" class="rec local-only" data-rec="scene" data-id="' + g.id + '">● Record scene</button></div>' +
+          '<div class="takes local-only" id="tk-scene-' + g.id + '"></div>';
         html += '<div class="notes"><label for="n-' + g.id + '">Notes on this scene\'s visuals or timing</label><textarea id="n-' + g.id + '" rows="1" placeholder="Optional"></textarea></div>';
         g.lines.forEach(function (l) {
           html += '<div class="line' + (l.vertical ? ' vertical' : '') + '" id="l-' + l.id + '">' +
@@ -176,7 +215,9 @@ button.link { border: 0; padding: 0; background: none; text-decoration: underlin
             (l.claims.length ? l.claims.map(function (c) { return '<span class="claim-chip" title="' + esc(D.claims[c] ? D.claims[c].text : '') + '">' + c + '</span>'; }).join('')
               : '<span>no numbers, no claim</span>') +
             '<span id="est-' + l.id + '"></span><span class="pill" id="st-' + l.id + '">Unchanged</span>' +
+            '<button type="button" class="rec local-only" data-rec="line" data-id="' + l.id + '">● Record line</button>' +
             '<button type="button" class="link" data-revert="' + l.id + '" hidden>Restore the v3 line</button></div>' +
+            '<div class="takes local-only" id="tk-line-' + l.id + '"></div>' +
             '<div class="issues" id="iss-' + l.id + '"></div><div class="was" id="was-' + l.id + '" hidden><b>v3</b>' + esc(l.text) + '</div></div></div>';
         });
         html += '</div>';
@@ -197,7 +238,7 @@ button.link { border: 0; padding: 0; background: none; text-decoration: underlin
     document.querySelector('[data-revert="' + id + '"]').hidden = !changed;
     var st = $('st-' + id);
     st.className = 'pill' + (issues.length ? ' warn' : changed ? ' ok' : '');
-    st.textContent = saving[id] ? 'Saving…' : issues.length ? 'Check' : changed ? (db ? 'Edited · saved' : 'Edited') : 'Unchanged';
+    st.textContent = saving[id] ? 'Saving…' : issues.length ? 'Check' : changed ? (store ? 'Edited · saved' : 'Edited') : 'Unchanged';
     $('est-' + id).textContent = '≈ ' + estimate(l).toFixed(1) + ' s' + (changed ? ' (was ' + l.seconds.toFixed(1) + ')' : '');
   }
   function refreshTotals() {
@@ -219,8 +260,9 @@ button.link { border: 0; padding: 0; background: none; text-decoration: underlin
     $('length').textContent = 'film speech ≈ ' + clock(totals.film ? totals.film[0] : 0);
   }
 
-  // ---- Saving: the artifact's store when available, this browser otherwise ----
-  var db = null, timers = {}, inflight = {}, again = {}, pending = {};
+  // ---- Saving: the desk server on this Mac (desk.py), the artifact's store, or this browser ----
+  var LOCAL_DESK = !!window.DESK_LOCAL;
+  var store = null, timers = {}, inflight = {}, again = {}, pending = {};
   var LOCAL = 'script-desk-drafts';
   function localDrafts() { try { return JSON.parse(localStorage.getItem(LOCAL) || '{}'); } catch (e) { return {}; } }
   function keepLocal(key, text) { try { var d = localDrafts(); if (text == null) delete d[key]; else d[key] = text; localStorage.setItem(LOCAL, JSON.stringify(d)); } catch (e) { /* storage unavailable */ } }
@@ -229,7 +271,7 @@ button.link { border: 0; padding: 0; background: none; text-decoration: underlin
   function schedule(kind, id, text) {
     var key = kind + '/' + id;
     keepLocal(key, text);
-    if (!db) return;
+    if (!store) return;
     pending[key] = true;
     if (kind === 'lines') { saving[id] = true; refreshLine(id); }
     clearTimeout(timers[key]);
@@ -240,10 +282,9 @@ button.link { border: 0; padding: 0; background: none; text-decoration: underlin
     if (inflight[key]) { again[key] = true; return; }
     inflight[key] = true;
     var text = kind === 'lines' ? $('t-' + id).value : $('n-' + id).value;
-    var ref = db.collection(kind).doc(id);
     try {
       var unchanged = kind === 'lines' ? text.trim() === LINES[id].text : !text.trim();
-      if (unchanged) await ref.delete(); else await ref.set({ text: text, updated: new Date().toISOString() });
+      await store.save(kind, id, unchanged ? null : text);
       keepLocal(key, null);
       setSaveState('All changes saved', 'ok');
     } catch (e) {
@@ -255,21 +296,116 @@ button.link { border: 0; padding: 0; background: none; text-decoration: underlin
     if (kind === 'lines') { saving[id] = false; refreshLine(id); }
   }
 
+  // Show a saved text (null: back to the v3 line or an empty note) unless the viewer is typing there.
+  function applyText(kind, id, text) {
+    var el = kind === 'lines' ? $('t-' + id) : $('n-' + id);
+    if (!el || document.activeElement === el || pending[kind + '/' + id]) return;
+    var value = text == null ? (kind === 'lines' ? LINES[id].text : '') : text;
+    if (el.value !== value) { el.value = value; autosize(el); if (kind === 'lines') refreshLine(id); }
+  }
   function applyRemote(kind, snap) {
-    snap.docs.forEach(function (d) {
-      var body = d.data() || {}, el = kind === 'lines' ? $('t-' + d.id) : $('n-' + d.id);
-      if (!el || document.activeElement === el || pending[kind + '/' + d.id]) return;
-      if (typeof body.text === 'string' && el.value !== body.text) { el.value = body.text; autosize(el); if (kind === 'lines') refreshLine(d.id); }
-    });
-    snap.docChanges().forEach(function (c) {
-      if (c.type !== 'removed') return;
-      var el = kind === 'lines' ? $('t-' + c.doc.id) : $('n-' + c.doc.id);
-      if (!el || document.activeElement === el) return;
-      el.value = kind === 'lines' ? LINES[c.doc.id].text : '';
-      autosize(el); if (kind === 'lines') refreshLine(c.doc.id);
-    });
+    snap.docs.forEach(function (d) { var body = d.data() || {}; if (typeof body.text === 'string') applyText(kind, d.id, body.text); });
+    snap.docChanges().forEach(function (c) { if (c.type === 'removed') applyText(kind, c.doc.id, null); });
     refreshTotals();
   }
+  function dbStore(db) {
+    return { save: function (kind, id, text) {
+      var ref = db.collection(kind).doc(id);
+      return text == null ? ref.delete() : ref.set({ text: text, updated: new Date().toISOString() });
+    } };
+  }
+  function localStore() {
+    return { save: function (kind, id, text) {
+      return fetch('/api/' + kind + '/' + encodeURIComponent(id), { method: 'PUT', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text: text }) }).then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); });
+    } };
+  }
+
+  // ---- Recording your own narration (local desk only) ----
+  var TAKES = {};                        // "scene-S01" or "line-S01-1" -> {takes: [{n, file, seconds}], chosen}
+  function renderTakes(key) {
+    var el = $('tk-' + key), t = TAKES[key];
+    if (!el) return;
+    if (!t || !t.takes.length) { el.innerHTML = ''; return; }
+    el.innerHTML = '<span>Your takes:</span>' + t.takes.map(function (k) {
+      var chosen = k.n === t.chosen;
+      return '<span class="take' + (chosen ? ' chosen' : '') + '">Take ' + k.n + ' · ' + k.seconds.toFixed(1) + ' s' +
+        '<button type="button" data-take-play="' + esc(k.file) + '" aria-label="Play take ' + k.n + '">▶</button>' +
+        (chosen ? '<span>✓ using</span>' : '<button type="button" data-take-use="' + key + '" data-n="' + k.n + '">Use this</button>') + '</span>';
+    }).join('');
+  }
+  function marked(text) {                // the delivery marks, drawn for reading aloud
+    return esc(text).replace(/\s*\/\/\s*/g, ' \u0001 ').replace(/\s*\/\s*/g, ' \u0002 ')
+      .replace(/\*([^*]+)\*/g, '<strong>$1</strong>')
+      .replace(/\u0001/g, '<span class="pause">//</span>').replace(/\u0002/g, '<span class="pause">/</span>');
+  }
+  var mic = null, rec = null, chunks = [], target = null, t0 = 0, tick = null, audioCtx = null, analyser = null, raf = null;
+  async function openPrompter(kind, id) {
+    var lines = kind === 'scene' ? SCENES[id].lines : [LINES[id]];
+    $('p-title').textContent = kind === 'scene' ? SCENES[id].heading : 'Line ' + id;
+    $('p-script').innerHTML = lines.map(function (l) { return '<p><small>' + l.id + '</small>' + marked(current(l.id)) + '</p>'; }).join('');
+    $('p-msg').textContent = ''; $('p-time').textContent = '0:00'; $('p-stop').disabled = true;
+    $('prompter').hidden = false;
+    target = { kind: kind, id: id };
+    try {
+      mic = mic || await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: false, noiseSuppression: false, autoGainControl: false, channelCount: 1 } });
+    } catch (e) {
+      $('p-msg').textContent = 'The browser blocked the microphone. Allow it for this page in the address bar, then try again.';
+      return;
+    }
+    var mime = ['audio/webm;codecs=opus', 'audio/mp4', 'audio/ogg;codecs=opus'].filter(function (m) {
+      return window.MediaRecorder && MediaRecorder.isTypeSupported(m); })[0] || '';
+    rec = new MediaRecorder(mic, mime ? { mimeType: mime, audioBitsPerSecond: 256000 } : undefined);
+    chunks = [];
+    rec.ondataavailable = function (e) { if (e.data && e.data.size) chunks.push(e.data); };
+    rec.start(500);
+    t0 = Date.now();
+    $('prompter').classList.add('live'); $('p-stop').disabled = false; $('p-stop').focus();
+    tick = setInterval(function () { $('p-time').textContent = clock((Date.now() - t0) / 1000); }, 250);
+    meter();
+  }
+  function meter() {
+    try {
+      audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
+      analyser = audioCtx.createAnalyser(); analyser.fftSize = 2048;
+      audioCtx.createMediaStreamSource(mic).connect(analyser);
+    } catch (e) { $('p-level').textContent = ''; return; }
+    var buf = new Float32Array(analyser.fftSize), bar = $('p-meter');
+    (function draw() {
+      analyser.getFloatTimeDomainData(buf);
+      var peak = 0, sum = 0;
+      for (var i = 0; i < buf.length; i++) { var v = Math.abs(buf[i]); if (v > peak) peak = v; sum += v * v; }
+      var level = 20 * Math.log10(Math.sqrt(sum / buf.length) || 1e-6);
+      bar.firstChild.style.width = Math.max(0, Math.min(100, (level + 60) / 60 * 100)) + '%';
+      bar.classList.toggle('hot', peak > 0.95);
+      $('p-level').textContent = peak > 0.95 ? 'Too loud: move back a little' : level < -48 ? 'Quiet: move a little closer' : 'Level OK';
+      raf = requestAnimationFrame(draw);
+    })();
+  }
+  function closePrompter() {
+    clearInterval(tick); cancelAnimationFrame(raf);
+    if (analyser) { try { analyser.disconnect(); } catch (e) { /* already disconnected */ } }
+    $('prompter').classList.remove('live'); $('prompter').hidden = true;
+  }
+  function stopRecording(save) {
+    if (!rec || rec.state === 'inactive') { closePrompter(); return; }
+    var dest = target, recorder = rec;
+    recorder.onstop = function () {
+      var blob = new Blob(chunks, { type: recorder.mimeType || 'audio/webm' });
+      closePrompter();
+      if (!save || !blob.size) return;
+      var ext = /mp4/.test(blob.type) ? 'mp4' : /ogg/.test(blob.type) ? 'ogg' : 'webm', key = dest.kind + '-' + dest.id;
+      setSaveState('Saving your take…', '');
+      fetch('/api/takes/' + dest.kind + '/' + encodeURIComponent(dest.id) + '?ext=' + ext, { method: 'POST', body: blob })
+        .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+        .then(function (entry) { TAKES[key] = entry; renderTakes(key); setSaveState('Take saved', 'ok'); })
+        .catch(function () { setSaveState('Couldn\'t save the take; is the desk server still running?', 'warn'); });
+    };
+    recorder.stop();
+  }
+  $('p-stop').addEventListener('click', function () { stopRecording(true); });
+  $('p-discard').addEventListener('click', function () { stopRecording(false); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !$('prompter').hidden) stopRecording(false); });
 
   // ---- Wire up ----
   build();
@@ -292,6 +428,18 @@ button.link { border: 0; padding: 0; background: none; text-decoration: underlin
 
   var player = $('player'), playing = null;
   document.addEventListener('click', function (e) {
+    var rb = e.target.closest('[data-rec]'), tp = e.target.closest('[data-take-play]'), tu = e.target.closest('[data-take-use]');
+    if (rb) { player.pause(); openPrompter(rb.getAttribute('data-rec'), rb.getAttribute('data-id')); return; }
+    if (tp) { player.src = '/voice/' + tp.getAttribute('data-take-play'); player.play().catch(function () {}); return; }
+    if (tu) {
+      var key = tu.getAttribute('data-take-use'), cut = key.indexOf('-'), n = Number(tu.getAttribute('data-n'));
+      fetch('/api/choose/' + key.slice(0, cut) + '/' + encodeURIComponent(key.slice(cut + 1)), { method: 'PUT',
+        headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ n: n }) })
+        .then(function (r) { if (!r.ok) throw new Error(); return r.json(); })
+        .then(function (entry) { TAKES[key] = entry; renderTakes(key); })
+        .catch(function () { setSaveState('Couldn\'t change the take; is the desk server still running?', 'warn'); });
+      return;
+    }
     var p = e.target.closest('[data-play]'), r = e.target.closest('[data-revert]');
     if (p) {
       var id = p.getAttribute('data-play');
@@ -307,14 +455,30 @@ button.link { border: 0; padding: 0; background: none; text-decoration: underlin
   });
   player.addEventListener('ended', function () { playing = null; document.querySelectorAll('[data-play]').forEach(function (b) { b.textContent = '▶ Play'; }); });
 
-  var use = window.claude && window.claude.use ? window.claude.use('db') : Promise.resolve(null);
-  use.then(function (store) {
-    db = store;
-    if (!db) { setSaveState('Saving here is off; edits stay in this browser', 'warn'); Object.keys(LINES).forEach(refreshLine); return; }
-    setSaveState('Connected', 'ok');
-    db.collection('lines').onSnapshot(function (s) { applyRemote('lines', s); }, function () { setSaveState('Lost the connection; edits stay in this browser', 'warn'); });
-    db.collection('notes').onSnapshot(function (s) { applyRemote('notes', s); }, function () {});
-    Object.keys(drafts).forEach(function (key) { var parts = key.split('/'); flush(parts[0], parts[1]); });
-  }).catch(function () { setSaveState('Saving here is off; edits stay in this browser', 'warn'); });
+  var flushDrafts = function () { Object.keys(drafts).forEach(function (key) { var parts = key.split('/'); flush(parts[0], parts[1]); }); };
+  if (LOCAL_DESK) {
+    document.body.classList.add('local');
+    fetch('/api/state').then(function (r) { return r.json(); }).then(function (state) {
+      store = localStore();
+      ['lines', 'notes'].forEach(function (kind) {
+        Object.keys(state[kind] || {}).forEach(function (id) { if (drafts[kind + '/' + id] == null) applyText(kind, id, state[kind][id]); });
+      });
+      TAKES = state.takes || {};
+      Object.keys(TAKES).forEach(renderTakes);
+      Object.keys(LINES).forEach(refreshLine); refreshTotals();
+      setSaveState('Saving to the project on this Mac', 'ok');
+      flushDrafts();
+    }).catch(function () { setSaveState('Can\'t reach the desk server; edits stay in this browser', 'warn'); });
+  } else {
+    var use = window.claude && window.claude.use ? window.claude.use('db') : Promise.resolve(null);
+    use.then(function (db) {
+      if (!db) { setSaveState('Saving here is off; edits stay in this browser', 'warn'); Object.keys(LINES).forEach(refreshLine); return; }
+      store = dbStore(db);
+      setSaveState('Connected', 'ok');
+      db.collection('lines').onSnapshot(function (s) { applyRemote('lines', s); }, function () { setSaveState('Lost the connection; edits stay in this browser', 'warn'); });
+      db.collection('notes').onSnapshot(function (s) { applyRemote('notes', s); }, function () {});
+      flushDrafts();
+    }).catch(function () { setSaveState('Saving here is off; edits stay in this browser', 'warn'); });
+  }
 })();
 </script>

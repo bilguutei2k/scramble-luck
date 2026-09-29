@@ -4,3 +4,4 @@ __pycache__/
 .nightshift/
 .venv/
 studio/episodes/*/renders/
+studio/episodes/*/voice/
