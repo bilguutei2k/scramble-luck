@@ -49,3 +49,23 @@ body { overflow: hidden; }
   background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22300%22><filter id=%22n%22><feTurbulence type=%22fractalNoise%22 baseFrequency=%22.8%22 numOctaves=%222%22 stitchTiles=%22stitch%22/><feColorMatrix values=%220 0 0 0 1  0 0 0 0 .95  0 0 0 0 .9  0 0 0 .35 0%22/></filter><rect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23n)%22/></svg>'); }
 
 .safe { pointer-events: none; border: 3px dashed var(--player-b); }
+
+/* Batch 2 additions are scoped: none of the original Jimmy selectors change. */
+.ft-component { position: absolute; inset: 0; }
+.ft-component > * { position: absolute; }
+.ft-component svg { overflow: visible; }
+.ft-chart-line { fill: none; stroke: var(--ink); stroke-linejoin: round; }
+.ft-median-ring { border: 4px dashed var(--player-a); box-sizing: border-box; border-radius: 50%; }
+.ft-named-field { color: var(--field-text); font-weight: 600; }
+.ft-cast { display: flex; gap: 12px; font-family: var(--mono); font-size: 26px; font-weight: 600; }
+.ft-cast > span { padding: 6px 12px; background: var(--player-a); color: var(--ink); }
+.ft-cast > span + span { background: var(--player-b); color: var(--paper); }
+.ft-football-disc { border-radius: 50%; background: var(--player-a);
+  -webkit-mask: radial-gradient(circle,#000 7px,transparent 7.6px) 0 0/22px 22px;
+  mask: radial-gradient(circle,#000 7px,transparent 7.6px) 0 0/22px 22px; }
+.ft-table { display: grid; font-family: var(--mono); }
+.ft-table > .ft-th { font-size: 26px; color: var(--field-text); border-bottom: 3px solid var(--ink); padding-bottom: 18px; }
+.ft-table > .ft-td { font-size: 56px; font-weight: 600; padding: 30px 0; border-bottom: 2px solid var(--paper-2); text-align: right; }
+.ft-table > .ft-name { font-size: 40px; text-align: left; display: flex; align-items: center; gap: 20px; }
+.ft-table .dot { display: inline-block; width: 22px; height: 22px; flex: none; }
+.ft-football-vertical .grain { background-position: var(--grain-shift, 0px) var(--grain-shift, 0px); }
