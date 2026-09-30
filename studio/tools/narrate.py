@@ -45,9 +45,11 @@ def year(y):
 
 
 RULES = [
-    # Football seasons: 2025/26 -> twenty twenty-five twenty-six.
+    # Football seasons: 2025/26 -> twenty twenty-five twenty-six;
+    # 2003/04 -> two thousand three oh-four (no "to", so ranges read cleanly).
     # Keep the existing dash-season rule unchanged for Playoff Jimmy.
-    (re.compile(r"(\d{4})/(\d{2})\b"), lambda m: year(int(m[1])) + " " + words(int(m[2]))),
+    (re.compile(r"(\d{4})/(\d{2})\b"), lambda m: year(int(m[1])) + " " + (
+        "oh-" if int(m[2]) < 10 else "") + words(int(m[2]))),
     # Seasons: 2022–23 -> twenty twenty-two to twenty-three
     (re.compile(r"(\d{4})[–-](\d{2})\b"), lambda m: year(int(m[1])) + " to " + words(int(m[2]))),
     # 4.0-point -> four-point
