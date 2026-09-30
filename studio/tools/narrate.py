@@ -45,6 +45,9 @@ def year(y):
 
 
 RULES = [
+    # Football seasons: 2025/26 -> twenty twenty-five twenty-six.
+    # Keep the existing dash-season rule unchanged for Playoff Jimmy.
+    (re.compile(r"(\d{4})/(\d{2})\b"), lambda m: year(int(m[1])) + " " + words(int(m[2]))),
     # Seasons: 2022–23 -> twenty twenty-two to twenty-three
     (re.compile(r"(\d{4})[–-](\d{2})\b"), lambda m: year(int(m[1])) + " to " + words(int(m[2]))),
     # 4.0-point -> four-point
@@ -56,10 +59,21 @@ RULES = [
     # Whole numbers, with thousands separators
     (re.compile(r"\d{1,3}(?:,\d{3})+|\d+"), lambda m: words(int(m[0].replace(",", "")))),
 ]
-PHRASES = [("player-seasons", "player seasons")]
+PHRASES = [
+    ("player-seasons", "player seasons"),
+    # Local voice respellings; captions and cue words retain the written names.
+    ("Højlund", "Hoy-lund"),
+    ("Castellanos", "Kas-teh-yah-nos"),
+    ("Calvert-Lewin", "Calvert Loo-in"),
+    ("Semenyo", "Seh-men-yoh"),
+    ("Gibbs-White", "Gibbs White"),
+    ("Ekitiké", "Eh-kee-tee-kay"),
+    ("Kroupi", "Kroo-pee"),
+]
 
 
 def speak(token):
+    token = re.sub(r"\bFPL\b", "F P L", token)
     for written, said in PHRASES:
         token = token.replace(written, said)
     for pattern, repl in RULES:

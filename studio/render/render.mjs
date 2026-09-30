@@ -141,6 +141,17 @@ async function main() {
     const info = (await cdp.send('Runtime.evaluate', { expression: 'JSON.stringify({d: __ft.duration, w: __ft.width, h: __ft.height})',
       returnByValue: true }, sessionId)).result.value;
     const scene = JSON.parse(info);
+    // Optional edit-level visibility gates for static labels/rows. Restore the
+    // scene's own visibility before every seek so backward seeks stay pure.
+    const reveals = o.timemap?.reveals ?? [];
+    if (reveals.length) {
+      const checked = await cdp.send('Runtime.evaluate', {
+        expression: 'JSON.stringify(' + JSON.stringify(reveals) + '.filter(r => !document.querySelector(r.selector)).map(r => r.selector))',
+        returnByValue: true,
+      }, sessionId);
+      const missing = JSON.parse(checked.result.value);
+      if (missing.length) throw new Error('Edit reveal selectors missing: ' + missing.join(', '));
+    }
     const shot = async (t) => {
       const r = await cdp.send('Runtime.evaluate', { expression: '__ft.seek(' + t + ')', returnByValue: true }, sessionId);
       if (r.exceptionDetails || errors.length) throw new Error('Render failed at t=' + t + ': ' + (errors.join('; ') || r.exceptionDetails.text));
@@ -161,8 +172,23 @@ async function main() {
       const done = new Promise((ok, fail) => ffmpeg.on('exit', (c) => (c === 0 ? ok() : fail(new Error('ffmpeg exited ' + c)))));
       let lastT = null, lastPng = null, captured = 0;
       for (let i = 0; i < frames; i++) {
-        const t = map(from + i / o.fps);
-        if (t !== lastT) { lastPng = await shot(t); lastT = t; captured++; }
+        const outputT = from + i / o.fps, t = map(outputT);
+        // Visibility can change while the scene clock holds on a frame.
+        const gate = reveals.map(r => outputT >= r.at);
+        const key = reveals.length ? JSON.stringify([t, gate]) : t;
+        if (key !== lastT) {
+          if (reveals.length) {
+            const gated = await cdp.send('Runtime.evaluate', {
+              expression: '(() => { (window.__editHidden || []).forEach(([e,v]) => e.style.visibility=v); window.__editHidden=[]; __ft.seek(' + t + '); ' +
+                'const hidden=new Set(); ' + JSON.stringify(reveals) + '.forEach(r => { if (' + outputT + ' < r.at) document.querySelectorAll(r.selector).forEach(e => { hidden.add(e); e.querySelectorAll("*").forEach(child => hidden.add(child)); }); }); hidden.forEach(e => { window.__editHidden.push([e,e.style.visibility]); e.style.visibility="hidden"; }); })()',
+              returnByValue: true,
+            }, sessionId);
+            if (gated.exceptionDetails || errors.length) throw new Error('Edit reveal failed at ' + outputT);
+            const img = await cdp.send('Page.captureScreenshot', { format: 'png', clip: { x: 0, y: 0, width: scene.w, height: scene.h, scale: 1 } }, sessionId);
+            lastPng = Buffer.from(img.data, 'base64');
+          } else lastPng = await shot(t);
+          lastT = key; captured++;
+        }
         if (!ffmpeg.stdin.write(lastPng)) await new Promise((ok) => ffmpeg.stdin.once('drain', ok));
       }
       ffmpeg.stdin.end();

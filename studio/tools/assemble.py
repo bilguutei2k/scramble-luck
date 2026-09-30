@@ -47,25 +47,67 @@ def plan_shot(shot, narration, edit):
     """Line start times within the shot, its duration, and the timemap anchors."""
     scene_id, indices = shot["lines"]
     lines = [narration["scenes"][scene_id]["lines"][i] for i in indices]
+    # Optional half-open written-word ranges split long lines without editing
+    # STORY.md, synthesising fragments, or changing the narration cache.
+    if "word_ranges" in shot:
+        if len(shot["word_ranges"]) != len(lines):
+            raise ValueError("word_ranges must match the shot's lines")
+        lines = [slice_line(line, bounds) if bounds is not None else line
+                 for line, bounds in zip(lines, shot["word_ranges"])]
     t, starts = shot.get("lead", edit["lead"]), []
     for i, line in enumerate(lines):
         starts.append(t)
         t += line["duration"] + (edit["gap"] if i + 1 < len(lines) else 0)
     duration = t + shot.get("tail", edit["tail"])
+    reveals = []
+    for cue in shot.get("reveals", []):
+        at = duration + 1 if cue.get("hidden") else cue_time(cue, lines, starts)
+        reveals.append({"selector": cue["selector"], "at": round(max(0, at), 3)})
     if "hold" in shot:                                  # a still: the scene frozen at one moment (a recap)
         return {"lines": lines, "starts": starts, "duration": round(duration, 3),
-                "anchors": [[shot["hold"], 0.0], [shot["hold"] + 0.05, round(duration + 60, 3)]]}
+                "anchors": [[shot["hold"], 0.0], [shot["hold"] + 0.05, round(duration + 60, 3)]],
+                "reveals": reveals}
     anchors = []
     for cue in shot["cues"]:
-        line, base = lines[cue["line"]], starts[cue["line"]]
-        at = base + (find_word(line, cue["word"], cue.get("nth", 1))["start"] if "word" in cue else 0)
-        anchors.append([cue["t"], round(max(0.0, at + cue.get("offset", 0)), 3)])
+        at = round(max(0.0, cue_time(cue, lines, starts)), 3)
+        if "jump_from" in cue:
+            # A named-state cut skips its unused reveal-clock hold. Equal
+            # output timestamps make the cut exact without rushing motion.
+            anchors.append([cue["jump_from"], at])
+        anchors.append([cue["t"], at])
+    if "end_t" in shot:
+        # Finish this reveal, then hold below the next state's clock boundary.
+        anchors.append([shot["end_t"], round(duration + 60, 3)])
     if anchors[0][1] > 0:
         anchors.insert(0, [anchors[0][0], 0.0])
     for a, b in zip(anchors, anchors[1:]):
         if b[1] < a[1] or b[0] < a[0]:
             raise ValueError("%s: cues out of order at scene t=%s" % (shot["scene"], b[0]))
-    return {"lines": lines, "starts": starts, "duration": round(duration, 3), "anchors": anchors}
+    return {"lines": lines, "starts": starts, "duration": round(duration, 3), "anchors": anchors, "reveals": reveals}
+
+
+def cue_time(cue, lines, starts):
+    line = lines[cue["line"]]
+    return starts[cue["line"]] + (find_word(line, cue["word"], cue.get("nth", 1))["start"]
+                                 if "word" in cue else 0) + cue.get("offset", 0)
+
+
+def slice_line(line, bounds):
+    """Slice audio and captions at the same boundary between written words."""
+    a, b = bounds
+    words = line["words"]
+    if not (isinstance(a, int) and isinstance(b, int) and 0 <= a < b <= len(words)):
+        raise ValueError("invalid written-word range %r" % (bounds,))
+    # Midpoints preserve inter-word silence across adjacent slices, without
+    # dropping the attack of a consonant or overlapping PCM samples.
+    start = (words[a - 1]["end"] + words[a]["start"]) / 2 if a else 0
+    end = (words[b - 1]["end"] + words[b]["start"]) / 2 if b < len(words) else line["duration"]
+    if end <= start:
+        raise ValueError("word range has no timed audio: %r" % (bounds,))
+    selected = [{**w, "start": round(max(0, w["start"] - start), 3),
+                 "end": round(min(end - start, w["end"] - start), 3)} for w in words[a:b]]
+    return {**line, "written": text_of(selected), "words": selected,
+            "duration": end - start, "audio_range": [start, end]}
 
 
 def sha(path):
@@ -86,10 +128,14 @@ def render_shot(job):
     return out, json.loads(out.with_suffix(".mp4.json").read_text())["captured"]
 
 
-def read_wav(path):
+def read_wav(path, audio_range=None):
     with wave.open(str(path)) as f:
         assert f.getframerate() == RATE and f.getnchannels() == 1 and f.getsampwidth() == 2
-        return f.readframes(f.getnframes())
+        if audio_range is None:
+            return f.readframes(f.getnframes())
+        start, end = (round(t * RATE) for t in audio_range)
+        f.setpos(start)
+        return f.readframes(end - start)
 
 
 def build_audio(placements, duration, out):
@@ -201,7 +247,8 @@ def assemble(episode, name, spec, edit, narration, jobs):
         plans.append(plan)
     total = t
     work = [(episode / "scenes" / (p["shot"]["scene"] + ".html"), fmt,
-             {"duration": p["duration"], "anchors": p["anchors"]}, p["file"]) for p in plans]
+             {"duration": p["duration"], "anchors": p["anchors"],
+              **({"reveals": p["reveals"]} if p["reveals"] else {})}, p["file"]) for p in plans]
     with ThreadPoolExecutor(max_workers=jobs) as pool:
         for path, how in pool.map(render_shot, work):
             print("  %s: %s" % (path.name, how if how == "cached" else "%s frames captured" % how))
@@ -213,7 +260,7 @@ def assemble(episode, name, spec, edit, narration, jobs):
     placements, timed = [], []
     for p in plans:
         for start, line in zip(p["starts"], p["lines"]):
-            placements.append((p["start"] + start, read_wav(episode / line["wav"])))
+            placements.append((p["start"] + start, read_wav(episode / line["wav"], line.get("audio_range"))))
             timed.append((p["start"] + start, line))
     voice = shots_dir / "narration.wav"
     build_audio(placements, total, voice)
@@ -227,9 +274,12 @@ def assemble(episode, name, spec, edit, narration, jobs):
     n_captions = captions(timed, out / (name + ".srt"))
     record = {"deliverable": name, "title": spec.get("title"), "format": fmt, "duration": round(total, 3),
               "output_sha256": sha(final), "captions": n_captions, "narration_engine": narration["engine"],
+              "status": edit.get("status", "draft"),
               "story_sha256": narration["story_sha256"], "data_js_sha256": sha(episode / "scenes/data.js"),
               "shots": [{"scene": p["shot"]["scene"], "start": p["start"], "duration": p["duration"],
-                         "lines": p["shot"]["lines"], "anchors": p["anchors"], "transition_in": p["shot"]["in"]} for p in plans]}
+                         "lines": p["shot"]["lines"], "anchors": p["anchors"], "transition_in": p["shot"]["in"],
+                         **({"word_ranges": p["shot"]["word_ranges"]} if "word_ranges" in p["shot"] else {}),
+                         **({"reveals": p["reveals"]} if p["reveals"] else {})} for p in plans]}
     (out / (name + ".json")).write_text(json.dumps(record, indent=1) + "\n")
     print("Wrote %s (%d:%04.1f, %d shots, %d captions)" % (final, total // 60, total % 60, len(plans), n_captions))
 
