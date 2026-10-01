@@ -73,22 +73,45 @@ PHRASES = [
     ("Kroupi", "Kroo-pee"),
 ]
 
+SUPER_SUBS_PHRASES = [
+    # Proposed Kokoro hints: audition locally before locking. Written-word
+    # spans, cue keys and captions keep the original spelling and accents.
+    ("Hernández", "Her-nan-dez"),
+    ("Chicharito", "Chee-chah-ree-toh"),
+    ("Solskjær", "Sol-shair"),
+    ("Giroud", "Zhee-roo"),
+    ("Defoe", "Deh-foe"),
+    ("Javier", "Hah-vee-air"),
+    ("Ole", "Oh-leh"),
+    ("Gunnar", "Goo-nar"),
+]
 
-def speak(token):
+
+def speak(token, episode=None):
     token = re.sub(r"\bFPL\b", "F P L", token)
-    for written, said in PHRASES:
+    for written, said in PHRASES + (SUPER_SUBS_PHRASES if episode == "super-subs" else []):
         token = token.replace(written, said)
+    if episode == "super-subs":
+        # Scores are read in their written order, including home–away labels.
+        # Apply before cardinals; never reinterpret four-digit season ranges.
+        token = re.sub(r"(?<!\d)(\d{1,2})[–-](\d{1,2})(?!\d)",
+                       lambda m: words(int(m[1])) + " " + words(int(m[2])), token)
+        token = re.sub(r"\b90\+", "ninety plus", token)
+        token = token.replace("%", " percent")
+        token = token.replace("×", "times ")
+        token = re.sub(r"^((?:19|20)\d{2})([,:;.?!]?)$",
+                       lambda m: year(int(m[1])) + m[2], token)
     for pattern, repl in RULES:
         token = pattern.sub(repl, token)
     return token
 
 
-def spoken_form(line):
+def spoken_form(line, episode=None):
     """The spoken text, and for each written word its character span in it."""
     written = TAG.sub("", line).split()
     spoken, spans = "", []
     for w in written:
-        s = speak(w)
+        s = speak(w, episode)
         start = len(spoken) + (1 if spoken else 0)
         spoken = (spoken + " " + s) if spoken else s
         spans.append((w, start, len(spoken)))
@@ -163,7 +186,7 @@ def narrate(episode, voice, speed):
             continue
         entries = []
         for index, line in enumerate(lines):
-            spoken, spans = spoken_form(line)
+            spoken, spans = spoken_form(line, episode.name)
             key = hashlib.sha256(json.dumps([spoken, engine], sort_keys=True).encode()).hexdigest()[:20]
             wav, meta = out / "lines" / (key + ".wav"), out / "lines" / (key + ".json")
             if not (wav.exists() and meta.exists()):
@@ -188,7 +211,7 @@ def audition(episode, voices, speed):
     out = episode / "renders/audio/audition"
     out.mkdir(parents=True, exist_ok=True)
     lines = next(iter(scenes((episode / "STORY.md").read_text()).values()))[:2]
-    text = " ".join(spoken_form(line)[0] for line in lines)
+    text = " ".join(spoken_form(line, episode.name)[0] for line in lines)
     pipeline = load_pipeline()
     gap = np.zeros(int(0.8 * SAMPLE_RATE), dtype=np.float32)
     for voice in voices:

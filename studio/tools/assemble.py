@@ -62,7 +62,8 @@ def plan_shot(shot, narration, edit):
     reveals = []
     for cue in shot.get("reveals", []):
         at = duration + 1 if cue.get("hidden") else cue_time(cue, lines, starts)
-        reveals.append({"selector": cue["selector"], "at": round(max(0, at), 3)})
+        reveals.append({"selector": cue["selector"], "at": round(max(0, at), 3),
+                        **({"hide_after": True} if cue.get("hide_after") else {})})
     if "hold" in shot:                                  # a still: the scene frozen at one moment (a recap)
         return {"lines": lines, "starts": starts, "duration": round(duration, 3),
                 "anchors": [[shot["hold"], 0.0], [shot["hold"] + 0.05, round(duration + 60, 3)]],
@@ -263,7 +264,13 @@ def captions(timed_lines, path, width=42, strict=False):
             else:
                 merged.append(s)
         for s in merged:
-            cues.extend((offset, piece) for piece in split_cue(s, 2 * width - 2))
+            for piece in split_cue(s, 2 * width - 2):
+                # A <=82-character chunk can still have no word boundary
+                # that fits two 42-character rows. Keep strict captions within
+                # the row limit without changing the legacy caption path.
+                pieces = (split_cue(piece, width) if strict and
+                          any(len(row) > width for row in wrap(piece, width).splitlines()) else [piece])
+                cues.extend((offset, part) for part in pieces)
     entries = [[offset + chunk[0]["start"], offset + chunk[-1]["end"], wrap(chunk, width)] for offset, chunk in cues]
     for a, b in ([] if strict else zip(entries, entries[1:])):
         a[1] = max(a[1], min(a[0] + 1.0, b[0]))
@@ -317,6 +324,7 @@ def assemble(episode, name, spec, edit, narration, jobs):
     total = sum(p["duration"] for p in plans)
     work = [(episode / "scenes" / (p["shot"]["scene"] + ".html"), fmt,
              {"duration": p["duration"], "anchors": p["anchors"],
+              **({"narrated": True} if edit.get("settled_visuals") else {}),
               **({"reveals": p["reveals"]} if p["reveals"] else {})}, p["file"]) for p in plans]
     with ThreadPoolExecutor(max_workers=jobs) as pool:
         for path, how in pool.map(render_shot, work):

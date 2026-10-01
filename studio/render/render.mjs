@@ -128,6 +128,12 @@ async function main() {
     });
     await cdp.send('Page.enable', {}, sessionId);
     await cdp.send('Runtime.enable', {}, sessionId);
+    if (o.timemap?.narrated) {
+      // Opt-in scene composition: persistent orientation and settled charts;
+      // spoken-word gates still control each newly introduced value.
+      await cdp.send('Page.addScriptToEvaluateOnNewDocument',
+        { source: 'window.__narratedAssembly = true;' }, sessionId);
+    }
     await cdp.send('Log.enable', {}, sessionId);
     const size = o.format === 'vertical' ? { w: 1080, h: 1920 } : { w: 1920, h: 1080 };
     await cdp.send('Emulation.setDeviceMetricsOverride', { width: size.w, height: size.h, deviceScaleFactor: 1, mobile: false }, sessionId);
@@ -174,13 +180,13 @@ async function main() {
       for (let i = 0; i < frames; i++) {
         const outputT = from + i / o.fps, t = map(outputT);
         // Visibility can change while the scene clock holds on a frame.
-        const gate = reveals.map(r => outputT >= r.at);
+        const gate = reveals.map(r => r.hide_after ? outputT < r.at : outputT >= r.at);
         const key = reveals.length ? JSON.stringify([t, gate]) : t;
         if (key !== lastT) {
           if (reveals.length) {
             const gated = await cdp.send('Runtime.evaluate', {
               expression: '(() => { (window.__editHidden || []).forEach(([e,v]) => e.style.visibility=v); window.__editHidden=[]; __ft.seek(' + t + '); ' +
-                'const hidden=new Set(); ' + JSON.stringify(reveals) + '.forEach(r => { if (' + outputT + ' < r.at) document.querySelectorAll(r.selector).forEach(e => { hidden.add(e); e.querySelectorAll("*").forEach(child => hidden.add(child)); }); }); hidden.forEach(e => { window.__editHidden.push([e,e.style.visibility]); e.style.visibility="hidden"; }); })()',
+                'const hidden=new Set(); ' + JSON.stringify(reveals) + '.forEach(r => { if (r.hide_after ? ' + outputT + ' >= r.at : ' + outputT + ' < r.at) document.querySelectorAll(r.selector).forEach(e => { hidden.add(e); e.querySelectorAll("*").forEach(child => hidden.add(child)); }); }); hidden.forEach(e => { window.__editHidden.push([e,e.style.visibility]); e.style.visibility="hidden"; }); })()',
               returnByValue: true,
             }, sessionId);
             if (gated.exceptionDetails || errors.length) throw new Error('Edit reveal failed at ' + outputT);
