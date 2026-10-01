@@ -118,7 +118,12 @@ def render_shot(job):
     page, fmt, timemap, out = job
     tm = out.with_suffix(".timemap.json")
     tm.write_text(json.dumps(timemap) + "\n")
-    key = hashlib.sha256((sha(page) + sha(page.parent / "data.js") + fmt + json.dumps(timemap)).encode()).hexdigest()
+    dependencies = [page, RENDER]
+    for relative in re.findall(r'(?:src|href)="([^"?#]+)"', page.read_text()):
+        dependency = page.parent / relative
+        if dependency.is_file():
+            dependencies.append(dependency)
+    key = hashlib.sha256(("".join(sha(p) for p in dependencies) + fmt + json.dumps(timemap)).encode()).hexdigest()
     stamp = out.with_suffix(".key")
     if out.exists() and stamp.exists() and stamp.read_text() == key:
         return out, "cached"
@@ -151,13 +156,48 @@ def build_audio(placements, duration, out):
         f.writeframes(bytes(track))
 
 
-def loudnorm_filter(wav):
-    probe = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(wav), "-af",
-                            "loudnorm=I=-14:TP=-1:LRA=11:print_format=json", "-f", "null", "-"],
+def loudness_measure(path, true_peak=-1):
+    probe = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(path), "-vn", "-af",
+                            "loudnorm=I=-14:TP=%s:LRA=11:print_format=json" % true_peak, "-f", "null", "-"],
                            capture_output=True, text=True, check=True).stderr
-    m = json.loads(probe[probe.rindex("{"):probe.rindex("}") + 1])
-    return ("loudnorm=I=-14:TP=-1:LRA=11:measured_I=%s:measured_TP=%s:measured_LRA=%s:measured_thresh=%s:offset=%s:linear=true"
-            % (m["input_i"], m["input_tp"], m["input_lra"], m["input_thresh"], m["target_offset"]))
+    return json.loads(probe[probe.rindex("{"):probe.rindex("}") + 1])
+
+
+def loudnorm_filter(wav, true_peak=-1, correction=0):
+    m = loudness_measure(wav, true_peak)
+    return ("loudnorm=I=-14:TP=%s:LRA=11:measured_I=%s:measured_TP=%s:measured_LRA=%s:measured_thresh=%s:offset=%s:linear=true"
+            % (true_peak, m["input_i"], m["input_tp"], m["input_lra"], m["input_thresh"], float(m["target_offset"]) + correction))
+
+
+def calibrate_audio(final, voice, total, true_peak):
+    """Check the encoded AAC, correcting dynamic loudnorm's residual offset.
+
+    Each retry uses the original PCM and copies the picture stream. The
+    requested true-peak headroom is retained through every normalization.
+    """
+    correction, gain = 0, 0
+    for attempt in range(8):
+        m = loudness_measure(final, true_peak)
+        level, peak = float(m["input_i"]), float(m["input_tp"])
+        if abs(level + 14) <= .15 and peak <= -1:
+            return {"integrated_lufs": level, "true_peak_dbtp": peak}
+        if attempt == 7:
+            raise ValueError("Encoded audio outside target: %.2f LUFS / %.2f dBTP" % (level, peak))
+        delta = -14 - level
+        if delta < 0 or delta <= -1.1 - peak:
+            # Use available encoded-peak headroom for a small, exact gain.
+            gain += delta
+        else:
+            correction += 2 * delta
+        if peak > -1:
+            true_peak -= peak + 1.2
+        temp = final.with_name(final.stem + ".normalizing.mp4")
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(final), "-i", str(voice),
+                        "-map", "0:v:0", "-map", "1:a:0", "-c:v", "copy", "-af",
+                        loudnorm_filter(voice, true_peak, correction) + ",volume=%sdB,aresample=48000" % gain,
+                        "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-t", "%.3f" % total,
+                        "-movflags", "+faststart", str(temp)], check=True)
+        temp.replace(final)
 
 
 def wipe_graph(cuts, fmt, wipe, total):
@@ -200,7 +240,7 @@ def wrap(words, width):
     return text_of(words[:i]) + "\n" + text_of(words[i:])
 
 
-def captions(timed_lines, path, width=42):
+def captions(timed_lines, path, width=42, strict=False):
     """SRT captions: sentences, merged when short and split at commas when long, at most two lines of
     `width` characters each, timed from the spoken words."""
     def fmt(s):
@@ -225,7 +265,7 @@ def captions(timed_lines, path, width=42):
         for s in merged:
             cues.extend((offset, piece) for piece in split_cue(s, 2 * width - 2))
     entries = [[offset + chunk[0]["start"], offset + chunk[-1]["end"], wrap(chunk, width)] for offset, chunk in cues]
-    for a, b in zip(entries, entries[1:]):
+    for a, b in ([] if strict else zip(entries, entries[1:])):
         a[1] = max(a[1], min(a[0] + 1.0, b[0]))
         if b[0] - a[1] < 0.25:
             a[1] = b[0]
@@ -233,19 +273,48 @@ def captions(timed_lines, path, width=42):
     return len(entries)
 
 
+def sequence_plans(shots, narration, edit):
+    """Keep adjacent fragments of one cached line sample-contiguous.
+
+    Picture cuts land on whole frames. The next PCM fragment starts at the
+    previous fragment's exact endpoint, carrying the sub-frame difference
+    into word cues and captions instead of inserting silence at the cut.
+    This is opt-in; existing episode edits retain their original timing.
+    """
+    bridges = set()
+    if edit.get("bridge_word_ranges"):
+        for i, (a, b) in enumerate(zip(shots, shots[1:])):
+            if (a["lines"][0] == b["lines"][0] and
+                    a["lines"][1][-1] == b["lines"][1][0] and
+                    a.get("word_ranges") and b.get("word_ranges") and
+                    a["word_ranges"][-1] and b["word_ranges"][0] and
+                    a["word_ranges"][-1][1] == b["word_ranges"][0][0]):
+                bridges.add(i)
+    plans, t, pcm_end = [], 0.0, 0.0
+    for i, shot in enumerate(shots):
+        effective = dict(shot)
+        if i in bridges:
+            effective["tail"] = 0
+        if i - 1 in bridges:
+            effective["lead"] = pcm_end - t
+        plan = plan_shot(effective, narration, edit)
+        plan.update(start=round(t, 6), shot=shot)
+        plan["duration"] = round(plan["duration"] * FPS) / FPS
+        pcm_end = t + plan["starts"][-1] + plan["lines"][-1]["duration"]
+        t += plan["duration"]
+        plans.append(plan)
+    return plans
+
+
 def assemble(episode, name, spec, edit, narration, jobs):
     out = episode / "renders/draft"
     shots_dir = out / name
     shots_dir.mkdir(parents=True, exist_ok=True)
-    fmt, plans, t = spec["format"], [], 0.0
-    for k, shot in enumerate(spec["shots"]):
-        plan = plan_shot(shot, narration, edit)
-        plan.update(start=round(t, 3), shot=shot, file=shots_dir / ("%02d-%s.mp4" % (k + 1, shot["scene"])))
-        frames = round(plan["duration"] * FPS)
-        plan["duration"] = frames / FPS                     # whole frames, so cuts land where the audio expects
-        t += plan["duration"]
-        plans.append(plan)
-    total = t
+    fmt = spec["format"]
+    plans = sequence_plans(spec["shots"], narration, edit)
+    for k, plan in enumerate(plans):
+        plan["file"] = shots_dir / ("%02d-%s.mp4" % (k + 1, plan["shot"]["scene"]))
+    total = sum(p["duration"] for p in plans)
     work = [(episode / "scenes" / (p["shot"]["scene"] + ".html"), fmt,
              {"duration": p["duration"], "anchors": p["anchors"],
               **({"reveals": p["reveals"]} if p["reveals"] else {})}, p["file"]) for p in plans]
@@ -266,18 +335,24 @@ def assemble(episode, name, spec, edit, narration, jobs):
     build_audio(placements, total, voice)
     cuts = [(p["start"], PANEL[p["shot"]["bg"]]) for p in plans if p["shot"]["in"] == "wipe"]
     final = out / (name + ".mp4")
-    graph = wipe_graph(cuts, fmt, edit["wipe"], total) + ";[1:a]%s,aresample=48000[a]" % loudnorm_filter(voice)
+    graph = wipe_graph(cuts, fmt, edit["wipe"], total) + ";[1:a]%s,aresample=48000[a]" % loudnorm_filter(voice, edit.get("audio_true_peak", -1))
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(joined), "-i", str(voice), "-filter_complex", graph,
                     "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-crf", "18", "-preset", "medium", "-pix_fmt", "yuv420p",
                     "-r", str(FPS), "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-t", "%.3f" % total,
                     "-movflags", "+faststart", str(final)], check=True)
-    n_captions = captions(timed, out / (name + ".srt"))
+    audio_qa = calibrate_audio(final, voice, total, edit.get("audio_true_peak", -1)) if edit.get("calibrate_loudness") else None
+    n_captions = captions(timed, out / (name + ".srt"), strict=edit.get("strict_captions", False))
     record = {"deliverable": name, "title": spec.get("title"), "format": fmt, "duration": round(total, 3),
               "output_sha256": sha(final), "captions": n_captions, "narration_engine": narration["engine"],
+              **({"audio_qa": audio_qa} if audio_qa else {}),
               "status": edit.get("status", "draft"),
               "story_sha256": narration["story_sha256"], "data_js_sha256": sha(episode / "scenes/data.js"),
               "shots": [{"scene": p["shot"]["scene"], "start": p["start"], "duration": p["duration"],
                          "lines": p["shot"]["lines"], "anchors": p["anchors"], "transition_in": p["shot"]["in"],
+                         "speech": [{"start": round(p["start"] + start, 6),
+                                     "end": round(p["start"] + start + line["duration"], 6),
+                                     "written": line["written"]}
+                                    for start, line in zip(p["starts"], p["lines"])],
                          **({"word_ranges": p["shot"]["word_ranges"]} if "word_ranges" in p["shot"] else {}),
                          **({"reveals": p["reveals"]} if p["reveals"] else {})} for p in plans]}
     (out / (name + ".json")).write_text(json.dumps(record, indent=1) + "\n")

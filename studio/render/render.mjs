@@ -207,7 +207,8 @@ async function main() {
     if (ffmpeg && ffmpeg.exitCode === null) ffmpeg.kill('SIGKILL');
     try { cdp.ws.close(); } catch (e) { /* already closed */ }
     chrome.kill('SIGKILL');
-    rmSync(profile, { recursive: true, force: true });
+    // Chromium can still finish a profile write just after SIGKILL is sent.
+    rmSync(profile, { recursive: true, force: true, maxRetries: 4, retryDelay: 50 });
   }
 }
 
