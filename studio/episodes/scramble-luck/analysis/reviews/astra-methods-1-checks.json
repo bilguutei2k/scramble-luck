@@ -1,0 +1,529 @@
+{
+  "archive_hash_match": true,
+  "split": {
+    "exploration": {
+      "n": 3756,
+      "hash_match": true,
+      "unique_sorted": true,
+      "rule_match": true
+    },
+    "confirmation": {
+      "n": 15015,
+      "hash_match": true,
+      "unique_sorted": true,
+      "rule_match": true
+    }
+  },
+  "disjoint": true,
+  "source_hash_checks": {
+    "README.md": true,
+    "WCA_export_competitions.tsv": true,
+    "WCA_export_result_attempts.tsv": true,
+    "WCA_export_results.tsv": true,
+    "WCA_export_round_types.tsv": true,
+    "WCA_export_scrambles.tsv": true,
+    "metadata.json": true
+  },
+  "result_code_hash_checks": {
+    "analysis_reports.py": true,
+    "analyze.py": true,
+    "common.py": true,
+    "compare_recheck.py": true,
+    "cross.py": true,
+    "engine.py": true,
+    "gate.py": true,
+    "snapshot.py": true,
+    "verify.py": true
+  },
+  "bulk_manifest_hash_match": true,
+  "bulk_hash_checks": {
+    "data/derived/analysis-common-moments.jsonl": true,
+    "data/derived/analysis-deletion-intervals.jsonl": true,
+    "data/derived/analysis-permutation.jsonl": true,
+    "data/derived/analysis-primary.jsonl": true,
+    "data/derived/analysis-solver-deletions.jsonl": true,
+    "data/derived/analysis-subsets.jsonl": true,
+    "data/derived/bootstrap-competition.npy": true,
+    "data/derived/bootstrap-solver.npy": true,
+    "data/derived/bootstrap-training.npy": true,
+    "data/derived/confirmation-values.parquet": true,
+    "data/derived/cross.parquet": true,
+    "data/derived/first-confirmation-open.json": true,
+    "data/derived/scrambles.parquet": true,
+    "data/derived/structure.parquet": true,
+    "data/derived/training.parquet": true
+  },
+  "amendment_hash_checks": {
+    ".gitignore": true,
+    "AMENDMENT-1.md": true,
+    "DIAGNOSIS.md": true,
+    "EVALUATION-PLAN.md": true,
+    "README.md": true,
+    "RESULTS.md": true,
+    "benchmark.json": true,
+    "boundary-calibration.json": true,
+    "boundary-truth.json": true,
+    "boundary-truth.jsonl": true,
+    "calibration-progress.log": true,
+    "compute-budget.json": true,
+    "endpoint-stability.json": true,
+    "evaluate.py": true,
+    "finish_runs.py": true,
+    "followup-timing.json": true,
+    "replicates-timing.json": true,
+    "replicates.jsonl": true,
+    "replication-DIAGNOSIS.md": true,
+    "replication-RESULTS.md": true,
+    "replication-results.csv": true,
+    "replication-summary.json": true,
+    "replication-timing.json": true,
+    "replication.jsonl": true,
+    "results.csv": true,
+    "stability-timing.json": true,
+    "stability.jsonl": true,
+    "summarize.py": true,
+    "summary.json": true,
+    "sweep-progress.log": true,
+    "verification-progress.log": true,
+    "verification.json": true,
+    "verify.py": true,
+    "write_amendment.py": true
+  },
+  "point": {
+    "F": 0.047433876605946335,
+    "gamma_over_D": 0.003565247138183235,
+    "logR": 0.01958576612398147,
+    "available_extrema": 3313,
+    "tier_supported_finals": 4420,
+    "tier_successful_cells": 234525
+  },
+  "counts": {
+    "years": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "slots": 306155,
+    "successes": 301668,
+    "DNF": 4429,
+    "DNS": 58,
+    "duplicate_solver_comp": 0,
+    "solvers_union": 14289,
+    "solvers_confirmation": 12853,
+    "finals": 5017,
+    "competitions": 5017
+  },
+  "training_beta_max_error": 0.0,
+  "R_recomputed": {
+    "point": 1.0197788255872957,
+    "CI": [
+      1.016369805475588,
+      1.0230705470953203
+    ],
+    "valid": 2000
+  },
+  "first_10_draw_weights_match": true,
+  "primary_checkpoint_ids_valid": true,
+  "era": {
+    "era_2019_2022": {
+      "full_reference_F": 0.04718725046336681,
+      "full_reference_gamma": 0.0032894242065890284,
+      "finals": 1375,
+      "cells": 68127,
+      "masked_reference_F": 0.04823810778856412
+    },
+    "era_2023_2025": {
+      "full_reference_F": 0.0473167746395628,
+      "full_reference_gamma": 0.003608460674187086,
+      "finals": 3045,
+      "cells": 166398,
+      "masked_reference_F": 0.04746543127310497
+    }
+  },
+  "cross_point_stats": {
+    "r": 0.2658019102397095,
+    "covariance": 0.008974754159586039,
+    "h_variance": 0.002445401829714203,
+    "cross_variance": 0.4662068965517233
+  },
+  "cross_point_matches": 5.551115123125783e-17,
+  "independent_40_LOO_max_error": 9.71445146547012e-17,
+  "cross_ablation_200": {
+    "competition_only_fixed_h": {
+      "mean": {
+        "r": 0.2655705899674848,
+        "covariance": 0.008966628975299455,
+        "h_variance": 0.002445946344493839,
+        "cross_variance": 0.46600861072353905
+      },
+      "r_percentiles": [
+        0.25143231416855805,
+        0.2786514967171833
+      ]
+    },
+    "solver_only_frozen_beta": {
+      "mean": {
+        "r": 0.21323781868240033,
+        "covariance": 0.008984976567795516,
+        "h_variance": 0.003809273930222359,
+        "cross_variance": 0.46615072323257123
+      },
+      "r_percentiles": [
+        0.20478316371189884,
+        0.22205145984032768
+      ]
+    },
+    "product_frozen_beta": {
+      "mean": {
+        "r": 0.21331883091510043,
+        "covariance": 0.008986203738325751,
+        "h_variance": 0.00380868402002017,
+        "cross_variance": 0.46593589321841167
+      },
+      "r_percentiles": [
+        0.1986389050071071,
+        0.22775892437045236
+      ]
+    },
+    "product_refit_beta": {
+      "mean": {
+        "r": 0.21310735875923698,
+        "covariance": 0.008987377385938175,
+        "h_variance": 0.0038172958609957,
+        "cross_variance": 0.46593589321841167
+      },
+      "r_percentiles": [
+        0.19779589960394542,
+        0.22718223831156154
+      ]
+    }
+  },
+  "cross_200_max_saved_draw_difference": 4.440892098500626e-16,
+  "cross_intervals": {
+    "registered_raw": [
+      0.197514691113376,
+      0.22872852485048575
+    ],
+    "bootstrap_mean": 0.21317015652090912,
+    "recentered_candidate_NOT_validated": [
+      0.2501464448321764,
+      0.28136027856928614
+    ],
+    "basic_candidate_NOT_validated": [
+      0.3028752956289332,
+      0.334089129366043
+    ],
+    "fixed_h_competition_only_conditional": [
+      0.25261904262698365,
+      0.2788244719749195
+    ]
+  },
+  "amendment_B": {
+    "replicates.jsonl": {
+      "boundary": {
+        "n": 200,
+        "draws": [
+          500
+        ],
+        "replicate_range": [
+          0,
+          199
+        ],
+        "bias": -4.655235279797665e-05,
+        "coverage": 0.97,
+        "false_holds_at_boundary": 0.02,
+        "false_fails_at_boundary": 0.01
+      },
+      "informative_dnf": {
+        "n": 200,
+        "draws": [
+          500
+        ],
+        "replicate_range": [
+          0,
+          199
+        ],
+        "bias": -2.532187967235061e-06,
+        "coverage": 1.0,
+        "false_holds_at_boundary": null,
+        "false_fails_at_boundary": null
+      },
+      "large_shared": {
+        "n": 200,
+        "draws": [
+          500
+        ],
+        "replicate_range": [
+          0,
+          199
+        ],
+        "bias": 5.733153293625837e-05,
+        "coverage": 0.985,
+        "false_holds_at_boundary": null,
+        "false_fails_at_boundary": null
+      },
+      "null": {
+        "n": 200,
+        "draws": [
+          500
+        ],
+        "replicate_range": [
+          0,
+          199
+        ],
+        "bias": 5.773141387301361e-05,
+        "coverage": 1.0,
+        "false_holds_at_boundary": null,
+        "false_fails_at_boundary": null
+      },
+      "pure_attempt_slot_shock": {
+        "n": 200,
+        "draws": [
+          500
+        ],
+        "replicate_range": [
+          0,
+          199
+        ],
+        "bias": 0.00019141224156475622,
+        "coverage": 0.965,
+        "false_holds_at_boundary": null,
+        "false_fails_at_boundary": null
+      },
+      "random_replacement_10_percent": {
+        "n": 200,
+        "draws": [
+          500
+        ],
+        "replicate_range": [
+          0,
+          199
+        ],
+        "bias": 7.418298069347337e-05,
+        "coverage": 1.0,
+        "false_holds_at_boundary": null,
+        "false_fails_at_boundary": null
+      },
+      "shared_plus_tier_interaction": {
+        "n": 200,
+        "draws": [
+          500
+        ],
+        "replicate_range": [
+          0,
+          199
+        ],
+        "bias": -7.796173014035755e-05,
+        "coverage": 0.995,
+        "false_holds_at_boundary": null,
+        "false_fails_at_boundary": null
+      },
+      "small_shared": {
+        "n": 200,
+        "draws": [
+          500
+        ],
+        "replicate_range": [
+          0,
+          199
+        ],
+        "bias": -3.0418496750842655e-05,
+        "coverage": 0.995,
+        "false_holds_at_boundary": null,
+        "false_fails_at_boundary": null
+      }
+    },
+    "replication.jsonl": {
+      "boundary": {
+        "n": 1000,
+        "draws": [
+          500
+        ],
+        "replicate_range": [
+          1000,
+          1999
+        ],
+        "bias": -1.1759607209643752e-05,
+        "coverage": 0.985,
+        "false_holds_at_boundary": 0.006,
+        "false_fails_at_boundary": 0.009
+      },
+      "informative_dnf": {
+        "n": 200,
+        "draws": [
+          500
+        ],
+        "replicate_range": [
+          1000,
+          1199
+        ],
+        "bias": -2.5029150479520534e-06,
+        "coverage": 1.0,
+        "false_holds_at_boundary": null,
+        "false_fails_at_boundary": null
+      },
+      "large_shared": {
+        "n": 200,
+        "draws": [
+          500
+        ],
+        "replicate_range": [
+          1000,
+          1199
+        ],
+        "bias": 6.909593592979713e-07,
+        "coverage": 0.96,
+        "false_holds_at_boundary": null,
+        "false_fails_at_boundary": null
+      },
+      "null": {
+        "n": 200,
+        "draws": [
+          500
+        ],
+        "replicate_range": [
+          1000,
+          1199
+        ],
+        "bias": -2.6986416003618938e-05,
+        "coverage": 1.0,
+        "false_holds_at_boundary": null,
+        "false_fails_at_boundary": null
+      },
+      "pure_attempt_slot_shock": {
+        "n": 200,
+        "draws": [
+          500
+        ],
+        "replicate_range": [
+          1000,
+          1199
+        ],
+        "bias": 3.7186321900042896e-05,
+        "coverage": 0.97,
+        "false_holds_at_boundary": null,
+        "false_fails_at_boundary": null
+      },
+      "random_replacement_10_percent": {
+        "n": 200,
+        "draws": [
+          500
+        ],
+        "replicate_range": [
+          1000,
+          1199
+        ],
+        "bias": -0.0001168478086838818,
+        "coverage": 1.0,
+        "false_holds_at_boundary": null,
+        "false_fails_at_boundary": null
+      },
+      "shared_plus_tier_interaction": {
+        "n": 200,
+        "draws": [
+          500
+        ],
+        "replicate_range": [
+          1000,
+          1199
+        ],
+        "bias": 0.00013497854429237073,
+        "coverage": 1.0,
+        "false_holds_at_boundary": null,
+        "false_fails_at_boundary": null
+      },
+      "small_shared": {
+        "n": 200,
+        "draws": [
+          500
+        ],
+        "replicate_range": [
+          1000,
+          1199
+        ],
+        "bias": 6.74788710074252e-05,
+        "coverage": 0.995,
+        "false_holds_at_boundary": null,
+        "false_fails_at_boundary": null
+      }
+    }
+  },
+  "git_chronology": [
+    "e8880f3 2026-10-02T08:36:01-07:00 2026-10-02T08:36:01-07:00 Scramble luck: confirmation analysis (belief fails) and blind re-derivation",
+    "5496074 2026-10-02T08:07:31-07:00 2026-10-02T08:07:31-07:00 Scramble luck: register Amendment 1 (re-centred R interval), approved by the owner",
+    "0eb88d1 2026-10-02T01:55:43-07:00 2026-10-02T01:55:43-07:00 Scramble luck: AMENDMENT-1 investigation (outcome-blind), draft for approval",
+    "3eca079 2026-10-02T00:57:04-07:00 2026-10-02T00:57:04-07:00 Scramble luck: validation gate report, before confirmation times are read",
+    "8a474d3 2026-10-01T23:49:29-07:00 2026-10-01T23:49:29-07:00 Scramble luck: pre-registration (METHOD v2) before confirmation data; idea search"
+  ],
+  "recheck_local_filesystem_timestamps": {
+    "code/derive.py": {
+      "birth_utc": "2026-10-02T15:11:38.992100+00:00",
+      "modified_utc": "2026-10-02T15:17:09.397389+00:00"
+    },
+    "run.log": {
+      "birth_utc": "2026-10-02T15:11:38.995161+00:00",
+      "modified_utc": "2026-10-02T15:15:57.521942+00:00"
+    },
+    "raw_times.npy": {
+      "birth_utc": "2026-10-02T15:11:57.555727+00:00",
+      "modified_utc": "2026-10-02T15:11:57.556164+00:00"
+    },
+    "raw_rows.pkl": {
+      "birth_utc": "2026-10-02T15:11:57.553619+00:00",
+      "modified_utc": "2026-10-02T15:11:57.555417+00:00"
+    },
+    "extraction.json": {
+      "birth_utc": "2026-10-02T15:11:57.556337+00:00",
+      "modified_utc": "2026-10-02T15:11:57.556408+00:00"
+    },
+    "phase1-seal.json": {
+      "birth_utc": "2026-10-02T15:18:34.610036+00:00",
+      "modified_utc": "2026-10-02T15:18:34.610144+00:00"
+    }
+  },
+  "literal_season_selection_errors": 0,
+  "seasons_checked": 3313,
+  "independent_R": 1.0197788255872957,
+  "independent_logR_error": 0.0,
+  "frozen_fixture_checks": [
+    {
+      "name": "frozen_missing_pattern_contributions",
+      "pass": true
+    },
+    {
+      "name": "frozen_squared_solver_weight_noise_trace",
+      "pass": true,
+      "maximum_absolute_error": 1.734723475976807e-17
+    },
+    {
+      "name": "frozen_unshrunk_extreme_peer_projection",
+      "pass": true,
+      "maximum_absolute_error": 4.884981308350689e-15
+    },
+    {
+      "name": "centering_trace_identities",
+      "pass": true
+    },
+    {
+      "name": "frozen_tier_moment_and_residual_variances",
+      "pass": true
+    },
+    {
+      "name": "seasonal_reselection_fixed_roster_and_no_runner_up_for_missing_success",
+      "pass": true
+    }
+  ],
+  "gumbel_top_k_description_check": {
+    "weights": [
+      1.0,
+      2.0,
+      3.0
+    ],
+    "two_DNF_probability_subset_0_1_sequential": 0.15,
+    "same_subset_probability_exact_conditional_logit": 0.18181818181818182
+  }
+}

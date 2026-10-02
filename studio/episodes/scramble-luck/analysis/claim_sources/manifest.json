@@ -1,0 +1,49 @@
+{
+  "https://www.worldcubeassociation.org/regulations/history/official/2025-07-17/": {
+    "path": "source-00.html",
+    "sha256": "95422bea3a22969e5fa3529059462ec98ab62bdfb398fcf0212ced569cf8a78c",
+    "url": "https://www.worldcubeassociation.org/regulations/history/official/2025-07-17/",
+    "retrieved_date": "2026-10-02"
+  },
+  "https://ruwix.com/blog/yusheng-du-record-347/": {
+    "path": "source-01.html",
+    "sha256": "48fa9a69df6aa637f54b35e0f6f13e774babae2adcdf98160171b2f0dd496fa6",
+    "url": "https://ruwix.com/blog/yusheng-du-record-347/",
+    "retrieved_date": "2026-10-02"
+  },
+  "https://reco.nz/solve/9155": {
+    "path": "source-02.html",
+    "sha256": "fd7f7b0649634cad80aa8e80d9e8c27af980ce5eab8d84e796f4c43c83c8672b",
+    "url": "https://reco.nz/solve/9155",
+    "retrieved_date": "2026-10-02"
+  },
+  "https://reco.nz/solve/11719": {
+    "path": "source-04.html",
+    "sha256": "45fdc8ad141990774af589528f37d4873617ab134eeb7c40a7de229b9dec9b1e",
+    "url": "https://reco.nz/solve/11719",
+    "retrieved_date": "2026-10-02"
+  },
+  "https://reco.nz/solve/12564": {
+    "path": "source-05.html",
+    "sha256": "49844a6e7eba921548e78e07123e6edbd49c866f3bf91567a4fceedacee79f57",
+    "url": "https://reco.nz/solve/12564",
+    "retrieved_date": "2026-10-02"
+  },
+  "https://www.cubeskills.com/tools/glossary": {
+    "path": "source-06.html",
+    "sha256": "611438b414378672e04416b503200dc281f37b773f67c48eb0a6c26ccff10974",
+    "url": "https://www.cubeskills.com/tools/glossary",
+    "retrieved_date": "2026-10-02"
+  },
+  "https://cuberoot.me/recon/2010-yiheng-wang-3-3-xmum-cube-open-2025-2": {
+    "path": "wang-web-extract.txt",
+    "sha256": "bde18df37177e10f286091190d08a92d07c16436bd2f07ffb6f626fdfae2887d",
+    "retrieved_date": "2026-10-02",
+    "format": "statistic excerpts from successful web open (turn1view0); subsequent access denied"
+  },
+  "https://www.worldcubeassociation.org/regulations/": {
+    "path": "current-regulations.html",
+    "sha256": "92d7948ead7ad885ac5b7f8fdde7de889a13094afdc54340ce0d886f7db43129",
+    "retrieved_date": "2026-10-02"
+  }
+}

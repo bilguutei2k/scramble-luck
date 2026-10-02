@@ -1,0 +1,13 @@
+{
+  "census": {
+    "solvers": 12853,
+    "solver_rounds": 61231,
+    "solver_seasons": 3313,
+    "years": 7,
+    "first_year": 2019,
+    "last_year": 2025,
+    "seasonal_solvers": 1800,
+    "incomplete_solver_rounds": 4176,
+    "clipped_cells": 404
+  }
+}
