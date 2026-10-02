@@ -1,0 +1,88 @@
+{
+  "model": {
+    "fast_variance": 0.0009347133352501111,
+    "slow_variance": 0.0009459235661268463,
+    "cross_covariance": 0.0010126049567989704,
+    "shared_variance": 0.0009764617037437246,
+    "interaction_variance": -3.614325305524585e-05,
+    "cross_tier_latent_correlation": 1.0768936273218463,
+    "fast_residual": 0.022966461797411634,
+    "slow_residual": 0.02226780983153686
+  },
+  "competition_bootstrap_95": {
+    "fast_variance": [
+      0.0006423563033834869,
+      0.001231646069563823
+    ],
+    "slow_variance": [
+      0.0007052859731300732,
+      0.0011750975385278325
+    ],
+    "cross_covariance": [
+      0.0008268238195062203,
+      0.0011910222527657254
+    ],
+    "shared_variance": [
+      0.0008159591705462519,
+      0.001130430678888757
+    ],
+    "interaction_variance": [
+      -0.0001400825265663369,
+      6.214664060777719e-05
+    ],
+    "cross_tier_latent_correlation": [
+      0.8854778826996431,
+      1.3516960368633453
+    ],
+    "fast_residual": [
+      0.022186304212530542,
+      0.023776883522729365
+    ],
+    "slow_residual": [
+      0.021617046901246453,
+      0.0229709985452502
+    ]
+  },
+  "competition_solver_bootstrap_95": {
+    "fast_variance": [
+      5.9754185488927946e-05,
+      0.002011907411445124
+    ],
+    "slow_variance": [
+      0.000246825163052755,
+      0.001712532193695586
+    ],
+    "cross_covariance": [
+      0.0006042674987623136,
+      0.0014552464442160076
+    ],
+    "shared_variance": [
+      0.0005951208142224044,
+      0.0014323876903644
+    ],
+    "interaction_variance": [
+      -0.000347677002265431,
+      0.000300962397139023
+    ],
+    "cross_tier_latent_correlation": [
+      0.6113425729951659,
+      5.3284639481287615
+    ],
+    "fast_residual": [
+      0.021671574801110538,
+      0.024463308837805328
+    ],
+    "slow_residual": [
+      0.021194808884199577,
+      0.023394673780778964
+    ]
+  },
+  "rounds": 1260,
+  "solver_rounds": 11545,
+  "admissible_display": {
+    "interaction_variance": 0,
+    "cross_tier_latent_correlation": 1.0
+  },
+  "definition": "Faster/slower half by median log time in at least two OTHER slice finals within +/-2 calendar years. Both tiers need >=3 informative peers. No method field exists; no method claim is tested.",
+  "limitations": "Skill reference uses future as well as past exploration finals; tier effect is exploratory, composition-selected and not a method effect. Residual permits tier-specific variance. Interactions within either tier remain unidentified. Raw moment estimates can be negative or correlations can exceed one due to sampling; those are diagnostics, not physical estimates."
+}

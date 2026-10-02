@@ -1,0 +1,452 @@
+{
+  "competitions_total": 18771,
+  "competitions_exploration": 3756,
+  "competitions_confirmation": 15015,
+  "ids_sha256": "b5f6426bffbbf01c4d742cbe65f083cb4cbb5a134a5b60c3fe9fa312d028b7a4",
+  "all_333": [
+    {
+      "explore": false,
+      "result_rows": 1501727,
+      "attempt_rows": 7495038.0,
+      "rounds": 34992,
+      "final_result_rows": 182684,
+      "final_rounds": 12357
+    },
+    {
+      "explore": true,
+      "result_rows": 369569,
+      "attempt_rows": 1845196.0,
+      "rounds": 8702,
+      "final_result_rows": 45341,
+      "final_rounds": 3077
+    }
+  ],
+  "eligible": [
+    {
+      "explore": false,
+      "is_final": false,
+      "result_rows": 24826,
+      "attempt_rows": 124130,
+      "competitions": 459,
+      "rounds": 556,
+      "solvers": 11299,
+      "rounds_with_extra_pool": 552
+    },
+    {
+      "explore": false,
+      "is_final": true,
+      "result_rows": 95877,
+      "attempt_rows": 479385,
+      "competitions": 8014,
+      "rounds": 8014,
+      "solvers": 17981,
+      "rounds_with_extra_pool": 8006
+    },
+    {
+      "explore": true,
+      "is_final": false,
+      "result_rows": 5871,
+      "attempt_rows": 29355,
+      "competitions": 102,
+      "rounds": 134,
+      "solvers": 3660,
+      "rounds_with_extra_pool": 132
+    },
+    {
+      "explore": true,
+      "is_final": true,
+      "result_rows": 23907,
+      "attempt_rows": 119535,
+      "competitions": 1996,
+      "rounds": 1996,
+      "solvers": 9139,
+      "rounds_with_extra_pool": 1992
+    }
+  ],
+  "coverage_by_year": [
+    {
+      "explore": false,
+      "year": 1982,
+      "total_results": 19,
+      "eligible_results": null,
+      "final_results": null
+    },
+    {
+      "explore": false,
+      "year": 2003,
+      "total_results": 130,
+      "eligible_results": null,
+      "final_results": null
+    },
+    {
+      "explore": false,
+      "year": 2004,
+      "total_results": 429,
+      "eligible_results": null,
+      "final_results": null
+    },
+    {
+      "explore": false,
+      "year": 2005,
+      "total_results": 953,
+      "eligible_results": null,
+      "final_results": null
+    },
+    {
+      "explore": false,
+      "year": 2006,
+      "total_results": 1777,
+      "eligible_results": null,
+      "final_results": null
+    },
+    {
+      "explore": false,
+      "year": 2007,
+      "total_results": 2871,
+      "eligible_results": null,
+      "final_results": null
+    },
+    {
+      "explore": false,
+      "year": 2008,
+      "total_results": 5825,
+      "eligible_results": null,
+      "final_results": null
+    },
+    {
+      "explore": false,
+      "year": 2009,
+      "total_results": 11865,
+      "eligible_results": null,
+      "final_results": null
+    },
+    {
+      "explore": false,
+      "year": 2010,
+      "total_results": 13505,
+      "eligible_results": null,
+      "final_results": null
+    },
+    {
+      "explore": false,
+      "year": 2011,
+      "total_results": 17533,
+      "eligible_results": null,
+      "final_results": null
+    },
+    {
+      "explore": false,
+      "year": 2012,
+      "total_results": 19152,
+      "eligible_results": null,
+      "final_results": null
+    },
+    {
+      "explore": false,
+      "year": 2013,
+      "total_results": 22479,
+      "eligible_results": null,
+      "final_results": null
+    },
+    {
+      "explore": false,
+      "year": 2014,
+      "total_results": 35756,
+      "eligible_results": 6128,
+      "final_results": 2848
+    },
+    {
+      "explore": false,
+      "year": 2015,
+      "total_results": 46589,
+      "eligible_results": 8741,
+      "final_results": 3839
+    },
+    {
+      "explore": false,
+      "year": 2016,
+      "total_results": 64231,
+      "eligible_results": 9191,
+      "final_results": 4231
+    },
+    {
+      "explore": false,
+      "year": 2017,
+      "total_results": 92891,
+      "eligible_results": 9749,
+      "final_results": 6426
+    },
+    {
+      "explore": false,
+      "year": 2018,
+      "total_results": 109619,
+      "eligible_results": 9389,
+      "final_results": 7738
+    },
+    {
+      "explore": false,
+      "year": 2019,
+      "total_results": 123272,
+      "eligible_results": 10671,
+      "final_results": 9587
+    },
+    {
+      "explore": false,
+      "year": 2020,
+      "total_results": 19536,
+      "eligible_results": 1546,
+      "final_results": 1459
+    },
+    {
+      "explore": false,
+      "year": 2021,
+      "total_results": 16790,
+      "eligible_results": 1602,
+      "final_results": 1552
+    },
+    {
+      "explore": false,
+      "year": 2022,
+      "total_results": 106729,
+      "eligible_results": 8167,
+      "final_results": 7168
+    },
+    {
+      "explore": false,
+      "year": 2023,
+      "total_results": 201531,
+      "eligible_results": 14883,
+      "final_results": 13683
+    },
+    {
+      "explore": false,
+      "year": 2024,
+      "total_results": 222336,
+      "eligible_results": 15187,
+      "final_results": 13854
+    },
+    {
+      "explore": false,
+      "year": 2025,
+      "total_results": 214826,
+      "eligible_results": 14993,
+      "final_results": 13928
+    },
+    {
+      "explore": false,
+      "year": 2026,
+      "total_results": 151083,
+      "eligible_results": 10456,
+      "final_results": 9564
+    },
+    {
+      "explore": true,
+      "year": 2004,
+      "total_results": 42,
+      "eligible_results": null,
+      "final_results": null
+    },
+    {
+      "explore": true,
+      "year": 2005,
+      "total_results": 194,
+      "eligible_results": null,
+      "final_results": null
+    },
+    {
+      "explore": true,
+      "year": 2006,
+      "total_results": 171,
+      "eligible_results": null,
+      "final_results": null
+    },
+    {
+      "explore": true,
+      "year": 2007,
+      "total_results": 773,
+      "eligible_results": null,
+      "final_results": null
+    },
+    {
+      "explore": true,
+      "year": 2008,
+      "total_results": 2009,
+      "eligible_results": null,
+      "final_results": null
+    },
+    {
+      "explore": true,
+      "year": 2009,
+      "total_results": 1489,
+      "eligible_results": null,
+      "final_results": null
+    },
+    {
+      "explore": true,
+      "year": 2010,
+      "total_results": 4369,
+      "eligible_results": null,
+      "final_results": null
+    },
+    {
+      "explore": true,
+      "year": 2011,
+      "total_results": 4614,
+      "eligible_results": null,
+      "final_results": null
+    },
+    {
+      "explore": true,
+      "year": 2012,
+      "total_results": 4664,
+      "eligible_results": null,
+      "final_results": null
+    },
+    {
+      "explore": true,
+      "year": 2013,
+      "total_results": 8753,
+      "eligible_results": null,
+      "final_results": null
+    },
+    {
+      "explore": true,
+      "year": 2014,
+      "total_results": 9207,
+      "eligible_results": 2067,
+      "final_results": 618
+    },
+    {
+      "explore": true,
+      "year": 2015,
+      "total_results": 10985,
+      "eligible_results": 2214,
+      "final_results": 1009
+    },
+    {
+      "explore": true,
+      "year": 2016,
+      "total_results": 14750,
+      "eligible_results": 2614,
+      "final_results": 1157
+    },
+    {
+      "explore": true,
+      "year": 2017,
+      "total_results": 20751,
+      "eligible_results": 1841,
+      "final_results": 1361
+    },
+    {
+      "explore": true,
+      "year": 2018,
+      "total_results": 29024,
+      "eligible_results": 2352,
+      "final_results": 2050
+    },
+    {
+      "explore": true,
+      "year": 2019,
+      "total_results": 31517,
+      "eligible_results": 2464,
+      "final_results": 2358
+    },
+    {
+      "explore": true,
+      "year": 2020,
+      "total_results": 6779,
+      "eligible_results": 538,
+      "final_results": 538
+    },
+    {
+      "explore": true,
+      "year": 2021,
+      "total_results": 5521,
+      "eligible_results": 461,
+      "final_results": 461
+    },
+    {
+      "explore": true,
+      "year": 2022,
+      "total_results": 25388,
+      "eligible_results": 1912,
+      "final_results": 1774
+    },
+    {
+      "explore": true,
+      "year": 2023,
+      "total_results": 50844,
+      "eligible_results": 3506,
+      "final_results": 3148
+    },
+    {
+      "explore": true,
+      "year": 2024,
+      "total_results": 57513,
+      "eligible_results": 4172,
+      "final_results": 3883
+    },
+    {
+      "explore": true,
+      "year": 2025,
+      "total_results": 45567,
+      "eligible_results": 3222,
+      "final_results": 3175
+    },
+    {
+      "explore": true,
+      "year": 2026,
+      "total_results": 34645,
+      "eligible_results": 2415,
+      "final_results": 2375
+    }
+  ],
+  "single_group_no_extra": [
+    {
+      "explore": true,
+      "rounds": 6,
+      "attempts": 520
+    },
+    {
+      "explore": false,
+      "rounds": 12,
+      "attempts": 1220
+    }
+  ],
+  "eligible_seasons_structural": [
+    {
+      "explore": false,
+      "solver_seasons_at_least_5_finals": 4898
+    },
+    {
+      "explore": true,
+      "solver_seasons_at_least_5_finals": 235
+    }
+  ],
+  "extra_pool_distribution": [
+    {
+      "extra_pool_rows": 0,
+      "rounds": 18
+    },
+    {
+      "extra_pool_rows": 1,
+      "rounds": 26
+    },
+    {
+      "extra_pool_rows": 2,
+      "rounds": 10640
+    },
+    {
+      "extra_pool_rows": 3,
+      "rounds": 14
+    },
+    {
+      "extra_pool_rows": 4,
+      "rounds": 1
+    },
+    {
+      "extra_pool_rows": 5,
+      "rounds": 1
+    }
+  ]
+}

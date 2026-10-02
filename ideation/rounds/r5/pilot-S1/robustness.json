@@ -1,0 +1,95 @@
+{
+  "periods": [
+    {
+      "period": "pre2019",
+      "rounds": 551,
+      "valid_attempts": 30545,
+      "shared_fraction": 0.03485005698026765,
+      "competition_95": [
+        0.02764106959756103,
+        0.041735215622358844
+      ]
+    },
+    {
+      "period": "2019\u20132022",
+      "rounds": 442,
+      "valid_attempts": 25302,
+      "shared_fraction": 0.04367103240819587,
+      "competition_95": [
+        0.03560477252727877,
+        0.052580277446137774
+      ]
+    },
+    {
+      "period": "2023\u20132025",
+      "rounds": 806,
+      "valid_attempts": 50251,
+      "shared_fraction": 0.03688017107845593,
+      "competition_95": [
+        0.0314157256156248,
+        0.042660437377875345
+      ]
+    },
+    {
+      "period": "2026",
+      "rounds": 197,
+      "valid_attempts": 11681,
+      "shared_fraction": 0.03883046467307138,
+      "competition_95": [
+        0.02522842294730015,
+        0.052864382839476025
+      ]
+    }
+  ],
+  "leave_year_out": [
+    {
+      "excluded_year": 2019,
+      "shared_fraction": 0.037456123660933344
+    },
+    {
+      "excluded_year": 2020,
+      "shared_fraction": 0.03885326551880774
+    },
+    {
+      "excluded_year": 2021,
+      "shared_fraction": 0.03866748710103667
+    },
+    {
+      "excluded_year": 2022,
+      "shared_fraction": 0.039227078469001746
+    },
+    {
+      "excluded_year": 2023,
+      "shared_fraction": 0.03890262732208924
+    },
+    {
+      "excluded_year": 2024,
+      "shared_fraction": 0.03954777590015324
+    },
+    {
+      "excluded_year": 2025,
+      "shared_fraction": 0.040179558725146176
+    }
+  ],
+  "extreme_periods": [
+    {
+      "period": "2019\u20132022",
+      "n": 41,
+      "aggregate_unshrunk_ratio": 1.0225148691518118
+    },
+    {
+      "period": "2023\u20132025",
+      "n": 139,
+      "aggregate_unshrunk_ratio": 1.0145247161373105
+    }
+  ],
+  "independent_solver_label_negative_control": {
+    "draws": 200,
+    "shared_variance_95": [
+      -6.143235706869391e-05,
+      5.502779759500171e-05
+    ],
+    "empirical_upper_tail_p": 0.004975124378109453,
+    "scope": "Independent permutation of each solver complete five-slot status/time vector destroys cross-peer alignment; a signal-negative-control, not scramble causation identification."
+  }
+}

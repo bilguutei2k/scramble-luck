@@ -1,0 +1,64 @@
+{
+  "id": "S1",
+  "slice": {
+    "rule": "int(sha256(competition_id.encode(\"utf-8\")).hexdigest(),16) % 5 == 0; all years; identical to rounds/r3/pilot-S1/SLICE.md",
+    "competition_ids": 3756,
+    "id_list_sha256": "b5f6426bffbbf01c4d742cbe65f083cb4cbb5a134a5b60c3fe9fa312d028b7a4",
+    "outcome_final_rounds": 1996,
+    "attempt_rows": 119535,
+    "heldout_outcomes_opened": false
+  },
+  "headline": [
+    {
+      "claim": "Shared scheduled-position component of within-solver-round successful log-time variance (exploratory)",
+      "value": 0.03813343438452765,
+      "ci": [
+        0.02944541496128432,
+        0.046970779222393025
+      ],
+      "n": 117779
+    },
+    {
+      "claim": "Unshrunk aggregate median-shared-effect / observed seasonal-minimum time ratio, exploratory broad cohort",
+      "value": 1.0163391866358535,
+      "ci": [
+        1.0049164550769423,
+        1.022532641183049
+      ],
+      "n": 180
+    },
+    {
+      "claim": "Held-out peer log-time R\u00b2 with 10 peers, pre-2019 model frozen (exploratory)",
+      "value": 0.011092397801648723,
+      "ci": [
+        0.008375332424073675,
+        0.013768832555681476
+      ],
+      "n": 809
+    },
+    {
+      "claim": "Skill-tier interaction variance, unconstrained moment diagnostic (exploratory; negative estimate is sampling noise)",
+      "value": -3.614325305524585e-05,
+      "ci": [
+        -0.000347677002265431,
+        0.000300962397139023
+      ],
+      "n": 1260
+    }
+  ],
+  "prereg_would_pass": "untestable on slice",
+  "power_note": "Original official-cohort power is not identifiable here: ranking and verified assignment coverage are absent. The structural 2019\u20132025 holdout has 5,017 scheduled-mapped finals, 306,155 attempt rows and 3,313 broadly eligible solver-seasons. Conditional normal approximations using the unshrunk pilot SE and 4x competition precision give a confirmatory log-SE of 0.0022: essentially zero chance to exceed 1.10 at the pilot effect, 50% power exactly at 1.10, and >99.9% at 1.12. These are sensitivity calculations, not promised power: cohort exposure, dependence, replacement audit and selection change. Structural season eligibility grows about 18x, not 4x.",
+  "design_changes": [
+    "Use within-solver-round log-time variation as the denominator; do not label between-finalist variation or total population variation as scramble luck.",
+    "Retain every successful cell of DNF/DNS panels using exact missing-pattern trace corrections. Analyze DNF as a separate binary component; do not impute a DNF time or claim joint latent-time identification.",
+    "Validate finite-peer correction in simulation and show reliability and out-of-sample predictive R\u00b2 separately. Freeze pre-2019 hyperparameters before 2019\u20132025 prediction.",
+    "For aggregate selected-extreme attribution use unshrunk leave-one-solver-out peer estimates. Retain shrinkage only for individual displays; label its conditional uncertainty and selection bias.",
+    "Measure skill-tier interactions using skill estimates from other finals; allow tier-specific residual variance and use competition+solver uncertainty. Method interaction remains untestable without method labels.",
+    "Treat attempt-number joins as scheduled mappings. Audit actual replacement use before claiming actual scramble attribution; retain unresolved rows only for a renamed shared scheduled-position estimand. Extra-pool presence cannot certify replacement use or non-use.",
+    "Replace the unavailable official-2018 top100 pilot cohort with an explicitly exploratory all-finalist cohort; any confirmatory cohort change must be preregistered and cannot be described as the original test.",
+    "Refit training nuisance parameters and reselect minima in uncertainty calculations; keep and disclose the original eligible-season population. Do not present cluster-resampled exposure as the original fixed-exposure race.",
+    "Write pilot.json, a complete report, frozen specification, result-key ledger and artifact hashes. The held-out outcomes remain untouched."
+  ],
+  "recommendation": "revise",
+  "why": "The small shared component survives DNF retention, tail sensitivity, finite-peer simulation and held-out-peer prediction. The broad seasonal-extreme adjustment is far below 10%, but the original official-cohort claim cannot be tested. Actual replacement assignments and method labels are missing; low split-peer correlation does not establish personal luck. Revise the episode to shared versus unexplained variation and audit mapping before any exact scramble claim."
+}

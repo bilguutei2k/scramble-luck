@@ -1,0 +1,30 @@
+[
+  {
+    "shared_truth": 0.0009,
+    "replicates": 400,
+    "seasons_per_replicate": 300,
+    "finals_per_season": 5,
+    "mean_true_extreme_log_advantage": 0.010197488639567785,
+    "mean_unshrunk_estimate": 0.010090098778348154,
+    "unshrunk_bias": -0.00010738986121963147,
+    "unshrunk_truth_error_95_coverage": 0.95,
+    "mean_shrunk_estimate": 0.0030416704720758066,
+    "shrinkage_bias": -0.007155818167491978,
+    "shrunk_truth_error_95_coverage": 0.0,
+    "note": "Intervals use simulated estimation errors against each replicate finite-sample truth. This directly tests attribution recovery; it is not the episode bootstrap. Independent execution errors assumed."
+  },
+  {
+    "shared_truth": 0.004,
+    "replicates": 400,
+    "seasons_per_replicate": 300,
+    "finals_per_season": 5,
+    "mean_true_extreme_log_advantage": 0.04265258938695166,
+    "mean_unshrunk_estimate": 0.04284666634638357,
+    "unshrunk_bias": 0.00019407695943191028,
+    "unshrunk_truth_error_95_coverage": 0.955,
+    "mean_shrunk_estimate": 0.027815779956495326,
+    "shrinkage_bias": -0.014836809430456337,
+    "shrunk_truth_error_95_coverage": 0.0,
+    "note": "Intervals use simulated estimation errors against each replicate finite-sample truth. This directly tests attribution recovery; it is not the episode bootstrap. Independent execution errors assumed."
+  }
+]

@@ -1,0 +1,126 @@
+{
+  "id": "S1",
+  "title": "How much of a record-speed Rubik’s Cube solve is the scramble?",
+  "verdict": "go-if",
+  "verdict_why": "Proceed only with the named change to record-like extremes in audited single-group 3x3 finals, requiring at least 500 eligible finals, 20,000 confirmatory attempts and 100 solver-season extremes. Exact world-record attribution additionally requires a verified scramble link for that attempt; otherwise it is an illustrative motivation only. Missing competitor-group assignment invalidates the original all-round claim.",
+  "data": [
+    {
+      "name": "WCA results export v2.0.2",
+      "url": "https://www.worldcubeassociation.org/export/results",
+      "files_or_endpoints": [
+        "https://exports.worldcubeassociation.org/results/WCA_export_v2_273_20260930T000036Z.tsv.zip",
+        "WCA_export_results.tsv",
+        "WCA_export_result_attempts.tsv",
+        "WCA_export_scrambles.tsv",
+        "WCA_export_competitions.tsv",
+        "metadata.json",
+        "README.md",
+        "https://www.worldcubeassociation.org/api/v0/export/public"
+      ],
+      "total_size": "HEAD confirmed 200: 378,739,520 bytes (378.74 MB decimal; page labels 361 MB). ZIP central-directory range fetch: 1,653,097,432 bytes uncompressed, 16 files. Full archive NOT downloaded; <=150 KB tail and <=64 KB per header fetched. Exact row counts not counted; full official population, millions of attempts. Evidence scratch/r2-wca-zip-index.json and r2-wca-headers.json. Bundled README date and Allowed Use confirmed with a separate 3.5 KB range fetch; scratch/r2-wca-bundled-readme.md.",
+      "format": "ZIP containing UTF-8 TSV, JSON metadata and Markdown terms; centiseconds for 333; -1 DNF, -2 DNS, 0 absent.",
+      "fields_confirmed": [
+        "results: id,competition_id,round_type_id,event_id,person_id,format_id,best,average,regional_single_record",
+        "result_attempts: value,attempt_number,result_id",
+        "scrambles: scramble,id,competition_id,event_id,group_id,is_extra,round_type_id,scramble_num",
+        "competitions: id,year,month,day,end_year,end_month,end_day"
+      ],
+      "field_problems": [
+        "NO group_id or scramble_id in results or result_attempts. Joining only competition/round/attempt misassigns scrambles in multi-group rounds.",
+        "Restrict to finals with exactly one non-extra scramble group and complete sequence; exclude ambiguous extra/replacement attempts unless independently resolved. Finals being single-group is a recommendation, not a guarantee.",
+        "No solve reconstructions, turning speed, orientation/method, actual inspection or penalties separated from time; optimal solution length is not human difficulty.",
+        "Historical scramble completeness and sample sizes require later pilot audit; header-only fetch inspected no outcome rows."
+      ],
+      "licence": "WCA custom export Allowed Use terms; attribution required, no noncommercial restriction stated.",
+      "licence_quote": "“The information in this file may be re-published, in whole or in part” and “users are clearly notified”.",
+      "licence_url": "https://www.worldcubeassociation.org/export/results",
+      "monetised_use_ok": "Yes under the export’s unrestricted republication grant (interpretation; monetisation not named). Attribute WCA ownership/maintenance, results URL and the date prescribed by the bundled README prominently in video and companion; use the dated ZIP terms, not a later daily export page date.",
+      "redistribution_ok": "Yes, whole or partial republication expressly allowed with the prescribed notice; distribute only necessary public competition fields, omit unrelated personal/venue data."
+    }
+  ],
+  "prior_work": [
+    {
+      "citation": "Ability and Nonability Predictors of Real-World Skill Acquisition: The Case of Rubik’s Cube Solving (2023)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9866889/",
+      "finding": "Longitudinal skill-acquisition study using repeated solving and cognitive/practice predictors; acknowledges scramble difficulty. Does not estimate a competition-wide shared-scramble record counterfactual."
+    },
+    {
+      "citation": "Joshua Cherian, Cubing Data Analysis 2 (2021)",
+      "url": "https://joshuacherian.github.io/posts/Cubing-Data-Analysis-2",
+      "finding": "WCA-scale solve distributions and performance progression; closest broad popular statistical precursor, rather than shared-scramble adjustment."
+    },
+    {
+      "citation": "Ruwix, Max Park: 3.13 — New Rubik’s Cube Single Record (2023)",
+      "url": "https://ruwix.com/blog/max-park-rubik-single-record-313/",
+      "finding": "Reconstruction identifies efficient early pairs and a PLL skip. The generic claim that the 2023 record involved luck is already published."
+    },
+    {
+      "citation": "Potential development of the 3x3 Rubik’s Cube World Record (single), dataisbeautiful (2023)",
+      "url": "https://www.reddit.com/r/dataisbeautiful/comments/14q9rjo",
+      "finding": "Fits record progression including a Gompertz model. Calendar record extrapolation is not novel."
+    }
+  ],
+  "novelty_status": "survives only with a named change",
+  "novelty_why": "Change from “was the world record lucky?” to an exposure-adjusted, peer-measured scramble advantage for each solver’s fastest final-round solve of a season, using audited single-group finals. Published reconstructions already answer the generic luck question; the searched academic/popular work did not supply this counterfactual. Five queries used; absence is a bounded search verdict. A specific world record is tested only if it falls in the linked subset.",
+  "estimand": "For eligible solver-seasons, the geometric-mean ratio of estimated time on a median-difficulty scramble to the observed fastest 333 final-round solve that season, holding solver/date skill fixed. Cohort: the top 100 solvers by 2018 official 333 average ranking with at least 50 pre-2019 valid attempts; solver-seasons must have at least five eligible final rounds. Secondary: frequency of extreme solves beyond a fixed-skill, actual-attempt-exposure null. Inference is for this finals cohort, not all world records.",
+  "identification": "Crossed model for log valid time with solver-specific time trends, competition-round conditions, attempt-position effects and scramble effects. Peers in an audited single group identify relative scramble advantage within the same round; estimate each extreme’s scramble effect leaving that solver out. Fit a joint DNF component. Learn priors, feature choices and tuning only on pre-2019 eligible finals, freeze the estimation algorithm, then estimate nuisance skill/difficulty with cross-fitting on 2019–2025 and apply the pre-fixed seasonal-minimum selection. Simulate actual finalist lineups, attempt counts and calendar, retaining round/solver dependence and reselecting each seasonal minimum. This is a conditional shared-environment comparison, not a causal partition of innate skill and luck; exact historical world-record examples require independently verified mapping.",
+  "strongest_objection": "A scramble favours particular solving methods/orientations and interacts with a solver’s skill; a common random effect can mistake a solver-specific opportunity for general luck. Record selection also exaggerates residuals.",
+  "fix": "Estimate difficulty from other finalists with cross-fitting; fit solver-by-scramble-feature interactions using transparent cross/first-pair features, and bootstrap the entire record-selection procedure. Treat unmeasured execution luck as residual, not scramble causation; restrict claims to the shared component. Reject coverage if group or extra-attempt mapping is ambiguous.",
+  "robustness": [
+    "Compare Gaussian log-time and heavy-tailed models, with and without DNF joint modelling; cluster resampling by competition and solver.",
+    "Replicate in 2019–2022 and 2023–2025; require stable sign with leave-one-season, leave-one-solver and alternative pre-fixed best-of-five rather than seasonal-minimum estimates.",
+    "Placebo permute attempt-position scramble labels within eligible rounds; compare peer difficulty with solver-computed cross/first-pair features, not God’s-number distance as a sole proxy."
+  ],
+  "prereg_rule": "Primary claim “shared scramble luck materially helps extreme solves” passes if the geometric-mean median-scramble/observed-time ratio across pre-defined solver-season minima exceeds 1.10 and its competition/solver clustered bootstrap 95% lower bound exceeds 1.00 (2,000 resamples, seasonal-minimum selection repeated). Otherwise it does not pass; call inconclusive if the interval spans both 1.00 and 1.10. Coverage gate: >=500 eligible finals, >=20,000 confirmatory attempts, >=100 eligible solver-season extremes. Freeze top-100 cohort from 2018 average ranking and the >=50 pre-2019 attempt requirement; require >=5 eligible finals per solver-season. Do not replace missing finals with an all-round scramble join. Record-arrival null is secondary (10,000 simulations); specific world-record claims require a verified link and are case studies, not this primary estimand.",
+  "exploration_slice": {
+    "definition": "Only pre-2019 333 finals with exactly one non-extra scramble group and complete five-attempt mapping; order rounds by SHA256(competition_id|round_type_id), take up to 100 rounds and first 20 competitors per round by hashed person_id. Exclude every selected competition from confirmation. Metadata/header reads so far are not an outcome pilot.",
+    "rows": "At most 10,000 attempt rows (100 rounds × 20 competitors × 5); realised count must be recorded at extraction, not yet measured.",
+    "size": "<=3 MB projected minimal joined CSV (cap 300 bytes/row); exact emitted bytes to be logged. Streaming ZIP extraction reads a 378.74 MB source later; no full download in verification."
+  },
+  "belief": "A single world-record solve proves someone is the fastest cuber.",
+  "obvious_answer": "Rank solvers by their best official time.",
+  "flaw": "Best-of-many attempts rewards opportunity and easy scrambles; most rounds also use different scramble groups.",
+  "fairer_test": "Compare the same scramble among audited finalists, infer its shared advantage without the extreme solver, then replay the seasonal-best race with the observed opportunities.",
+  "possible_verdicts": [
+    "Records receive a large shared scramble boost, while exceptional skill remains necessary.",
+    "Peer-measured scramble difficulty explains little; solver execution or solver-specific opportunities dominate the extreme result."
+  ],
+  "central_visual": "Each fastest final-round solve of a season moves to its estimated median-scramble time with an uncertainty band, beside the other finalists on the identical scramble and the simulated extreme-time envelope. Add a world-record example only when directly linked.",
+  "shorts": [
+    "One scramble, several finalists: how much do everyone’s times move?",
+    "Why five solves and one single record measure different things.",
+    "More attempts can break a record even if nobody improves."
+  ],
+  "companion_assumption": "Change the counterfactual scramble percentile from the 50th to the 25th or 75th; refit-free predictions move the adjusted time.",
+  "effort_days": 8,
+  "scores": {
+    "Novelty": {
+      "score": 4,
+      "why": "Shared-scramble and exposure counterfactual is distinct; generic luck story is already covered."
+    },
+    "Rigour": {
+      "score": 4,
+      "why": "Peer comparison and selection-aware simulation work on audited finals; method interactions limit attribution."
+    },
+    "Data": {
+      "score": 4,
+      "why": "Full population, downloadable and republishable; missing group links restrict usable coverage."
+    },
+    "Hook": {
+      "score": 5,
+      "why": "Skill versus luck in a spectacular record is immediate."
+    },
+    "Verdict either way": {
+      "score": 5,
+      "why": "Large or small shared luck both revise what a record measures."
+    },
+    "Visual": {
+      "score": 5,
+      "why": "One shared-scramble comparison and adjusted-time interval carries the turn."
+    },
+    "Feasibility": {
+      "score": 3,
+      "why": "Laptop-sized archive; eligibility audit and record-selection model take roughly eight days."
+    }
+  }
+}

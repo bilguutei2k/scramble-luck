@@ -1,0 +1,16 @@
+{
+  "source": "World Cube Association results export v2.0.2",
+  "url": "https://exports.worldcubeassociation.org/results/WCA_export_v2_273_20260930T000036Z.tsv.zip",
+  "export_time_utc": "2026-09-30T00:00:36Z",
+  "local_path": "data/raw/WCA_export_v2_273_20260930T000036Z.tsv.zip",
+  "bytes": 378739520,
+  "sha256": "e6b262b2ada513228a48fa221015ddc25e9041a029340778cd253f564c23427d",
+  "licence": "Bundled README Allowed Use: whole or partial republication with the prescribed notice (see METHOD.md). The ZIP is not committed because of its size; download it from the URL and check the hash.",
+  "split": {
+    "rule": "int(sha256(competition_id.encode('utf-8')).hexdigest(), 16) % 5 == 0 -> exploration; else confirmation",
+    "exploration_ids": "data/exploration-competition-ids.txt",
+    "exploration_ids_sha256": "b5f6426bffbbf01c4d742cbe65f083cb4cbb5a134a5b60c3fe9fa312d028b7a4",
+    "confirmation_ids": "data/confirmation-competition-ids.txt",
+    "confirmation_ids_sha256": "2c0d64860c762e8214ec78123326b62ddd262feabadb45a3515728cbef1b4ed8"
+  }
+}

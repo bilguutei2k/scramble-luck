@@ -1,0 +1,74 @@
+{
+  "model": "Crossed solver-round by scramble random effects, pooled position fixed effect, ANOVA moments on balanced successful five-attempt panels",
+  "model_counts": {
+    "rounds": 1954,
+    "competitions": 1954,
+    "solver_rounds": 22093,
+    "attempts": 110465
+  },
+  "fit": {
+    "solver_round_variance": 0.024697397531741702,
+    "scramble_variance": 0.0008878322890551703,
+    "residual_variance": 0.022166434785117296,
+    "total_share": 0.018592698210256945,
+    "within_solver_share": 0.03851054063869168,
+    "scramble_log_sd": 0.029796514713220576,
+    "position": [
+      0.0012329387848743446,
+      -0.0003437122569658749,
+      -0.0008271944768827874,
+      -0.0033995372110459067,
+      0.0033375051600202247
+    ]
+  },
+  "ci": {
+    "total_share": [
+      0.016603362793806812,
+      0.020706260641077695
+    ],
+    "within_solver_share": [
+      0.034372735382960165,
+      0.042656688456623564
+    ],
+    "scramble_log_sd": [
+      0.028164433648955337,
+      0.03138067804663464
+    ],
+    "scramble_variance": [
+      0.0007932353227837494,
+      0.0009847469547113587
+    ]
+  },
+  "crossed_bootstrap_ci": {
+    "total_share": [
+      0.014010585235934892,
+      0.022672577241569583
+    ],
+    "within_solver_share": [
+      0.029063137264964053,
+      0.047210142625204045
+    ],
+    "scramble_log_sd": [
+      0.02587493550495553,
+      0.03306288786802539
+    ]
+  },
+  "statuses": [
+    {
+      "is_final": false,
+      "attempts": 29355,
+      "successful": 28632,
+      "dnf": 700,
+      "dns": 23,
+      "absent": 0
+    },
+    {
+      "is_final": true,
+      "attempts": 119535,
+      "successful": 117779,
+      "dnf": 1723,
+      "dns": 33,
+      "absent": 0
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "id": "S1-r5-measurement-v1",
+  "status": "ready for preregistration; not yet committed METHOD.md",
+  "confirmation": "All competitions with sha256 UTF-8 ID integer modulo 5 != 0; 2019\u20132025; no outcomes inspected in this study.",
+  "sources": {
+    "url": "https://exports.worldcubeassociation.org/results/WCA_export_v2_273_20260930T000036Z.tsv.zip",
+    "files": [
+      {
+        "path": "data/S1/WCA_export_v2_273_20260930T000036Z.tsv.zip",
+        "bytes": 378739520,
+        "sha256": "e6b262b2ada513228a48fa221015ddc25e9041a029340778cd253f564c23427d"
+      },
+      {
+        "path": "data/S1/raw/README.md",
+        "bytes": 9209,
+        "sha256": "ec4a096b29b937e4d4f4e395227d703bbb773d711ff4b6c4ca569ee03e904a8d"
+      },
+      {
+        "path": "data/S1/raw/WCA_export_competitions.tsv",
+        "bytes": 21055148,
+        "sha256": "85442ae2d9074278606a70c28f2d39b857c76f7d20b79463188946eb55a170c3"
+      },
+      {
+        "path": "data/S1/raw/WCA_export_result_attempts.tsv",
+        "bytes": 464979084,
+        "sha256": "37073b780424b66654a843948c73f4a69f9bea5d2ca2c3143df486a9c34923ee"
+      },
+      {
+        "path": "data/S1/raw/WCA_export_results.tsv",
+        "bytes": 661796817,
+        "sha256": "a7243bb93cd4cab09e42894f9eba60b1ad4e439bc2d7c0e4fdf94e7182df130a"
+      },
+      {
+        "path": "data/S1/raw/WCA_export_round_types.tsv",
+        "bytes": 370,
+        "sha256": "3184c23bc0fc7c17201c4db8aa664a8eaca728676124e58f3cc9ccb42a8f2c6e"
+      },
+      {
+        "path": "data/S1/raw/WCA_export_scrambles.tsv",
+        "bytes": 421059325,
+        "sha256": "2e7652bbe70b7041ad26c15e54076a5e72fccffcf004f211382056bb6d716b3c"
+      },
+      {
+        "path": "data/S1/raw/metadata.json",
+        "bytes": 124,
+        "sha256": "ba2c22799638052d0d11f366740b3af6b279507de0549c31efa8bccc9559299b"
+      }
+    ],
+    "metadata": {
+      "export_format_version": "v2.0.2",
+      "version_label": "current",
+      "end_of_life_date": null,
+      "export_date": "2026-09-30 00:00:36 UTC"
+    }
+  },
+  "slice_id_sha256": "b5f6426bffbbf01c4d742cbe65f083cb4cbb5a134a5b60c3fe9fa312d028b7a4",
+  "training": "Pre-2019 mapped finals only in the locked exploration slice; no confirmation outcomes used.",
+  "hyperparameters": {
+    "shared_variance": 0.0007830105490928417,
+    "residual_variance": 0.021684974210191423,
+    "within_solver_share": 0.03485005698026765,
+    "shared_log_sd": 0.027982325655542675,
+    "position": [
+      -0.00019098085080805892,
+      0.0015330545917410243,
+      -0.00016398101357186266,
+      -0.005728817307245912,
+      0.0045507245798848085
+    ]
+  },
+  "skill_training": "Within-final solver intercepts cancel; skill-tier reference is median log mean of >=2 other eligible finals within +/-2 years, excluding focal competition.",
+  "eligibility": "333, round_types.final=1, format a; one non-extra group; exactly five nonmissing regular scramble rows numbered 1\u20135; five recorded attempt slots 1\u20135; retain all statuses. For outcome contrasts need >=2 successful cells per solver; singleton/all-failure panels remain in counts and binary failure analysis.",
+  "time_model": "log(value/100)=solver-round intercept + frozen global position + shared round-position contrast + independent residual. Demean within available successful cells. Shared Gaussian prior is used only for displayed individual predictions; moments allow non-Gaussian residuals with finite variance.",
+  "moment_equations": "C_i=diag(valid)-valid valid^T/m_i; A_r=sum_i C_i; V_r=sum_i C_i(y_i-beta). S_r=sum_i ||C_i(y_i-beta)||\u00b2; d_r=sum_i(m_i-1). tau=(sum ||V_r||\u00b2-sum S_r)/(sum tr(A_r\u00b2)-sum d_r); e=sum S_r/sum d_r-tau. Weighted solver bootstraps replace residual noise trace by A(w\u00b2).",
+  "predictive_validation": "Predetermine k=2,5,10,20; 30 random whole-solver splits per final, >=k+2 informative solvers. Peer posterior solve (A_peer+e/tau I)^-1 V_peer. Predict target scramble time relative to mean of target solver OTHER successful attempts; target solve is never used in its baseline. Report R\u00b2 and competition CI. k=2..max and extrapolations descriptive.",
+  "primary_endpoint": "Geometric mean estimated median-shared-effect / observed fastest valid time ratio for all eligible solver-seasons with >=5 eligible finals in confirmation, 2019\u20132025; leave out focal solver; unshrunk pseudoinverse peer contrasts; fixed zero/median symmetric shared-effect counterfactual.",
+  "primary_rule": "Material shared scheduled-position advantage passes iff ratio >1.10 and two-way competition/solver bootstrap 95% lower bound >1.00. Otherwise fails; inconclusive if interval spans both 1.00 and 1.10. >=500 eligible finals, >=20,000 attempt rows, >=100 eligible extrema. This is a revised all-finalist estimand, not the verified official-top100 test.",
+  "uncertainty": "2,000 competition+solver draws; refit position/training moments on resampled pre-2019 exploration training finals; recompute leave-one-out effects and reselect minima in target competition resamples. Original eligible-season list fixed; report changing exposure separately. Individual Gaussian intervals omit mapping error and selection conditioning.",
+  "DNF": "Separate started-attempt binary covariance/risk endpoint, DNS separately. Successful-time estimand conditional on success. Report informative-DNF simulation and complete-case/clipped-log sensitivity; no unidentified latent DNF times.",
+  "tier_secondary": "Faster/slower half by other-final skill reference; >=3 informative peers per tier. Separate tier shared variances/residual variances and cross covariance; interaction=(bFast+bSlow-2cov)/4. Signed moments and crossed bootstrap CI; constrain display only. No method claim. Tier test secondary, not proof of personal luck.",
+  "mapping_gate": "Actual scramble claim requires independent per-attempt assignment/replacement audit, including extrema. Without audit, preregister a scheduled-position claim only, explicitly including synchronized round conditions and unknown replacement dilution. Do not treat absent extra pool as verified no replacement.",
+  "robustness": "Repeat full DNF-retaining model, complete-case sensitivity, log-contrast clipping +/-0.6, periods 2019\u20132022 and 2023\u20132025 and leave-year-out. Report all results regardless of sign; no alternate specification rescue. Independent per-solver within-round label permutation is a signal-negative-control; common permutation of whole scramble labels is invariant and is not a valid placebo.",
+  "personal_luck": "Unexplained remainder includes execution, solver-by-scramble opportunities, missing skill, penalties and assignment errors. It is not identified personal luck.",
+  "selection_caution": "Shrinkage posterior means conditional only on peers are biased for aggregate extrema selected using focal times. Unshrunk aggregates validated under independent-noise simulations; individual displays remain shrunk and labelled.",
+  "algorithm_hashes": {
+    "pilot.py": "a51bd11ad84d56397190b4a7fb69be26ce65e9ee7096b91ecb9cca04ca962a60",
+    "validate.py": "f7d796c72af7aa5b322b159a13f93cf3c9eec4a57ac195f947c9a82f9df44f23",
+    "report.py": "8dcdcef4ac84846042f5c26b9dc8a7b49aeea9d319a4a6e183dd0862a79e54b1"
+  }
+}

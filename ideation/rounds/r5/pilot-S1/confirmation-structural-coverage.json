@@ -1,0 +1,49 @@
+{
+  "season_coverage": [
+    {
+      "explore": false,
+      "solver_seasons": 25209,
+      "seasons_ge5": 3313,
+      "solvers_ge5": 1800
+    },
+    {
+      "explore": true,
+      "solver_seasons": 10594,
+      "seasons_ge5": 180,
+      "solvers_ge5": 133
+    }
+  ],
+  "no_extra_pool": [
+    {
+      "explore": false,
+      "year": 2014,
+      "finals": 6,
+      "attempts": 495
+    },
+    {
+      "explore": false,
+      "year": 2017,
+      "finals": 1,
+      "attempts": 60
+    },
+    {
+      "explore": false,
+      "year": 2018,
+      "finals": 1,
+      "attempts": 25
+    },
+    {
+      "explore": true,
+      "year": 2014,
+      "finals": 3,
+      "attempts": 155
+    },
+    {
+      "explore": true,
+      "year": 2015,
+      "finals": 1,
+      "attempts": 50
+    }
+  ],
+  "outcome_blind": true
+}

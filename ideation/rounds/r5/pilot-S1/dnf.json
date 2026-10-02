@@ -1,0 +1,18 @@
+{
+  "DNF": 1723,
+  "DNS": 33,
+  "valid": 117779,
+  "absent": 0,
+  "DNF_rate_among_started": 0.014418168733577682,
+  "binary_shared_variance": 2.177022404797417e-05,
+  "binary_shared_variance_competition_95": [
+    -1.4488967481402711e-05,
+    6.213330718485567e-05
+  ],
+  "peer_log_difficulty_DNF_risk_slope": -0.003171551214845196,
+  "slope_competition_95": [
+    -0.053342814882875185,
+    0.042713034576553094
+  ],
+  "scope": "Descriptive binary peer-covariance companion, not a joint likelihood or a latent DNF-time reconstruction. DNS excluded from started denominator, reported separately; all successful cells of DNF panels retained. Informative missingness is probed by simulation and sensitivity."
+}

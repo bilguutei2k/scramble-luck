@@ -1,0 +1,47 @@
+{
+  "n": 180,
+  "solvers": 133,
+  "competitions": 143,
+  "eligible_structural_solver_seasons": 180,
+  "eligible_seasons_without_any_valid_time": 0,
+  "solver_rounds_with_nonidentified_peer_contrasts": 0,
+  "ratio": 1.0048799713984706,
+  "competition_solver_refit_reselection_95": [
+    1.0015308562503555,
+    1.0069282761887206
+  ],
+  "bootstrap_log_se": 0.0013470349941956772,
+  "mean_fastest_seconds": 6.427633776397951,
+  "within_round_log_speedup": 0.23196263641236647,
+  "peer_explained_log_speedup": 0.0048681029342283405,
+  "peer_fraction_of_log_speedup": 0.020986582190651505,
+  "own_unexplained_log_speedup": 0.22709453347813813,
+  "aggregate_unshrunk_ratio": 1.0163391866358535,
+  "aggregate_unshrunk_95": [
+    1.0049164550769423,
+    1.022532641183049
+  ],
+  "aggregate_unshrunk_log_se": 0.004430320787421318,
+  "aggregate_unshrunk_peer_fraction": 0.0698696083434174,
+  "cohort": "All slice solvers with >=5 structurally eligible finals in the slice per season, 2019\u20132025; not official-2018 top100.",
+  "uncertainty_scope": "2,000 draws: pre-2019 hyperparameter refit, target competition+solver resampling, seasonal-minimum reselection. Eligibility list fixed; exposure changes under ordinary cluster resampling. Does not identify latent per-extreme truth or mapping error.",
+  "frozen_pre2019": {
+    "shared_variance": 0.0007830105490928417,
+    "residual_variance": 0.021684974210191423,
+    "within_solver_share": 0.03485005698026765,
+    "shared_log_sd": 0.027982325655542675,
+    "position": [
+      -0.00019098085080805892,
+      0.0015330545917410243,
+      -0.00016398101357186266,
+      -0.005728817307245912,
+      0.0045507245798848085
+    ]
+  },
+  "prereg_would_pass": "untestable on slice",
+  "surrogate_rule_pass": false,
+  "slice_proxy_top100": {
+    "n": 14,
+    "ratio": 1.0096228439757553
+  }
+}

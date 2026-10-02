@@ -1,0 +1,59 @@
+{
+  "leave_one_year": [
+    {
+      "excluded_year": 2019,
+      "n": 138,
+      "ratio": 1.0055478125546675
+    },
+    {
+      "excluded_year": 2021,
+      "n": 152,
+      "ratio": 1.0056591166874569
+    },
+    {
+      "excluded_year": 2022,
+      "n": 135,
+      "ratio": 1.0061021099239753
+    },
+    {
+      "excluded_year": 2023,
+      "n": 117,
+      "ratio": 1.004585657733766
+    },
+    {
+      "excluded_year": 2024,
+      "n": 99,
+      "ratio": 1.0057344940793653
+    },
+    {
+      "excluded_year": 2025,
+      "n": 134,
+      "ratio": 1.007435573438307
+    }
+  ],
+  "leave_one_solver_ratio_range": [
+    1.00554999648827,
+    1.0062468860882725
+  ],
+  "best_of_five_n": 22093,
+  "best_of_five_ratio": 1.0026735972609302,
+  "all_season_minima_easy_decile_fraction": 0.23225806451612904,
+  "easy_decile_mean_adjustment": 1.0256033998777596,
+  "hard_decile_mean_adjustment": 0.9748237917695476,
+  "extreme_easy_summary": {
+    "n": 155,
+    "easy_n": 36,
+    "easy_fraction": 0.23225806451612904,
+    "easy_fraction_ci": [
+      0.12257735352205398,
+      0.35664447017950207
+    ],
+    "easy_extreme_ratio": 1.0258828945639487,
+    "easy_extreme_ratio_ci": [
+      1.0227712254905803,
+      1.0303222789258268
+    ],
+    "peer_difficulty_decile_threshold": -0.017932596061053352,
+    "uncertainty_scope": "Competition + solver bootstrap of fixed observed extrema; fitted difficulty and classification frozen."
+  }
+}

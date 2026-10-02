@@ -1,0 +1,38 @@
+[
+  {
+    "scenario": "shared_and_tier",
+    "replicates": 400,
+    "shared_truth": 0.0009,
+    "interaction_truth": 0.0025,
+    "shared_mean": 0.0008973877470900226,
+    "shared_bias": -2.6122529099773927e-06,
+    "interaction_mean": 0.0024930096493994743,
+    "interaction_bias": -6.990350600525729e-06,
+    "shared_95_coverage": 0.96,
+    "interaction_95_coverage": 0.95
+  },
+  {
+    "scenario": "tier_only",
+    "replicates": 400,
+    "shared_truth": 0.0,
+    "interaction_truth": 0.0025,
+    "shared_mean": -8.645250075834819e-08,
+    "shared_bias": -8.645250075834819e-08,
+    "interaction_mean": 0.0025030113421606846,
+    "interaction_bias": 3.0113421606845804e-06,
+    "shared_95_coverage": 0.935,
+    "interaction_95_coverage": 0.9675
+  },
+  {
+    "scenario": "no_tier",
+    "replicates": 400,
+    "shared_truth": 0.0009,
+    "interaction_truth": 0.0,
+    "shared_mean": 0.0008965774291645825,
+    "shared_bias": -3.4225708354174503e-06,
+    "interaction_mean": -1.3746669078151507e-06,
+    "interaction_bias": -1.3746669078151507e-06,
+    "shared_95_coverage": 0.96,
+    "interaction_95_coverage": 0.925
+  }
+]

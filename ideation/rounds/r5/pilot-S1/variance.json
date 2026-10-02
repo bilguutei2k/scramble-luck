@@ -1,0 +1,85 @@
+{
+  "fit": {
+    "shared_variance": 0.0008813353218050065,
+    "residual_variance": 0.022230543690136325,
+    "within_solver_share": 0.03813343438452765,
+    "shared_log_sd": 0.02968729226125223,
+    "position": [
+      0.0008391616675786559,
+      -0.0005995584005621772,
+      -0.0010819457474495133,
+      -0.0030682823808905156,
+      0.00391062486132355
+    ]
+  },
+  "bootstrap_95": {
+    "competition": {
+      "shared_variance": [
+        0.0007913755434111919,
+        0.0009703154921508066
+      ],
+      "within_solver_share": [
+        0.034241052768854405,
+        0.04195358273469304
+      ],
+      "shared_log_sd": [
+        0.028131397793220537,
+        0.03114988751216505
+      ]
+    },
+    "competition_solver": {
+      "shared_variance": [
+        0.0006738583625618848,
+        0.0010943488243605386
+      ],
+      "within_solver_share": [
+        0.02944541496128432,
+        0.046970779222393025
+      ],
+      "shared_log_sd": [
+        0.025958781962560875,
+        0.03308094339225891
+      ]
+    }
+  },
+  "counts": {
+    "rounds": 1996,
+    "solver_rounds": 23907,
+    "valid_attempts": 117779,
+    "attempt_rows": 119535,
+    "solvers": 9139,
+    "informative_solver_rounds": 23900,
+    "solver_rounds_with_any_nonpositive": 1618,
+    "extra_pool_rounds": 1992
+  },
+  "sensitivity": [
+    {
+      "specification": "complete_case",
+      "shared_variance": 0.0008986208953398998,
+      "residual_variance": 0.022170328421301573,
+      "within_solver_share": 0.03895369845438314,
+      "shared_log_sd": 0.029977006110348977,
+      "position": [
+        0.0012832231927933065,
+        -0.00044866729042079487,
+        -0.000907325765034155,
+        -0.003261828354784859,
+        0.003334598217446503
+      ]
+    },
+    {
+      "specification": "log_contrast_clip_0.6",
+      "shared_variance": 0.000880868022698656,
+      "residual_variance": 0.021789592689321794,
+      "within_solver_share": 0.038855320758064596,
+      "shared_log_sd": 0.029679420861914677,
+      "position": [
+        0.0009319510685158925,
+        -0.0006089383743925398,
+        -0.0010317217289770482,
+        -0.0030252003744691584,
+        0.0037339094093228544
+      ]
+    }
+  ]
+}

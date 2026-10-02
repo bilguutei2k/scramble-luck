@@ -1,0 +1,62 @@
+{
+  "random_replacement_sensitivity": [
+    {
+      "replacement_fraction": 0,
+      "independent_random_replacement_corrected_variance": 0.0008813353218050065,
+      "corrected_within_solver_share": 0.03813343438452765
+    },
+    {
+      "replacement_fraction": 0.01,
+      "independent_random_replacement_corrected_variance": 0.0008992299987807433,
+      "corrected_within_solver_share": 0.0389076975660929
+    },
+    {
+      "replacement_fraction": 0.05,
+      "independent_random_replacement_corrected_variance": 0.0009765488330249379,
+      "corrected_within_solver_share": 0.04225311289144338
+    },
+    {
+      "replacement_fraction": 0.1,
+      "independent_random_replacement_corrected_variance": 0.0010880682985246993,
+      "corrected_within_solver_share": 0.047078314054972405
+    },
+    {
+      "replacement_fraction": 0.2,
+      "independent_random_replacement_corrected_variance": 0.0013770864403203223,
+      "corrected_within_solver_share": 0.05958349122582444
+    }
+  ],
+  "no_extra_pool_structural_counts": [
+    {
+      "explore": false,
+      "year": 2014,
+      "finals": 6,
+      "attempts": 495
+    },
+    {
+      "explore": false,
+      "year": 2017,
+      "finals": 1,
+      "attempts": 60
+    },
+    {
+      "explore": false,
+      "year": 2018,
+      "finals": 1,
+      "attempts": 25
+    },
+    {
+      "explore": true,
+      "year": 2014,
+      "finals": 3,
+      "attempts": 155
+    },
+    {
+      "explore": true,
+      "year": 2015,
+      "finals": 1,
+      "attempts": 50
+    }
+  ],
+  "not_a_bound": "Assumes independent random replacement; unknown targeted replacement can bias either way. Extra-pool presence is not usage. No exact-attempt attribution is verified. Confirmation requires an assignment audit or a revised scheduled-position estimand."
+}

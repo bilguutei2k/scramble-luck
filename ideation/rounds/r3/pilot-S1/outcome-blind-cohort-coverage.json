@@ -1,0 +1,101 @@
+{
+  "proxy_cohort_activity": [
+    {
+      "explore": true,
+      "solver_seasons": 11,
+      "solvers": 6
+    },
+    {
+      "explore": false,
+      "solver_seasons": 115,
+      "solvers": 44
+    }
+  ],
+  "target_period_coverage": [
+    {
+      "explore": false,
+      "is_final": false,
+      "period": "2019-2025",
+      "rounds": 155,
+      "attempts": 29090
+    },
+    {
+      "explore": false,
+      "is_final": true,
+      "period": "2019-2025",
+      "rounds": 5017,
+      "attempts": 306155
+    },
+    {
+      "explore": false,
+      "is_final": false,
+      "period": "2026",
+      "rounds": 20,
+      "attempts": 4460
+    },
+    {
+      "explore": false,
+      "is_final": true,
+      "period": "2026",
+      "rounds": 798,
+      "attempts": 47820
+    },
+    {
+      "explore": false,
+      "is_final": false,
+      "period": "pre2019",
+      "rounds": 381,
+      "attempts": 90580
+    },
+    {
+      "explore": false,
+      "is_final": true,
+      "period": "pre2019",
+      "rounds": 2199,
+      "attempts": 125410
+    },
+    {
+      "explore": true,
+      "is_final": false,
+      "period": "2019-2025",
+      "rounds": 28,
+      "attempts": 4690
+    },
+    {
+      "explore": true,
+      "is_final": true,
+      "period": "2019-2025",
+      "rounds": 1248,
+      "attempts": 76685
+    },
+    {
+      "explore": true,
+      "is_final": false,
+      "period": "2026",
+      "rounds": 1,
+      "attempts": 200
+    },
+    {
+      "explore": true,
+      "is_final": true,
+      "period": "2026",
+      "rounds": 197,
+      "attempts": 11875
+    },
+    {
+      "explore": true,
+      "is_final": false,
+      "period": "pre2019",
+      "rounds": 105,
+      "attempts": 24465
+    },
+    {
+      "explore": true,
+      "is_final": true,
+      "period": "pre2019",
+      "rounds": 551,
+      "attempts": 30975
+    }
+  ],
+  "note": "Only presence and format/mapping fields from confirmation. Exact 2018 cohort is unavailable without historical ranking outcomes."
+}

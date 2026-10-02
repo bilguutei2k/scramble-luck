@@ -1,0 +1,154 @@
+{
+  "specifications": [
+    {
+      "spec": "all_rounds",
+      "rounds": 2088,
+      "attempts": 136660,
+      "solver_round_variance": 0.045128902091217046,
+      "scramble_variance": 0.000825423239551992,
+      "residual_variance": 0.022509921070354662,
+      "total_share": 0.012056267072830067,
+      "within_solver_share": 0.03537223314941925,
+      "scramble_log_sd": 0.028730179942910068,
+      "position": [
+        0.0015097548848789822,
+        0.00030797689737422333,
+        -0.0005624151159385935,
+        -0.0032195995287127616,
+        0.0019642828623981498
+      ],
+      "extremes": 9,
+      "ratio": 1.0111815164494249
+    },
+    {
+      "spec": "finals_2019_2022",
+      "rounds": 431,
+      "attempts": 23745,
+      "solver_round_variance": 0.02347460338288954,
+      "scramble_variance": 0.0009715805453769243,
+      "residual_variance": 0.021694166550674,
+      "total_share": 0.02105706903592716,
+      "within_solver_share": 0.042865586616653094,
+      "scramble_log_sd": 0.031170186803689905,
+      "position": [
+        0.0012069837483412206,
+        -0.0017859946779621436,
+        -0.0007966916298256784,
+        -0.0005389881535835424,
+        0.0019146907130301438
+      ],
+      "extremes": 3,
+      "ratio": 1.0094689479386814
+    },
+    {
+      "spec": "finals_2023_2025",
+      "rounds": 793,
+      "attempts": 47160,
+      "solver_round_variance": 0.025442352085717268,
+      "scramble_variance": 0.0008734494913570154,
+      "residual_variance": 0.022587023405333417,
+      "total_share": 0.017860920952342325,
+      "within_solver_share": 0.03723068563891706,
+      "scramble_log_sd": 0.029554178915290732,
+      "position": [
+        0.0023026403539308355,
+        -0.0009229919163225121,
+        -0.0002600115922136543,
+        -0.004048137294061204,
+        0.0029285004486665346
+      ],
+      "extremes": 6,
+      "ratio": 1.0120388899144352
+    },
+    {
+      "spec": "finals_pre2019",
+      "rounds": 536,
+      "attempts": 28635,
+      "solver_round_variance": 0.023949569254508706,
+      "scramble_variance": 0.0008307566813639404,
+      "residual_variance": 0.021667959679485396,
+      "total_share": 0.017885626355373,
+      "within_solver_share": 0.03692462574485201,
+      "scramble_log_sd": 0.028822849986841002,
+      "position": [
+        -0.00021992659679267797,
+        0.0025864698915178436,
+        -0.0002719248135747327,
+        -0.006235530079406004,
+        0.0041409115982555715
+      ],
+      "extremes": 0,
+      "ratio": null
+    },
+    {
+      "spec": "finals_at_least_12",
+      "rounds": 811,
+      "attempts": 58145,
+      "solver_round_variance": 0.0239091664649674,
+      "scramble_variance": 0.0008962992946035317,
+      "residual_variance": 0.022351084280768888,
+      "total_share": 0.01900688862600842,
+      "within_solver_share": 0.03855484604095595,
+      "scramble_log_sd": 0.029938258042236387,
+      "position": [
+        0.0023499621475308154,
+        -0.0018001381857780329,
+        -0.00035243621408712934,
+        -0.004480752953718065,
+        0.004283365206052412
+      ],
+      "extremes": 2,
+      "ratio": 1.0048984329360144
+    },
+    {
+      "spec": "finals_winsorized",
+      "rounds": 1954,
+      "attempts": 110465,
+      "solver_round_variance": 0.024709186713345887,
+      "scramble_variance": 0.0008885469142395912,
+      "residual_variance": 0.021707581263480137,
+      "total_share": 0.018783236435181365,
+      "within_solver_share": 0.03932297193798527,
+      "scramble_log_sd": 0.029808504059069974,
+      "position": [
+        0.0013338834965909052,
+        -0.000348122262836399,
+        -0.0007774986768215197,
+        -0.003359239102690021,
+        0.0031509765457570344
+      ],
+      "extremes": 9,
+      "ratio": 1.0108188875649018
+    },
+    {
+      "spec": "finals_no_nonpositive",
+      "rounds": 890,
+      "attempts": 49595,
+      "solver_round_variance": 0.023231155214729748,
+      "scramble_variance": 0.0008883313596921013,
+      "residual_variance": 0.02195122325759564,
+      "total_share": 0.019281911716383906,
+      "within_solver_share": 0.03889442568287669,
+      "scramble_log_sd": 0.029804888184526063,
+      "position": [
+        0.0006868127071991813,
+        -0.0014409776291414796,
+        0.0005437372816909627,
+        -0.0032732897937538486,
+        0.003483717434005184
+      ],
+      "extremes": 1,
+      "ratio": 0.993779703557981
+    }
+  ],
+  "independent_solver_position_permutation": {
+    "replicates": 100,
+    "observed_within_share": 0.03851054063869168,
+    "null_95_interval": [
+      0.0,
+      0.0022639340190264584
+    ],
+    "p_plus_one": 0.009900990099009901
+  },
+  "placebo_fix": "A common label permutation within a round merely renames scramble effects. Independently permute each solver row instead."
+}

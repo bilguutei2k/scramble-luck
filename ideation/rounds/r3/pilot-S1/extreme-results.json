@@ -1,0 +1,49 @@
+{
+  "training_prior": {
+    "solver_round_variance": 0.023949569254508706,
+    "scramble_variance": 0.0008307566813639404,
+    "residual_variance": 0.021667959679485396,
+    "total_share": 0.017885626355373,
+    "within_solver_share": 0.03692462574485201,
+    "scramble_log_sd": 0.028822849986841002,
+    "position": [
+      -0.00021992659679267797,
+      0.0025864698915178436,
+      -0.0002719248135747327,
+      -0.006235530079406004,
+      0.0041409115982555715
+    ]
+  },
+  "training_rounds": 536,
+  "cohort": "100 best pre-2019 slice eligible 3x3 averages, >=50 successful mapped attempts; not the prescribed full-population 2018 ranking",
+  "proxy": {
+    "n": 9,
+    "solvers": 6,
+    "competitions": 9,
+    "ratio": 1.0111815164494249,
+    "log_ratio": 0.011119465415691374,
+    "ci": [
+      0.9944503229925912,
+      1.0214794454058085
+    ],
+    "bootstrap_log_se": 0.006818363114043911,
+    "bootstrap_mean_ratio": 1.008301041059707,
+    "bootstrap_reselect": true,
+    "uncertainty_scope": "Competition + solver resampling, minimum reselection, fixed eligible seasons and fitted peer effects; not full nuisance-refit bootstrap."
+  },
+  "all_solvers": {
+    "n": 155,
+    "solvers": 115,
+    "competitions": 131,
+    "ratio": 1.0058708365289593,
+    "log_ratio": 0.005853670322079795,
+    "ci": [
+      1.0019417816823015,
+      1.0079224500284336
+    ],
+    "bootstrap_log_se": 0.0014851453581773723,
+    "bootstrap_mean_ratio": 1.0049351086248965,
+    "bootstrap_reselect": true,
+    "uncertainty_scope": "Competition + solver resampling, minimum reselection, fixed eligible seasons and fitted peer effects; not full nuisance-refit bootstrap."
+  }
+}

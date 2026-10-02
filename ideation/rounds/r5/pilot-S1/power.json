@@ -1,0 +1,70 @@
+{
+  "note": "Original official-cohort power is not identifiable here: ranking and verified assignment coverage are absent. The structural 2019\u20132025 holdout has 5,017 scheduled-mapped finals, 306,155 attempt rows and 3,313 broadly eligible solver-seasons. Conditional normal approximations using the unshrunk pilot SE and 4x competition precision give a confirmatory log-SE of 0.0022: essentially zero chance to exceed 1.10 at the pilot effect, 50% power exactly at 1.10, and >99.9% at 1.12. These are sensitivity calculations, not promised power: cohort exposure, dependence, replacement audit and selection change. Structural season eligibility grows about 18x, not 4x.",
+  "scenarios": [
+    {
+      "scenario": "4x competition precision heuristic",
+      "assumed_log_SE": 0.002215160393710659,
+      "pass_probability_at_pilot_ratio": 1.3902261438775365e-279,
+      "power_if_ratio_1_10": 0.5,
+      "power_if_ratio_1_12": 0.9999999999999998
+    },
+    {
+      "scenario": "18.4x extreme count, independence heuristic",
+      "assumed_log_SE": 0.0010326679729024614,
+      "pass_probability_at_pilot_ratio": 0.0,
+      "power_if_ratio_1_10": 0.5,
+      "power_if_ratio_1_12": 1.0
+    }
+  ],
+  "original_cohort": "unavailable",
+  "heldout_outcomes_read": false,
+  "structural": {
+    "season_coverage": [
+      {
+        "explore": false,
+        "solver_seasons": 25209,
+        "seasons_ge5": 3313,
+        "solvers_ge5": 1800
+      },
+      {
+        "explore": true,
+        "solver_seasons": 10594,
+        "seasons_ge5": 180,
+        "solvers_ge5": 133
+      }
+    ],
+    "no_extra_pool": [
+      {
+        "explore": false,
+        "year": 2014,
+        "finals": 6,
+        "attempts": 495
+      },
+      {
+        "explore": false,
+        "year": 2017,
+        "finals": 1,
+        "attempts": 60
+      },
+      {
+        "explore": false,
+        "year": 2018,
+        "finals": 1,
+        "attempts": 25
+      },
+      {
+        "explore": true,
+        "year": 2014,
+        "finals": 3,
+        "attempts": 155
+      },
+      {
+        "explore": true,
+        "year": 2015,
+        "finals": 1,
+        "attempts": 50
+      }
+    ],
+    "outcome_blind": true
+  }
+}
