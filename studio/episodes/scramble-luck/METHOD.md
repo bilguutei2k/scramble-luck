@@ -374,3 +374,21 @@ as `../../../ideation/rounds/r6/scramble-luck-METHOD.v1.md`.
 No post-registration amendments yet. Log date, rationale, outcomes already seen,
 and whether each later amendment makes an analysis exploratory; never overwrite
 this specification because a result looks more or less attractive.
+
+## Amendment 1 (registered 2026-10-02, approved by the owner)
+
+The pre-confirmation gate failed (`analysis/GATE.md`, commit `3eca079`). The
+full amendment, its diagnosis, candidate definitions, simulations and an
+independent replication are in `analysis/amendment/` (commit `0eb88d1`);
+`analysis/amendment/AMENDMENT-1.md` is the registered text and governs where it
+differs from this file. In short: R's 95% interval is the registered reselecting
+pigeonhole bootstrap (2,000 draws, seed 20261001, same draw order) re-centred on
+the point estimate, `CI_logR = theta_hat + quantile(theta_star - mean(theta_star),
+[0.025, 0.975])`, exponentiated; the revised gate (coverage at least 92% in every
+judged process, no automatic failure above 99%, a calibrated R = 1.10 boundary
+process with each false-verdict rate at most 2.5%) passed on the original and
+independent simulations. The fixed-selection interval (procedure A) is reported
+beside R as a sensitivity and cannot change the verdict. The point estimate, the
+1.10 line, the decision table, weighting, scope and all other checks are
+unchanged. Timing: written after the original gate failed and after its
+simulation results were seen; no confirmation solve time had been read.

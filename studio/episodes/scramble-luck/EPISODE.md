@@ -28,3 +28,6 @@ idea-stage pilot (`data/confirmation-competition-ids.txt`). The pilot's 20%
 - 2026-10-01: idea search, pilot and measurement-validation study (`ideation/`).
 - 2026-10-01: METHOD.md v2 approved by the user after an external methods
   review; committed before any confirmation solve time was read.
+- 2026-10-02: validation gate failed before confirmation (commit 3eca079);
+  Amendment 1 (re-centred R interval) approved and registered before any
+  confirmation solve time was read.
