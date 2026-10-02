@@ -1,0 +1,757 @@
+{
+  "phase1_seal": {
+    "utc": "2026-10-02T15:18:34.609472+00:00",
+    "files": {
+      "values.json": "ce355f18a2502c10ce4270b4fa3919b4b11f7835839383ad8f493ec991b227f6",
+      "code/derive.py": "45d2a11e9f25a212db819cc4f411448c0c1f24bd7789f4f4c5e5c4f170e9d50b",
+      "code/finish_phase1.py": "cb6e6e71b87f2f4cdc0a2b88bb5c597073c4ceea78bf0567965f177697c36d90"
+    }
+  },
+  "sol_results_sha256": "65b514a3ea775a2655201e393c5f620086e0db16989ffbe753f721712cff293e",
+  "comparison_units": "One named value per entry; a two-endpoint interval is one comparison. No duplicate counting of n fields.",
+  "monte_carlo_tolerance": {
+    "method": "1000 independent resamples of 2000 blind draws; diagnostic seed 20261002; endpoint SE on log scale. Difference tolerance is 4*sqrt(2)*SE (two independent equal-sized Monte Carlo estimates). This is not a scientific sampling interval.",
+    "replicates": 1000,
+    "centered_endpoint_se": [
+      0.0001225945858943175,
+      9.668702192944713e-05
+    ],
+    "fixed_endpoint_se": [
+      0.0001540820262850912,
+      0.0001202182977184832
+    ],
+    "mean_logR_se": 3.752706196732728e-05,
+    "absent_mean_se": 0.9723798465630613,
+    "competition_mean_se": 0.5025627309762627,
+    "raw_endpoint_se": [
+      0.00013294597444848006,
+      0.0001017965954954979
+    ]
+  },
+  "summary": {
+    "matched": 55,
+    "mismatched": 8,
+    "not_reported_by_sol": 5,
+    "total_blind_values": 68
+  },
+  "comparisons": [
+    {
+      "key": "finals",
+      "blind": 5017,
+      "sol": 5017,
+      "sol_path": "coverage.structural.eligible_finals",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "match"
+    },
+    {
+      "key": "attempt_slots",
+      "blind": 306155,
+      "sol": 306155,
+      "sol_path": "coverage.structural.included_attempt_slots",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "match"
+    },
+    {
+      "key": "dnf",
+      "blind": 4429,
+      "sol": 4429,
+      "sol_path": "coverage.structural.dnf_slots",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "match"
+    },
+    {
+      "key": "dns",
+      "blind": 58,
+      "sol": 58,
+      "sol_path": "coverage.structural.dns_slots",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "match"
+    },
+    {
+      "key": "solver_results",
+      "blind": 61231,
+      "sol": 61231,
+      "sol_path": "coverage.structural.solver_final_incidence_rows",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "match"
+    },
+    {
+      "key": "eligible_solver_seasons",
+      "blind": 3313,
+      "sol": 3313,
+      "sol_path": "coverage.structural.structurally_eligible_person_years",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "match"
+    },
+    {
+      "key": "extra_pool_finals",
+      "blind": 5017,
+      "sol": 5017,
+      "sol_path": "coverage.structural.extra_pool_finals",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "match"
+    },
+    {
+      "key": "universe_exploration_competitions",
+      "blind": 3756,
+      "sol": 3756,
+      "sol_path": "coverage.structural.split_counts.exploration",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "match"
+    },
+    {
+      "key": "universe_confirmation_competitions",
+      "blind": 15015,
+      "sol": 15015,
+      "sol_path": "coverage.structural.split_counts.confirmation",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "match"
+    },
+    {
+      "key": "successes",
+      "blind": 301668,
+      "sol": 301668,
+      "sol_path": "coverage.outcome.successful_cells",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "match"
+    },
+    {
+      "key": "no_success_seasons",
+      "blind": 0,
+      "sol": 0,
+      "sol_path": "coverage.outcome.no_success_seasons",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "match"
+    },
+    {
+      "key": "unidentified_extrema",
+      "blind": 0,
+      "sol": 0,
+      "sol_path": "coverage.outcome.unidentified_extrema",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "match"
+    },
+    {
+      "key": "available_extrema",
+      "blind": 3313,
+      "sol": 3313,
+      "sol_path": "coverage.outcome.available_extrema",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "match"
+    },
+    {
+      "key": "tier_missing_reference",
+      "blind": 11557,
+      "sol": 11557,
+      "sol_path": "coverage.outcome.missing_skill_references_informative_solver_rounds",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "match"
+    },
+    {
+      "key": "exclusion_other_event",
+      "blind": 2504130,
+      "sol": 2504130,
+      "sol_path": "coverage.structural.exclusions_mutually_exclusive_result_counts.other_event_results",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "match"
+    },
+    {
+      "key": "exclusion_nonfinal",
+      "blind": 794852,
+      "sol": 794852,
+      "sol_path": "coverage.structural.exclusions_mutually_exclusive_result_counts.nonfinal_333_results",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "match"
+    },
+    {
+      "key": "exclusion_invalid_format",
+      "blind": 0,
+      "sol": 0,
+      "sol_path": "coverage.structural.exclusions_mutually_exclusive_result_counts.invalid_format_final_results",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "match"
+    },
+    {
+      "key": "exclusion_multigroup_or_no_regular_group_results",
+      "blind": 48911,
+      "sol": 48911,
+      "sol_path": "coverage.structural.exclusions_mutually_exclusive_result_counts.multigroup_results",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "match"
+    },
+    {
+      "key": "exclusion_missing_schedule_results",
+      "blind": 26,
+      "sol": 26,
+      "sol_path": "coverage.structural.exclusions_mutually_exclusive_result_counts.missing_schedule_results",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "match"
+    },
+    {
+      "key": "exclusion_incomplete_duplicate_slots_results",
+      "blind": 0,
+      "sol": 0,
+      "sol_path": "coverage.structural.exclusions_mutually_exclusive_result_counts.incomplete_or_duplicate_slots_results",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "match"
+    },
+    {
+      "key": "exclusion_invalid_status_results",
+      "blind": 0,
+      "sol": 0,
+      "sol_path": "coverage.structural.exclusions_mutually_exclusive_result_counts.invalid_status_results_after_slot_gate",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "match"
+    },
+    {
+      "key": "exclusion_ambiguous_regular_schedule_results",
+      "blind": 0,
+      "sol": 0,
+      "sol_path": "coverage.structural.exclusions_mutually_exclusive_result_counts.invalid_regular_schedule_results",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "match"
+    },
+    {
+      "key": "scope_results",
+      "blind": 3409150,
+      "sol": 3409150,
+      "sol_path": "sum(coverage.structural.exclusions_mutually_exclusive_result_counts) + coverage.structural.solver_final_incidence_rows",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "match"
+    },
+    {
+      "key": "under_two_success_rows",
+      "blind": 20,
+      "sol": 20,
+      "sol_path": "coverage.outcome.no_success_solver_rounds + singleton_success_solver_rounds",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "match"
+    },
+    {
+      "key": "solvers",
+      "blind": 12853,
+      "sol": 12853,
+      "sol_path": "data/derived/structure.parquet: nunique(person_id) [supplementary source]",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "match"
+    },
+    {
+      "key": "R",
+      "blind": 1.0197788255872957,
+      "sol": 1.0197788255872957,
+      "sol_path": "primary.R_geometric_person_year.estimate",
+      "comparison": "point",
+      "tolerance": "1e-6 relative, zero absolute tolerance",
+      "status": "match"
+    },
+    {
+      "key": "R_arithmetic",
+      "blind": 1.0213077422510106,
+      "sol": 1.0213077422510106,
+      "sol_path": "aggregation_and_tier_sensitivities.arithmetic_mean_R.estimate",
+      "comparison": "point",
+      "tolerance": "1e-6 relative, zero absolute tolerance",
+      "status": "match"
+    },
+    {
+      "key": "R_solver_weighted",
+      "blind": 1.01841917500455,
+      "sol": 1.01841917500455,
+      "sol_path": "aggregation_and_tier_sensitivities.per_solver_weighted_R.estimate",
+      "comparison": "point",
+      "tolerance": "1e-6 relative, zero absolute tolerance",
+      "status": "match"
+    },
+    {
+      "key": "eligible_season_solvers",
+      "blind": 1800,
+      "sol": 1800,
+      "sol_path": "aggregation_and_tier_sensitivities.per_solver_weighted_R.n.solvers",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "match"
+    },
+    {
+      "key": "tier_F",
+      "blind": 0.047433876605946265,
+      "sol": 0.047433876605946335,
+      "sol_path": "primary.F_tier_aware.estimate",
+      "comparison": "point",
+      "tolerance": "1e-6 relative, zero absolute tolerance",
+      "status": "match"
+    },
+    {
+      "key": "tier_gamma_share",
+      "blind": 0.0035652471381832107,
+      "sol": 0.003565247138183235,
+      "sol_path": "primary.tier_interaction_share_gamma_over_D.estimate",
+      "comparison": "point",
+      "tolerance": "1e-6 relative, zero absolute tolerance",
+      "status": "match"
+    },
+    {
+      "key": "tier_tau",
+      "blind": 0.0011011839442249555,
+      "sol": 0.0011011839442249568,
+      "sol_path": "primary.signed_variance_components.tau.estimate",
+      "comparison": "point",
+      "tolerance": "1e-6 relative, zero absolute tolerance",
+      "status": "match"
+    },
+    {
+      "key": "tier_gamma",
+      "blind": 8.276770078010373e-05,
+      "sol": 8.276770078010428e-05,
+      "sol_path": "primary.signed_variance_components.gamma.estimate",
+      "comparison": "point",
+      "tolerance": "1e-6 relative, zero absolute tolerance",
+      "status": "match"
+    },
+    {
+      "key": "tier_D",
+      "blind": 0.02321513700794407,
+      "sol": 0.023215137007944062,
+      "sol_path": "primary.signed_variance_components.D.estimate",
+      "comparison": "point",
+      "tolerance": "1e-6 relative, zero absolute tolerance",
+      "status": "match"
+    },
+    {
+      "key": "tier_b_fast",
+      "blind": 0.0012155535149531113,
+      "sol": 0.0012155535149531145,
+      "sol_path": "primary.signed_variance_components.fast_shared_variance.estimate",
+      "comparison": "point",
+      "tolerance": "1e-6 relative, zero absolute tolerance",
+      "status": "match"
+    },
+    {
+      "key": "tier_b_slow",
+      "blind": 0.001152349775057007,
+      "sol": 0.0011523497750570077,
+      "sol_path": "primary.signed_variance_components.slow_shared_variance.estimate",
+      "comparison": "point",
+      "tolerance": "1e-6 relative, zero absolute tolerance",
+      "status": "match"
+    },
+    {
+      "key": "tier_e_fast",
+      "blind": 0.02169682768569975,
+      "sol": 0.021696827685699735,
+      "sol_path": "primary.signed_variance_components.fast_residual_variance.estimate",
+      "comparison": "point",
+      "tolerance": "1e-6 relative, zero absolute tolerance",
+      "status": "match"
+    },
+    {
+      "key": "tier_e_slow",
+      "blind": 0.02236554304017827,
+      "sol": 0.022365543040178265,
+      "sol_path": "primary.signed_variance_components.slow_residual_variance.estimate",
+      "comparison": "point",
+      "tolerance": "1e-6 relative, zero absolute tolerance",
+      "status": "match"
+    },
+    {
+      "key": "tier_c",
+      "blind": 0.0010184162434448518,
+      "sol": 0.0010184162434448525,
+      "sol_path": "primary.signed_variance_components.cross_covariance.estimate",
+      "comparison": "point",
+      "tolerance": "1e-6 relative, zero absolute tolerance",
+      "status": "match"
+    },
+    {
+      "key": "tier_finals",
+      "blind": 4420,
+      "sol": 4420,
+      "sol_path": "primary.coverage.tier_supported_finals",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "match"
+    },
+    {
+      "key": "tier_successes",
+      "blind": 234525,
+      "sol": 234525,
+      "sol_path": "primary.coverage.tier_successful_cells",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "match"
+    },
+    {
+      "key": "2019_2022_F",
+      "blind": 0.04718725046336678,
+      "sol": 0.04823810778856412,
+      "sol_path": "robustness.era_2019_2022.F_tier_aware.estimate",
+      "comparison": "point",
+      "tolerance": "1e-6 relative, zero absolute tolerance",
+      "status": "mismatch",
+      "cause": "Blind recheck retained cross-era skill references; Sol masks reference candidates to each era (DEVIATIONS.md decision 9, analyze.py task_subsets, engine.py refs_tiers). METHOD does not explicitly specify this boundary choice. Sol documented its choice before opening outcomes.",
+      "attribution": "recheck split-reference interpretation; not a primary estimator discrepancy",
+      "resolution": {
+        "within_era_reference_recheck": 0.04823810778856414,
+        "sol": 0.04823810778856412,
+        "matches": true
+      }
+    },
+    {
+      "key": "2019_2022_gamma_share",
+      "blind": 0.003289424206589003,
+      "sol": 0.0018197902503476531,
+      "sol_path": "robustness.era_2019_2022.tier_interaction_share_gamma_over_D.estimate",
+      "comparison": "point",
+      "tolerance": "1e-6 relative, zero absolute tolerance",
+      "status": "mismatch",
+      "cause": "Blind recheck retained cross-era skill references; Sol masks reference candidates to each era (DEVIATIONS.md decision 9, analyze.py task_subsets, engine.py refs_tiers). METHOD does not explicitly specify this boundary choice. Sol documented its choice before opening outcomes.",
+      "attribution": "recheck split-reference interpretation; not a primary estimator discrepancy",
+      "resolution": {
+        "within_era_reference_recheck": 0.001819790250347663,
+        "sol": 0.0018197902503476531,
+        "matches": true
+      }
+    },
+    {
+      "key": "2019_2022_finals",
+      "blind": 1375,
+      "sol": 1269,
+      "sol_path": "robustness.era_2019_2022.coverage.tier_supported_finals",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "mismatch",
+      "cause": "Blind recheck retained cross-era skill references; Sol masks reference candidates to each era (DEVIATIONS.md decision 9, analyze.py task_subsets, engine.py refs_tiers). METHOD does not explicitly specify this boundary choice. Sol documented its choice before opening outcomes.",
+      "attribution": "recheck split-reference interpretation; not a primary estimator discrepancy",
+      "resolution": {
+        "within_era_reference_recheck": 1269,
+        "sol": 1269,
+        "matches": true
+      }
+    },
+    {
+      "key": "2019_2022_successes",
+      "blind": 68127,
+      "sol": 59773,
+      "sol_path": "robustness.era_2019_2022.coverage.tier_successful_cells",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "mismatch",
+      "cause": "Blind recheck retained cross-era skill references; Sol masks reference candidates to each era (DEVIATIONS.md decision 9, analyze.py task_subsets, engine.py refs_tiers). METHOD does not explicitly specify this boundary choice. Sol documented its choice before opening outcomes.",
+      "attribution": "recheck split-reference interpretation; not a primary estimator discrepancy",
+      "resolution": {
+        "within_era_reference_recheck": 59773,
+        "sol": 59773,
+        "matches": true
+      }
+    },
+    {
+      "key": "2019_2022_R",
+      "blind": 1.0186446168156613,
+      "sol": 1.0186446168156613,
+      "sol_path": "robustness.era_2019_2022.R_geometric_person_year.estimate",
+      "comparison": "point",
+      "tolerance": "1e-6 relative, zero absolute tolerance",
+      "status": "match"
+    },
+    {
+      "key": "2023_2025_F",
+      "blind": 0.04731677463956277,
+      "sol": 0.04746543127310497,
+      "sol_path": "robustness.era_2023_2025.F_tier_aware.estimate",
+      "comparison": "point",
+      "tolerance": "1e-6 relative, zero absolute tolerance",
+      "status": "mismatch",
+      "cause": "Blind recheck retained cross-era skill references; Sol masks reference candidates to each era (DEVIATIONS.md decision 9, analyze.py task_subsets, engine.py refs_tiers). METHOD does not explicitly specify this boundary choice. Sol documented its choice before opening outcomes.",
+      "attribution": "recheck split-reference interpretation; not a primary estimator discrepancy",
+      "resolution": {
+        "within_era_reference_recheck": 0.04746543127310496,
+        "sol": 0.04746543127310497,
+        "matches": true
+      }
+    },
+    {
+      "key": "2023_2025_gamma_share",
+      "blind": 0.0036084606741870807,
+      "sol": 0.0029693094199893023,
+      "sol_path": "robustness.era_2023_2025.tier_interaction_share_gamma_over_D.estimate",
+      "comparison": "point",
+      "tolerance": "1e-6 relative, zero absolute tolerance",
+      "status": "mismatch",
+      "cause": "Blind recheck retained cross-era skill references; Sol masks reference candidates to each era (DEVIATIONS.md decision 9, analyze.py task_subsets, engine.py refs_tiers). METHOD does not explicitly specify this boundary choice. Sol documented its choice before opening outcomes.",
+      "attribution": "recheck split-reference interpretation; not a primary estimator discrepancy",
+      "resolution": {
+        "within_era_reference_recheck": 0.002969309419989302,
+        "sol": 0.0029693094199893023,
+        "matches": true
+      }
+    },
+    {
+      "key": "2023_2025_finals",
+      "blind": 3045,
+      "sol": 3012,
+      "sol_path": "robustness.era_2023_2025.coverage.tier_supported_finals",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "mismatch",
+      "cause": "Blind recheck retained cross-era skill references; Sol masks reference candidates to each era (DEVIATIONS.md decision 9, analyze.py task_subsets, engine.py refs_tiers). METHOD does not explicitly specify this boundary choice. Sol documented its choice before opening outcomes.",
+      "attribution": "recheck split-reference interpretation; not a primary estimator discrepancy",
+      "resolution": {
+        "within_era_reference_recheck": 3012,
+        "sol": 3012,
+        "matches": true
+      }
+    },
+    {
+      "key": "2023_2025_successes",
+      "blind": 166398,
+      "sol": 162831,
+      "sol_path": "robustness.era_2023_2025.coverage.tier_successful_cells",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "mismatch",
+      "cause": "Blind recheck retained cross-era skill references; Sol masks reference candidates to each era (DEVIATIONS.md decision 9, analyze.py task_subsets, engine.py refs_tiers). METHOD does not explicitly specify this boundary choice. Sol documented its choice before opening outcomes.",
+      "attribution": "recheck split-reference interpretation; not a primary estimator discrepancy",
+      "resolution": {
+        "within_era_reference_recheck": 162831,
+        "sol": 162831,
+        "matches": true
+      }
+    },
+    {
+      "key": "2023_2025_R",
+      "blind": 1.0201944722912417,
+      "sol": 1.0201944722912417,
+      "sol_path": "robustness.era_2023_2025.R_geometric_person_year.estimate",
+      "comparison": "point",
+      "tolerance": "1e-6 relative, zero absolute tolerance",
+      "status": "match"
+    },
+    {
+      "key": "R_ci95",
+      "blind": [
+        1.0163694283864124,
+        1.0231592116224408
+      ],
+      "sol": [
+        1.016369805475588,
+        1.0230705470953203
+      ],
+      "sol_path": "primary.R_geometric_person_year.interval_95",
+      "comparison": "mc_centered",
+      "tolerance": [
+        0.0006934997041810287,
+        0.000546944390872356
+      ],
+      "difference_on_comparison_scale": [
+        3.710157893167809e-07,
+        8.666136028789156e-05
+      ],
+      "scale": "log ratio",
+      "mc_reason": "Equivalent multinomial algorithms consume the seeded RNG differently: blind rng.multinomial; Sol bincount(rng.integers). Tolerance is four combined Monte Carlo SEs, estimated from blind draws only.",
+      "status": "match"
+    },
+    {
+      "key": "R_bootstrap_raw_ci95",
+      "blind": [
+        1.0140130865867667,
+        1.02078712845002
+      ],
+      "sol": [
+        1.014038011976348,
+        1.0207233805048443
+      ],
+      "sol_path": "primary.R_geometric_person_year.raw_percentile_interval_95",
+      "comparison": "mc_raw",
+      "tolerance": [
+        0.0007520560005117899,
+        0.0005758485038125642
+      ],
+      "difference_on_comparison_scale": [
+        2.4580632707060096e-05,
+        6.245174337022805e-05
+      ],
+      "scale": "log ratio",
+      "mc_reason": "Equivalent multinomial algorithms consume the seeded RNG differently: blind rng.multinomial; Sol bincount(rng.integers). Tolerance is four combined Monte Carlo SEs, estimated from blind draws only.",
+      "status": "match"
+    },
+    {
+      "key": "R_fixed_ci95",
+      "blind": [
+        1.0149857940598719,
+        1.0245237423600195
+      ],
+      "sol": [
+        1.01493870321637,
+        1.0246117181274688
+      ],
+      "sol_path": "primary.R_fixed_selection_A_sensitivity.interval_95",
+      "comparison": "mc_fixed",
+      "tolerance": [
+        0.0008716195651612148,
+        0.0006800573883155419
+      ],
+      "difference_on_comparison_scale": [
+        4.639664536646229e-05,
+        8.586622914851655e-05
+      ],
+      "scale": "log ratio",
+      "mc_reason": "Equivalent multinomial algorithms consume the seeded RNG differently: blind rng.multinomial; Sol bincount(rng.integers). Tolerance is four combined Monte Carlo SEs, estimated from blind draws only.",
+      "status": "match"
+    },
+    {
+      "key": "R_bootstrap_mean_log",
+      "blind": 0.01726468343128384,
+      "sol": 0.017288893048201536,
+      "sol_path": "primary.R_geometric_person_year.bootstrap_mean",
+      "comparison": "mc_mean",
+      "tolerance": 0.0002122851199608392,
+      "difference_on_comparison_scale": 2.4209616917694743e-05,
+      "scale": "native",
+      "mc_reason": "Equivalent multinomial algorithms consume the seeded RNG differently: blind rng.multinomial; Sol bincount(rng.integers). Tolerance is four combined Monte Carlo SEs, estimated from blind draws only.",
+      "status": "match"
+    },
+    {
+      "key": "R_bootstrap_displacement",
+      "blind": -0.00232108269269762,
+      "sol": -0.0022968730757799323,
+      "sol_path": "primary.R_geometric_person_year.bootstrap_mean_displacement",
+      "comparison": "mc_mean",
+      "tolerance": 0.0002122851199608392,
+      "difference_on_comparison_scale": 2.4209616917687804e-05,
+      "scale": "native",
+      "mc_reason": "Equivalent multinomial algorithms consume the seeded RNG differently: blind rng.multinomial; Sol bincount(rng.integers). Tolerance is four combined Monte Carlo SEs, estimated from blind draws only.",
+      "status": "match"
+    },
+    {
+      "key": "bootstrap_valid_draws",
+      "blind": 2000,
+      "sol": 2000,
+      "sol_path": "primary.R_geometric_person_year.valid_draws",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "match"
+    },
+    {
+      "key": "bootstrap_absent_seasons_mean",
+      "blind": 1225.5025,
+      "sol": 1225.144,
+      "sol_path": "bootstrap_exposure.absent_seasons.mean",
+      "comparison": "mc_absent",
+      "tolerance": 5.500611067151002,
+      "difference_on_comparison_scale": 0.3585000000000491,
+      "scale": "native",
+      "mc_reason": "Equivalent multinomial algorithms consume the seeded RNG differently: blind rng.multinomial; Sol bincount(rng.integers). Tolerance is four combined Monte Carlo SEs, estimated from blind draws only.",
+      "status": "match"
+    },
+    {
+      "key": "bootstrap_distinct_competitions_mean",
+      "blind": 3171.595,
+      "sol": 3171.7985000000003,
+      "sol_path": "bootstrap_exposure.distinct_competition_fraction.mean * coverage.structural.eligible_finals",
+      "comparison": "mc_competitions",
+      "tolerance": 2.8429241203595677,
+      "difference_on_comparison_scale": 0.20350000000053114,
+      "scale": "native",
+      "mc_reason": "Equivalent multinomial algorithms consume the seeded RNG differently: blind rng.multinomial; Sol bincount(rng.integers). Tolerance is four combined Monte Carlo SEs, estimated from blind draws only.",
+      "status": "match"
+    },
+    {
+      "key": "verdict",
+      "blind": "belief fails",
+      "sol": "Belief fails",
+      "sol_path": "verdict.outcome",
+      "comparison": "verdict",
+      "tolerance": "case-normalized exact equality",
+      "status": "match"
+    },
+    {
+      "key": "dnf_started_rate",
+      "blind": 0.014469269545274863,
+      "sol": 0.014469269545274863,
+      "sol_path": "DNF_secondary.started_attempt_DNF_rate.estimate",
+      "comparison": "point",
+      "tolerance": "1e-6 relative, zero absolute tolerance",
+      "status": "match"
+    },
+    {
+      "key": "extra_pool_solver_results",
+      "blind": 61231,
+      "sol": 61231,
+      "sol_path": "all eligible finals have extra pools; coverage.structural.solver_final_incidence_rows",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "match"
+    },
+    {
+      "key": "complete_success_results",
+      "blind": 57055,
+      "sol": 57055,
+      "sol_path": "coverage.structural.status_patterns: five success statuses",
+      "comparison": "count",
+      "tolerance": "exact integer equality",
+      "status": "match"
+    }
+  ],
+  "not_reported": [
+    {
+      "key": "exclusion_ambiguous_regular_schedule_finals",
+      "blind": 0,
+      "status": "not_reported_by_sol",
+      "reason": "No corresponding quantity in results.json; not counted as a match or mismatch."
+    },
+    {
+      "key": "exclusion_missing_schedule_finals",
+      "blind": 3,
+      "status": "not_reported_by_sol",
+      "reason": "No corresponding quantity in results.json; not counted as a match or mismatch."
+    },
+    {
+      "key": "exclusion_multigroup_or_no_regular_group_finals",
+      "blind": 1932,
+      "status": "not_reported_by_sol",
+      "reason": "No corresponding quantity in results.json; not counted as a match or mismatch."
+    },
+    {
+      "key": "tier_rows",
+      "blind": 47585,
+      "status": "not_reported_by_sol",
+      "reason": "No corresponding quantity in results.json; not counted as a match or mismatch."
+    },
+    {
+      "key": "training_beta",
+      "blind": [
+        -0.00019098085080805448,
+        0.001533054591740826,
+        -0.00016398101357183268,
+        -0.0057288173072452785,
+        0.004550724579884341
+      ],
+      "status": "not_reported_by_sol",
+      "reason": "No corresponding quantity in results.json; not counted as a match or mismatch."
+    }
+  ]
+}

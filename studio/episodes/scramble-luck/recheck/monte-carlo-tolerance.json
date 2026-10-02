@@ -1,0 +1,19 @@
+{
+  "method": "1000 independent resamples of 2000 blind draws; diagnostic seed 20261002; endpoint SE on log scale. Difference tolerance is 4*sqrt(2)*SE (two independent equal-sized Monte Carlo estimates). This is not a scientific sampling interval.",
+  "replicates": 1000,
+  "centered_endpoint_se": [
+    0.0001225945858943175,
+    9.668702192944713e-05
+  ],
+  "fixed_endpoint_se": [
+    0.0001540820262850912,
+    0.0001202182977184832
+  ],
+  "mean_logR_se": 3.752706196732728e-05,
+  "absent_mean_se": 0.9723798465630613,
+  "competition_mean_se": 0.5025627309762627,
+  "raw_endpoint_se": [
+    0.00013294597444848006,
+    0.0001017965954954979
+  ]
+}

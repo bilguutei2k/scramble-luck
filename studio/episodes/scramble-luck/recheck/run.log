@@ -1,0 +1,45 @@
+bootstrap 100 seconds 4
+bootstrap 200 seconds 9
+bootstrap 300 seconds 13
+bootstrap 400 seconds 17
+bootstrap 500 seconds 22
+bootstrap 600 seconds 26
+bootstrap 700 seconds 31
+bootstrap 800 seconds 35
+bootstrap 900 seconds 39
+bootstrap 1000 seconds 44
+bootstrap 1100 seconds 48
+bootstrap 1200 seconds 52
+bootstrap 1300 seconds 57
+bootstrap 1400 seconds 61
+bootstrap 1500 seconds 66
+bootstrap 1600 seconds 70
+bootstrap 1700 seconds 74
+bootstrap 1800 seconds 79
+bootstrap 1900 seconds 83
+bootstrap 2000 seconds 87
+Traceback (most recent call last):
+  File "/Users/bilguutei/Documents/ChatGPT/operator/studio/episodes/scramble-luck/recheck/code/derive.py", line 190, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/bilguutei/Documents/ChatGPT/operator/studio/episodes/scramble-luck/recheck/code/derive.py", line 188, in main
+    (BASE/'values.json').write_text(json.dumps(vals,indent=2,allow_nan=False)+'\n')
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.13_2/Frameworks/Python.framework/Versions/3.12/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type int64 is not JSON serializable

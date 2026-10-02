@@ -64,3 +64,60 @@ METHOD.md is unchanged; no positive confirmation solve times have been read.
    after competition-only completed null and small-shared (small-shared coverage
    55.5%); some large-shared datasets were already checkpointed. Partial datasets
    are retained but do not decide acceptance. No confirmation outcomes were read.
+
+## Step 4 implementation decisions (flagged; made before opening outcomes)
+
+7. **Secondary logistic fixed effects.** Estimate the DNF model by exact
+   conditional logistic likelihood, conditioning on each solver-round's DNF
+   count. This eliminates its intercept without an incidental-parameter fit.
+   Four attempt indicators and h/0.05 enter jointly; all-success/all-DNF panels
+   contribute counts but no conditional likelihood. Recompute peer h and
+   training beta in every product-weight draw; use percentile intervals.
+8. **Cross correlation.** For every identified focal solver-round, use all five
+   leave-one-out h values (including failure positions). Average h across
+   focal solvers at each scheduled position, then correlate across scheduled
+   scrambles. Report Pearson correlation both with raw cross length and with
+   length demeaned within final, for six-face and white/yellow minima. Weight
+   focal averages by solver multiplicity and scrambles by competition
+   multiplicity in the bootstrap. The centered correlation is the preferred
+   mechanism description because h is a within-final contrast.
+9. **Subsets and deletion uncertainty.** Era and year-deletion checks use the
+   full registered cluster draws with excluded competitions given zero weight;
+   the original structural seasonal roster remains fixed. Reference candidates
+   are limited by the same competition mask. Delete each confirmation solver
+   in turn (also from training); report the entire point range with its counts.
+   Report bootstrap intervals for the deletions attaining each endpoint, not
+   a simultaneous interval for a data-selected range. No deletion changes the
+   primary verdict. Complete-success sensitivity masks incomplete solver-rounds
+   from time analysis, keeps the original seasonal roster, and reselects among
+   its available complete panels. Clipping follows the frozen pilot: clip
+   centered successful log times at ±0.6, then re-center through the engine.
+10. **Prediction and auxiliary uncertainty.** Reuse the frozen pilot's
+    whole-solver peer prediction, pre-2019 hyperparameters, other-success target
+    baseline and thirty splits, at k=2,5,10,20. The fixed panel requires ≥22
+    informative finalists for all k. Competition-only percentile intervals
+    average splits first, as in the frozen pilot; split ranges and model
+    extrapolations are labeled separately. All other estimable secondary
+    statistics use the same 2,000 registered product-weight draws. Arithmetic
+    and per-solver R get translated reselecting intervals as descriptive
+    sensitivities; equal-tier R and its matched all-peer comparator do too.
+    Negative control independently permutes all five time/status cells per
+    solver-round in each of 1,000 draws, recomputing references, F and R with
+    frozen primary beta. Its central 95% permutation range is not a sampling CI.
+
+These choices resolve details METHOD does not specify. They are implementation
+decisions, not new registered confirmatory endpoints; flag them in FINDINGS.
+AMENDMENT-1 is a registered post-gate methodological amendment, not a silent
+deviation. No primary point estimator, threshold or draw order changes here.
+
+### Step 4 software correction after opening (flagged disclosure)
+
+During the sensitivity block, a 2020 bootstrap draw had zero available
+seasonal extrema. The wrapper incorrectly tried to average an empty array.
+It now records an invalid yearly R draw and omits its zero weight from the
+pooled year-specific-beta ratio. Original primary draws and completed valid
+subset draws were retained unchanged; the remaining tasks resumed from their
+checkpoints. No estimator, seed, primary interval, threshold or eligibility
+rule changed. Sparse yearly checks are explicitly labelled diagnostic when
+the registered coverage/valid-draw gates fail. Confirmation point estimates
+and the primary interval had been seen at this correction.

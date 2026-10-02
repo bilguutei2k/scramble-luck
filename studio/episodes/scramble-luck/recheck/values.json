@@ -1,0 +1,357 @@
+{
+  "scope_results": {
+    "value": 3409150,
+    "n": 3409150,
+    "definition": "Sequential raw-result exclusion/count: scope_results"
+  },
+  "exclusion_other_event": {
+    "value": 2504130,
+    "n": 3409150,
+    "definition": "Sequential raw-result exclusion/count: other_event"
+  },
+  "exclusion_nonfinal": {
+    "value": 794852,
+    "n": 3409150,
+    "definition": "Sequential raw-result exclusion/count: nonfinal"
+  },
+  "exclusion_invalid_format": {
+    "value": 0,
+    "n": 3409150,
+    "definition": "Sequential raw-result exclusion/count: invalid_format"
+  },
+  "exclusion_multigroup_or_no_regular_group_results": {
+    "value": 48911,
+    "n": 3409150,
+    "definition": "Sequential raw-result exclusion/count: multigroup_or_no_regular_group_results"
+  },
+  "exclusion_multigroup_or_no_regular_group_finals": {
+    "value": 1932,
+    "n": 3409150,
+    "definition": "Sequential raw-result exclusion/count: multigroup_or_no_regular_group_finals"
+  },
+  "exclusion_missing_schedule_results": {
+    "value": 26,
+    "n": 3409150,
+    "definition": "Sequential raw-result exclusion/count: missing_schedule_results"
+  },
+  "exclusion_missing_schedule_finals": {
+    "value": 3,
+    "n": 3409150,
+    "definition": "Sequential raw-result exclusion/count: missing_schedule_finals"
+  },
+  "exclusion_incomplete_duplicate_slots_results": {
+    "value": 0,
+    "n": 3409150,
+    "definition": "Sequential raw-result exclusion/count: incomplete_duplicate_slots_results"
+  },
+  "exclusion_invalid_status_results": {
+    "value": 0,
+    "n": 3409150,
+    "definition": "Sequential raw-result exclusion/count: invalid_status_results"
+  },
+  "finals": {
+    "value": 5017,
+    "n": 61231,
+    "definition": "Distinct included competition/final-round panels"
+  },
+  "attempt_slots": {
+    "value": 306155,
+    "n": 61231,
+    "definition": "Five included scheduled slots per solver result"
+  },
+  "successes": {
+    "value": 301668,
+    "n": 61231,
+    "definition": "Positive official attempt values"
+  },
+  "dnf": {
+    "value": 4429,
+    "n": 61231,
+    "definition": "Official -1 attempt values"
+  },
+  "dns": {
+    "value": 58,
+    "n": 61231,
+    "definition": "Official -2 attempt values"
+  },
+  "solvers": {
+    "value": 12853,
+    "n": 61231,
+    "definition": "Distinct included WCA person IDs"
+  },
+  "solver_results": {
+    "value": 61231,
+    "n": 61231,
+    "definition": "Included solver-final rows"
+  },
+  "under_two_success_rows": {
+    "value": 20,
+    "n": 61231,
+    "definition": "Rows retained in counts but uninformative for time contrasts"
+  },
+  "eligible_solver_seasons": {
+    "value": 3313,
+    "n": 3313,
+    "definition": "Person-years with at least five distinct included confirmation competitions"
+  },
+  "no_success_seasons": {
+    "value": 0,
+    "n": 3313,
+    "definition": "Eligible seasons with no successful solve"
+  },
+  "unidentified_extrema": {
+    "value": 0,
+    "n": 3313,
+    "definition": "Selected extrema whose leave-focal-out peer matrix has rank below four"
+  },
+  "available_extrema": {
+    "value": 3313,
+    "n": 3313,
+    "definition": "Eligible seasons with successful and identified selected extrema"
+  },
+  "R": {
+    "value": 1.0197788255872957,
+    "n": 3313,
+    "definition": "Geometric mean exp(-peer shared contrast) across available person-years"
+  },
+  "R_arithmetic": {
+    "value": 1.0213077422510106,
+    "n": 3313,
+    "definition": "Arithmetic mean of estimated adjusted/observed ratios"
+  },
+  "R_solver_weighted": {
+    "value": 1.01841917500455,
+    "n": 1800,
+    "definition": "Average log ratio within solver, then equally across solvers, exponentiated"
+  },
+  "tier_F": {
+    "value": 0.047433876605946265,
+    "n": 4420,
+    "definition": "Balanced-tier moment quantity: F"
+  },
+  "tier_gamma_share": {
+    "value": 0.0035652471381832107,
+    "n": 4420,
+    "definition": "Balanced-tier moment quantity: gamma_share"
+  },
+  "tier_tau": {
+    "value": 0.0011011839442249555,
+    "n": 4420,
+    "definition": "Balanced-tier moment quantity: tau"
+  },
+  "tier_gamma": {
+    "value": 8.276770078010373e-05,
+    "n": 4420,
+    "definition": "Balanced-tier moment quantity: gamma"
+  },
+  "tier_D": {
+    "value": 0.02321513700794407,
+    "n": 4420,
+    "definition": "Balanced-tier moment quantity: D"
+  },
+  "tier_b_fast": {
+    "value": 0.0012155535149531113,
+    "n": 4420,
+    "definition": "Balanced-tier moment quantity: b_fast"
+  },
+  "tier_b_slow": {
+    "value": 0.001152349775057007,
+    "n": 4420,
+    "definition": "Balanced-tier moment quantity: b_slow"
+  },
+  "tier_e_fast": {
+    "value": 0.02169682768569975,
+    "n": 4420,
+    "definition": "Balanced-tier moment quantity: e_fast"
+  },
+  "tier_e_slow": {
+    "value": 0.02236554304017827,
+    "n": 4420,
+    "definition": "Balanced-tier moment quantity: e_slow"
+  },
+  "tier_c": {
+    "value": 0.0010184162434448518,
+    "n": 4420,
+    "definition": "Balanced-tier moment quantity: c"
+  },
+  "tier_finals": {
+    "value": 4420,
+    "n": 4420,
+    "definition": "Balanced-tier moment quantity: finals"
+  },
+  "tier_successes": {
+    "value": 234525,
+    "n": 4420,
+    "definition": "Balanced-tier moment quantity: successes"
+  },
+  "tier_rows": {
+    "value": 47585,
+    "n": 4420,
+    "definition": "Balanced-tier moment quantity: rows"
+  },
+  "tier_missing_reference": {
+    "value": 11557,
+    "n": 4420,
+    "definition": "Balanced-tier moment quantity: missing_reference"
+  },
+  "training_beta": {
+    "value": [
+      -0.00019098085080805448,
+      0.001533054591740826,
+      -0.00016398101357183268,
+      -0.0057288173072452785,
+      0.004550724579884341
+    ],
+    "n": 6195,
+    "definition": "Pooled pre-2019 exploration solver-demeaned position coefficients"
+  },
+  "2019_2022_F": {
+    "value": 0.04718725046336678,
+    "n": 1375,
+    "definition": "Era-restricted tier measure with full-window skill references: F"
+  },
+  "2019_2022_gamma_share": {
+    "value": 0.003289424206589003,
+    "n": 1375,
+    "definition": "Era-restricted tier measure with full-window skill references: gamma_share"
+  },
+  "2019_2022_finals": {
+    "value": 1375,
+    "n": 1375,
+    "definition": "Era-restricted tier measure with full-window skill references: finals"
+  },
+  "2019_2022_successes": {
+    "value": 68127,
+    "n": 1375,
+    "definition": "Era-restricted tier measure with full-window skill references: successes"
+  },
+  "2019_2022_R": {
+    "value": 1.0186446168156613,
+    "n": 888,
+    "definition": "Geometric seasonal ratio in the named calendar-year era"
+  },
+  "2023_2025_F": {
+    "value": 0.04731677463956277,
+    "n": 3045,
+    "definition": "Era-restricted tier measure with full-window skill references: F"
+  },
+  "2023_2025_gamma_share": {
+    "value": 0.0036084606741870807,
+    "n": 3045,
+    "definition": "Era-restricted tier measure with full-window skill references: gamma_share"
+  },
+  "2023_2025_finals": {
+    "value": 3045,
+    "n": 3045,
+    "definition": "Era-restricted tier measure with full-window skill references: finals"
+  },
+  "2023_2025_successes": {
+    "value": 166398,
+    "n": 3045,
+    "definition": "Era-restricted tier measure with full-window skill references: successes"
+  },
+  "2023_2025_R": {
+    "value": 1.0201944722912417,
+    "n": 2425,
+    "definition": "Geometric seasonal ratio in the named calendar-year era"
+  },
+  "R_ci95": {
+    "value": [
+      1.0163694283864124,
+      1.0231592116224408
+    ],
+    "n": 2000,
+    "definition": "Amendment B: exponentiated mean-recentered linear log-R percentile endpoints"
+  },
+  "R_bootstrap_raw_ci95": {
+    "value": [
+      1.0140130865867667,
+      1.02078712845002
+    ],
+    "n": 2000,
+    "definition": "Uncentered reselecting percentile interval, diagnostic only"
+  },
+  "R_bootstrap_mean_log": {
+    "value": 0.01726468343128384,
+    "n": 2000,
+    "definition": "Mean reselecting bootstrap log R"
+  },
+  "R_bootstrap_displacement": {
+    "value": -0.00232108269269762,
+    "n": 2000,
+    "definition": "Bootstrap mean log R minus original log R"
+  },
+  "R_fixed_ci95": {
+    "value": [
+      1.0149857940598719,
+      1.0245237423600195
+    ],
+    "n": 2000,
+    "definition": "Amendment A: fixed original extrema with competition times solver weights"
+  },
+  "bootstrap_valid_draws": {
+    "value": 2000,
+    "n": 2000,
+    "definition": "Finite reselecting pigeonhole bootstrap draws"
+  },
+  "bootstrap_absent_seasons_mean": {
+    "value": 1225.5025,
+    "n": 2000,
+    "definition": "Mean roster seasons absent after competition and solver resampling"
+  },
+  "bootstrap_distinct_competitions_mean": {
+    "value": 3171.595,
+    "n": 2000,
+    "definition": "Mean distinct included confirmation competitions in a draw"
+  },
+  "verdict": {
+    "value": "belief fails",
+    "n": 2000,
+    "definition": "Registered interval decision, conditional on accepted validation gate and coverage checks"
+  },
+  "universe_exploration_competitions": {
+    "value": 3756,
+    "n": 18771,
+    "definition": "Hash-defined exploration competitions in the full raw export"
+  },
+  "universe_confirmation_competitions": {
+    "value": 15015,
+    "n": 18771,
+    "definition": "Hash-defined confirmation competitions in the full raw export"
+  },
+  "exclusion_ambiguous_regular_schedule_results": {
+    "value": 0,
+    "n": 3409150,
+    "definition": "Sequential exclusion count: ambiguous_regular_schedule_results"
+  },
+  "exclusion_ambiguous_regular_schedule_finals": {
+    "value": 0,
+    "n": 3409150,
+    "definition": "Sequential exclusion count: ambiguous_regular_schedule_finals"
+  },
+  "extra_pool_finals": {
+    "value": 5017,
+    "n": 5017,
+    "definition": "Included finals with at least one extra-pool scramble row"
+  },
+  "extra_pool_solver_results": {
+    "value": 61231,
+    "n": 61231,
+    "definition": "Included solver-final rows in finals with extra pools"
+  },
+  "dnf_started_rate": {
+    "value": 0.014469269545274863,
+    "n": 306097,
+    "definition": "DNF divided by positive attempts plus DNF; DNS excluded"
+  },
+  "complete_success_results": {
+    "value": 57055,
+    "n": 61231,
+    "definition": "Included solver-final rows with five successful attempts"
+  },
+  "eligible_season_solvers": {
+    "value": 1800,
+    "n": 3313,
+    "definition": "Distinct solvers represented on the fixed eligible person-year roster"
+  }
+}

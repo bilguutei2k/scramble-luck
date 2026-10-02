@@ -1,0 +1,46 @@
+{
+  "2019_2022": {
+    "F": {
+      "within_era_reference_recheck": 0.04823810778856414,
+      "sol": 0.04823810778856412,
+      "matches": true
+    },
+    "gamma_share": {
+      "within_era_reference_recheck": 0.001819790250347663,
+      "sol": 0.0018197902503476531,
+      "matches": true
+    },
+    "finals": {
+      "within_era_reference_recheck": 1269,
+      "sol": 1269,
+      "matches": true
+    },
+    "successes": {
+      "within_era_reference_recheck": 59773,
+      "sol": 59773,
+      "matches": true
+    }
+  },
+  "2023_2025": {
+    "F": {
+      "within_era_reference_recheck": 0.04746543127310496,
+      "sol": 0.04746543127310497,
+      "matches": true
+    },
+    "gamma_share": {
+      "within_era_reference_recheck": 0.002969309419989302,
+      "sol": 0.0029693094199893023,
+      "matches": true
+    },
+    "finals": {
+      "within_era_reference_recheck": 3012,
+      "sol": 3012,
+      "matches": true
+    },
+    "successes": {
+      "within_era_reference_recheck": 162831,
+      "sol": 162831,
+      "matches": true
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "amendment_sha256": "2c8702324a964952364b40a0c1148a8bfa544e27756ada00150dc406172e7385",
+  "archive_sha256": "e6b262b2ada513228a48fa221015ddc25e9041a029340778cd253f564c23427d",
+  "first_open": {
+    "action": "first magnitude SELECT immediately follows this persisted timestamp",
+    "first_open_utc": "2026-10-02T15:17:40.383923+00:00"
+  },
+  "frozen_fixture_checks": [
+    {
+      "name": "frozen_missing_pattern_contributions",
+      "pass": true
+    },
+    {
+      "maximum_absolute_error": 1.734723475976807e-17,
+      "name": "frozen_squared_solver_weight_noise_trace",
+      "pass": true
+    },
+    {
+      "maximum_absolute_error": 4.884981308350689e-15,
+      "name": "frozen_unshrunk_extreme_peer_projection",
+      "pass": true
+    },
+    {
+      "name": "centering_trace_identities",
+      "pass": true
+    },
+    {
+      "name": "frozen_tier_moment_and_residual_variances",
+      "pass": true
+    },
+    {
+      "name": "seasonal_reselection_fixed_roster_and_no_runner_up_for_missing_success",
+      "pass": true
+    }
+  ],
+  "method_sha256": "c67cc30101d636c75db182fe8fa869e107d934425fff214f9c5440a3d572212f",
+  "source_hashes_rechecked": {
+    "README.md": "ec4a096b29b937e4d4f4e395227d703bbb773d711ff4b6c4ca569ee03e904a8d",
+    "WCA_export_competitions.tsv": "85442ae2d9074278606a70c28f2d39b857c76f7d20b79463188946eb55a170c3",
+    "WCA_export_result_attempts.tsv": "37073b780424b66654a843948c73f4a69f9bea5d2ca2c3143df486a9c34923ee",
+    "WCA_export_results.tsv": "a7243bb93cd4cab09e42894f9eba60b1ad4e439bc2d7c0e4fdf94e7182df130a",
+    "WCA_export_round_types.tsv": "3184c23bc0fc7c17201c4db8aa664a8eaca728676124e58f3cc9ccb42a8f2c6e",
+    "WCA_export_scrambles.tsv": "2e7652bbe70b7041ad26c15e54076a5e72fccffcf004f211382056bb6d716b3c",
+    "metadata.json": "ba2c22799638052d0d11f366740b3af6b279507de0549c31efa8bccc9559299b"
+  },
+  "split_counts": {
+    "confirmation": 15015,
+    "exploration": 3756
+  }
+}

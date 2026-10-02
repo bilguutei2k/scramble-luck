@@ -1,0 +1,16 @@
+{
+  "exploration_all_ids": 3756,
+  "exploration_ids_sha256": "b5f6426bffbbf01c4d742cbe65f083cb4cbb5a134a5b60c3fe9fa312d028b7a4",
+  "confirmation_all_ids": 15015,
+  "confirmation_ids_sha256": "2c0d64860c762e8214ec78123326b62ddd262feabadb45a3515728cbef1b4ed8",
+  "scope_results": 3409150,
+  "other_event": 2504130,
+  "nonfinal": 794852,
+  "invalid_format": 0,
+  "multigroup_or_no_regular_group_results": 48911,
+  "multigroup_or_no_regular_group_finals": 1932,
+  "missing_schedule_results": 26,
+  "missing_schedule_finals": 3,
+  "incomplete_duplicate_slots_results": 0,
+  "invalid_status_results": 0
+}

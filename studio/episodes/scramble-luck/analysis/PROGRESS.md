@@ -324,3 +324,217 @@
 - 2026-10-02T07:52:28+00:00: Gate audit complete: all seven primary processes have 200 datasets × 500 valid R/F/gamma draws. All permitted bootstrap methods rejected on fully completed processes. Bulk hashes and software provenance saved. Required verdict: inconclusive: uncertainty not validated; step 4 not run. Gate report ready for commit.
 
 - 2026-10-02T07:54:52+00:00: COMMIT BLOCKED by filesystem policy: requested git add failed (exit 128), unable to create .git/index.lock: Operation not permitted. Repository .git is read-only. No files staged; no gate commit created. Exact requested message saved in COMMIT_MESSAGE.txt. Gate failed; confirmation magnitudes remain unopened; step 4 has not run. All reviewable analysis code/reports are ready for an authorized repository writer to commit.
+
+- 2026-10-02T15:17:40+00:00: Step 4: FIRST OPEN of confirmation solve-time magnitudes at 2026-10-02T15:17:40.383923+00:00; approved amendment commit 5496074 verified; original and independent B gates pass.
+
+- 2026-10-02T15:17:44+00:00: Step 4 observed-point block complete: 5017 finals; 3313 available extrema; 4420 tier-supported finals. No threshold decision before intervals.
+
+- 2026-10-02T15:17:44+00:00: Step 4 block primary: 0 checkpointed; 2000 tasks remaining on ten cores.
+
+- 2026-10-02T15:17:59+00:00: Step 4 primary: 500 tasks checkpointed; elapsed 14.5s.
+
+- 2026-10-02T15:18:09+00:00: Step 4 primary: 1000 tasks checkpointed; elapsed 24.5s.
+
+- 2026-10-02T15:18:19+00:00: Step 4 primary: 1500 tasks checkpointed; elapsed 35.2s.
+
+- 2026-10-02T15:18:28+00:00: Step 4 primary: 2000 tasks checkpointed; elapsed 44.2s.
+
+- 2026-10-02T15:18:28+00:00: Step 4 block primary COMPLETE: 2000 tasks, 44.2s this run.
+
+- 2026-10-02T15:18:28+00:00: Step 4 block subsets: 0 checkpointed; 2000 tasks remaining on ten cores.
+
+- 2026-10-02T15:18:42+00:00: Step 4 subsets: 500 tasks checkpointed; elapsed 13.1s.
+
+- 2026-10-02T15:25:25+00:00: Step 4 observed-point block complete: 5017 finals; 3313 available extrema; 4420 tier-supported finals. No threshold decision before intervals.
+
+- 2026-10-02T15:25:25+00:00: Step 4 block primary: 2000 checkpointed; 0 tasks remaining on ten cores.
+
+- 2026-10-02T15:25:25+00:00: Step 4 block primary COMPLETE: 2000 tasks, 0.0s this run.
+
+- 2026-10-02T15:25:25+00:00: Step 4 block subsets: 650 checkpointed; 1350 tasks remaining on ten cores.
+
+- 2026-10-02T15:25:42+00:00: Step 4 subsets: 1150 tasks checkpointed; elapsed 17.2s.
+
+- 2026-10-02T15:25:55+00:00: Step 4 subsets: 1650 tasks checkpointed; elapsed 30.3s.
+
+- 2026-10-02T15:26:04+00:00: Step 4 block subsets COMPLETE: 2000 tasks, 38.9s this run.
+
+- 2026-10-02T15:26:04+00:00: Step 4 block solver-deletions: 0 checkpointed; 12853 tasks remaining on ten cores.
+
+- 2026-10-02T15:26:05+00:00: Step 4 solver-deletions: 500 tasks checkpointed; elapsed 1.6s.
+
+- 2026-10-02T15:26:07+00:00: Step 4 solver-deletions: 1000 tasks checkpointed; elapsed 3.2s.
+
+- 2026-10-02T15:26:08+00:00: Step 4 solver-deletions: 1500 tasks checkpointed; elapsed 4.7s.
+
+- 2026-10-02T15:26:10+00:00: Step 4 solver-deletions: 2000 tasks checkpointed; elapsed 6.2s.
+
+- 2026-10-02T15:26:11+00:00: Step 4 solver-deletions: 2500 tasks checkpointed; elapsed 7.8s.
+
+- 2026-10-02T15:26:13+00:00: Step 4 solver-deletions: 3000 tasks checkpointed; elapsed 9.3s.
+
+- 2026-10-02T15:26:14+00:00: Step 4 solver-deletions: 3500 tasks checkpointed; elapsed 10.8s.
+
+- 2026-10-02T15:26:16+00:00: Step 4 solver-deletions: 4000 tasks checkpointed; elapsed 12.4s.
+
+- 2026-10-02T15:26:18+00:00: Step 4 solver-deletions: 4500 tasks checkpointed; elapsed 14.0s.
+
+- 2026-10-02T15:26:19+00:00: Step 4 solver-deletions: 5000 tasks checkpointed; elapsed 15.5s.
+
+- 2026-10-02T15:26:21+00:00: Step 4 solver-deletions: 5500 tasks checkpointed; elapsed 17.0s.
+
+- 2026-10-02T15:26:22+00:00: Step 4 solver-deletions: 6000 tasks checkpointed; elapsed 18.5s.
+
+- 2026-10-02T15:26:24+00:00: Step 4 solver-deletions: 6500 tasks checkpointed; elapsed 20.1s.
+
+- 2026-10-02T15:26:25+00:00: Step 4 solver-deletions: 7000 tasks checkpointed; elapsed 21.6s.
+
+- 2026-10-02T15:26:27+00:00: Step 4 solver-deletions: 7500 tasks checkpointed; elapsed 23.1s.
+
+- 2026-10-02T15:26:28+00:00: Step 4 solver-deletions: 8000 tasks checkpointed; elapsed 24.6s.
+
+- 2026-10-02T15:26:30+00:00: Step 4 solver-deletions: 8500 tasks checkpointed; elapsed 26.2s.
+
+- 2026-10-02T15:26:31+00:00: Step 4 solver-deletions: 9000 tasks checkpointed; elapsed 27.7s.
+
+- 2026-10-02T15:26:33+00:00: Step 4 solver-deletions: 9500 tasks checkpointed; elapsed 29.3s.
+
+- 2026-10-02T15:26:34+00:00: Step 4 solver-deletions: 10000 tasks checkpointed; elapsed 30.8s.
+
+- 2026-10-02T15:26:36+00:00: Step 4 solver-deletions: 10500 tasks checkpointed; elapsed 32.3s.
+
+- 2026-10-02T15:26:37+00:00: Step 4 solver-deletions: 11000 tasks checkpointed; elapsed 33.8s.
+
+- 2026-10-02T15:26:39+00:00: Step 4 solver-deletions: 11500 tasks checkpointed; elapsed 35.3s.
+
+- 2026-10-02T15:26:41+00:00: Step 4 solver-deletions: 12000 tasks checkpointed; elapsed 36.9s.
+
+- 2026-10-02T15:26:42+00:00: Step 4 solver-deletions: 12500 tasks checkpointed; elapsed 38.5s.
+
+- 2026-10-02T15:26:43+00:00: Step 4 block solver-deletions COMPLETE: 12853 tasks, 39.5s this run.
+
+- 2026-10-02T15:26:43+00:00: Step 4 block deletion-intervals: 0 checkpointed; 2000 tasks remaining on ten cores.
+
+- 2026-10-02T15:26:50+00:00: Step 4 deletion-intervals: 500 tasks checkpointed; elapsed 7.0s.
+
+- 2026-10-02T15:26:53+00:00: Step 4 deletion-intervals: 1000 tasks checkpointed; elapsed 10.2s.
+
+- 2026-10-02T15:26:57+00:00: Step 4 deletion-intervals: 1500 tasks checkpointed; elapsed 13.5s.
+
+- 2026-10-02T15:27:00+00:00: Step 4 deletion-intervals: 2000 tasks checkpointed; elapsed 16.7s.
+
+- 2026-10-02T15:27:00+00:00: Step 4 block deletion-intervals COMPLETE: 2000 tasks, 16.7s this run.
+
+- 2026-10-02T15:27:00+00:00: Step 4 block common-moments: 0 checkpointed; 2000 tasks remaining on ten cores.
+
+- 2026-10-02T15:27:01+00:00: Step 4 common-moments: 500 tasks checkpointed; elapsed 1.3s.
+
+- 2026-10-02T15:27:02+00:00: Step 4 common-moments: 1000 tasks checkpointed; elapsed 2.6s.
+
+- 2026-10-02T15:27:04+00:00: Step 4 common-moments: 1500 tasks checkpointed; elapsed 3.8s.
+
+- 2026-10-02T15:27:05+00:00: Step 4 common-moments: 2000 tasks checkpointed; elapsed 5.1s.
+
+- 2026-10-02T15:27:05+00:00: Step 4 block common-moments COMPLETE: 2000 tasks, 5.1s this run.
+
+- 2026-10-02T15:27:05+00:00: Step 4 block permutation: 0 checkpointed; 1000 tasks remaining on ten cores.
+
+- 2026-10-02T15:27:33+00:00: Step 4 permutation: 500 tasks checkpointed; elapsed 28.4s.
+
+- 2026-10-02T15:28:02+00:00: Step 4 permutation: 1000 tasks checkpointed; elapsed 56.8s.
+
+- 2026-10-02T15:28:02+00:00: Step 4 block permutation COMPLETE: 1000 tasks, 56.8s this run.
+
+- 2026-10-02T15:28:02+00:00: Step 4 peer-prediction block START: 30 whole-solver splits, k=2,5,10,20, and common ≥22-finalist panel on ten cores.
+
+- 2026-10-02T15:28:26+00:00: Step 4 observed-point block complete: 5017 finals; 3313 available extrema; 4420 tier-supported finals. No threshold decision before intervals.
+
+- 2026-10-02T15:28:27+00:00: Step 4 block primary: 2000 checkpointed; 0 tasks remaining on ten cores.
+
+- 2026-10-02T15:28:27+00:00: Step 4 block primary COMPLETE: 2000 tasks, 0.0s this run.
+
+- 2026-10-02T15:28:27+00:00: Step 4 block subsets: 2000 checkpointed; 0 tasks remaining on ten cores.
+
+- 2026-10-02T15:28:27+00:00: Step 4 block subsets COMPLETE: 2000 tasks, 0.0s this run.
+
+- 2026-10-02T15:28:27+00:00: Step 4 block solver-deletions: 12853 checkpointed; 0 tasks remaining on ten cores.
+
+- 2026-10-02T15:28:27+00:00: Step 4 block solver-deletions COMPLETE: 12853 tasks, 0.0s this run.
+
+- 2026-10-02T15:28:27+00:00: Step 4 block deletion-intervals: 2000 checkpointed; 0 tasks remaining on ten cores.
+
+- 2026-10-02T15:28:27+00:00: Step 4 block deletion-intervals COMPLETE: 2000 tasks, 0.0s this run.
+
+- 2026-10-02T15:28:27+00:00: Step 4 block common-moments: 2000 checkpointed; 0 tasks remaining on ten cores.
+
+- 2026-10-02T15:28:27+00:00: Step 4 block common-moments COMPLETE: 2000 tasks, 0.0s this run.
+
+- 2026-10-02T15:28:27+00:00: Step 4 block permutation: 1000 checkpointed; 0 tasks remaining on ten cores.
+
+- 2026-10-02T15:28:27+00:00: Step 4 block permutation COMPLETE: 1000 tasks, 0.0s this run.
+
+- 2026-10-02T15:28:27+00:00: Step 4 peer-prediction block START: 30 whole-solver splits, k=2,5,10,20, and common ≥22-finalist panel on ten cores.
+
+- 2026-10-02T15:28:44+00:00: Step 4 peer-prediction block COMPLETE: 30 whole-solver splits and 2,000 competition draws at k=2,5,10,20; changing and fixed panels.
+
+- 2026-10-02T15:28:50+00:00: Step 4 reporting and QA COMPLETE: Belief fails; 25/25 named QA checks pass; results.json, qa.json, FINDINGS.md saved. No .git writes or commit attempted.
+
+- 2026-10-02T15:32:05+00:00: Step 4 observed-point block complete: 5017 finals; 3313 available extrema; 4420 tier-supported finals. No threshold decision before intervals.
+
+- 2026-10-02T15:32:05+00:00: Step 4 block primary: 2000 checkpointed; 0 tasks remaining on ten cores.
+
+- 2026-10-02T15:32:05+00:00: Step 4 block primary COMPLETE: 2000 tasks, 0.0s this run.
+
+- 2026-10-02T15:32:05+00:00: Step 4 block subsets: 2000 checkpointed; 0 tasks remaining on ten cores.
+
+- 2026-10-02T15:32:05+00:00: Step 4 block subsets COMPLETE: 2000 tasks, 0.0s this run.
+
+- 2026-10-02T15:32:05+00:00: Step 4 block solver-deletions: 12853 checkpointed; 0 tasks remaining on ten cores.
+
+- 2026-10-02T15:32:05+00:00: Step 4 block solver-deletions COMPLETE: 12853 tasks, 0.0s this run.
+
+- 2026-10-02T15:32:05+00:00: Step 4 block deletion-intervals: 2000 checkpointed; 0 tasks remaining on ten cores.
+
+- 2026-10-02T15:32:05+00:00: Step 4 block deletion-intervals COMPLETE: 2000 tasks, 0.0s this run.
+
+- 2026-10-02T15:32:05+00:00: Step 4 block common-moments: 2000 checkpointed; 0 tasks remaining on ten cores.
+
+- 2026-10-02T15:32:05+00:00: Step 4 block common-moments COMPLETE: 2000 tasks, 0.0s this run.
+
+- 2026-10-02T15:32:05+00:00: Step 4 block permutation: 1000 checkpointed; 0 tasks remaining on ten cores.
+
+- 2026-10-02T15:32:05+00:00: Step 4 block permutation COMPLETE: 1000 tasks, 0.0s this run.
+
+- 2026-10-02T15:32:05+00:00: Step 4 peer-prediction block COMPLETE: 30 whole-solver splits and 2,000 competition draws at k=2,5,10,20; changing and fixed panels.
+
+- 2026-10-02T15:32:11+00:00: Step 4 reporting and QA COMPLETE: Belief fails; 25/25 named QA checks pass; results.json, qa.json, FINDINGS.md saved. No .git writes or commit attempted.
+
+- 2026-10-02T15:33:42+00:00: Step 4 observed-point block complete: 5017 finals; 3313 available extrema; 4420 tier-supported finals. No threshold decision before intervals.
+
+- 2026-10-02T15:33:42+00:00: Step 4 block primary: 2000 checkpointed; 0 tasks remaining on ten cores.
+
+- 2026-10-02T15:33:42+00:00: Step 4 block primary COMPLETE: 2000 tasks, 0.0s this run.
+
+- 2026-10-02T15:33:42+00:00: Step 4 block subsets: 2000 checkpointed; 0 tasks remaining on ten cores.
+
+- 2026-10-02T15:33:42+00:00: Step 4 block subsets COMPLETE: 2000 tasks, 0.0s this run.
+
+- 2026-10-02T15:33:42+00:00: Step 4 block solver-deletions: 12853 checkpointed; 0 tasks remaining on ten cores.
+
+- 2026-10-02T15:33:42+00:00: Step 4 block solver-deletions COMPLETE: 12853 tasks, 0.0s this run.
+
+- 2026-10-02T15:33:43+00:00: Step 4 block deletion-intervals: 2000 checkpointed; 0 tasks remaining on ten cores.
+
+- 2026-10-02T15:33:43+00:00: Step 4 block deletion-intervals COMPLETE: 2000 tasks, 0.0s this run.
+
+- 2026-10-02T15:33:43+00:00: Step 4 block common-moments: 2000 checkpointed; 0 tasks remaining on ten cores.
+
+- 2026-10-02T15:33:43+00:00: Step 4 block common-moments COMPLETE: 2000 tasks, 0.0s this run.
+
+- 2026-10-02T15:33:43+00:00: Step 4 block permutation: 1000 checkpointed; 0 tasks remaining on ten cores.
+
+- 2026-10-02T15:33:43+00:00: Step 4 block permutation COMPLETE: 1000 tasks, 0.0s this run.
+
+- 2026-10-02T15:33:43+00:00: Step 4 peer-prediction block COMPLETE: 30 whole-solver splits and 2,000 competition draws at k=2,5,10,20; changing and fixed panels.
+
+- 2026-10-02T15:33:48+00:00: Step 4 reporting and QA COMPLETE: Belief fails; 25/25 named QA checks pass; results.json, qa.json, FINDINGS.md saved. No .git writes or commit attempted.

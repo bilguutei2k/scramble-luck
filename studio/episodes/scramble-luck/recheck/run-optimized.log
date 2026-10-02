@@ -1,0 +1,3 @@
+points: R computed
+points: F computed
+{"finals": 5017, "attempt_slots": 306155, "successes": 301668, "dnf": 4429, "dns": 58, "eligible_solver_seasons": 3313, "tier_F": 0.047433876605946265, "tier_gamma_share": 0.0035652471381832107, "R": 1.0197788255872957, "R_ci95": [1.0163694283864124, 1.0231592116224408], "verdict": "belief fails"}
