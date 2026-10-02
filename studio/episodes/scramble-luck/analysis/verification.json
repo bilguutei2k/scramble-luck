@@ -1,0 +1,36 @@
+{
+  "all_checks_passed": true,
+  "checks": [
+    {
+      "max_error": 4.996003610813204e-16,
+      "name": "explicit_copies_exclude_every_focal_solver_copy",
+      "pass": true
+    },
+    {
+      "name": "squared_weights_not_independent_copies_noise_operator",
+      "pass": true
+    },
+    {
+      "name": "empty_peer_graph_is_unidentified",
+      "pass": true
+    },
+    {
+      "cases": 100,
+      "name": "weighted_median_matches_literal_repeated_sample",
+      "pass": true
+    },
+    {
+      "name": "reference_requires_two_distinct_other_finals",
+      "pass": true
+    },
+    {
+      "name": "solver_round_intercepts_cancel_with_missingness",
+      "pass": true
+    },
+    {
+      "name": "tier_position_refit_absorbs_initial_global_beta",
+      "pass": true
+    }
+  ],
+  "positive_confirmation_times_read": false
+}

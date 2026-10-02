@@ -1,0 +1,73 @@
+{
+  "informative_dnf": {
+    "R": 1.0159477172656421,
+    "integration_datasets": 10000,
+    "log_R": 0.01582188844800005,
+    "log_R_MC_999_interval": [
+      0.01580230205431992,
+      0.015841474841680178
+    ],
+    "log_R_MC_standard_error": 5.952357686209616e-06
+  },
+  "large_shared": {
+    "R": 1.1219040623303824,
+    "integration_datasets": 10000,
+    "log_R": 0.11502729750026217,
+    "log_R_MC_999_interval": [
+      0.11496081170194872,
+      0.11509378329857561
+    ],
+    "log_R_MC_standard_error": 2.0205212816502604e-05
+  },
+  "null": {
+    "R": 1.0,
+    "integration_datasets": 0,
+    "log_R": 0.0,
+    "log_R_MC_999_interval": [
+      0.0,
+      0.0
+    ],
+    "log_R_MC_standard_error": 0.0
+  },
+  "pure_attempt_slot_shock": {
+    "R": 1.1219040623303824,
+    "integration_datasets": 10000,
+    "log_R": 0.11502729750026217,
+    "log_R_MC_999_interval": [
+      0.11496081170194872,
+      0.11509378329857561
+    ],
+    "log_R_MC_standard_error": 2.0205212816502604e-05,
+    "same_distribution_as": "large_shared; interpreted as synchronized slot shock"
+  },
+  "random_replacement_10_percent": {
+    "R": 1.0127384358905578,
+    "integration_datasets": 10000,
+    "log_R": 0.01265798451220054,
+    "log_R_MC_999_interval": [
+      0.01264010744422228,
+      0.0126758615801788
+    ],
+    "log_R_MC_standard_error": 5.4328890108664375e-06
+  },
+  "shared_plus_tier_interaction": {
+    "R": 1.0126945050927425,
+    "integration_datasets": 10000,
+    "log_R": 0.012614605344287152,
+    "log_R_MC_999_interval": [
+      0.01259481127394492,
+      0.012634399414629384
+    ],
+    "log_R_MC_standard_error": 6.015471182042171e-06
+  },
+  "small_shared": {
+    "R": 1.0157799845190132,
+    "integration_datasets": 10000,
+    "log_R": 0.01565677503554557,
+    "log_R_MC_999_interval": [
+      0.01563721878121482,
+      0.015676331289876323
+    ],
+    "log_R_MC_standard_error": 5.943198256920874e-06
+  }
+}

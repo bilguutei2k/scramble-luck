@@ -1,0 +1,88 @@
+{
+  "all_six_face_counts": {
+    "1": 11,
+    "2": 123,
+    "3": 1049,
+    "4": 6129,
+    "5": 13879,
+    "6": 3889,
+    "7": 5
+  },
+  "all_six_mean": 4.811002591189954,
+  "bfs_visited_per_face": [
+    190080,
+    190080,
+    190080,
+    190080,
+    190080,
+    190080
+  ],
+  "code_sha256": {
+    "common.py": "e70b307713237277aab96911879a9a5f61aaa19279d63708f57cd395446e5912",
+    "cross.py": "510512efe9ca347f9b433199da9209ef0ccd2204f71a36159bd90009e7c31ecd",
+    "snapshot.py": "2371d65a645b12e7980e2b352ab5517843067d3d03bbf244f8520b59db4830ad"
+  },
+  "elapsed_seconds": 1.2683102499577217,
+  "inverse_move_checks": 18,
+  "known_case_checks": [
+    {
+      "actual": 1,
+      "expected": 1,
+      "face": "U",
+      "pass": true,
+      "scramble": "U"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "face": "D",
+      "pass": true,
+      "scramble": "U"
+    },
+    {
+      "actual": 1,
+      "expected": 1,
+      "face": "R",
+      "pass": true,
+      "scramble": "R2"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "face": "L",
+      "pass": true,
+      "scramble": "R2"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "face": "D",
+      "pass": true,
+      "scramble": "R U R' U R U2 R'"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "face": "F",
+      "pass": true,
+      "scramble": "F F F F"
+    }
+  ],
+  "maximum_face_distance": 8,
+  "metric": "half-turn metric: U/U2/Uprime each one move; standard WCA orientation U=white, D=yellow",
+  "positive_confirmation_times_read": false,
+  "random_bfs_triangle_and_descent_checks": 1000,
+  "scheduled_scrambles": 25085,
+  "source_notice": "This information is based on competition results owned and maintained by the World Cube Assocation, published at https://worldcubeassociation.org/results as of September 30, 2026.",
+  "unique_scramble_strings": 25085,
+  "white_yellow_counts": {
+    "1": 4,
+    "2": 36,
+    "3": 345,
+    "4": 2479,
+    "5": 9877,
+    "6": 11485,
+    "7": 859
+  },
+  "white_yellow_mean": 5.3950568068566875
+}

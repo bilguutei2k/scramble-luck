@@ -1,0 +1,460 @@
+{
+  "archive_sha256": "e6b262b2ada513228a48fa221015ddc25e9041a029340778cd253f564c23427d",
+  "code_sha256": {
+    "common.py": "e70b307713237277aab96911879a9a5f61aaa19279d63708f57cd395446e5912",
+    "snapshot.py": "2371d65a645b12e7980e2b352ab5517843067d3d03bbf244f8520b59db4830ad"
+  },
+  "dnf_slots": 4429,
+  "dns_slots": 58,
+  "eligible_finals": 5017,
+  "exclusions_mutually_exclusive_result_counts": {
+    "incomplete_or_duplicate_slots_results": 0,
+    "invalid_format_final_results": 0,
+    "invalid_regular_schedule_results": 0,
+    "invalid_status_results_after_slot_gate": 0,
+    "missing_schedule_results": 26,
+    "multigroup_results": 48911,
+    "nonfinal_333_results": 794852,
+    "other_event_results": 2504130
+  },
+  "extra_pool_finals": 5017,
+  "included_attempt_slots": 306155,
+  "method_sha256": "762ed708c6e702f103a6afb0c0877c0bbe9e8c7114eb4d231159d4f66f618a1a",
+  "no_success_panels": 6,
+  "panel_size_counts": {
+    "10": 767,
+    "11": 95,
+    "12": 1835,
+    "13": 15,
+    "14": 56,
+    "15": 98,
+    "16": 875,
+    "17": 9,
+    "18": 18,
+    "19": 14,
+    "20": 166,
+    "21": 4,
+    "22": 3,
+    "23": 8,
+    "24": 65,
+    "25": 3,
+    "26": 1,
+    "27": 1,
+    "29": 1,
+    "30": 4,
+    "32": 3,
+    "35": 1,
+    "39": 2,
+    "4": 9,
+    "40": 4,
+    "5": 8,
+    "6": 172,
+    "7": 26,
+    "77": 1,
+    "8": 700,
+    "9": 53
+  },
+  "positive_confirmation_times_read": false,
+  "scheduled_mapped_finals_before_status_exclusions": 5017,
+  "singleton_success_panels": 14,
+  "solver_final_incidence_rows": 61231,
+  "source_notice": "This information is based on competition results owned and maintained by the World Cube Assocation, published at https://worldcubeassociation.org/results as of September 30, 2026.",
+  "split_counts": {
+    "confirmation": 15015,
+    "exploration": 3756
+  },
+  "status_patterns": [
+    {
+      "n": 1,
+      "status1": -1,
+      "status2": -1,
+      "status3": -2,
+      "status4": -2,
+      "status5": -2
+    },
+    {
+      "n": 1,
+      "status1": -1,
+      "status2": -1,
+      "status3": -1,
+      "status4": -2,
+      "status5": -2
+    },
+    {
+      "n": 4,
+      "status1": -1,
+      "status2": -1,
+      "status3": -1,
+      "status4": -1,
+      "status5": -1
+    },
+    {
+      "n": 2,
+      "status1": -1,
+      "status2": -1,
+      "status3": -1,
+      "status4": -1,
+      "status5": 1
+    },
+    {
+      "n": 1,
+      "status1": -1,
+      "status2": -1,
+      "status3": -1,
+      "status4": 1,
+      "status5": -1
+    },
+    {
+      "n": 1,
+      "status1": -1,
+      "status2": -1,
+      "status3": 1,
+      "status4": -1,
+      "status5": -1
+    },
+    {
+      "n": 1,
+      "status1": -1,
+      "status2": -1,
+      "status3": 1,
+      "status4": -1,
+      "status5": 1
+    },
+    {
+      "n": 2,
+      "status1": -1,
+      "status2": -1,
+      "status3": 1,
+      "status4": 1,
+      "status5": -1
+    },
+    {
+      "n": 18,
+      "status1": -1,
+      "status2": -1,
+      "status3": 1,
+      "status4": 1,
+      "status5": 1
+    },
+    {
+      "n": 1,
+      "status1": -1,
+      "status2": 1,
+      "status3": -2,
+      "status4": -2,
+      "status5": -2
+    },
+    {
+      "n": 2,
+      "status1": -1,
+      "status2": 1,
+      "status3": -1,
+      "status4": -2,
+      "status5": -2
+    },
+    {
+      "n": 1,
+      "status1": -1,
+      "status2": 1,
+      "status3": -1,
+      "status4": 1,
+      "status5": -1
+    },
+    {
+      "n": 14,
+      "status1": -1,
+      "status2": 1,
+      "status3": -1,
+      "status4": 1,
+      "status5": 1
+    },
+    {
+      "n": 1,
+      "status1": -1,
+      "status2": 1,
+      "status3": 1,
+      "status4": -1,
+      "status5": -1
+    },
+    {
+      "n": 14,
+      "status1": -1,
+      "status2": 1,
+      "status3": 1,
+      "status4": -1,
+      "status5": 1
+    },
+    {
+      "n": 19,
+      "status1": -1,
+      "status2": 1,
+      "status3": 1,
+      "status4": 1,
+      "status5": -1
+    },
+    {
+      "n": 662,
+      "status1": -1,
+      "status2": 1,
+      "status3": 1,
+      "status4": 1,
+      "status5": 1
+    },
+    {
+      "n": 2,
+      "status1": 1,
+      "status2": -2,
+      "status3": -2,
+      "status4": -2,
+      "status5": -2
+    },
+    {
+      "n": 2,
+      "status1": 1,
+      "status2": -1,
+      "status3": -2,
+      "status4": -2,
+      "status5": -2
+    },
+    {
+      "n": 3,
+      "status1": 1,
+      "status2": -1,
+      "status3": -1,
+      "status4": -1,
+      "status5": -1
+    },
+    {
+      "n": 2,
+      "status1": 1,
+      "status2": -1,
+      "status3": -1,
+      "status4": -1,
+      "status5": 1
+    },
+    {
+      "n": 2,
+      "status1": 1,
+      "status2": -1,
+      "status3": -1,
+      "status4": 1,
+      "status5": -1
+    },
+    {
+      "n": 13,
+      "status1": 1,
+      "status2": -1,
+      "status3": -1,
+      "status4": 1,
+      "status5": 1
+    },
+    {
+      "n": 4,
+      "status1": 1,
+      "status2": -1,
+      "status3": 1,
+      "status4": -1,
+      "status5": -2
+    },
+    {
+      "n": 2,
+      "status1": 1,
+      "status2": -1,
+      "status3": 1,
+      "status4": -1,
+      "status5": -1
+    },
+    {
+      "n": 17,
+      "status1": 1,
+      "status2": -1,
+      "status3": 1,
+      "status4": -1,
+      "status5": 1
+    },
+    {
+      "n": 1,
+      "status1": 1,
+      "status2": -1,
+      "status3": 1,
+      "status4": 1,
+      "status5": -2
+    },
+    {
+      "n": 25,
+      "status1": 1,
+      "status2": -1,
+      "status3": 1,
+      "status4": 1,
+      "status5": -1
+    },
+    {
+      "n": 697,
+      "status1": 1,
+      "status2": -1,
+      "status3": 1,
+      "status4": 1,
+      "status5": 1
+    },
+    {
+      "n": 2,
+      "status1": 1,
+      "status2": 1,
+      "status3": -2,
+      "status4": -2,
+      "status5": -2
+    },
+    {
+      "n": 1,
+      "status1": 1,
+      "status2": 1,
+      "status3": -2,
+      "status4": 1,
+      "status5": 1
+    },
+    {
+      "n": 3,
+      "status1": 1,
+      "status2": 1,
+      "status3": -1,
+      "status4": -1,
+      "status5": -1
+    },
+    {
+      "n": 22,
+      "status1": 1,
+      "status2": 1,
+      "status3": -1,
+      "status4": -1,
+      "status5": 1
+    },
+    {
+      "n": 34,
+      "status1": 1,
+      "status2": 1,
+      "status3": -1,
+      "status4": 1,
+      "status5": -1
+    },
+    {
+      "n": 697,
+      "status1": 1,
+      "status2": 1,
+      "status3": -1,
+      "status4": 1,
+      "status5": 1
+    },
+    {
+      "n": 7,
+      "status1": 1,
+      "status2": 1,
+      "status3": 1,
+      "status4": -2,
+      "status5": -2
+    },
+    {
+      "n": 1,
+      "status1": 1,
+      "status2": 1,
+      "status3": 1,
+      "status4": -2,
+      "status5": 1
+    },
+    {
+      "n": 2,
+      "status1": 1,
+      "status2": 1,
+      "status3": 1,
+      "status4": -1,
+      "status5": -2
+    },
+    {
+      "n": 19,
+      "status1": 1,
+      "status2": 1,
+      "status3": 1,
+      "status4": -1,
+      "status5": -1
+    },
+    {
+      "n": 815,
+      "status1": 1,
+      "status2": 1,
+      "status3": 1,
+      "status4": -1,
+      "status5": 1
+    },
+    {
+      "n": 3,
+      "status1": 1,
+      "status2": 1,
+      "status3": 1,
+      "status4": 1,
+      "status5": -2
+    },
+    {
+      "n": 1055,
+      "status1": 1,
+      "status2": 1,
+      "status3": 1,
+      "status4": 1,
+      "status5": -1
+    },
+    {
+      "n": 57055,
+      "status1": 1,
+      "status2": 1,
+      "status3": 1,
+      "status4": 1,
+      "status5": 1
+    }
+  ],
+  "structurally_eligible_person_years": 3313,
+  "successful_slots_sign_only": 301668,
+  "verified_file_hashes": {
+    "README.md": "ec4a096b29b937e4d4f4e395227d703bbb773d711ff4b6c4ca569ee03e904a8d",
+    "WCA_export_competitions.tsv": "85442ae2d9074278606a70c28f2d39b857c76f7d20b79463188946eb55a170c3",
+    "WCA_export_result_attempts.tsv": "37073b780424b66654a843948c73f4a69f9bea5d2ca2c3143df486a9c34923ee",
+    "WCA_export_results.tsv": "a7243bb93cd4cab09e42894f9eba60b1ad4e439bc2d7c0e4fdf94e7182df130a",
+    "WCA_export_round_types.tsv": "3184c23bc0fc7c17201c4db8aa664a8eaca728676124e58f3cc9ccb42a8f2c6e",
+    "WCA_export_scrambles.tsv": "2e7652bbe70b7041ad26c15e54076a5e72fccffcf004f211382056bb6d716b3c",
+    "metadata.json": "ba2c22799638052d0d11f366740b3af6b279507de0549c31efa8bccc9559299b"
+  },
+  "year_coverage": [
+    {
+      "finals": 813,
+      "solver_finals": 9587,
+      "year": 2019
+    },
+    {
+      "finals": 131,
+      "solver_finals": 1459,
+      "year": 2020
+    },
+    {
+      "finals": 143,
+      "solver_finals": 1552,
+      "year": 2021
+    },
+    {
+      "finals": 577,
+      "solver_finals": 7168,
+      "year": 2022
+    },
+    {
+      "finals": 1084,
+      "solver_finals": 13683,
+      "year": 2023
+    },
+    {
+      "finals": 1133,
+      "solver_finals": 13854,
+      "year": 2024
+    },
+    {
+      "finals": 1136,
+      "solver_finals": 13928,
+      "year": 2025
+    }
+  ]
+}

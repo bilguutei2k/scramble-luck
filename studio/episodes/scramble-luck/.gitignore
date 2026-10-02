@@ -1,0 +1,4 @@
+data/derived/
+analysis/__pycache__/
+analysis/*.nbc
+analysis/*.nbi

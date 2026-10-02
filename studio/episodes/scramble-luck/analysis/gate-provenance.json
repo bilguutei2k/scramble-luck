@@ -1,0 +1,46 @@
+{
+  "bulk_record_hashes": {
+    "gate-competition_only.jsonl": {
+      "records": 580,
+      "sha256": "6dd12440f3fd30c2b896918d28a761ecefc506ca472e6979c57c0812de6b9759"
+    },
+    "gate-pigeonhole.jsonl": {
+      "records": 1400,
+      "sha256": "cd8ba738863a1aa7b8aae2deaab333934e773c30250506b338f198995be0726f"
+    },
+    "gate-population-truth.jsonl": {
+      "records": 50000,
+      "sha256": "7374b1cffd6c931f08e7fbbc7cf5fd21ec05fa875c27f4184109bc0e4fbc03b6"
+    },
+    "gate-solver_only.jsonl": {
+      "records": 200,
+      "sha256": "8dfe41f3e5313b392052c52f8b526e73afb244983578f46692a180b5e66288c9"
+    }
+  },
+  "code_sha256": {
+    "common.py": "e70b307713237277aab96911879a9a5f61aaa19279d63708f57cd395446e5912",
+    "cross.py": "510512efe9ca347f9b433199da9209ef0ccd2204f71a36159bd90009e7c31ecd",
+    "engine.py": "6dff31e780de0cf074d2b16568f973df40f0ff72995367123923d5fdb5721fae",
+    "gate.py": "0f17d7fc82d1dd3738c20d811bbb55f594276a95e688ae5db3853ca6c7068bb4",
+    "snapshot.py": "2371d65a645b12e7980e2b352ab5517843067d3d03bbf244f8520b59db4830ad",
+    "verify.py": "70bf75837def9c83a88a7d91e599098214366cae51d8e81e1b9b63cc46c277ae"
+  },
+  "confirmation_analysis_executed": false,
+  "method_registration_commit": "8a474d3",
+  "method_sha256": "762ed708c6e702f103a6afb0c0877c0bbe9e8c7114eb4d231159d4f66f618a1a",
+  "positive_confirmation_times_read": false,
+  "software_versions": {
+    "duckdb": "1.5.6",
+    "numba": "0.68.0",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1"
+  },
+  "source_notice": "This information is based on competition results owned and maintained by the World Cube Assocation, published at https://worldcubeassociation.org/results as of September 30, 2026.",
+  "structural_input_hashes": {
+    "cross.parquet": "e263efe62df8686d2331d841b22bbacaccbb967d867578f75d2c335d61898c7e",
+    "structure.parquet": "120b6dec3c4327c4e607fefd0e8b126abd23d1ad98607ac3b3e6638662faaf58",
+    "training.parquet": "9d4922a430525ad7a1f2ca7b57f4d9d2c4ab3dd58714a83b2c830086d3074fa8"
+  },
+  "total_completed_bootstrap_datasets": 2180
+}

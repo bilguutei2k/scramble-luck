@@ -1,0 +1,465 @@
+{
+  "acceptance": {
+    "coverage_max": 0.99,
+    "coverage_min": 0.92,
+    "max_absolute_bias_log_R": 0.005,
+    "slot_shock_judged": false
+  },
+  "benchmark": {
+    "dataset_preparation_seconds": 1.2531244580168277,
+    "estimated_cpu_hours": 2.2797638860841594,
+    "estimated_ten_core_wall_minutes": 13.678583316504955,
+    "runs_measured": 10,
+    "seconds_per_pipeline_run": 0.011724499985575676,
+    "structure": {
+      "eligible_seasons": 3313,
+      "finals": 5017,
+      "solver_finals": 61231,
+      "solver_ids_training_confirmation_union": 14289
+    }
+  },
+  "bootstrap_draws_per_dataset": 500,
+  "code_sha256": {
+    "common.py": "e70b307713237277aab96911879a9a5f61aaa19279d63708f57cd395446e5912",
+    "cross.py": "510512efe9ca347f9b433199da9209ef0ccd2204f71a36159bd90009e7c31ecd",
+    "engine.py": "6dff31e780de0cf074d2b16568f973df40f0ff72995367123923d5fdb5721fae",
+    "gate.py": "0f17d7fc82d1dd3738c20d811bbb55f594276a95e688ae5db3853ca6c7068bb4",
+    "snapshot.py": "2371d65a645b12e7980e2b352ab5517843067d3d03bbf244f8520b59db4830ad",
+    "verify.py": "70bf75837def9c83a88a7d91e599098214366cae51d8e81e1b9b63cc46c277ae"
+  },
+  "complete": true,
+  "dataset_counts_by_method": {
+    "competition_only": {
+      "informative_dnf": 0,
+      "large_shared": 180,
+      "null": 200,
+      "pure_attempt_slot_shock": 0,
+      "random_replacement_10_percent": 0,
+      "shared_plus_tier_interaction": 0,
+      "small_shared": 200
+    },
+    "pigeonhole": {
+      "informative_dnf": 200,
+      "large_shared": 200,
+      "null": 200,
+      "pure_attempt_slot_shock": 200,
+      "random_replacement_10_percent": 200,
+      "shared_plus_tier_interaction": 200,
+      "small_shared": 200
+    },
+    "solver_only": {
+      "informative_dnf": 0,
+      "large_shared": 0,
+      "null": 200,
+      "pure_attempt_slot_shock": 0,
+      "random_replacement_10_percent": 0,
+      "shared_plus_tier_interaction": 0,
+      "small_shared": 0
+    }
+  },
+  "datasets_per_process": 200,
+  "fallback_futility_rule": "Initial pigeonhole: all seven processes completed. Reject fallback after a fully completed 200-dataset process fails; accept fallback only after all seven complete and all judged processes pass.",
+  "fallback_order": [
+    "pigeonhole",
+    "competition_only",
+    "solver_only"
+  ],
+  "frozen_model_id": "S1-r5-measurement-v1",
+  "gate_passed": false,
+  "informative_dnf_stress": "Each real solver-final DNF count/DNS locations retained; conditional DNF position odds proportional to exp(12*shared_slot).",
+  "mcar_stress": "All other cases retain observed DNF/DNS masks independently of generated times.",
+  "methods": {
+    "competition_only": {
+      "null": {
+        "absolute_bias_log_R": 5.773141387301362e-05,
+        "all_pipeline_draws_valid": true,
+        "bias_pass": true,
+        "bootstrap_draws_per_dataset": 500,
+        "coverage_95": 0.955,
+        "coverage_pass": true,
+        "coverage_range_over_truth_integration_999_interval": [
+          0.955,
+          0.955
+        ],
+        "datasets": 200,
+        "finite_oracle_attribution_bias_log_R": 5.773141387301362e-05,
+        "finite_oracle_diagnostic_coverage": 0.955,
+        "judged": true,
+        "mean_F": -0.00010771854589905717,
+        "mean_estimated_R": 1.000057733080363,
+        "mean_gamma_over_D": -4.581883570822907e-05,
+        "mean_oracle_R": 1.0,
+        "mean_pipeline_seconds": 11.073182922480337,
+        "pass": true,
+        "population_log_R_integration_SE": 0.0,
+        "population_true_R": 1.0,
+        "signed_bias_log_R": 5.773141387301362e-05
+      },
+      "small_shared": {
+        "absolute_bias_log_R": 3.0418496750842655e-05,
+        "all_pipeline_draws_valid": true,
+        "bias_pass": true,
+        "bootstrap_draws_per_dataset": 500,
+        "coverage_95": 0.555,
+        "coverage_pass": false,
+        "coverage_range_over_truth_integration_999_interval": [
+          0.54,
+          0.57
+        ],
+        "datasets": 200,
+        "finite_oracle_attribution_bias_log_R": 7.195119514754947e-06,
+        "finite_oracle_diagnostic_coverage": 0.59,
+        "judged": true,
+        "mean_F": 0.05999369411865778,
+        "mean_estimated_R": 1.0157490864887926,
+        "mean_gamma_over_D": -0.00024220643670700814,
+        "mean_oracle_R": 1.0157417780790108,
+        "mean_pipeline_seconds": 11.014818011066527,
+        "pass": false,
+        "population_log_R_integration_SE": 5.943198256920874e-06,
+        "population_true_R": 1.0157799845190132,
+        "signed_bias_log_R": -3.0418496750842655e-05
+      }
+    },
+    "pigeonhole": {
+      "informative_dnf": {
+        "absolute_bias_log_R": 2.5321879672315917e-06,
+        "all_pipeline_draws_valid": true,
+        "bias_pass": true,
+        "bootstrap_draws_per_dataset": 500,
+        "coverage_95": 0.98,
+        "coverage_pass": true,
+        "coverage_range_over_truth_integration_999_interval": [
+          0.98,
+          0.98
+        ],
+        "datasets": 200,
+        "finite_oracle_attribution_bias_log_R": -1.7137367236230195e-06,
+        "finite_oracle_diagnostic_coverage": 1.0,
+        "judged": true,
+        "mean_F": 0.059823801091792354,
+        "mean_estimated_R": 1.015945144698314,
+        "mean_gamma_over_D": -6.709502731722777e-05,
+        "mean_oracle_R": 1.0159468857623097,
+        "mean_pipeline_seconds": 8.845842539425648,
+        "pass": true,
+        "population_log_R_integration_SE": 5.952357686209616e-06,
+        "population_true_R": 1.0159477172656421,
+        "signed_bias_log_R": -2.5321879672315917e-06
+      },
+      "large_shared": {
+        "absolute_bias_log_R": 5.733153293625837e-05,
+        "all_pipeline_draws_valid": true,
+        "bias_pass": true,
+        "bootstrap_draws_per_dataset": 500,
+        "coverage_95": 0.01,
+        "coverage_pass": false,
+        "coverage_range_over_truth_integration_999_interval": [
+          0.005,
+          0.01
+        ],
+        "datasets": 200,
+        "finite_oracle_attribution_bias_log_R": -4.5030961186436e-05,
+        "finite_oracle_diagnostic_coverage": 0.0,
+        "judged": true,
+        "mean_F": 0.35552595326803954,
+        "mean_estimated_R": 1.1219683846539144,
+        "mean_gamma_over_D": 2.3011398074094586e-05,
+        "mean_oracle_R": 1.1220189091062698,
+        "mean_pipeline_seconds": 9.046796339591674,
+        "pass": false,
+        "population_log_R_integration_SE": 2.0205212816502604e-05,
+        "population_true_R": 1.1219040623303824,
+        "signed_bias_log_R": 5.733153293625837e-05
+      },
+      "null": {
+        "absolute_bias_log_R": 5.773141387301362e-05,
+        "all_pipeline_draws_valid": true,
+        "bias_pass": true,
+        "bootstrap_draws_per_dataset": 500,
+        "coverage_95": 1.0,
+        "coverage_pass": false,
+        "coverage_range_over_truth_integration_999_interval": [
+          1.0,
+          1.0
+        ],
+        "datasets": 200,
+        "finite_oracle_attribution_bias_log_R": 5.773141387301362e-05,
+        "finite_oracle_diagnostic_coverage": 1.0,
+        "judged": true,
+        "mean_F": -0.00010771854589905719,
+        "mean_estimated_R": 1.000057733080363,
+        "mean_gamma_over_D": -4.5818835708229047e-05,
+        "mean_oracle_R": 1.0,
+        "mean_pipeline_seconds": 9.246916169355682,
+        "pass": false,
+        "population_log_R_integration_SE": 0.0,
+        "population_true_R": 1.0,
+        "signed_bias_log_R": 5.773141387301362e-05
+      },
+      "pure_attempt_slot_shock": {
+        "absolute_bias_log_R": 0.00019141224156472847,
+        "all_pipeline_draws_valid": true,
+        "bias_pass": true,
+        "bootstrap_draws_per_dataset": 500,
+        "coverage_95": 0.02,
+        "coverage_pass": false,
+        "coverage_range_over_truth_integration_999_interval": [
+          0.02,
+          0.02
+        ],
+        "datasets": 200,
+        "finite_oracle_attribution_bias_log_R": -1.8246759750332533e-05,
+        "finite_oracle_diagnostic_coverage": 0.0,
+        "judged": false,
+        "mean_F": 0.3559466076640689,
+        "mean_estimated_R": 1.1221188290556081,
+        "mean_gamma_over_D": 1.991280643036296e-05,
+        "mean_oracle_R": 1.1221393042750958,
+        "mean_pipeline_seconds": 8.837665147304943,
+        "pass": true,
+        "population_log_R_integration_SE": 2.0205212816502604e-05,
+        "population_true_R": 1.1219040623303824,
+        "signed_bias_log_R": 0.00019141224156472847
+      },
+      "random_replacement_10_percent": {
+        "absolute_bias_log_R": 7.418298069347337e-05,
+        "all_pipeline_draws_valid": true,
+        "bias_pass": true,
+        "bootstrap_draws_per_dataset": 500,
+        "coverage_95": 1.0,
+        "coverage_pass": false,
+        "coverage_range_over_truth_integration_999_interval": [
+          1.0,
+          1.0
+        ],
+        "datasets": 200,
+        "finite_oracle_attribution_bias_log_R": 2.645482871122486e-05,
+        "finite_oracle_diagnostic_coverage": 1.0,
+        "judged": true,
+        "mean_F": 0.0487807770969207,
+        "mean_estimated_R": 1.0128135666330718,
+        "mean_gamma_over_D": -5.582224934505566e-05,
+        "mean_oracle_R": 1.0127867731780598,
+        "mean_pipeline_seconds": 8.840050688570482,
+        "pass": false,
+        "population_log_R_integration_SE": 5.4328890108664375e-06,
+        "population_true_R": 1.0127384358905578,
+        "signed_bias_log_R": 7.418298069347337e-05
+      },
+      "shared_plus_tier_interaction": {
+        "absolute_bias_log_R": 7.796173014035755e-05,
+        "all_pipeline_draws_valid": true,
+        "bias_pass": true,
+        "bootstrap_draws_per_dataset": 500,
+        "coverage_95": 0.995,
+        "coverage_pass": false,
+        "coverage_range_over_truth_integration_999_interval": [
+          0.995,
+          0.995
+        ],
+        "datasets": 200,
+        "finite_oracle_attribution_bias_log_R": -4.1096940824128504e-05,
+        "finite_oracle_diagnostic_coverage": 1.0,
+        "judged": true,
+        "mean_F": 0.05330533194884175,
+        "mean_estimated_R": 1.0126155567545365,
+        "mean_gamma_over_D": 0.07565424697117627,
+        "mean_oracle_R": 1.0126571730112945,
+        "mean_pipeline_seconds": 8.896932893508929,
+        "pass": false,
+        "population_log_R_integration_SE": 6.015471182042171e-06,
+        "population_true_R": 1.0126945050927425,
+        "signed_bias_log_R": -7.796173014035755e-05
+      },
+      "small_shared": {
+        "absolute_bias_log_R": 3.0418496750842655e-05,
+        "all_pipeline_draws_valid": true,
+        "bias_pass": true,
+        "bootstrap_draws_per_dataset": 500,
+        "coverage_95": 0.995,
+        "coverage_pass": false,
+        "coverage_range_over_truth_integration_999_interval": [
+          0.99,
+          0.995
+        ],
+        "datasets": 200,
+        "finite_oracle_attribution_bias_log_R": 7.195119514754947e-06,
+        "finite_oracle_diagnostic_coverage": 1.0,
+        "judged": true,
+        "mean_F": 0.05999369411865778,
+        "mean_estimated_R": 1.0157490864887926,
+        "mean_gamma_over_D": -0.00024220643670700814,
+        "mean_oracle_R": 1.0157417780790108,
+        "mean_pipeline_seconds": 9.18944752397918,
+        "pass": false,
+        "population_log_R_integration_SE": 5.943198256920874e-06,
+        "population_true_R": 1.0157799845190132,
+        "signed_bias_log_R": -3.0418496750842655e-05
+      }
+    },
+    "solver_only": {
+      "null": {
+        "absolute_bias_log_R": 5.773141387301361e-05,
+        "all_pipeline_draws_valid": true,
+        "bias_pass": true,
+        "bootstrap_draws_per_dataset": 500,
+        "coverage_95": 0.995,
+        "coverage_pass": false,
+        "coverage_range_over_truth_integration_999_interval": [
+          0.995,
+          0.995
+        ],
+        "datasets": 200,
+        "finite_oracle_attribution_bias_log_R": 5.773141387301361e-05,
+        "finite_oracle_diagnostic_coverage": 0.995,
+        "judged": true,
+        "mean_F": -0.00010771854589905717,
+        "mean_estimated_R": 1.000057733080363,
+        "mean_gamma_over_D": -4.581883570822905e-05,
+        "mean_oracle_R": 1.0,
+        "mean_pipeline_seconds": 9.852031647503027,
+        "pass": false,
+        "population_log_R_integration_SE": 0.0,
+        "population_true_R": 1.0,
+        "signed_bias_log_R": 5.773141387301361e-05
+      }
+    }
+  },
+  "population_truth": {
+    "informative_dnf": {
+      "R": 1.0159477172656421,
+      "integration_datasets": 10000,
+      "log_R": 0.01582188844800005,
+      "log_R_MC_999_interval": [
+        0.01580230205431992,
+        0.015841474841680178
+      ],
+      "log_R_MC_standard_error": 5.952357686209616e-06
+    },
+    "large_shared": {
+      "R": 1.1219040623303824,
+      "integration_datasets": 10000,
+      "log_R": 0.11502729750026217,
+      "log_R_MC_999_interval": [
+        0.11496081170194872,
+        0.11509378329857561
+      ],
+      "log_R_MC_standard_error": 2.0205212816502604e-05
+    },
+    "null": {
+      "R": 1.0,
+      "integration_datasets": 0,
+      "log_R": 0.0,
+      "log_R_MC_999_interval": [
+        0.0,
+        0.0
+      ],
+      "log_R_MC_standard_error": 0.0
+    },
+    "pure_attempt_slot_shock": {
+      "R": 1.1219040623303824,
+      "integration_datasets": 10000,
+      "log_R": 0.11502729750026217,
+      "log_R_MC_999_interval": [
+        0.11496081170194872,
+        0.11509378329857561
+      ],
+      "log_R_MC_standard_error": 2.0205212816502604e-05,
+      "same_distribution_as": "large_shared; interpreted as synchronized slot shock"
+    },
+    "random_replacement_10_percent": {
+      "R": 1.0127384358905578,
+      "integration_datasets": 10000,
+      "log_R": 0.01265798451220054,
+      "log_R_MC_999_interval": [
+        0.01264010744422228,
+        0.0126758615801788
+      ],
+      "log_R_MC_standard_error": 5.4328890108664375e-06
+    },
+    "shared_plus_tier_interaction": {
+      "R": 1.0126945050927425,
+      "integration_datasets": 10000,
+      "log_R": 0.012614605344287152,
+      "log_R_MC_999_interval": [
+        0.01259481127394492,
+        0.012634399414629384
+      ],
+      "log_R_MC_standard_error": 6.015471182042171e-06
+    },
+    "small_shared": {
+      "R": 1.0157799845190132,
+      "integration_datasets": 10000,
+      "log_R": 0.01565677503554557,
+      "log_R_MC_999_interval": [
+        0.01563721878121482,
+        0.015676331289876323
+      ],
+      "log_R_MC_standard_error": 5.943198256920874e-06
+    }
+  },
+  "positive_confirmation_times_read": false,
+  "process_parameters": {
+    "informative_dnf": {
+      "gamma": 0.0,
+      "tau": 0.0014
+    },
+    "large_shared": {
+      "gamma": 0.0,
+      "tau": 0.0121
+    },
+    "null": {
+      "gamma": 0.0,
+      "tau": 0.0
+    },
+    "pure_attempt_slot_shock": {
+      "gamma": 0.0,
+      "tau": 0.0121
+    },
+    "random_replacement_10_percent": {
+      "gamma": 0.0,
+      "tau": 0.0014
+    },
+    "shared_plus_tier_interaction": {
+      "gamma": 0.0025,
+      "tau": 0.0014
+    },
+    "small_shared": {
+      "gamma": 0.0,
+      "tau": 0.0014
+    }
+  },
+  "seed": 20261001,
+  "selected_bootstrap": null,
+  "synthetic_fixture_checks": [
+    {
+      "name": "frozen_missing_pattern_contributions",
+      "pass": true
+    },
+    {
+      "maximum_absolute_error": 1.734723475976807e-17,
+      "name": "frozen_squared_solver_weight_noise_trace",
+      "pass": true
+    },
+    {
+      "maximum_absolute_error": 4.884981308350689e-15,
+      "name": "frozen_unshrunk_extreme_peer_projection",
+      "pass": true
+    },
+    {
+      "name": "centering_trace_identities",
+      "pass": true
+    },
+    {
+      "name": "frozen_tier_moment_and_residual_variances",
+      "pass": true
+    },
+    {
+      "name": "seasonal_reselection_fixed_roster_and_no_runner_up_for_missing_success",
+      "pass": true
+    }
+  ],
+  "truth_definition": "Process expectation of original-selection oracle log R, integrated using 10,000 independent synthetic datasets/process; finite-oracle attribution coverage retained as diagnostic; see DEVIATIONS.md.",
+  "verdict_if_failed": "inconclusive: uncertainty not validated"
+}
