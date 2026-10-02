@@ -1,0 +1,58 @@
+{
+  "checks": [
+    {
+      "case": "null",
+      "max_full_engine_draw_difference": 0.0,
+      "pass": true
+    },
+    {
+      "case": "small_shared",
+      "max_full_engine_draw_difference": 0.0,
+      "pass": true
+    },
+    {
+      "case": "large_shared",
+      "max_full_engine_draw_difference": 0.0,
+      "pass": true
+    },
+    {
+      "case": "shared_plus_tier_interaction",
+      "max_full_engine_draw_difference": 0.0,
+      "pass": true
+    },
+    {
+      "case": "informative_dnf",
+      "max_full_engine_draw_difference": 0.0,
+      "pass": true
+    },
+    {
+      "case": "random_replacement_10_percent",
+      "max_full_engine_draw_difference": 0.0,
+      "pass": true
+    },
+    {
+      "case": "pure_attempt_slot_shock",
+      "max_full_engine_draw_difference": 0.0,
+      "pass": true
+    },
+    {
+      "case": "boundary",
+      "max_full_engine_draw_difference": 0.0,
+      "pass": true
+    }
+  ],
+  "input_sha256": {
+    "METHOD.md": "762ed708c6e702f103a6afb0c0877c0bbe9e8c7114eb4d231159d4f66f618a1a",
+    "analysis/GATE.md": "52b63e6f873341047811151bdd83a505dd4b621fb311b1c6df69b44abf169d8a",
+    "analysis/DEVIATIONS.md": "00dc8815e0a5a9d0424d124d007d349865fc751744996287c8108f468d323ec4",
+    "analysis/SIMULATION_DESIGN.md": "572f431d62022ae0bf646f7a9e9f8415716a77009aea34872c4a7ec44aece6a5",
+    "analysis/engine.py": "6dff31e780de0cf074d2b16568f973df40f0ff72995367123923d5fdb5721fae",
+    "analysis/gate.py": "0f17d7fc82d1dd3738c20d811bbb55f594276a95e688ae5db3853ca6c7068bb4",
+    "analysis/common.py": "e70b307713237277aab96911879a9a5f61aaa19279d63708f57cd395446e5912",
+    "data/derived/structure.duckdb": "44183ae8eaea713b5ed8b99823ab6305a57f1de3220f0138b12004b814979e67",
+    "data/derived/panels.parquet": "728fd23120fb0dbf047018d03c1c5aea7f40452e9ff2cf99f7f4e29d99835b8f",
+    "analysis/population-truth.json": "391330fe1a8a1948a64e3e9fb32a40ad756934e0377d775debed6d742fb2ebe9"
+  },
+  "structure_only_reads": "incidence table from read-only structure.duckdb; training v columns are statuses",
+  "confirmation_outcome_magnitudes_read": false
+}

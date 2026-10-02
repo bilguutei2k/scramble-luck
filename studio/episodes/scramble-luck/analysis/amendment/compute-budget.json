@@ -1,0 +1,23 @@
+{
+  "measured_compute_wall_seconds": 900.8601706659538,
+  "measured_compute_wall_minutes": 15.014336177765896,
+  "wall_budget_minutes": 75,
+  "workers": 10,
+  "numerical_threads_per_worker": 1,
+  "components": {
+    "calibration_and_independent_truth": 377.841463165998,
+    "paired_sweep": 24.231683999998495,
+    "benchmark": 1.8024726249859668,
+    "followup_jobs": [
+      {
+        "source": "stability-timing.json",
+        "wall_seconds": 48.1013699999894
+      },
+      {
+        "source": "replication-timing.json",
+        "wall_seconds": 448.8831808749819
+      }
+    ]
+  },
+  "note": "Wall time, not aggregate core-minutes; minor verification/reporting excluded."
+}

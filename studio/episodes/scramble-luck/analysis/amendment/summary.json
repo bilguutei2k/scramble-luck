@@ -1,0 +1,1376 @@
+{
+  "results": [
+    {
+      "method": "original",
+      "case": "null",
+      "datasets": 200,
+      "bias_log_R": 5.773141387301362e-05,
+      "bias_MC_SE": 5.026247386803469e-05,
+      "coverage": 1.0,
+      "coverage_binomial_95": [
+        0.9817246596448638,
+        1.0
+      ],
+      "coverage_range_truth_MC_999": [
+        1.0,
+        1.0
+      ],
+      "mean_log_width": 0.005319394154957402,
+      "mean_R_width": 0.005319830872443683,
+      "mean_log_endpoints": [
+        -0.0025803523474024308,
+        0.00273904180755497
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 0.0,
+      "fails_probability": 1.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": true,
+      "passes_revised_gate": true
+    },
+    {
+      "method": "A",
+      "case": "null",
+      "datasets": 200,
+      "bias_log_R": 5.773141387301362e-05,
+      "bias_MC_SE": 5.026247386803469e-05,
+      "coverage": 1.0,
+      "coverage_binomial_95": [
+        0.9817246596448638,
+        1.0
+      ],
+      "coverage_range_truth_MC_999": [
+        1.0,
+        1.0
+      ],
+      "mean_log_width": 0.007390336550963224,
+      "mean_R_width": 0.0073909056086716605,
+      "mean_log_endpoints": [
+        -0.003625502683300559,
+        0.0037648338676626657
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 0.0,
+      "fails_probability": 1.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": true,
+      "passes_revised_gate": true
+    },
+    {
+      "method": "B",
+      "case": "null",
+      "datasets": 200,
+      "bias_log_R": 5.773141387301362e-05,
+      "bias_MC_SE": 5.026247386803469e-05,
+      "coverage": 1.0,
+      "coverage_binomial_95": [
+        0.9817246596448638,
+        1.0
+      ],
+      "coverage_range_truth_MC_999": [
+        1.0,
+        1.0
+      ],
+      "mean_log_width": 0.005319394154957402,
+      "mean_R_width": 0.00531979193937973,
+      "mean_log_endpoints": [
+        -0.002589172131504505,
+        0.002730222023452898
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 0.0,
+      "fails_probability": 1.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": true,
+      "passes_revised_gate": true
+    },
+    {
+      "method": "C",
+      "case": "null",
+      "datasets": 200,
+      "bias_log_R": 5.773141387301362e-05,
+      "bias_MC_SE": 5.026247386803469e-05,
+      "coverage": 0.96,
+      "coverage_binomial_95": [
+        0.9227080317739839,
+        0.9825751910055194
+      ],
+      "coverage_range_truth_MC_999": [
+        0.96,
+        0.96
+      ],
+      "mean_log_width": 0.0028019127033136713,
+      "mean_R_width": 0.002802088810827888,
+      "mean_log_endpoints": [
+        -0.0013432249377838225,
+        0.0014586877655298493
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 0.0,
+      "fails_probability": 1.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": true,
+      "passes_revised_gate": true
+    },
+    {
+      "method": "D",
+      "case": "null",
+      "datasets": 200,
+      "bias_log_R": 5.773141387301362e-05,
+      "bias_MC_SE": 5.026247386803469e-05,
+      "coverage": 0.995,
+      "coverage_binomial_95": [
+        0.9724581015427943,
+        0.999873418972133
+      ],
+      "coverage_range_truth_MC_999": [
+        0.995,
+        0.995
+      ],
+      "mean_log_width": 0.003908221042158713,
+      "mean_R_width": 0.003908461957307809,
+      "mean_log_endpoints": [
+        -0.0018963791072063424,
+        0.00201184193495237
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 0.0,
+      "fails_probability": 1.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": true,
+      "passes_revised_gate": true
+    },
+    {
+      "method": "original",
+      "case": "small_shared",
+      "datasets": 200,
+      "bias_log_R": -3.0418496750842655e-05,
+      "bias_MC_SE": 7.136366797631752e-05,
+      "coverage": 0.995,
+      "coverage_binomial_95": [
+        0.9724581015427943,
+        0.999873418972133
+      ],
+      "coverage_range_truth_MC_999": [
+        0.99,
+        0.995
+      ],
+      "mean_log_width": 0.006150068276474787,
+      "mean_R_width": 0.006239214661309068,
+      "mean_log_endpoints": [
+        0.011309578758520058,
+        0.01745964703499485
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 0.0,
+      "fails_probability": 1.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": true,
+      "passes_revised_gate": true
+    },
+    {
+      "method": "A",
+      "case": "small_shared",
+      "datasets": 200,
+      "bias_log_R": -3.0418496750842655e-05,
+      "bias_MC_SE": 7.136366797631752e-05,
+      "coverage": 1.0,
+      "coverage_binomial_95": [
+        0.9817246596448638,
+        1.0
+      ],
+      "coverage_range_truth_MC_999": [
+        1.0,
+        1.0
+      ],
+      "mean_log_width": 0.008535627336310816,
+      "mean_R_width": 0.008670232987590202,
+      "mean_log_endpoints": [
+        0.011373897160908244,
+        0.019909524497219055
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 0.0,
+      "fails_probability": 1.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": true,
+      "passes_revised_gate": true
+    },
+    {
+      "method": "B",
+      "case": "small_shared",
+      "datasets": 200,
+      "bias_log_R": -3.0418496750842655e-05,
+      "bias_MC_SE": 7.136366797631752e-05,
+      "coverage": 0.995,
+      "coverage_binomial_95": [
+        0.9724581015427943,
+        0.999873418972133
+      ],
+      "coverage_range_truth_MC_999": [
+        0.995,
+        0.995
+      ],
+      "mean_log_width": 0.006150068276474787,
+      "mean_R_width": 0.006247029804874683,
+      "mean_log_endpoints": [
+        0.012560750618265346,
+        0.018710818894740133
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 0.0,
+      "fails_probability": 1.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": true,
+      "passes_revised_gate": true
+    },
+    {
+      "method": "C",
+      "case": "small_shared",
+      "datasets": 200,
+      "bias_log_R": -3.0418496750842655e-05,
+      "bias_MC_SE": 7.136366797631752e-05,
+      "coverage": 0.94,
+      "coverage_binomial_95": [
+        0.8975381686916755,
+        0.9686160461065165
+      ],
+      "coverage_range_truth_MC_999": [
+        0.94,
+        0.94
+      ],
+      "mean_log_width": 0.0037906509615667416,
+      "mean_R_width": 0.003850383566740003,
+      "mean_log_endpoints": [
+        0.013731031058011356,
+        0.017521682019578096
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 0.0,
+      "fails_probability": 1.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": true,
+      "passes_revised_gate": true
+    },
+    {
+      "method": "D",
+      "case": "small_shared",
+      "datasets": 200,
+      "bias_log_R": -3.0418496750842655e-05,
+      "bias_MC_SE": 7.136366797631752e-05,
+      "coverage": 0.975,
+      "coverage_binomial_95": [
+        0.9426256488731541,
+        0.9918338338091575
+      ],
+      "coverage_range_truth_MC_999": [
+        0.975,
+        0.975
+      ],
+      "mean_log_width": 0.0051757220589260244,
+      "mean_R_width": 0.005257274020631174,
+      "mean_log_endpoints": [
+        0.01303849550933171,
+        0.01821421756825774
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 0.0,
+      "fails_probability": 1.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": true,
+      "passes_revised_gate": true
+    },
+    {
+      "method": "original",
+      "case": "large_shared",
+      "datasets": 200,
+      "bias_log_R": 5.733153293625837e-05,
+      "bias_MC_SE": 0.00014981551977746868,
+      "coverage": 0.01,
+      "coverage_binomial_95": [
+        0.0012133490137360304,
+        0.035654668397239776
+      ],
+      "coverage_range_truth_MC_999": [
+        0.005,
+        0.01
+      ],
+      "mean_log_width": 0.010338882117239765,
+      "mean_R_width": 0.011487113900235846,
+      "mean_log_endpoints": [
+        0.10012578037702982,
+        0.11046466249426963
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 0.995,
+      "fails_probability": 0.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": true,
+      "passes_revised_gate": false
+    },
+    {
+      "method": "A",
+      "case": "large_shared",
+      "datasets": 200,
+      "bias_log_R": 5.733153293625837e-05,
+      "bias_MC_SE": 0.00014981551977746868,
+      "coverage": 0.995,
+      "coverage_binomial_95": [
+        0.9724581015427943,
+        0.999873418972133
+      ],
+      "coverage_range_truth_MC_999": [
+        0.995,
+        1.0
+      ],
+      "mean_log_width": 0.01429944434038374,
+      "mean_R_width": 0.016044732702754253,
+      "mean_log_endpoints": [
+        0.10798598258145117,
+        0.12228542692183501
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 1.0,
+      "fails_probability": 0.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": true,
+      "passes_revised_gate": true
+    },
+    {
+      "method": "B",
+      "case": "large_shared",
+      "datasets": 200,
+      "bias_log_R": 5.733153293625837e-05,
+      "bias_MC_SE": 0.00014981551977746868,
+      "coverage": 0.985,
+      "coverage_binomial_95": [
+        0.9567917180822874,
+        0.9968958923784464
+      ],
+      "coverage_range_truth_MC_999": [
+        0.98,
+        0.985
+      ],
+      "mean_log_width": 0.010338882117239765,
+      "mean_R_width": 0.011600116341713153,
+      "mean_log_endpoints": [
+        0.1099099944395449,
+        0.1202488765567847
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 1.0,
+      "fails_probability": 0.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": true,
+      "passes_revised_gate": true
+    },
+    {
+      "method": "C",
+      "case": "large_shared",
+      "datasets": 200,
+      "bias_log_R": 5.733153293625837e-05,
+      "bias_MC_SE": 0.00014981551977746868,
+      "coverage": 0.955,
+      "coverage_binomial_95": [
+        0.916297311924146,
+        0.9792195777729956
+      ],
+      "coverage_range_truth_MC_999": [
+        0.955,
+        0.96
+      ],
+      "mean_log_width": 0.008813416195884514,
+      "mean_R_width": 0.009888873547064208,
+      "mean_log_endpoints": [
+        0.11067792093525622,
+        0.11949133713114067
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 1.0,
+      "fails_probability": 0.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": true,
+      "passes_revised_gate": true
+    },
+    {
+      "method": "D",
+      "case": "large_shared",
+      "datasets": 200,
+      "bias_log_R": 5.733153293625837e-05,
+      "bias_MC_SE": 0.00014981551977746868,
+      "coverage": 0.995,
+      "coverage_binomial_95": [
+        0.9724581015427943,
+        0.999873418972133
+      ],
+      "coverage_range_truth_MC_999": [
+        0.995,
+        0.995
+      ],
+      "mean_log_width": 0.010944164742796527,
+      "mean_R_width": 0.012279511382125576,
+      "mean_log_endpoints": [
+        0.1096125466618002,
+        0.12055671140459669
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 1.0,
+      "fails_probability": 0.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": true,
+      "passes_revised_gate": true
+    },
+    {
+      "method": "original",
+      "case": "shared_plus_tier_interaction",
+      "datasets": 200,
+      "bias_log_R": -7.796173014035582e-05,
+      "bias_MC_SE": 6.546953165145836e-05,
+      "coverage": 0.995,
+      "coverage_binomial_95": [
+        0.9724581015427943,
+        0.999873418972133
+      ],
+      "coverage_range_truth_MC_999": [
+        0.995,
+        0.995
+      ],
+      "mean_log_width": 0.006390339263980333,
+      "mean_R_width": 0.0064645889190298785,
+      "mean_log_endpoints": [
+        0.008352920642768703,
+        0.01474325990674904
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 0.0,
+      "fails_probability": 1.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": true,
+      "passes_revised_gate": true
+    },
+    {
+      "method": "A",
+      "case": "shared_plus_tier_interaction",
+      "datasets": 200,
+      "bias_log_R": -7.796173014035582e-05,
+      "bias_MC_SE": 6.546953165145836e-05,
+      "coverage": 1.0,
+      "coverage_binomial_95": [
+        0.9817246596448638,
+        1.0
+      ],
+      "coverage_range_truth_MC_999": [
+        1.0,
+        1.0
+      ],
+      "mean_log_width": 0.008913835694153322,
+      "mean_R_width": 0.009026549320522454,
+      "mean_log_endpoints": [
+        0.008103180056408815,
+        0.017017015750562133
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 0.0,
+      "fails_probability": 1.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": true,
+      "passes_revised_gate": true
+    },
+    {
+      "method": "B",
+      "case": "shared_plus_tier_interaction",
+      "datasets": 200,
+      "bias_log_R": -7.796173014035582e-05,
+      "bias_MC_SE": 6.546953165145836e-05,
+      "coverage": 0.995,
+      "coverage_binomial_95": [
+        0.9724581015427943,
+        0.999873418972133
+      ],
+      "coverage_range_truth_MC_999": [
+        0.995,
+        0.995
+      ],
+      "mean_log_width": 0.006390339263980333,
+      "mean_R_width": 0.006471094899632525,
+      "mean_log_endpoints": [
+        0.00935874961543456,
+        0.015749088879414907
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 0.0,
+      "fails_probability": 1.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": true,
+      "passes_revised_gate": true
+    },
+    {
+      "method": "C",
+      "case": "shared_plus_tier_interaction",
+      "datasets": 200,
+      "bias_log_R": -7.796173014035582e-05,
+      "bias_MC_SE": 6.546953165145836e-05,
+      "coverage": 0.955,
+      "coverage_binomial_95": [
+        0.916297311924146,
+        0.9792195777729956
+      ],
+      "coverage_range_truth_MC_999": [
+        0.955,
+        0.955
+      ],
+      "mean_log_width": 0.003791096887371769,
+      "mean_R_width": 0.003838953467736266,
+      "mean_log_endpoints": [
+        0.010641095170460914,
+        0.014432192057832685
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 0.0,
+      "fails_probability": 1.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": true,
+      "passes_revised_gate": true
+    },
+    {
+      "method": "D",
+      "case": "shared_plus_tier_interaction",
+      "datasets": 200,
+      "bias_log_R": -7.796173014035582e-05,
+      "bias_MC_SE": 6.546953165145836e-05,
+      "coverage": 0.995,
+      "coverage_binomial_95": [
+        0.9724581015427943,
+        0.999873418972133
+      ],
+      "coverage_range_truth_MC_999": [
+        0.995,
+        0.995
+      ],
+      "mean_log_width": 0.005192432946783294,
+      "mean_R_width": 0.00525797482282855,
+      "mean_log_endpoints": [
+        0.009940427140755145,
+        0.015132860087538445
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 0.0,
+      "fails_probability": 1.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": true,
+      "passes_revised_gate": true
+    },
+    {
+      "method": "original",
+      "case": "informative_dnf",
+      "datasets": 200,
+      "bias_log_R": -2.532187967235061e-06,
+      "bias_MC_SE": 7.237347374130255e-05,
+      "coverage": 0.98,
+      "coverage_binomial_95": [
+        0.9495863909101037,
+        0.9945244341204436
+      ],
+      "coverage_range_truth_MC_999": [
+        0.98,
+        0.98
+      ],
+      "mean_log_width": 0.006160748686869195,
+      "mean_R_width": 0.0062512332080379126,
+      "mean_log_endpoints": [
+        0.011496291604035164,
+        0.017657040290904348
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 0.0,
+      "fails_probability": 1.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": true,
+      "passes_revised_gate": true
+    },
+    {
+      "method": "A",
+      "case": "informative_dnf",
+      "datasets": 200,
+      "bias_log_R": -2.532187967235061e-06,
+      "bias_MC_SE": 7.237347374130255e-05,
+      "coverage": 1.0,
+      "coverage_binomial_95": [
+        0.9817246596448638,
+        1.0
+      ],
+      "coverage_range_truth_MC_999": [
+        1.0,
+        1.0
+      ],
+      "mean_log_width": 0.008499014835927066,
+      "mean_R_width": 0.008634541620335567,
+      "mean_log_endpoints": [
+        0.011559589570528526,
+        0.02005860440645562
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 0.0,
+      "fails_probability": 1.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": true,
+      "passes_revised_gate": true
+    },
+    {
+      "method": "B",
+      "case": "informative_dnf",
+      "datasets": 200,
+      "bias_log_R": -2.532187967235061e-06,
+      "bias_MC_SE": 7.237347374130255e-05,
+      "coverage": 1.0,
+      "coverage_binomial_95": [
+        0.9817246596448638,
+        1.0
+      ],
+      "coverage_range_truth_MC_999": [
+        1.0,
+        1.0
+      ],
+      "mean_log_width": 0.006160748686869195,
+      "mean_R_width": 0.006259047911871336,
+      "mean_log_endpoints": [
+        0.01274473853742365,
+        0.01890548722429285
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 0.0,
+      "fails_probability": 1.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": true,
+      "passes_revised_gate": true
+    },
+    {
+      "method": "C",
+      "case": "informative_dnf",
+      "datasets": 200,
+      "bias_log_R": -2.532187967235061e-06,
+      "bias_MC_SE": 7.237347374130255e-05,
+      "coverage": 0.935,
+      "coverage_binomial_95": [
+        0.8914127634961848,
+        0.9649392913430209
+      ],
+      "coverage_range_truth_MC_999": [
+        0.93,
+        0.935
+      ],
+      "mean_log_width": 0.003780741407352004,
+      "mean_R_width": 0.003841072309876796,
+      "mean_log_endpoints": [
+        0.013928985556356807,
+        0.017709726963708816
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 0.0,
+      "fails_probability": 1.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": true,
+      "passes_revised_gate": true
+    },
+    {
+      "method": "D",
+      "case": "informative_dnf",
+      "datasets": 200,
+      "bias_log_R": -2.532187967235061e-06,
+      "bias_MC_SE": 7.237347374130255e-05,
+      "coverage": 0.98,
+      "coverage_binomial_95": [
+        0.9495863909101037,
+        0.9945244341204436
+      ],
+      "coverage_range_truth_MC_999": [
+        0.98,
+        0.98
+      ],
+      "mean_log_width": 0.005165498165299389,
+      "mean_R_width": 0.005247910972392628,
+      "mean_log_endpoints": [
+        0.01323660717738313,
+        0.018402105342682506
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 0.0,
+      "fails_probability": 1.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": true,
+      "passes_revised_gate": true
+    },
+    {
+      "method": "original",
+      "case": "random_replacement_10_percent",
+      "datasets": 200,
+      "bias_log_R": 7.418298069347337e-05,
+      "bias_MC_SE": 6.510267884837645e-05,
+      "coverage": 1.0,
+      "coverage_binomial_95": [
+        0.9817246596448638,
+        1.0
+      ],
+      "coverage_range_truth_MC_999": [
+        1.0,
+        1.0
+      ],
+      "mean_log_width": 0.006008766772962529,
+      "mean_R_width": 0.006079499092401413,
+      "mean_log_endpoints": [
+        0.008693333329900157,
+        0.014702100102862693
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 0.0,
+      "fails_probability": 1.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": true,
+      "passes_revised_gate": true
+    },
+    {
+      "method": "A",
+      "case": "random_replacement_10_percent",
+      "datasets": 200,
+      "bias_log_R": 7.418298069347337e-05,
+      "bias_MC_SE": 6.510267884837645e-05,
+      "coverage": 1.0,
+      "coverage_binomial_95": [
+        0.9817246596448638,
+        1.0
+      ],
+      "coverage_range_truth_MC_999": [
+        1.0,
+        1.0
+      ],
+      "mean_log_width": 0.008397838266625508,
+      "mean_R_width": 0.00850554623944107,
+      "mean_log_endpoints": [
+        0.008538331156976987,
+        0.0169361694236025
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 0.0,
+      "fails_probability": 1.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": true,
+      "passes_revised_gate": true
+    },
+    {
+      "method": "B",
+      "case": "random_replacement_10_percent",
+      "datasets": 200,
+      "bias_log_R": 7.418298069347337e-05,
+      "bias_MC_SE": 6.510267884837645e-05,
+      "coverage": 1.0,
+      "coverage_binomial_95": [
+        0.9817246596448638,
+        1.0
+      ],
+      "coverage_range_truth_MC_999": [
+        1.0,
+        1.0
+      ],
+      "mean_log_width": 0.006008766772962527,
+      "mean_R_width": 0.006085827337202465,
+      "mean_log_endpoints": [
+        0.009732962871922941,
+        0.015741729644885464
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 0.0,
+      "fails_probability": 1.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": true,
+      "passes_revised_gate": true
+    },
+    {
+      "method": "C",
+      "case": "random_replacement_10_percent",
+      "datasets": 200,
+      "bias_log_R": 7.418298069347337e-05,
+      "bias_MC_SE": 6.510267884837645e-05,
+      "coverage": 0.95,
+      "coverage_binomial_95": [
+        0.9099724622986486,
+        0.9757658345278915
+      ],
+      "coverage_range_truth_MC_999": [
+        0.945,
+        0.95
+      ],
+      "mean_log_width": 0.003639675822002311,
+      "mean_R_width": 0.0036863522542619574,
+      "mean_log_endpoints": [
+        0.010912329581892859,
+        0.014552005403895169
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 0.0,
+      "fails_probability": 1.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": true,
+      "passes_revised_gate": true
+    },
+    {
+      "method": "D",
+      "case": "random_replacement_10_percent",
+      "datasets": 200,
+      "bias_log_R": 7.418298069347337e-05,
+      "bias_MC_SE": 6.510267884837645e-05,
+      "coverage": 0.99,
+      "coverage_binomial_95": [
+        0.9643453316027603,
+        0.998786650986264
+      ],
+      "coverage_range_truth_MC_999": [
+        0.99,
+        0.99
+      ],
+      "mean_log_width": 0.004988467566394702,
+      "mean_R_width": 0.005052425884435948,
+      "mean_log_endpoints": [
+        0.010237933709696658,
+        0.015226401276091367
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 0.0,
+      "fails_probability": 1.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": true,
+      "passes_revised_gate": true
+    },
+    {
+      "method": "original",
+      "case": "pure_attempt_slot_shock",
+      "datasets": 200,
+      "bias_log_R": 0.00019141224156472847,
+      "bias_MC_SE": 0.00017443737894475917,
+      "coverage": 0.02,
+      "coverage_binomial_95": [
+        0.00547556587955645,
+        0.0504136090898963
+      ],
+      "coverage_range_truth_MC_999": [
+        0.02,
+        0.02
+      ],
+      "mean_log_width": 0.01034793710842587,
+      "mean_R_width": 0.011499116928976512,
+      "mean_log_endpoints": [
+        0.10027723386506075,
+        0.11062517097348656
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 1.0,
+      "fails_probability": 0.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": false,
+      "passes_revised_gate": null
+    },
+    {
+      "method": "A",
+      "case": "pure_attempt_slot_shock",
+      "datasets": 200,
+      "bias_log_R": 0.00019141224156472847,
+      "bias_MC_SE": 0.00017443737894475917,
+      "coverage": 0.99,
+      "coverage_binomial_95": [
+        0.9643453316027603,
+        0.998786650986264
+      ],
+      "coverage_range_truth_MC_999": [
+        0.99,
+        0.99
+      ],
+      "mean_log_width": 0.01435387535609256,
+      "mean_R_width": 0.016108372329364094,
+      "mean_log_endpoints": [
+        0.10809765035293221,
+        0.1224515257090247
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 1.0,
+      "fails_probability": 0.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": false,
+      "passes_revised_gate": null
+    },
+    {
+      "method": "B",
+      "case": "pure_attempt_slot_shock",
+      "datasets": 200,
+      "bias_log_R": 0.00019141224156472847,
+      "bias_MC_SE": 0.00017443737894475917,
+      "coverage": 0.965,
+      "coverage_binomial_95": [
+        0.9292190016490228,
+        0.9858144741015807
+      ],
+      "coverage_range_truth_MC_999": [
+        0.965,
+        0.97
+      ],
+      "mean_log_width": 0.01034793710842587,
+      "mean_R_width": 0.011612008322753768,
+      "mean_log_endpoints": [
+        0.11003874435329371,
+        0.12038668146171956
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 1.0,
+      "fails_probability": 0.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": false,
+      "passes_revised_gate": null
+    },
+    {
+      "method": "C",
+      "case": "pure_attempt_slot_shock",
+      "datasets": 200,
+      "bias_log_R": 0.00019141224156472847,
+      "bias_MC_SE": 0.00017443737894475917,
+      "coverage": 0.94,
+      "coverage_binomial_95": [
+        0.8975381686916755,
+        0.9686160461065165
+      ],
+      "coverage_range_truth_MC_999": [
+        0.94,
+        0.945
+      ],
+      "mean_log_width": 0.008787713474764718,
+      "mean_R_width": 0.009861456745854865,
+      "mean_log_endpoints": [
+        0.11082485300444457,
+        0.11961256647920931
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 1.0,
+      "fails_probability": 0.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": false,
+      "passes_revised_gate": null
+    },
+    {
+      "method": "D",
+      "case": "pure_attempt_slot_shock",
+      "datasets": 200,
+      "bias_log_R": 0.00019141224156472847,
+      "bias_MC_SE": 0.00017443737894475917,
+      "coverage": 0.98,
+      "coverage_binomial_95": [
+        0.9495863909101037,
+        0.9945244341204436
+      ],
+      "coverage_range_truth_MC_999": [
+        0.98,
+        0.98
+      ],
+      "mean_log_width": 0.010916633102777695,
+      "mean_R_width": 0.01225037910937445,
+      "mean_log_endpoints": [
+        0.10976039319043808,
+        0.12067702629321574
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 1.0,
+      "fails_probability": 0.0,
+      "boundary_holds_binomial_95": null,
+      "boundary_fails_binomial_95": null,
+      "boundary_error_range_truth_MC_999": null,
+      "judged": false,
+      "passes_revised_gate": null
+    },
+    {
+      "method": "original",
+      "case": "boundary",
+      "datasets": 200,
+      "bias_log_R": -4.655235279797665e-05,
+      "bias_MC_SE": 0.00013410242765229372,
+      "coverage": 0.035,
+      "coverage_binomial_95": [
+        0.014185525898419244,
+        0.0707809983509772
+      ],
+      "coverage_range_truth_MC_999": [
+        0.035,
+        0.035
+      ],
+      "mean_log_width": 0.009591430093479642,
+      "mean_R_width": 0.01046660489016004,
+      "mean_log_endpoints": [
+        0.0825145826624053,
+        0.09210601275588498
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 0.0,
+      "fails_probability": 0.965,
+      "boundary_holds_binomial_95": [
+        0.0,
+        0.01827534035513624
+      ],
+      "boundary_fails_binomial_95": [
+        0.9292190016490228,
+        0.9858144741015807
+      ],
+      "boundary_error_range_truth_MC_999": {
+        "holds": [
+          0.0,
+          0.0
+        ],
+        "fails": [
+          0.965,
+          0.965
+        ]
+      },
+      "judged": true,
+      "passes_revised_gate": false
+    },
+    {
+      "method": "A",
+      "case": "boundary",
+      "datasets": 200,
+      "bias_log_R": -4.655235279797665e-05,
+      "bias_MC_SE": 0.00013410242765229372,
+      "coverage": 0.995,
+      "coverage_binomial_95": [
+        0.9724581015427943,
+        0.999873418972133
+      ],
+      "coverage_range_truth_MC_999": [
+        0.995,
+        0.995
+      ],
+      "mean_log_width": 0.013220626503074184,
+      "mean_R_width": 0.01454273681764859,
+      "mean_log_endpoints": [
+        0.08868519856831923,
+        0.1019058250713934
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 0.005,
+      "fails_probability": 0.0,
+      "boundary_holds_binomial_95": [
+        0.00012658102786701825,
+        0.02754189845720562
+      ],
+      "boundary_fails_binomial_95": [
+        0.0,
+        0.01827534035513624
+      ],
+      "boundary_error_range_truth_MC_999": {
+        "holds": [
+          0.005,
+          0.005
+        ],
+        "fails": [
+          0.0,
+          0.0
+        ]
+      },
+      "judged": true,
+      "passes_revised_gate": true
+    },
+    {
+      "method": "B",
+      "case": "boundary",
+      "datasets": 200,
+      "bias_log_R": -4.655235279797665e-05,
+      "bias_MC_SE": 0.00013410242765229372,
+      "coverage": 0.97,
+      "coverage_binomial_95": [
+        0.935849373294973,
+        0.9889125443277452
+      ],
+      "coverage_range_truth_MC_999": [
+        0.97,
+        0.97
+      ],
+      "mean_log_width": 0.009591430093479642,
+      "mean_R_width": 0.010550277192432584,
+      "mean_log_endpoints": [
+        0.09047551448148825,
+        0.10006694457496795
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 0.02,
+      "fails_probability": 0.01,
+      "boundary_holds_binomial_95": [
+        0.00547556587955645,
+        0.0504136090898963
+      ],
+      "boundary_fails_binomial_95": [
+        0.0012133490137360304,
+        0.035654668397239776
+      ],
+      "boundary_error_range_truth_MC_999": {
+        "holds": [
+          0.02,
+          0.02
+        ],
+        "fails": [
+          0.01,
+          0.01
+        ]
+      },
+      "judged": true,
+      "passes_revised_gate": true
+    },
+    {
+      "method": "C",
+      "case": "boundary",
+      "datasets": 200,
+      "bias_log_R": -4.655235279797665e-05,
+      "bias_MC_SE": 0.00013410242765229372,
+      "coverage": 0.945,
+      "coverage_binomial_95": [
+        0.9037223555660872,
+        0.9722277454479935
+      ],
+      "coverage_range_truth_MC_999": [
+        0.945,
+        0.95
+      ],
+      "mean_log_width": 0.007826778729359711,
+      "mean_R_width": 0.00860936818077086,
+      "mean_log_endpoints": [
+        0.09135023808684713,
+        0.09917701681620679
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 0.03,
+      "fails_probability": 0.025,
+      "boundary_holds_binomial_95": [
+        0.011087455672254774,
+        0.064150626705027
+      ],
+      "boundary_fails_binomial_95": [
+        0.008166166190842513,
+        0.05737435112684586
+      ],
+      "boundary_error_range_truth_MC_999": {
+        "holds": [
+          0.025,
+          0.03
+        ],
+        "fails": [
+          0.02,
+          0.025
+        ]
+      },
+      "judged": true,
+      "passes_revised_gate": false
+    },
+    {
+      "method": "D",
+      "case": "boundary",
+      "datasets": 200,
+      "bias_log_R": -4.655235279797665e-05,
+      "bias_MC_SE": 0.00013410242765229372,
+      "coverage": 0.975,
+      "coverage_binomial_95": [
+        0.9426256488731541,
+        0.9918338338091575
+      ],
+      "coverage_range_truth_MC_999": [
+        0.975,
+        0.975
+      ],
+      "mean_log_width": 0.009876217714643719,
+      "mean_R_width": 0.010863657152284505,
+      "mean_log_endpoints": [
+        0.09032551859420511,
+        0.10020173630884875
+      ],
+      "invalid_intervals": 0,
+      "holds_probability": 0.015,
+      "fails_probability": 0.01,
+      "boundary_holds_binomial_95": [
+        0.003104107621553509,
+        0.0432082819177126
+      ],
+      "boundary_fails_binomial_95": [
+        0.0012133490137360304,
+        0.035654668397239776
+      ],
+      "boundary_error_range_truth_MC_999": {
+        "holds": [
+          0.015,
+          0.015
+        ],
+        "fails": [
+          0.01,
+          0.01
+        ]
+      },
+      "judged": true,
+      "passes_revised_gate": true
+    }
+  ],
+  "diagnosis": [
+    {
+      "case": "null",
+      "point_mean": 5.773141387301362e-05,
+      "reselected_bootstrap_mean": 6.655119797508746e-05,
+      "fixed_bootstrap_mean": 5.894539129265972e-05,
+      "reselected_frozen_beta_mean": 6.782493003100869e-05,
+      "reselected_shift": 8.819784102073841e-06,
+      "fixed_shift": 1.2139774196461244e-06,
+      "shift_reselected_sd": 0.00031139956360958144,
+      "distinct_competition_fraction": 0.6323759218656565
+    },
+    {
+      "case": "small_shared",
+      "point_mean": 0.01562635653879473,
+      "reselected_bootstrap_mean": 0.014375184679049444,
+      "fixed_bootstrap_mean": 0.015618556718380607,
+      "reselected_frozen_beta_mean": 0.014377115714799214,
+      "reselected_shift": -0.0012511718597452844,
+      "fixed_shift": -7.799820414122203e-06,
+      "shift_reselected_sd": 0.00040362948035666473,
+      "distinct_competition_fraction": 0.6323759218656565
+    },
+    {
+      "case": "large_shared",
+      "point_mean": 0.11508462903319842,
+      "reselected_bootstrap_mean": 0.10530041497068336,
+      "fixed_bootstrap_mean": 0.11507048279558924,
+      "reselected_frozen_beta_mean": 0.10530329202374414,
+      "reselected_shift": -0.009784214062515048,
+      "fixed_shift": -1.4146237609183529e-05,
+      "shift_reselected_sd": 0.0007367076476979848,
+      "distinct_competition_fraction": 0.6323759218656565
+    },
+    {
+      "case": "shared_plus_tier_interaction",
+      "point_mean": 0.012536643614146796,
+      "reselected_bootstrap_mean": 0.011530814641480935,
+      "fixed_bootstrap_mean": 0.012540918584588999,
+      "reselected_frozen_beta_mean": 0.011530888272904773,
+      "reselected_shift": -0.0010058289726658574,
+      "fixed_shift": 4.274970442203684e-06,
+      "shift_reselected_sd": 0.0003912459811537673,
+      "distinct_competition_fraction": 0.6323759218656565
+    },
+    {
+      "case": "informative_dnf",
+      "point_mean": 0.015819356260032814,
+      "reselected_bootstrap_mean": 0.01457090932664432,
+      "fixed_bootstrap_mean": 0.015812681465260936,
+      "reselected_frozen_beta_mean": 0.014570906614459402,
+      "reselected_shift": -0.0012484469333884952,
+      "fixed_shift": -6.674794771878998e-06,
+      "shift_reselected_sd": 0.0004541980948100607,
+      "distinct_competition_fraction": 0.6323759218656565
+    },
+    {
+      "case": "random_replacement_10_percent",
+      "point_mean": 0.012732167492894013,
+      "reselected_bootstrap_mean": 0.011692537950871235,
+      "fixed_bootstrap_mean": 0.012724141100606046,
+      "reselected_frozen_beta_mean": 0.011698623282560126,
+      "reselected_shift": -0.0010396295420227798,
+      "fixed_shift": -8.026392287968964e-06,
+      "shift_reselected_sd": 0.000397826571904913,
+      "distinct_competition_fraction": 0.6323759218656565
+    },
+    {
+      "case": "pure_attempt_slot_shock",
+      "point_mean": 0.1152187097418269,
+      "reselected_bootstrap_mean": 0.10545719925359391,
+      "fixed_bootstrap_mean": 0.11521081965292794,
+      "reselected_frozen_beta_mean": 0.105456423613243,
+      "reselected_shift": -0.009761510488232997,
+      "fixed_shift": -7.89008889898149e-06,
+      "shift_reselected_sd": 0.0008330389753424197,
+      "distinct_competition_fraction": 0.6323759218656565
+    },
+    {
+      "case": "boundary",
+      "point_mean": 0.09526362745152696,
+      "reselected_bootstrap_mean": 0.08730269563244392,
+      "fixed_bootstrap_mean": 0.09524567396364922,
+      "reselected_frozen_beta_mean": 0.0873028251591755,
+      "reselected_shift": -0.00796093181908305,
+      "fixed_shift": -1.7953487877743202e-05,
+      "shift_reselected_sd": 0.0006885163552680821,
+      "distinct_competition_fraction": 0.6323759218656565
+    }
+  ],
+  "original_gate_max_numeric_difference": 0.0,
+  "procedure_pass": {
+    "A": true,
+    "B": true,
+    "C": false,
+    "D": true
+  }
+}
