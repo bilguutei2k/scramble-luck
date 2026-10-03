@@ -1,144 +1,281 @@
 # How lucky is a lucky scramble? — story and scenes
 
-Status: script draft v0 by Qwen 3.8 (local), 2026-10-02, for Sol 6.1 to revise; not locked; the title is a working title the owner decides.
+Status: script v1, 2026-10-02; not locked. Revised from preserved `STORY.v0.md`.
+Claims remain proposed pending owner lock. Numerical verification is in
+`analysis/claims_check.json`; narration checking retains “not verified” warnings.
+The title remains a working title.
 
-## Argument: "The shared scramble/slot component"
+## Argument: “A shortcut isn't a shared advantage”
 
-| Beat | What the viewer learns | Claims |
+| Beat | What the viewer learns | Evidence |
 |---|---|---|
-| 1. Belief | Record solves are often called "lucky scrambles." | — |
-| 2. Scope | We are not judging one record; we are measuring the shared component across all finalists. | SL-C002, SL-C003 |
-| 3. Obvious answer | Look at a record reconstruction; it often looks easy. | SL-C137, SL-C138 |
-| 4. Flaw | Luck that suits one solver is not luck everyone shares. | — |
-| 5. Fairer test | Every finalist solves the same five scrambles; peer times reveal scramble difficulty. | SL-C005, SL-C007 |
-| 6. Verdict | The shared component is small (~2%); data rule out a 10% boost. | SL-C001 |
-| 7. Limitations | Slot conditions, DNFs, and personal luck cannot be fully separated. | SL-C075, SL-C076 |
+| Belief | WIRED and Ruwix use luck language, with qualifications. | S01 source links; SL-C104 |
+| Obvious answer | Park's then-record reconstruction shows a PLL skip. | SL-C105, SL-C138; S03 source |
+| Flaw | One chosen solution cannot measure an advantage common to the field. | METHOD, belief → flaw; S04 schematic |
+| Fairer test | Exclude the focal solver, compare peers within their own final, then adjust the observed seasonal best. | METHOD, measures; SL-C002–004 |
+| Honest uncertainty | The original gate failed; an owner-approved amendment preceded confirmation. | METHOD Amendment 1; analysis/review.md |
+| Verdict | Belief fails under the amended contract; the average adjustment is about 2%, below the registered 10% line. | SL-C001, SL-C144 |
+| Limits | Slot conditions, replacements, success conditioning and personal luck limit interpretation. | SL-C074, SL-C075, SL-C134; METHOD |
 
-Wording rules (METHOD.md): The video answers a narrower question than "was the record lucky?": how much the scramble difficulty shared by all finalists speeds up season-best final solves. The shared scramble/slot component is small, around 2% for these season bests, and the data rule out a shared boost as large as 10%. NEVER say "only 2% of the record was luck", never say the rest is personal luck, never make claims about one specific record's total luck, never call it pure scramble difficulty (it is the shared scramble/slot component). Explain scramble, cross, CFOP, PLL skip, and average of five in one sentence each. First person, curious and precise, light humour allowed.
+Wording rules: use **shared scramble/slot component** throughout. The question
+is average adjustment of eligible season-best final solves, not a particular
+record's total luck. Say **estimated shared-scramble-adjusted time**; R is an
+equal-person-year geometric ratio of adjusted to observed time. A longer
+adjusted time is not the same percentage reduction in observed time. Use
+METHOD's permitted verdict sentence verbatim, with R and its amended interval.
+F is successful log-time variance, not seconds or a partition of total luck.
+Never assign the residual to personal luck or rank skill against luck.
+Cross-length evidence is an **unvalidated diagnostic**, with no calibrated
+interval claim. Quotes are exact, publication-attributed and linked beside
+the scene. Historical records are **then-records**. First-person narration;
+schematics carry no invented results. Claim tags and source labels aren't spoken.
 
 ## Scene table
 
-| Scene | Viewer question | Claims | Visual (the design system decides the look) | Why next? |
+| Scene | Viewer question | Evidence | Visual | Why next? |
 |---|---|---|---|---|
-| S01 The Belief | Are record solves just lucky scrambles? | — | Headlines quoting "lucky scramble"; a cube spinning | We need to define the scope. |
-| S02 The Scope | What are we actually measuring? | SL-C002, SL-C003 | Map of competitions; counter of finals and solvers | We need the basics. |
-| S03 The Basics | What is a scramble, cross, CFOP, etc.? | SL-C130, SL-C132 | Animated cube steps; text definitions | We need the obvious answer. |
-| S04 The Obvious Answer | Does a record reconstruction look easy? | SL-C137, SL-C138 | Token counts for Du and Park; "easy" label | But is it shared luck? |
-| S05 The Flaw | Is one solver's luck everyone's luck? | — | Two solvers, same scramble, different times; "Not shared" stamp | We need a fairer test. |
-| S06 The Fairer Test | How do we measure shared difficulty? | SL-C005, SL-C007 | Five finalists, same scrambles; bar chart of times | What is the verdict? |
-| S07 The Verdict | How big is the shared boost? | SL-C001 | Gauge showing ~2%; red line at 10% crossed out | What can't we tell? |
-| S08 Limitations | What is missing from this picture? | SL-C075, SL-C076 | DNF icons; slot clock; "Personal luck" fog | What about the records? |
-| S09 The Records | Does this apply to specific records? | SL-C104, SL-C105 | Record cards; "Aggregate result" disclaimer | How robust is the data? |
-| S10 Robustness | Do the results hold up to checks? | SL-C037, SL-C038, SL-C046 | Era splits; leave-one-out solver bars; all-finalist share | Final summary. |
-| S11 The Takeaway | So, is it luck? | SL-C001, SL-C005 | Recap of the 2% vs 10% verdict; "Shared component" label | End. |
+| S01 Lucky scramble? | What does that phrase mean? | SL-C104; WIRED/Ruwix | Big-number reveal: Du's historical mark; publication quote cards, dates and source/scope caption. Night. | Define the shortcut. |
+| S02 The basics | What is being skipped? | SL-C130, SL-C135; CubeSkills | Q · Measure cards: CROSS / F2L / OLL / PLL; edge-only cross schematic, then average-of-five discard diagram. Paper. | Inspect a real example. |
+| S03 The obvious answer | Does a reconstruction settle it? | SL-C105, SL-C138 | Q cards highlight Park's PLL skip and remaining top alignment; no stage durations or “easy” stamp. Source strip. | Whose advantage? |
+| S04 The flaw | Shared luck or one solution? | METHOD | Two-part split: THIS SOLUTION / SHARED BY THE FIELD?; schematic contrasting paths, no fabricated times. | Specify the population. |
+| S05 The scope | Which solves count? | SL-C002–004, SL-C133 | Big-number reveal: 5,017 finals, then 3,313 solver-seasons; scope strip with years and five-final eligibility. | Show the comparison. |
+| S06 Listen to the peers | How is the shared contrast estimated? | METHOD, measures | **New: Finalist × scheduled-scramble matrix**; remove focal row, center each peer row, reveal column summaries. Label SCHEMATIC. | Apply it to the selected best. |
+| S07 The seasonal best | What does the adjustment mean? | SL-C002; METHOD | Before → after: OBSERVED BEST → SHARED-COMPONENT-ADJUSTED TIME; symbolic arrow, then Q cards for variance F versus seasonal ratio R. | Validate the uncertainty. |
+| S08 The failed gate | Was the test fixed in advance? | SL-C024, SL-C025; Amendment 1 | Q cards: ORIGINAL GATE FAILED / AMENDMENT REGISTERED / CONFIRMATION; separate fixed-selection sensitivity card. No misleading first-open timestamp. | Read the decision scale. |
+| S09 The verdict | Does the shared boost reach the line? | SL-C001, SL-C144 | N · Resampling range bars adapted to ratio R: dot 1.0198, amended interval 1.0164–1.0231, rule 1.10. Mint: BELIEF FAILS. | Does it survive checks? |
+| S10 The checks | Detectable, and stable? | SL-C005, SL-C145, SL-C015, SL-C035, SL-C036, SL-C050–053, SL-C077 | Q cards with counts and qualifications; N-style matched-subset ratio rows; separate cross card stamped UNVALIDATED DIAGNOSTIC. | State remaining limits. |
+| S11 What remains unknown | Could this still miss luck? | SL-C074, SL-C075, SL-C134; METHOD | Q cards: SLOT CONDITIONS / REPLACEMENTS / DNF / PERSONAL LUCK; N range for DNF odds, no invented failure time. | Return to the opening. |
+| S12 The takeaway | What can I say about a lucky solve? | SL-C001, SL-C144; METHOD | Night verdict card, then source/scope strip and evidence link. | End. |
 
-## Script (v0)
+Visual implementation: retain Paper/Night surfaces, Ink rules, Plex Mono
+numbers, field peers and one highlighted focal row. The new matrix extends
+the dot/slope grammar to five scheduled columns; the small-table component's
+four-column cap cannot hold it. A hollow, separately tagged cell illustrates
+a replacement, not an audited observation. Record this adaptation in
+`studio/DIRECTION.md` before renderer use. N's reference line and captions
+are adapted to this episode's ratio and amended interval. All numerical
+graphics bind claim keys, not the design reference's placeholder values.
 
-### S01 The Belief
+## Script (v1)
 
-> When a world record falls, the first comment is often the same: "Lucky scramble?"
-> In 2018, after Yusheng Du’s 3.47, Ruwix asked, "Lucky scramble? Maybe." [SL-C104]
-> WIRED’s Robbie Gonzalez said, "The fact is, sometimes you just get a lucky scramble." [SL-C104]
-> For Xuanyi Geng’s 3.05 in 2025, the same article said, "He got a lucky scramble," while also crediting smart choices. [SL-C107]
-> It’s a compelling story. But is it true? And if so, how much?
+### S01 Lucky scramble?
 
-### S02 The Scope
+> A timer stops. A record falls. And there's an appealing explanation waiting: a lucky scramble.
+> WIRED put the intuition plainly: “The fact is, sometimes you just get a lucky scramble.” [SL-C146]
+> Ruwix asked, “Lucky scramble? Maybe.” That was its coverage of Yusheng Du's then-record 3.47-second solve in 2018. The article also credited skill. [SL-C104] [SL-C146]
+> I want to test a narrower question. When a solver sets their fastest final-round time of a season, how much help came from something that helped the other finalists too?
+> That distinction matters. A shortcut in one person's solution and an advantage shared by the field are different things to measure.
 
-> Before we judge luck, let’s define the playing field.
-> This study looks at 3×3 Rubik’s Cube finals from 2019 to 2025. [SL-C003]
-> It covers 5,017 finals, 306,155 scheduled attempt slots, and 301,668 successful solves. [SL-C002]
-> We are not asking, "Was Yiheng Wang’s 3.08 lucky?" [SL-C106]
-> We are asking: How much does the scramble difficulty *shared by all finalists* speed up season-best final solves? [SL-C002]
+Source cards: [WIRED video and transcript, released 2019-05-23](https://www.wired.com/video/watch/almost-impossible-why-solving-a-rubik-s-cube-in-under-3-seconds-is-almost-impossible),
+[Ruwix, published 2018-11-25](https://ruwix.com/blog/yusheng-du-record-347/).
+Publication date is not asserted as the solve day. Both quotations checked
+against the linked originals for this revision.
 
-### S03 The Basics
+### S02 The basics
 
-> Let’s quickly define the terms.
-> A **scramble** is a random sequence of moves that sets the cube to a solved state. [SL-C132]
-> A **cross** is the first step, solving the bottom face and its adjacent edges. [SL-C137]
-> **CFOP** is the most common method: Cross, F2L, OLL, PLL. [SL-C138]
-> A **PLL skip** happens when the cube is already in the correct orientation, saving an algorithm. [SL-C138]
-> An **average of five** uses 5 attempts, discards the fastest and slowest, and averages the middle 3. [SL-C130]
+> A scramble is the move sequence used to set up the cube's starting state. Official random generation does not promise equal human difficulty. [SL-C135] [SL-C147]
+> Here's a common solving method: CFOP. Make a cross, fill the first two layers, orient the last layer, then permute its pieces into place. [SL-C147]
+> The cross solves the edge pieces around a face's center, with side colors matching the neighboring centers. It doesn't solve the whole face. [SL-C147]
+> A PLL skip means that, after orientation, the last-layer pieces already have the right relative positions. The permutation algorithm is unnecessary; a final top-face alignment may remain. [SL-C147]
+> An average of five drops the fastest and slowest of 5 attempts and averages the middle 3. This study examines singles inside those finals, rather than the official average. [SL-C130]
 
-### S04 The Obvious Answer
+Definitions: [CubeSkills glossary](https://www.cubeskills.com/tools/glossary),
+[PLL guide](https://ruwix.com/the-rubiks-cube/advanced-cfop-fridrich/permutate-the-last-layer-pll/).
+Format: [2025 WCA regulation 9f8](https://www.worldcubeassociation.org/regulations/history/official/2025-07-17/#9f8).
 
-> The obvious way to check for luck is to look at a record reconstruction.
-> Du’s 3.47 had an 8-token double extended cross. [SL-C137]
-> Park’s 3.13 had a 13-token double extended cross and an 8-token OLL, plus a PLL skip. [SL-C138]
-> These look easy. Short algorithms, skipped steps. It’s tempting to say, "That was just a lucky scramble."
-> But here’s the problem: Luck that suits one solver is not luck everyone shares.
+### S03 The obvious answer
 
-### S05 The Flaw
+> The obvious way to investigate luck is a reconstruction: replay the moves and look for shortcuts.
+> Take Max Park's then-world-record 3.13-second single, set in 2023. Ruwix's published solution includes a double extended cross and a PLL skip. [SL-C105, SL-C138]
+> A double extended cross solves the cross alongside additional corner-edge pairs. Don't mistake that opening for a bare-cross count. [SL-C147]
+> The reconstruction still includes last-layer orientation and a final top-face adjustment. It isn't a whole-last-layer skip. [SL-C138]
+> That's useful evidence about the route Park took. But to estimate a shared advantage, I need a comparison the reconstruction doesn't provide: what happened to the other finalists?
 
-> Imagine two solvers, A and B, in the same final. They solve the same five scrambles.
-> Solver A is fast on scramble 1, but slow on scramble 3.
-> Solver B is slow on scramble 1, but fast on scramble 3.
-> If you only look at A’s record, you might think scramble 1 was "lucky" for A.
-> But B’s time on scramble 1 shows it wasn’t easy for everyone.
-> The "luck" is relative to the solver, not the scramble itself.
+Source: [Ruwix, published 2023-06-12; record set 2023-06-11](https://ruwix.com/blog/max-park-rubik-single-record-313/),
+cross-checked against [the published reconstruction](https://reco.nz/solve/9155).
+No precise record day is spoken; no claim of today's record is made.
 
-### S06 The Fairer Test
+### S04 The flaw
 
-> So how do we measure the *shared* component?
-> We look at every finalist in a final. They all solve the same five scrambles.
-> By comparing their times, we can estimate how much of the variance is due to the scramble/slot conditions shared by all.
-> The shared scramble/slot component accounts for 4.7434% of balanced-tier within-solver-round successful log-time variance. [SL-C005]
-> This is a measure of the *common* difficulty, not individual skill. [SL-C005]
+> Imagine the diagram shows different paths through the same starting state. It's a teaching example, not competition data. [SL-C148]
+> One solver's choices lead to a skip. Another solver takes a different route. The first solution alone cannot tell me how much easier the starting state was for everyone. [SL-C148]
+> And even the same solver can execute a promising route differently. Recognizing an opportunity and turning without a pause aren't measured separately here. [SL-C148]
+> So I can't label every unusually fast attempt shared luck. I need to ask whether peers also ran faster than their own usual pace within that final. That is the fairer test. [SL-C148]
 
-### S07 The Verdict
+Methodological inference: METHOD, “Belief → obvious answer → flaw → fairer
+test” and “Measures”; no illustrative result is claimed.
 
-> Now, let’s translate that variance into a time adjustment.
-> The estimated shared-scramble-adjusted time is about 1.98% longer than observed. [SL-C001]
-> In other words, the shared scramble/slot component is small, around 2% for these season bests. [SL-C001]
-> The data rule out a shared boost as large as 10%. [SL-C001]
-> The entire 95% interval lies below the registered 1.10 line. [SL-C001]
-> So, while scrambles do matter, the *shared* luck is not a huge factor.
+### S05 The scope
 
-### S08 Limitations
+> I used official WCA results for eligible one-group, average-of-five finals from 2019 through 2025. In the finals included here, competitors are assigned the same scheduled scrambles. That isn't a universal rule for every final. [SL-C003, SL-C133]
+> The confirmation sample was held out from the idea-stage pilot by a locked competition split. Its 80% label describes that split rule, not the fraction of solves surviving every filter. [SL-C004]
+> The included sample has 5,017 finals and 306,155 scheduled attempt slots. The seasonal comparison has 3,313 solver-seasons, each requiring at least 5 eligible finals. [SL-C002]
+> That population answers the seasonal question. It doesn't represent every cuber, every record attempt or every round.
 
-> But let’s be honest about what this *can’t* tell us.
-> First, slot conditions. The time slot a solver is in can affect their performance, and this is shared by all finalists in that slot. [SL-C057]
-> Second, DNFs. We analyze successful solves; DNFs are handled separately. [SL-C075]
-> Third, personal luck. If a solver gets a PLL skip in their own solution, that is personal luck, not shared. We cannot separate personal luck from execution. [SL-C076]
-> The data cannot separate personal luck from execution. [SL-C076]
+Scope: EPISODE and METHOD; group recommendations:
+[historical WCA regulation 1h and guidelines](https://www.worldcubeassociation.org/regulations/history/official/2025-07-17/#1h).
 
-### S09 The Records
+### S06 Listen to the peers
 
-> So, does this apply to specific records?
-> Not directly. This is an aggregate result. [SL-C001]
-> We cannot say, "Yiheng Wang’s 3.08 was 2% luck." [SL-C106]
-> We can say that, on average, across thousands of finals, the shared scramble/slot component is about 2%. [SL-C001]
-> Exact-record stories require verified actual assignments and remain illustrative, not independent confirmations. [SL-C104]
+> Each row here is a finalist. Each column is a scheduled scramble position. The picture is schematic. [SL-C148]
+> First, compare each peer with their own pace in that final. Otherwise, a fast finalist could make every column look easy merely by being fast. [SL-C148]
+> Then look down a column. If peers tended to beat their own pace there, the model estimates a favorable shared contrast. If they tended to slow down, it estimates an unfavorable one. [SL-C148]
+> Crucially, I remove the focal solver's entire row before estimating their shared contrast. Their spectacular time cannot serve as its own evidence that the scramble helped everyone. [SL-C148]
+> For the variance calculation, I correct for noise from having a finite set of peers. This estimates a shared scramble/slot component, with uncertainty. It doesn't turn each peer's stopwatch into a perfect difficulty meter. [SL-C148]
 
-### S10 Robustness
+Method: within-solver-round centering, finite-peer correction and whole-focal
+exclusion in METHOD, “Measures”. No schematic values are spoken or displayed.
 
-> Is this result robust?
-> Yes. We checked it across eras. From 2019–2022, R is 1.0186. From 2023–2025, R is 1.0202. [SL-C037, SL-C038]
-> We left out each year in turn; the result stays around 1.02. [SL-C039, SL-C040, SL-C041, SL-C042, SL-C043, SL-C044, SL-C045]
-> We deleted each solver in turn; the result stays stable. [SL-C049, SL-C050]
-> We compared all finalists; the common-only share is 4.4145%. [SL-C046]
-> The verdict holds.
+### S07 The seasonal best
 
-### S11 The Takeaway
+> Next, select each eligible solver's fastest successful final solve of the season. Keep that observed best selected; don't swap in whichever adjusted attempt now looks fastest. [SL-C148]
+> At its scheduled position, remove the estimated shared contrast under the model. A favorable shared contrast makes the estimated adjusted time longer than the observed time. [SL-C148]
+> This is an estimated shared-scramble-adjusted time. It isn't a replay of the solver on a different cube. [SL-C148]
+> I combine the adjusted-to-observed ratios geometrically, giving each available solver-season equal weight. That measure is R. A solver with more eligible seasons contributes more seasons. [SL-C002] [SL-C148]
+> A separate measure asks how much successful log-time variation is shared. That's F. Variance share and seasonal time adjustment answer different questions; neither is a complete luck score. [SL-C148]
 
-> So, is a record solve "lucky"?
-> The shared scramble/slot component is small, around 2%. [SL-C001]
-> The data rule out a shared boost as large as 10%. [SL-C001]
-> Luck exists, but it’s not the dominant factor. Skill, execution, and personal opportunities matter more.
-> The next time someone says, "Lucky scramble?", you can say: "Maybe, but it’s only about 2% of the story." [SL-C001]
+Method: “Seasonal-best correction”, aggregation and shared variance share.
 
-## Short 1 — The 2% Rule
+### S08 The failed gate
 
-> When a world record falls, people say, "Lucky scramble?"
-> We measured the shared scramble/slot component across 5,017 finals from 2019–2025. [SL-C002]
-> The result: it’s about 2%. [SL-C001]
-> The data rule out a 10% boost. [SL-C001]
-> Luck is real, but it’s a small part of the story. Skill matters more. [SL-C001]
+> Before using the confirmation results for a verdict, the uncertainty procedure had to recover known truths in simulations. [SL-C148]
+> The original gate failed. I can't leave that out of the story. [SL-C148]
+> After investigating the synthetic results, an owner-approved amendment changed how the interval was centered and revised the validation gate. It was registered before any confirmation solve times were read. The amended procedure passed its specified simulation checks. [SL-C148]
+> It reselects seasonal bests as competitions and solvers are resampled, then centers the bootstrap differences on the observed estimate. [SL-C024] [SL-C148]
+> A fixed-selection interval is reported separately as a sensitivity. It cannot change the verdict. These simulations validate the amended procedure under their specified processes, not every possible real-world process. [SL-C025] [SL-C148]
 
-## Short 2 — Why One Record Isn’t Enough
+Disclosure: METHOD Amendment 1, `analysis/amendment/AMENDMENT-1.md` and
+`analysis/review.md`. No claim that all secondary intervals were validated.
 
-> Looking at one record reconstruction is misleading.
-> Du’s 3.47 had an 8-token cross. [SL-C137]
-> Park’s 3.13 had a PLL skip. [SL-C138]
-> But luck that suits one solver isn’t luck everyone shares.
-> We compare all finalists in a final to measure the *shared* difficulty. [SL-C005]
-> That’s the fairer test. [SL-C005]
+### S09 The verdict
+
+> The line on this chart was fixed before solve times were read: an adjusted ratio of 1.10, meaning an estimated adjusted time 10% longer than observed. [SL-C001]
+> The measured R is 1.0198, with an amended 95% interval from 1.0164 to 1.0231. In plain language, the estimated adjustment is about 2%. [SL-C001, SL-C144]
+> The entire interval is below the decision line. Belief fails. [SL-C001]
+> The data rule out an average shared scramble/slot boost as large as 10% for these season bests. [SL-C001]
+> That's the permitted conclusion. It doesn't say that an individual spectacular solve received only that much help, or that a skip was unimportant to its solver.
+
+### S10 The checks
+
+> There is a detectable shared component: F is 4.7% of balanced-tier, within-solver-round successful log-time variance. Its interval is on screen. That is not a percentage of seconds. [SL-C005, SL-C145]
+> This tier comparison excludes 597 finals lacking the required support; its coverage matters. [SL-C015]
+> The seasonal result stays below the decision line with complete-success panels, clipped contrasts and individual solvers removed. None supplies a new verdict. [SL-C035, SL-C036, SL-C050]
+> Equal weighting of the skill tiers gives a similar ratio on its matched subset, but omits 270 seasonal bests. It doesn't establish a uniform advantage across skill levels. [SL-C051, SL-C053]
+> A geometry check links optimal cross length positively with the shared contrast. Its bootstrap uncertainty is unvalidated: treat it as a diagnostic, not calibrated inference. It cannot remove the slot confound. [SL-C077]
+
+On-screen supporting values: F 4.7434%, interval 3.9181–5.6708%; tier sample
+4,420 finals / 234,525 successes. Matched-subset R: all-peer 1.0199
+(1.0152–1.0247), equal-tier 1.0203 (1.0155–1.0251), n=3,043; translated
+sensitivity intervals are descriptive. Cross card shows the qualitative
+association and **UNVALIDATED DIAGNOSTIC**, with no numerical endpoints.
+The independent per-solver alignment permutation check (SL-C081) belongs in
+the companion evidence, not a second decision rule. Era F comparisons are omitted from narration. The review’s applied fixes
+now disclose full-window references and retain within-era estimates separately.
+
+### S11 What remains unknown
+
+> The biggest naming limitation is the slot. Scramble number and attempt number travel together. Warm-up, nerves or changing conditions could track the position. The model controls average position effects, but cannot isolate scramble geometry from conditions shared within a final's slot. [SL-C148]
+> Nor do assigned scrambles prove actual assignments. An extra attempt uses a different scramble and replaces the numbered result. There is no actual-assignment audit here. [SL-C134] [SL-C148]
+> Then there are failures. F and R use successful solves only; I don't invent a completion time for a DNF. The separate failure endpoint asks whether higher peer-measured difficulty goes with higher DNF odds. [SL-C148]
+> Its estimated association is positive, but the interval includes no association. Success conditioning may understate shared difficulty. Simulation stresses don't give a universal bound on missing failure times. [SL-C074, SL-C075] [SL-C148]
+> Finally, the remaining variation includes execution, solver-specific opportunities, penalties and model or mapping errors. These data cannot separate personal luck from execution. A PLL skip illustrates an opportunity in a chosen solution; it doesn't reveal the whole field's advantage. [SL-C148]
+
+Rules: [2025 WCA 11e1–11e2](https://www.worldcubeassociation.org/regulations/history/official/2025-07-17/#11e1).
+DNF card: odds ratio 1.0348 (0.9777–1.0649) per 0.05 higher h; 61,231
+identified solver-rounds, 4,154 discordant rows. Limits: METHOD and FINDINGS.
+
+### S12 The takeaway
+
+> So, was the record a lucky scramble? This aggregate study can't settle that particular solve.
+> It can say that, across these eligible seasonal bests, removing the estimated shared scramble/slot component makes the time about 2% longer on average. [SL-C144]
+> The data rule out an average shared scramble/slot boost as large as 10% for these season bests. [SL-C001]
+> The next time a reconstruction reveals a wonderful shortcut, I want to ask whose shortcut it was, and what comparison would measure it. The method, sources and all the checks are linked with this video.
+
+## Short-form adaptations
+
+Each portrait short has its own hook and payoff. Its scope strip remains
+visible throughout; qualifications stay in narration. Compose separately
+within the system's portrait safe area.
+
+### Short A: What the shared scramble adds
+
+Visual: N ratio range → big-number reveal; scope: eligible one-group
+average-of-five finals, 2019–2025; seasonal eligibility ≥5 finals; successful
+times, shared scramble/slot estimate; confirmatory under Amendment 1.
+
+> A lucky scramble sounds like an explanation for a record. I tested a narrower question: how much did the shared scramble/slot component help eligible season-best final solves?
+> The estimated adjustment is about 2%. The ratio is 1.0198, with an amended 95% interval of 1.0164 to 1.0231. [SL-C001, SL-C144]
+> The data rule out an average shared scramble/slot boost as large as 10% for these season bests. [SL-C001]
+> That doesn't measure a particular record's luck. It bundles shared slot conditions with the scramble, and cannot separate personal luck from execution.
+
+### Short B: A skip isn't a shared advantage
+
+Visual: Q stages → two-part split → focal-row exclusion matrix.
+Scope: published historical reconstruction; illustrative distinction;
+one-group seasonal-final study, not a record attribution.
+
+> Max Park's then-record 3.13-second solve included a PLL skip in Ruwix's reconstruction. A final top-face alignment still remained. [SL-C105, SL-C138]
+> That's a shortcut in the solution he chose. It doesn't tell me how much the starting state helped everyone else.
+> To estimate the shared scramble/slot component, I compare peers with their own pace in the final, excluding the focal solver entirely. [SL-C148]
+> A reconstruction explains a route. The peer comparison measures a shared pattern. Neither can separate personal luck from execution in these data. [SL-C148]
+
+Source: [Ruwix reconstruction](https://ruwix.com/blog/max-park-rubik-single-record-313/).
+
+### Short C: Why “scramble luck” includes the slot
+
+Visual: Q limitation cards → separate replacement tag in schematic matrix.
+Scope: scheduled-position analysis of eligible one-group finals, 2019–2025;
+no actual-assignment audit, successful times only.
+
+> If finalists are assigned the same scheduled scramble, their times offer a useful comparison. But scramble number and attempt number travel together. [SL-C148]
+> Conditions shared at that position can enter the estimate too. That's why I call it the shared scramble/slot component. [SL-C148]
+> An extra attempt also uses a different scramble while replacing the original numbered result. Scheduled position isn't proof of the actual cube used. [SL-C134] [SL-C148]
+> The primary estimate uses successful solves; failures are a separate endpoint. This comparison has limits, and it cannot tell us a particular record holder's total luck. [SL-C148]
+
+## Timing and evidence
+
+Long-form: **1,388 words, approximately 9:15 at 150 words per minute**, across
+12 scenes. Shorts: approximately 0:34, 0:32 and 0:36 respectively.
+
+Timing is a word-count estimate at 150 words per minute, excluding claim tags,
+source notes and visual instructions; final voice and chart holds will be
+timed after script lock. Long-form and shorts are counted separately.
+
+Required WCA notice for video/source strip and companion page, preserving
+the source's spelling:
+
+This information is based on competition results owned and maintained by the
+World Cube Assocation, published at https://worldcubeassociation.org/results
+as of September 30, 2026.
+
+Evidence: `METHOD.md` including Amendment 1, `analysis/FINDINGS.md`,
+`analysis/review.md`, `analysis/CONTEXT.md`, `CLAIMS.json` and
+`analysis/claims_check.json`. Context links are publication evidence, not
+independent confirmations of the seasonal estimate.
+
+## Review integration
+
+Re-read `analysis/review.md`, including “Fixes applied — 2026-10-02”, and
+the live `CLAIMS.json` after verification. Applied cross labels, era reference
+scopes, timestamp qualifications and corrected informative-DNF simulation
+wording leave the primary result unchanged. This script presents no cross
+interval endpoints, no disputed era F reading, no exact first-access timestamp
+and no conditional-logistic claim about the simulation sampling mechanism.
+Final verification covers all 148 proposed claims; `story_check` has only
+“not verified” warnings pending owner lock.
+
+## Changes from v0
+
+- Replaced named WIRED-presenter attribution with WIRED publication attribution;
+  removed “the same article” joining separate Ruwix posts and the Geng opening.
+- Removed unsupported assertions about what the first comment usually says,
+  how often reconstructions look easy, skill mattering more than luck, luck
+  being nondominant and “only about 2% of the story”.
+- Corrected the scramble, cross and PLL definitions; removed “most common”
+  as unnecessary and stopped labeling extended-cross tokens as a bare cross.
+- Rebuilt the peer comparison and seasonal adjustment as separate measures;
+  added amended-gate disclosure, precise scope, coverage and DNF uncertainty.
+- Removed the specific Wang-record comparison and era statistics; retained
+  sourced historical Du/Park illustrations without extrapolating to them.
+- Replaced unsupported numerical teaching examples and generic cube-spinning
+  directions with labeled schematics and named design-system components.

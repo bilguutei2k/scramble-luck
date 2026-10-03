@@ -141,6 +141,33 @@ def qa_checks(st,ds,point,primary,subsets,perm):
     add('attempt_beta_F_invariance',all(abs(r['confirmation_beta']['F']-primary[r['draw']]['F'])<1e-12 for r in subsets),{'reason':'separately refitted tier positions absorb any global beta exactly','algebra_error':float(fixed_error)})
     return checks
 
+def apply_review_reporting(result, full_eras):
+    result['confirmation_first_open_scope'] = 'main analysis pipeline first magnitude SELECT only'
+    result['confirmation_access_chronology'] = {
+        'amendment_registration_utc': '2026-10-02T15:07:31+00:00',
+        'blind_recheck_extracted_by_utc': '2026-10-02T15:11:57+00:00',
+        'blind_recheck_timestamp_evidence': 'local extraction-cache filesystem metadata; upper bound on access, not exact first-read audit timestamp',
+        'main_pipeline_first_magnitude_select_utc': result['confirmation_first_open_utc'],
+        'decisions_7_10_timing': 'reported pre-opening; first committed with confirmation results in e8880f3 at 2026-10-02T15:36:01+00:00; not independently established as committed preregistration',
+    }
+    for name, value in result['optimal_cross_mechanism'].items():
+        if isinstance(value, dict):
+            value.update(interval_coverage_validated=False,
+                         interval_method='unvalidated bootstrap percentile diagnostic',
+                         measurement_status='descriptive point estimate; inferential uncertainty inconclusive',
+                         interval_scope='unvalidated bootstrap diagnostic; no calibrated full multiway cross interval; Amendment 1 validates R only')
+    result['optimal_cross_mechanism']['inference_status'] = 'inconclusive; positive point associations are descriptive geometry evidence only'
+    for name, era in full_eras.items():
+        result['robustness'][name]['reference_scope'] = 'within-era reference restriction; separate sensitivity beyond METHOD reference definition'
+        result['robustness'][name]['full_window_reference'] = era
+    for name, value in result['robustness'].items():
+        if name.startswith('leave_year_'):
+            value['reference_scope'] = 'year deleted from outcome panels and reference candidates'
+    for value in result['attempt_position_sensitivities']['yearly_beta']['by_year'].values():
+        value['reference_scope'] = 'references restricted to the same year as outcome panels'
+    result['frozen_simulation_stresses']['informative_dnf_generator'] = 'Gumbel top-k: sequential weighted sampling without replacement among started slots with weights exp(12*shared_slot), renormalized over remaining slots; retain each solver-final DNF count and DNS positions; multi-DNF subset probabilities are not exact conditional-logistic subset odds'
+
+
 def finish(st,ds,cds,kds,point,ext,primary,subsets,deletions,delete_intervals,common,perm,pred):
     ones=(np.ones(st.C),np.ones(st.S),np.ones(st.TC))
     result={'analysis_contract':'METHOD.md as amended by registered AMENDMENT-1',
@@ -274,7 +301,10 @@ def finish(st,ds,cds,kds,point,ext,primary,subsets,deletions,delete_intervals,co
        'permitted_claim':{'Belief holds':'The shared scramble/slot component speeds these season-best solves by more than 10% on average.',
        'Belief fails':'The data rule out an average shared scramble/slot boost as large as 10% for these season bests.',
        'Inconclusive':'The fairer test cannot decide whether the average shared boost reaches 10%.'}[verdict]}
+    from era_references import build
+    apply_review_reporting(result, build(ds, st))
     result['code_sha256']=code_hashes()
+    result['code_sha256']['era_references.py']=sha(OUT/'era_references.py')
     paths=[DERIVED/n for n in ('structure.parquet','training.parquet','scrambles.parquet','cross.parquet','confirmation-values.parquet','first-confirmation-open.json')]
     paths+=list(DERIVED.glob('bootstrap-*.npy'))+list(DERIVED.glob('analysis-*.jsonl'))
     manifest={str(p.relative_to(EP)):{'bytes':p.stat().st_size,'sha256':sha(p)} for p in sorted(paths)}
@@ -285,9 +315,11 @@ def finish(st,ds,cds,kds,point,ext,primary,subsets,deletions,delete_intervals,co
        'flagged_implementation_decisions':[7,8,9,10],
        'non_gating_diagnostics':{
           'cross_percentile_displacement':{k:v for k,v in result['optimal_cross_mechanism'].items() if isinstance(v,dict)},
+          'confirmation_access_chronology':result['confirmation_access_chronology'],
+          'full_window_era_references':{name:result['robustness'][name]['full_window_reference'] for name in ('era_2019_2022','era_2023_2025')},
           'sparse_year_measurement_gates':{year:x['coverage_gates'] for year,x in result['attempt_position_sensitivities']['yearly_beta']['by_year'].items() if not all(x['coverage_gates'].values())},
           'year_2020_invalid_R_draws':2000-result['attempt_position_sensitivities']['yearly_beta']['by_year']['2020']['R_geometric_person_year']['valid_draws']},
-       'review_limit':'Independent numerical re-derivations and registered preconfirmation review are recorded; external full findings review and verified filming attribution remain outstanding.'})
+       'review_limit':'Independent numerical re-derivations and Astra methods review are recorded; required reporting corrections are applied. Verified actual-scramble attribution remains necessary for specific record stories.'})
     findings(result,checks)
     progress(f'Step 4 reporting and QA COMPLETE: {verdict}; {sum(r["pass"] for r in checks)}/{len(checks)} named QA checks pass; results.json, qa.json, FINDINGS.md saved. No .git writes or commit attempted.')
 
@@ -301,7 +333,7 @@ def findings(r,checks):
     lines=[f"The shared scramble/slot adjustment adds about {(R['estimate']-1)*100:.2f}% to these season-best final solves on average. **{r['verdict']['outcome']}.** {r['verdict']['permitted_claim']} R is {fmt(R)}; its entire procedure B interval is below the registered 1.10 line.",
       '',f"The shared scramble/slot component is detectable: tier-aware F is {fmt(F,True)} of balanced-tier within-solver-round successful log-time variance. This is not a percentage of seconds or total luck. The study answers a narrower question than whether a world record was lucky: average shared contrasts in 2019–2025 eligible finals and season bests, not a particular record or total personal luck.",
       '',f"{NOTICE}",'','## Registered primary measurements',
-      '',f"Confirmatory under METHOD as amended by owner-approved AMENDMENT-1 (registration commit 5496074). First confirmation magnitude read: {r['confirmation_first_open_utc']}. The original gate failed. Amendment B was chosen after synthetic results were seen, before confirmation times: it removes the over-coverage ceiling and validates re-centred uncertainty. Paired B coverage was 97–100%; independent coverage was 96–100%, with 0.6% false holds and 0.9% false fails at the calibrated 1.10 boundary (n=1,000). Conservatism reduces precision; these simulations do not guarantee coverage for every process.",
+      '',f"Confirmatory under METHOD as amended by owner-approved AMENDMENT-1 (registration commit 5496074). Main analysis pipeline first magnitude SELECT (not the blind recheck): {r['confirmation_first_open_utc']}. The blind recheck had extracted magnitudes by 15:11:57 UTC (local extraction-cache metadata, not an exact first-read timestamp); both follow amendment registration at 15:07:31 UTC. The original gate failed. Amendment B was chosen after synthetic results were seen, before confirmation times: it removes the over-coverage ceiling and validates re-centred uncertainty. Paired B coverage was 97–100%; independent coverage was 96–100%, with 0.6% false holds and 0.9% false fails at the calibrated 1.10 boundary (n=1,000). Conservatism reduces precision; these simulations do not guarantee coverage for every process.",
       '',f"R: {fmt(R)}, n={R['n']['available_person_years']} available person-years; {R['valid_draws']}/2,000 valid draws. Procedure B centres by the bootstrap mean on the observed log R. Raw percentile R interval: {R['raw_percentile_interval_95']}; bootstrap mean log R={R['bootstrap_mean']:.8f}; displacement={R['bootstrap_mean_displacement']:.8f}. No point-estimate bias correction or clipping. Procedure A fixed-selection sensitivity: {fmt(A)}, {A['valid_draws']}/2,000 valid draws; it cannot change the verdict.",
       '',f"F: {fmt(F,True)}, n={F['n']['tier_supported_finals']} tier-supported finals and {F['n']['successful_cells']} successful cells. Gamma/D: {fmt(P['tier_interaction_share_gamma_over_D'],True)}; the signed interval crosses zero. Signed variance components, tier residuals and D with their percentile intervals are in results.json. Negative moments are boundary diagnostics, not negative physical variance."]
     cov=r['coverage'];o=cov['outcome'];s=cov['structural']
@@ -311,9 +343,18 @@ def findings(r,checks):
     lines += ['', 'Exclusions are the registered structural/status exclusions; no speed threshold, outlier deletion or complete-final requirement. Mutually exclusive result counts: '+json.dumps(s['exclusions_mutually_exclusive_result_counts'],sort_keys=True)+'.',
        '', 'Bootstrap exposure diagnostics (central ranges describe draws, not extra confidence intervals):']
     for key,v in r['bootstrap_exposure'].items():lines.append(f"- {key}: mean {v['mean']:.4f}, central 95% range {v['central_95_draw_range']}, min–max {v['min']}–{v['max']}, n=2,000 draws.")
-    lines += ['','## Every robustness and sensitivity check','','All intervals below are pointwise. None changes the primary decision. Era and year-deletion references use the included competitions; the roster stays fixed.','', '| Check | F, 95% interval | R, procedure B interval | Tier finals / successes / extrema |','|---|---|---|---|']
+    lines += ['','## Every robustness and sensitivity check','','All intervals below are pointwise. None changes the primary decision. The existing era rows below use within-era references as a separate sensitivity; the full-window counterparts are shown immediately afterward. METHOD supports full-2019–2025 ±2-year references more directly. Year-deletion checks delete reference information with the year; yearly-beta checks restrict references to the same year. The roster stays fixed.','', '| Check | F, 95% interval | R, procedure B interval | Tier finals / successes / extrema |','|---|---|---|---|']
     for name,x in r['robustness'].items():
         c=x['coverage'];lines.append(f"| {name} | {fmt(x['F_tier_aware'],True)} | {fmt(x['R_geometric_person_year'])} | {c['tier_supported_finals']} / {c['tier_successful_cells']} / {c['available_extrema']} |")
+    lines += ['', 'Era reference comparison (percentile intervals use the same 2,000 registered product-weight draws; full-window references are recomputed before restricting outcome panels):', '',
+              '| Era | Reference scope | F, 95% interval | γ/D, 95% interval | Tier finals / successes |',
+              '|---|---|---|---|---|']
+    for name in ('era_2019_2022', 'era_2023_2025'):
+        within = r['robustness'][name]
+        for scope, x in [('full 2019–2025 ±2 years (direct METHOD reading)', within['full_window_reference']), ('within era (separate sensitivity)', within)]:
+            n = x['F_tier_aware']['n']
+            lines.append(f"| {name} | {scope} | {fmt(x['F_tier_aware'],True)} | {fmt(x['tier_interaction_share_gamma_over_D'],True)} | {n['tier_supported_finals']} / {n['successful_cells']} |")
+    lines += ['', 'The full-window points and counts reproduce all eight blind re-derivation values (F=0.0471872504634 / 0.0473167746396; γ/D=0.00328942420659 / 0.00360846067419). All four new intervals have 2,000 valid draws; none reuses a within-era interval. All-peer era R does not use skill references, so its values and the primary verdict are unchanged.']
     lines += ['',f"Complete-success sensitivity masks {r['robustness']['complete_success']['masked_solver_rounds']['estimate']} incomplete solver-rounds but keeps the original seasonal roster. Clipping affects {r['robustness']['clipped_centered_logs']['clipped_cells']['estimate']} successful cells at centered log contrast ±0.6; no primary clipping occurs."]
     for name,x in r['common_only_comparators'].items():lines.append(f"\nAll-finalist common-only comparator ({name}): share {fmt(x['share'],True)}; actual within-solver denominator {fmt(x['within_solver_denominator'])}, n={x['share']['n']}. It does not replace tier-aware F.")
     for name,x in r['solver_deletion']['metrics'].items():
@@ -321,7 +362,7 @@ def findings(r,checks):
         for z in x['endpoint_measurements']:lines.append(f"- Delete {z['deleted_solver']}: {fmt(z['measurement'])}, n={z['measurement']['n']}.")
     lines += ['', 'Aggregation/tier sensitivities:']
     for key,x in r['aggregation_and_tier_sensitivities'].items():
-        if 'interval_method' in x and key!='equal_tier_attrition':lines.append(f"- {key}: {fmt(x)}, n={x['n']}.")
+        if 'interval_method' in x and key!='equal_tier_attrition':lines.append(f"- {key}: {x['estimate']:.4f}; unvalidated bootstrap diagnostic range [{x['interval_95'][0]:.4f}, {x['interval_95'][1]:.4f}] (coverage unvalidated; inferential uncertainty inconclusive), n={x['n']}.")
     lines += ['',f"Equal-tier attrition={r['aggregation_and_tier_sensitivities']['equal_tier_attrition']['estimate']} original extrema. The matched subset comparison is essential; R averages the observed peer lineup and does not establish an advantage uniform across skill tiers.",
        '', 'Attempt-position checks:']
     for name,x in r['attempt_position_sensitivities'].items():
@@ -335,12 +376,12 @@ def findings(r,checks):
     lines += ['', 'All yearly fitted beta values and intervals are in results.json. F is algebraically invariant to a global beta change because pooled tier positions are refitted. R remains sensitive to position adjustment. Scramble number and attempt number are confounded.',
       '', '## Secondary checks, including contrary evidence',
       '',f"DNF odds ratio per 0.05 increase in leave-one-out h: {fmt(D)}, n={D['n']}. Exact conditional logistic regression includes attempt effects and solver-round fixed effects. All-success/all-DNF panels contribute counts but no conditional likelihood. DNS is outside the started denominator. Binary DNF shared covariance: {fmt(r['DNF_secondary']['binary_shared_covariance'])}. DNF rate: {fmt(r['DNF_secondary']['started_attempt_DNF_rate'],True)}; DNS rate: {fmt(r['DNF_secondary']['DNS_slot_rate'],True)}. Counts: {r['DNF_secondary']['DNF_count']['estimate']} DNF; {r['DNF_secondary']['DNS_count']['estimate']} DNS."]
-    if D['estimate']>1:lines += ['', 'The estimated DNF association is positive, but its interval includes no association. The success-only estimate may understate shared difficulty. The frozen informative-DNF simulation bounds behavior only under its specified conditional-odds process, not a universal bound on unobserved failure times. It cannot change the verdict.']
+    if D['estimate']>1:lines += ['', 'The estimated DNF association is positive, but its interval includes no association. The success-only estimate may understate shared difficulty. The frozen informative-DNF simulation bounds behavior only under its specified sequential weighted sampling without replacement process (Gumbel top-k, weights exp(12 × shared effect), preserving DNF counts and DNS positions), not a universal bound on unobserved failure times. It cannot change the verdict.']
     for name,x in X.items():
-        if isinstance(x,dict):lines.append(f"\nOptimal cross {name}: {fmt(x)}, n={x['n']}.")
-    lines += ['', 'Cross lengths were solved exactly from scramble strings before any confirmation times. A positive association supports a scramble-geometry contribution, but neither this association nor the time model separates all shared slot conditions. Half-turn metric; U/D denote white/yellow in the standard orientation.']
+        if isinstance(x,dict):lines.append(f"\nOptimal cross {name}: {x['estimate']:.4f}; unvalidated bootstrap diagnostic range [{x['interval_95'][0]:.4f}, {x['interval_95'][1]:.4f}] (coverage unvalidated; inferential uncertainty inconclusive), n={x['n']}.")
+    lines += ['', 'Cross lengths were solved exactly from scramble strings before any confirmation times. The positive point associations are descriptive evidence of a scramble-geometry contribution; calibrated cross inference remains inconclusive, but neither this association nor the time model separates all shared slot conditions. Half-turn metric; U/D denote white/yellow in the standard orientation.']
     for name,x in X.items():
-        if isinstance(x,dict) and x['point_outside_percentile_interval']:lines.append(f"\nContrary uncertainty diagnostic, {name}: the observed correlation lies outside its unaltered percentile interval; bootstrap mean={x['bootstrap_mean']:.6f}, displacement={x['bootstrap_mean_displacement']:.6f}, n=2,000 draws. Product-weight peer resampling changes measurement noise. Cross-correlation uncertainty has not been calibrated by Amendment 1 (which validates R only); do not present these endpoints as a demonstrated coverage guarantee. No unregistered recentering was applied.")
+        if isinstance(x,dict) and x['point_outside_percentile_interval']:lines.append(f"\nContrary uncertainty diagnostic, {name}: the observed correlation lies outside its unaltered unvalidated bootstrap diagnostic range; bootstrap mean={x['bootstrap_mean']:.6f}, displacement={x['bootstrap_mean_displacement']:.6f}, n=2,000 draws. Product-weight peer resampling changes measurement noise. Cross-correlation uncertainty has not been calibrated by Amendment 1 (which validates R only); do not present these endpoints as a demonstrated coverage guarantee. No unregistered recentering was applied.")
     lines += ['', 'Independent within-final, per-solver time/status permutations (1,000 draws; refitted references and moments):']
     for name,x in r['permutation_negative_control'].items():lines.append(f"- {name}: reference mean {x['estimate']:.6f}; central 95% permutation range {x['interval_95']}; observed {x['observed_estimate']:.6f}; plus-one upper-tail probability {x['one_sided_alignment_tail_probability_plus_one']:.6f}; valid draws={x['valid_draws']}. This reference range is not a sampling CI.")
     lines += ['', '| Assumed random replacement p | Scaled tau, interval | Share with original D, interval |','|---|---|---|']
@@ -359,7 +400,7 @@ def findings(r,checks):
       '', 'F and R are estimated from successful solves only. No failure time is imputed. The shared scramble/slot component bundles scramble geometry with conditions shared by everyone in the final’s time slot. Attempt number is confounded with scramble number. The estimated shared-scramble-adjusted time is not a causal replay on another scramble.',
       '', 'Residual variation includes execution, solver-specific scramble opportunities, penalties, model error, missingness and mapping error. The data cannot separate personal luck from execution. These results do not attribute a particular world record, identify the fastest record holder, or measure total personal luck. Exact-record stories require verified actual assignments and remain illustrative, not independent confirmations.',
       '', 'The population is structurally eligible all-finalist 2019–2025 confirmation finals and person-years with at least five such finals; it does not represent all record attempts, earlier rounds or all cubers. Skill references are retrospective and may use future appearances within ±2 years. Tier-subset coverage is disclosed above; do not generalize from it without this coverage table. Bootstrap exposure changes: the intervals are sampling intervals, not replays with original fixed attempt counts. Secondary intervals are pointwise and provide no additional confirmatory verdicts.',
-      '', 'Flagged decisions 7–10 in DEVIATIONS.md resolve unspecified secondary details: conditional logistic likelihood; focal-averaged raw/centered cross correlations; subset/deletion weighting and endpoint-only deletion intervals; fixed ≥22-peer prediction panels and auxiliary interval scopes. They were written before opening confirmation times. Arithmetic/equal-tier/per-solver translated intervals remain descriptive and were not given new simulation coverage guarantees. The registered post-failure amendment and the original failed gate remain fully disclosed.',
+      '', 'Flagged decisions 7–10 in DEVIATIONS.md resolve unspecified secondary details: conditional logistic likelihood; focal-averaged raw/centered cross correlations; subset/deletion weighting and endpoint-only deletion intervals; fixed ≥22-peer prediction panels and auxiliary interval scopes. They were reported as written before opening confirmation times, but first committed together with confirmation results in e8880f3 at 15:36:01 UTC; committed preregistration of these choices is not independently established. Arithmetic/equal-tier/per-solver translated intervals remain descriptive and were not given new simulation coverage guarantees. The registered post-failure amendment and the original failed gate remain fully disclosed.',
       '', 'A flagged software correction after opening handles a yearly draw with zero available extrema: retain it as invalid, omit its zero weight from the pooled yearly-beta ratio, and resume unchanged checkpoints. Primary point estimates, primary draws and intervals, seed, eligibility and threshold were unchanged. See DEVIATIONS.md.',
-      '', f"QA: {sum(x['pass'] for x in checks)}/{len(checks)} named checks pass; see qa.json for evidence. Independent numerical re-derivations and preconfirmation methods review are recorded. External review of the completed findings and verified actual-scramble attribution remain prerequisites for specific record stories or filming. No commit was attempted; .git is read-only."]
+      '', f"QA: {sum(x['pass'] for x in checks)}/{len(checks)} named checks pass; see qa.json for evidence. Independent numerical re-derivations and preconfirmation methods review are recorded. Astra methods review and its applied fixes are recorded in review.md; verified actual-scramble attribution remains necessary for specific record stories. No commit was attempted; .git is read-only."]
     (OUT/'FINDINGS.md').write_text('\n'.join(lines)+'\n')

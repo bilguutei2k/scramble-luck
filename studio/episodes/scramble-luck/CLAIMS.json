@@ -1529,7 +1529,7 @@
       "id": "SL-C037",
       "status": "proposed",
       "exploratory": false,
-      "text": "era 2019 2022: shared scramble/slot F 4.8238% (2.7785–7.2652%), R 1.0186 (1.0125–1.0248), γ/D 0.1820% (-1.7683–1.9218%); 1,269 tier finals, 59,773 tier successes and 888 available extrema.",
+      "text": "Within-era reference sensitivity — era 2019 2022: shared scramble/slot F 4.8238% (2.7785–7.2652%), R 1.0186 (1.0125–1.0248), γ/D 0.1820% (-1.7683–1.9218%); 1,269 tier finals, 59,773 tier successes and 888 available extrema. Full-window 2019–2025 ±2-year reference reading: F 4.7187% (3.1891–6.7179%), γ/D 0.3289% (-1.3108–1.7305%); 1,375 tier finals and 68,127 successes; 2,000 valid draws for each interval. METHOD supports the full-window reading more directly; all-peer R is unchanged.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
       "result_file": "analysis/results.json",
       "values": [
@@ -1592,9 +1592,70 @@
           "key": "robustness.era_2019_2022.R_geometric_person_year.n.available_person_years",
           "stated": 888,
           "digits": 0
+        },
+        {
+          "key": "robustness.era_2019_2022.full_window_reference.F_tier_aware.estimate",
+          "stated": 0.0471872505,
+          "digits": 10
+        },
+        {
+          "key": "robustness.era_2019_2022.full_window_reference.F_tier_aware.interval_95[0]",
+          "stated": 0.0318912413,
+          "digits": 10
+        },
+        {
+          "key": "robustness.era_2019_2022.full_window_reference.F_tier_aware.interval_95[1]",
+          "stated": 0.0671790079,
+          "digits": 10
+        },
+        {
+          "key": "robustness.era_2019_2022.full_window_reference.F_tier_aware.valid_draws",
+          "stated": 2000,
+          "digits": 0
+        },
+        {
+          "key": "robustness.era_2019_2022.full_window_reference.F_tier_aware.n.tier_supported_finals",
+          "stated": 1375,
+          "digits": 0
+        },
+        {
+          "key": "robustness.era_2019_2022.full_window_reference.F_tier_aware.n.successful_cells",
+          "stated": 68127,
+          "digits": 0
+        },
+        {
+          "key": "robustness.era_2019_2022.full_window_reference.tier_interaction_share_gamma_over_D.estimate",
+          "stated": 0.0032894242,
+          "digits": 10
+        },
+        {
+          "key": "robustness.era_2019_2022.full_window_reference.tier_interaction_share_gamma_over_D.interval_95[0]",
+          "stated": -0.0131078601,
+          "digits": 10
+        },
+        {
+          "key": "robustness.era_2019_2022.full_window_reference.tier_interaction_share_gamma_over_D.interval_95[1]",
+          "stated": 0.0173048783,
+          "digits": 10
+        },
+        {
+          "key": "robustness.era_2019_2022.full_window_reference.tier_interaction_share_gamma_over_D.valid_draws",
+          "stated": 2000,
+          "digits": 0
+        },
+        {
+          "key": "robustness.era_2019_2022.full_window_reference.tier_interaction_share_gamma_over_D.n.tier_supported_finals",
+          "stated": 1375,
+          "digits": 0
+        },
+        {
+          "key": "robustness.era_2019_2022.full_window_reference.tier_interaction_share_gamma_over_D.n.successful_cells",
+          "stated": 68127,
+          "digits": 0
         }
       ],
       "limitations": [
+        "Full-window reference weights are recomputed in each saved registered draw, then only outcome panels are restricted to the era. Each reading has its own pointwise intervals; the within-era reference restriction is a separate sensitivity, not a contract amendment.",
         "Pointwise sensitivity intervals; original seasonal roster stays fixed and extrema are reselected. No sensitivity changes the primary verdict.",
         "The shared scramble/slot component includes conditions shared at a scheduled attempt position; actual replacement assignments were not audited.",
         "Residual variation includes execution, solver-specific scramble opportunities, penalties, model error, missingness and mapping error; these data cannot separate personal luck from execution or attribute one record’s total luck."
@@ -1607,7 +1668,7 @@
       "id": "SL-C038",
       "status": "proposed",
       "exploratory": false,
-      "text": "era 2023 2025: shared scramble/slot F 4.7465% (3.7700–5.8016%), R 1.0202 (1.0162–1.0242), γ/D 0.2969% (-0.6321–1.0607%); 3,012 tier finals, 162,831 tier successes and 2,425 available extrema.",
+      "text": "Within-era reference sensitivity — era 2023 2025: shared scramble/slot F 4.7465% (3.7700–5.8016%), R 1.0202 (1.0162–1.0242), γ/D 0.2969% (-0.6321–1.0607%); 3,012 tier finals, 162,831 tier successes and 2,425 available extrema. Full-window 2019–2025 ±2-year reference reading: F 4.7317% (3.7627–5.7045%), γ/D 0.3608% (-0.6193–1.0217%); 3,045 tier finals and 166,398 successes; 2,000 valid draws for each interval. METHOD supports the full-window reading more directly; all-peer R is unchanged.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
       "result_file": "analysis/results.json",
       "values": [
@@ -1670,9 +1731,70 @@
           "key": "robustness.era_2023_2025.R_geometric_person_year.n.available_person_years",
           "stated": 2425,
           "digits": 0
+        },
+        {
+          "key": "robustness.era_2023_2025.full_window_reference.F_tier_aware.estimate",
+          "stated": 0.0473167746,
+          "digits": 10
+        },
+        {
+          "key": "robustness.era_2023_2025.full_window_reference.F_tier_aware.interval_95[0]",
+          "stated": 0.0376271777,
+          "digits": 10
+        },
+        {
+          "key": "robustness.era_2023_2025.full_window_reference.F_tier_aware.interval_95[1]",
+          "stated": 0.0570448586,
+          "digits": 10
+        },
+        {
+          "key": "robustness.era_2023_2025.full_window_reference.F_tier_aware.valid_draws",
+          "stated": 2000,
+          "digits": 0
+        },
+        {
+          "key": "robustness.era_2023_2025.full_window_reference.F_tier_aware.n.tier_supported_finals",
+          "stated": 3045,
+          "digits": 0
+        },
+        {
+          "key": "robustness.era_2023_2025.full_window_reference.F_tier_aware.n.successful_cells",
+          "stated": 166398,
+          "digits": 0
+        },
+        {
+          "key": "robustness.era_2023_2025.full_window_reference.tier_interaction_share_gamma_over_D.estimate",
+          "stated": 0.0036084607,
+          "digits": 10
+        },
+        {
+          "key": "robustness.era_2023_2025.full_window_reference.tier_interaction_share_gamma_over_D.interval_95[0]",
+          "stated": -0.0061925256,
+          "digits": 10
+        },
+        {
+          "key": "robustness.era_2023_2025.full_window_reference.tier_interaction_share_gamma_over_D.interval_95[1]",
+          "stated": 0.0102170001,
+          "digits": 10
+        },
+        {
+          "key": "robustness.era_2023_2025.full_window_reference.tier_interaction_share_gamma_over_D.valid_draws",
+          "stated": 2000,
+          "digits": 0
+        },
+        {
+          "key": "robustness.era_2023_2025.full_window_reference.tier_interaction_share_gamma_over_D.n.tier_supported_finals",
+          "stated": 3045,
+          "digits": 0
+        },
+        {
+          "key": "robustness.era_2023_2025.full_window_reference.tier_interaction_share_gamma_over_D.n.successful_cells",
+          "stated": 166398,
+          "digits": 0
         }
       ],
       "limitations": [
+        "Full-window reference weights are recomputed in each saved registered draw, then only outcome panels are restricted to the era. Each reading has its own pointwise intervals; the within-era reference restriction is a separate sensitivity, not a contract amendment.",
         "Pointwise sensitivity intervals; original seasonal roster stays fixed and extrema are reselected. No sensitivity changes the primary verdict.",
         "The shared scramble/slot component includes conditions shared at a scheduled attempt position; actual replacement assignments were not audited.",
         "Residual variation includes execution, solver-specific scramble opportunities, penalties, model error, missingness and mapping error; these data cannot separate personal luck from execution or attribute one record’s total luck."
@@ -1751,6 +1873,7 @@
         }
       ],
       "limitations": [
+        "The deleted year is excluded from outcome panels and skill-reference candidates; this is a data-deletion sensitivity.",
         "Pointwise sensitivity intervals; original seasonal roster stays fixed and extrema are reselected. No sensitivity changes the primary verdict.",
         "The shared scramble/slot component includes conditions shared at a scheduled attempt position; actual replacement assignments were not audited.",
         "Residual variation includes execution, solver-specific scramble opportunities, penalties, model error, missingness and mapping error; these data cannot separate personal luck from execution or attribute one record’s total luck."
@@ -1829,6 +1952,7 @@
         }
       ],
       "limitations": [
+        "The deleted year is excluded from outcome panels and skill-reference candidates; this is a data-deletion sensitivity.",
         "Pointwise sensitivity intervals; original seasonal roster stays fixed and extrema are reselected. No sensitivity changes the primary verdict.",
         "The shared scramble/slot component includes conditions shared at a scheduled attempt position; actual replacement assignments were not audited.",
         "Residual variation includes execution, solver-specific scramble opportunities, penalties, model error, missingness and mapping error; these data cannot separate personal luck from execution or attribute one record’s total luck."
@@ -1907,6 +2031,7 @@
         }
       ],
       "limitations": [
+        "The deleted year is excluded from outcome panels and skill-reference candidates; this is a data-deletion sensitivity.",
         "Pointwise sensitivity intervals; original seasonal roster stays fixed and extrema are reselected. No sensitivity changes the primary verdict.",
         "The shared scramble/slot component includes conditions shared at a scheduled attempt position; actual replacement assignments were not audited.",
         "Residual variation includes execution, solver-specific scramble opportunities, penalties, model error, missingness and mapping error; these data cannot separate personal luck from execution or attribute one record’s total luck."
@@ -1985,6 +2110,7 @@
         }
       ],
       "limitations": [
+        "The deleted year is excluded from outcome panels and skill-reference candidates; this is a data-deletion sensitivity.",
         "Pointwise sensitivity intervals; original seasonal roster stays fixed and extrema are reselected. No sensitivity changes the primary verdict.",
         "The shared scramble/slot component includes conditions shared at a scheduled attempt position; actual replacement assignments were not audited.",
         "Residual variation includes execution, solver-specific scramble opportunities, penalties, model error, missingness and mapping error; these data cannot separate personal luck from execution or attribute one record’s total luck."
@@ -2063,6 +2189,7 @@
         }
       ],
       "limitations": [
+        "The deleted year is excluded from outcome panels and skill-reference candidates; this is a data-deletion sensitivity.",
         "Pointwise sensitivity intervals; original seasonal roster stays fixed and extrema are reselected. No sensitivity changes the primary verdict.",
         "The shared scramble/slot component includes conditions shared at a scheduled attempt position; actual replacement assignments were not audited.",
         "Residual variation includes execution, solver-specific scramble opportunities, penalties, model error, missingness and mapping error; these data cannot separate personal luck from execution or attribute one record’s total luck."
@@ -2141,6 +2268,7 @@
         }
       ],
       "limitations": [
+        "The deleted year is excluded from outcome panels and skill-reference candidates; this is a data-deletion sensitivity.",
         "Pointwise sensitivity intervals; original seasonal roster stays fixed and extrema are reselected. No sensitivity changes the primary verdict.",
         "The shared scramble/slot component includes conditions shared at a scheduled attempt position; actual replacement assignments were not audited.",
         "Residual variation includes execution, solver-specific scramble opportunities, penalties, model error, missingness and mapping error; these data cannot separate personal luck from execution or attribute one record’s total luck."
@@ -2219,6 +2347,7 @@
         }
       ],
       "limitations": [
+        "The deleted year is excluded from outcome panels and skill-reference candidates; this is a data-deletion sensitivity.",
         "Pointwise sensitivity intervals; original seasonal roster stays fixed and extrema are reselected. No sensitivity changes the primary verdict.",
         "The shared scramble/slot component includes conditions shared at a scheduled attempt position; actual replacement assignments were not audited.",
         "Residual variation includes execution, solver-specific scramble opportunities, penalties, model error, missingness and mapping error; these data cannot separate personal luck from execution or attribute one record’s total luck."
@@ -3189,6 +3318,7 @@
         }
       ],
       "limitations": [
+        "Yearly tier F and γ/D restrict skill-reference candidates to the same year as outcome panels; this is a restricted-reference diagnostic.",
         "Year-specific estimates restrict reference finals to that year; pointwise diagnostics do not determine the primary verdict.",
         "The shared scramble/slot component includes conditions shared at a scheduled attempt position; actual replacement assignments were not audited.",
         "Residual variation includes execution, solver-specific scramble opportunities, penalties, model error, missingness and mapping error; these data cannot separate personal luck from execution or attribute one record’s total luck."
@@ -3282,6 +3412,7 @@
         }
       ],
       "limitations": [
+        "Yearly tier F and γ/D restrict skill-reference candidates to the same year as outcome panels; this is a restricted-reference diagnostic.",
         "Year-specific estimates restrict reference finals to that year; pointwise diagnostics do not determine the primary verdict.",
         "The shared scramble/slot component includes conditions shared at a scheduled attempt position; actual replacement assignments were not audited.",
         "Residual variation includes execution, solver-specific scramble opportunities, penalties, model error, missingness and mapping error; these data cannot separate personal luck from execution or attribute one record’s total luck."
@@ -3370,6 +3501,7 @@
         }
       ],
       "limitations": [
+        "Yearly tier F and γ/D restrict skill-reference candidates to the same year as outcome panels; this is a restricted-reference diagnostic.",
         "Year-specific estimates restrict reference finals to that year; pointwise diagnostics do not determine the primary verdict.",
         "F fails coverage and/or valid-draw gates; 2020 and 2021 also fail the available-extrema R gate. These intervals cannot support general yearly claims.",
         "The shared scramble/slot component includes conditions shared at a scheduled attempt position; actual replacement assignments were not audited.",
@@ -3464,6 +3596,7 @@
         }
       ],
       "limitations": [
+        "Yearly tier F and γ/D restrict skill-reference candidates to the same year as outcome panels; this is a restricted-reference diagnostic.",
         "Year-specific estimates restrict reference finals to that year; pointwise diagnostics do not determine the primary verdict.",
         "F fails coverage and/or valid-draw gates; 2020 and 2021 also fail the available-extrema R gate. These intervals cannot support general yearly claims.",
         "The shared scramble/slot component includes conditions shared at a scheduled attempt position; actual replacement assignments were not audited.",
@@ -3553,6 +3686,7 @@
         }
       ],
       "limitations": [
+        "Yearly tier F and γ/D restrict skill-reference candidates to the same year as outcome panels; this is a restricted-reference diagnostic.",
         "Year-specific estimates restrict reference finals to that year; pointwise diagnostics do not determine the primary verdict.",
         "F fails coverage and/or valid-draw gates; 2020 and 2021 also fail the available-extrema R gate. These intervals cannot support general yearly claims.",
         "The shared scramble/slot component includes conditions shared at a scheduled attempt position; actual replacement assignments were not audited.",
@@ -3647,6 +3781,7 @@
         }
       ],
       "limitations": [
+        "Yearly tier F and γ/D restrict skill-reference candidates to the same year as outcome panels; this is a restricted-reference diagnostic.",
         "Year-specific estimates restrict reference finals to that year; pointwise diagnostics do not determine the primary verdict.",
         "F fails coverage and/or valid-draw gates; 2020 and 2021 also fail the available-extrema R gate. These intervals cannot support general yearly claims.",
         "The shared scramble/slot component includes conditions shared at a scheduled attempt position; actual replacement assignments were not audited.",
@@ -3736,6 +3871,7 @@
         }
       ],
       "limitations": [
+        "Yearly tier F and γ/D restrict skill-reference candidates to the same year as outcome panels; this is a restricted-reference diagnostic.",
         "Year-specific estimates restrict reference finals to that year; pointwise diagnostics do not determine the primary verdict.",
         "F fails coverage and/or valid-draw gates; 2020 and 2021 also fail the available-extrema R gate. These intervals cannot support general yearly claims.",
         "The shared scramble/slot component includes conditions shared at a scheduled attempt position; actual replacement assignments were not audited.",
@@ -3830,6 +3966,7 @@
         }
       ],
       "limitations": [
+        "Yearly tier F and γ/D restrict skill-reference candidates to the same year as outcome panels; this is a restricted-reference diagnostic.",
         "Year-specific estimates restrict reference finals to that year; pointwise diagnostics do not determine the primary verdict.",
         "F fails coverage and/or valid-draw gates; 2020 and 2021 also fail the available-extrema R gate. These intervals cannot support general yearly claims.",
         "The shared scramble/slot component includes conditions shared at a scheduled attempt position; actual replacement assignments were not audited.",
@@ -3919,6 +4056,7 @@
         }
       ],
       "limitations": [
+        "Yearly tier F and γ/D restrict skill-reference candidates to the same year as outcome panels; this is a restricted-reference diagnostic.",
         "Year-specific estimates restrict reference finals to that year; pointwise diagnostics do not determine the primary verdict.",
         "The shared scramble/slot component includes conditions shared at a scheduled attempt position; actual replacement assignments were not audited.",
         "Residual variation includes execution, solver-specific scramble opportunities, penalties, model error, missingness and mapping error; these data cannot separate personal luck from execution or attribute one record’s total luck."
@@ -4012,6 +4150,7 @@
         }
       ],
       "limitations": [
+        "Yearly tier F and γ/D restrict skill-reference candidates to the same year as outcome panels; this is a restricted-reference diagnostic.",
         "Year-specific estimates restrict reference finals to that year; pointwise diagnostics do not determine the primary verdict.",
         "The shared scramble/slot component includes conditions shared at a scheduled attempt position; actual replacement assignments were not audited.",
         "Residual variation includes execution, solver-specific scramble opportunities, penalties, model error, missingness and mapping error; these data cannot separate personal luck from execution or attribute one record’s total luck."
@@ -4100,6 +4239,7 @@
         }
       ],
       "limitations": [
+        "Yearly tier F and γ/D restrict skill-reference candidates to the same year as outcome panels; this is a restricted-reference diagnostic.",
         "Year-specific estimates restrict reference finals to that year; pointwise diagnostics do not determine the primary verdict.",
         "The shared scramble/slot component includes conditions shared at a scheduled attempt position; actual replacement assignments were not audited.",
         "Residual variation includes execution, solver-specific scramble opportunities, penalties, model error, missingness and mapping error; these data cannot separate personal luck from execution or attribute one record’s total luck."
@@ -4193,6 +4333,7 @@
         }
       ],
       "limitations": [
+        "Yearly tier F and γ/D restrict skill-reference candidates to the same year as outcome panels; this is a restricted-reference diagnostic.",
         "Year-specific estimates restrict reference finals to that year; pointwise diagnostics do not determine the primary verdict.",
         "The shared scramble/slot component includes conditions shared at a scheduled attempt position; actual replacement assignments were not audited.",
         "Residual variation includes execution, solver-specific scramble opportunities, penalties, model error, missingness and mapping error; these data cannot separate personal luck from execution or attribute one record’s total luck."
@@ -4281,6 +4422,7 @@
         }
       ],
       "limitations": [
+        "Yearly tier F and γ/D restrict skill-reference candidates to the same year as outcome panels; this is a restricted-reference diagnostic.",
         "Year-specific estimates restrict reference finals to that year; pointwise diagnostics do not determine the primary verdict.",
         "The shared scramble/slot component includes conditions shared at a scheduled attempt position; actual replacement assignments were not audited.",
         "Residual variation includes execution, solver-specific scramble opportunities, penalties, model error, missingness and mapping error; these data cannot separate personal luck from execution or attribute one record’s total luck."
@@ -4374,6 +4516,7 @@
         }
       ],
       "limitations": [
+        "Yearly tier F and γ/D restrict skill-reference candidates to the same year as outcome panels; this is a restricted-reference diagnostic.",
         "Year-specific estimates restrict reference finals to that year; pointwise diagnostics do not determine the primary verdict.",
         "The shared scramble/slot component includes conditions shared at a scheduled attempt position; actual replacement assignments were not audited.",
         "Residual variation includes execution, solver-specific scramble opportunities, penalties, model error, missingness and mapping error; these data cannot separate personal luck from execution or attribute one record’s total luck."
@@ -4530,7 +4673,7 @@
       "id": "SL-C077",
       "status": "proposed",
       "exploratory": false,
-      "text": "six face centered correlation: correlation of optimal cross length with the shared scramble/slot contrast is 0.2658 (0.1975–0.2287) across 25,085 scheduled scrambles and 61,231 identified focal rows. Bootstrap mean 0.213170, displacement -0.052632.",
+      "text": "six face centered correlation: correlation of optimal cross length with the shared scramble/slot contrast is 0.2658; unvalidated bootstrap diagnostic range [0.1975–0.2287] (coverage unvalidated; inferential uncertainty inconclusive) across 25,085 scheduled scrambles and 61,231 identified focal rows. Bootstrap mean 0.213170, displacement -0.052632.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
       "result_file": "analysis/results.json",
       "values": [
@@ -4571,20 +4714,21 @@
         }
       ],
       "limitations": [
-        "The observed point lies outside its unaltered percentile interval. Product-weight peer resampling changes measurement noise; Amendment 1 calibrates R only, so these endpoints have no demonstrated coverage guarantee and were not recentred.",
-        "Exact cross lengths use half-turn metric; centered versions demean length within final, and are the preferred mechanism description. Positive association supports scramble geometry without separating shared slot conditions.",
+        "The observed point lies outside its unaltered unvalidated bootstrap diagnostic range. Product-weight peer resampling changes measurement noise; Amendment 1 calibrates R only, so these endpoints have no demonstrated coverage guarantee and were not recentred. No full multiway cross interval has been validated.",
+        "Exact cross lengths use half-turn metric; centered versions demean length within final, and are the preferred mechanism description. Positive point association supplies descriptive geometry evidence; calibrated inference is inconclusive without separating shared slot conditions.",
         "The shared scramble/slot component includes conditions shared at a scheduled attempt position; actual replacement assignments were not audited.",
         "Residual variation includes execution, solver-specific scramble opportunities, penalties, model error, missingness and mapping error; these data cannot separate personal luck from execution or attribute one record’s total luck."
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "interval_coverage_validated": false
     },
     {
       "id": "SL-C078",
       "status": "proposed",
       "exploratory": false,
-      "text": "six face raw correlation: correlation of optimal cross length with the shared scramble/slot contrast is 0.2377 (0.1764–0.2047) across 25,085 scheduled scrambles and 61,231 identified focal rows. Bootstrap mean 0.190635, displacement -0.047086.",
+      "text": "six face raw correlation: correlation of optimal cross length with the shared scramble/slot contrast is 0.2377; unvalidated bootstrap diagnostic range [0.1764–0.2047] (coverage unvalidated; inferential uncertainty inconclusive) across 25,085 scheduled scrambles and 61,231 identified focal rows. Bootstrap mean 0.190635, displacement -0.047086.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
       "result_file": "analysis/results.json",
       "values": [
@@ -4625,20 +4769,21 @@
         }
       ],
       "limitations": [
-        "The observed point lies outside its unaltered percentile interval. Product-weight peer resampling changes measurement noise; Amendment 1 calibrates R only, so these endpoints have no demonstrated coverage guarantee and were not recentred.",
-        "Exact cross lengths use half-turn metric; centered versions demean length within final, and are the preferred mechanism description. Positive association supports scramble geometry without separating shared slot conditions.",
+        "The observed point lies outside its unaltered unvalidated bootstrap diagnostic range. Product-weight peer resampling changes measurement noise; Amendment 1 calibrates R only, so these endpoints have no demonstrated coverage guarantee and were not recentred. No full multiway cross interval has been validated.",
+        "Exact cross lengths use half-turn metric; centered versions demean length within final, and are the preferred mechanism description. Positive point association supplies descriptive geometry evidence; calibrated inference is inconclusive without separating shared slot conditions.",
         "The shared scramble/slot component includes conditions shared at a scheduled attempt position; actual replacement assignments were not audited.",
         "Residual variation includes execution, solver-specific scramble opportunities, penalties, model error, missingness and mapping error; these data cannot separate personal luck from execution or attribute one record’s total luck."
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "interval_coverage_validated": false
     },
     {
       "id": "SL-C079",
       "status": "proposed",
       "exploratory": false,
-      "text": "white yellow centered correlation: correlation of optimal cross length with the shared scramble/slot contrast is 0.3429 (0.2582–0.2905) across 25,085 scheduled scrambles and 61,231 identified focal rows. Bootstrap mean 0.274691, displacement -0.068203.",
+      "text": "white yellow centered correlation: correlation of optimal cross length with the shared scramble/slot contrast is 0.3429; unvalidated bootstrap diagnostic range [0.2582–0.2905] (coverage unvalidated; inferential uncertainty inconclusive) across 25,085 scheduled scrambles and 61,231 identified focal rows. Bootstrap mean 0.274691, displacement -0.068203.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
       "result_file": "analysis/results.json",
       "values": [
@@ -4679,20 +4824,21 @@
         }
       ],
       "limitations": [
-        "The observed point lies outside its unaltered percentile interval. Product-weight peer resampling changes measurement noise; Amendment 1 calibrates R only, so these endpoints have no demonstrated coverage guarantee and were not recentred.",
-        "Exact cross lengths use half-turn metric; centered versions demean length within final, and are the preferred mechanism description. Positive association supports scramble geometry without separating shared slot conditions.",
+        "The observed point lies outside its unaltered unvalidated bootstrap diagnostic range. Product-weight peer resampling changes measurement noise; Amendment 1 calibrates R only, so these endpoints have no demonstrated coverage guarantee and were not recentred. No full multiway cross interval has been validated.",
+        "Exact cross lengths use half-turn metric; centered versions demean length within final, and are the preferred mechanism description. Positive point association supplies descriptive geometry evidence; calibrated inference is inconclusive without separating shared slot conditions.",
         "The shared scramble/slot component includes conditions shared at a scheduled attempt position; actual replacement assignments were not audited.",
         "Residual variation includes execution, solver-specific scramble opportunities, penalties, model error, missingness and mapping error; these data cannot separate personal luck from execution or attribute one record’s total luck."
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "interval_coverage_validated": false
     },
     {
       "id": "SL-C080",
       "status": "proposed",
       "exploratory": false,
-      "text": "white yellow raw correlation: correlation of optimal cross length with the shared scramble/slot contrast is 0.3069 (0.2312–0.2600) across 25,085 scheduled scrambles and 61,231 identified focal rows. Bootstrap mean 0.245869, displacement -0.061077.",
+      "text": "white yellow raw correlation: correlation of optimal cross length with the shared scramble/slot contrast is 0.3069; unvalidated bootstrap diagnostic range [0.2312–0.2600] (coverage unvalidated; inferential uncertainty inconclusive) across 25,085 scheduled scrambles and 61,231 identified focal rows. Bootstrap mean 0.245869, displacement -0.061077.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
       "result_file": "analysis/results.json",
       "values": [
@@ -4733,14 +4879,15 @@
         }
       ],
       "limitations": [
-        "The observed point lies outside its unaltered percentile interval. Product-weight peer resampling changes measurement noise; Amendment 1 calibrates R only, so these endpoints have no demonstrated coverage guarantee and were not recentred.",
-        "Exact cross lengths use half-turn metric; centered versions demean length within final, and are the preferred mechanism description. Positive association supports scramble geometry without separating shared slot conditions.",
+        "The observed point lies outside its unaltered unvalidated bootstrap diagnostic range. Product-weight peer resampling changes measurement noise; Amendment 1 calibrates R only, so these endpoints have no demonstrated coverage guarantee and were not recentred. No full multiway cross interval has been validated.",
+        "Exact cross lengths use half-turn metric; centered versions demean length within final, and are the preferred mechanism description. Positive point association supplies descriptive geometry evidence; calibrated inference is inconclusive without separating shared slot conditions.",
         "The shared scramble/slot component includes conditions shared at a scheduled attempt position; actual replacement assignments were not audited.",
         "Residual variation includes execution, solver-specific scramble opportunities, penalties, model error, missingness and mapping error; these data cannot separate personal luck from execution or attribute one record’s total luck."
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "interval_coverage_validated": false
     },
     {
       "id": "SL-C081",
@@ -5763,7 +5910,7 @@
       "id": "SL-C098",
       "status": "proposed",
       "exploratory": true,
-      "text": "informative dnf: synthetic mean estimated shared-scramble-adjusted R 1.015945 (1.015807–1.016084), oracle R 1.015948 (1.015936–1.015960), mean log-R error -0.000003 (-0.000139–0.000134), central dataset-error range -0.000003 (-0.001882–0.001861).",
+      "text": "informative dnf: synthetic mean estimated shared-scramble-adjusted R 1.015945 (1.015807–1.016084), oracle R 1.015948 (1.015936–1.015960), mean log-R error -0.000003 (-0.000139–0.000134), central dataset-error range -0.000003 (-0.001882–0.001861). DNF locations use sequential weighted sampling without replacement (Gumbel top-k), weights exp(12 × shared effect) renormalized over remaining started slots, preserving each solver-final DNF count and DNS positions.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
       "result_file": "analysis/results.json",
       "values": [
@@ -5829,6 +5976,7 @@
         }
       ],
       "limitations": [
+        "For multiple DNFs, selected-subset probabilities are not exact conditional-logistic subset odds. Empirical gate results refer to the generator actually simulated.",
         "200 independent simulated datasets per stress; oracle integrated on 10,000 disjoint datasets. Mean and oracle intervals describe Monte Carlo precision; the dataset-error range is not a universal bound on real informative failure times. Synthetic stresses were exposed before confirmation.",
         "The shared scramble/slot component includes conditions shared at a scheduled attempt position; actual replacement assignments were not audited.",
         "Residual variation includes execution, solver-specific scramble opportunities, penalties, model error, missingness and mapping error; these data cannot separate personal luck from execution or attribute one record’s total luck."
@@ -7078,6 +7226,202 @@
         "analysis/claims_check.json"
       ],
       "pilot_kind": "R"
+    },
+    {
+      "status": "proposed",
+      "exploratory": false,
+      "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
+      "result_file": "analysis/results.json",
+      "verification_evidence": [
+        "analysis/claims_check.json"
+      ],
+      "id": "SL-C144",
+      "text": "The estimated shared-scramble-adjusted time is about 2% longer than the observed seasonal best on average: R = 1.0197788256, an unrounded increase of 1.97788256%.",
+      "values": [
+        {
+          "key": "primary.R_geometric_person_year.estimate",
+          "stated": 1.0197788256,
+          "digits": 10,
+          "display_percent": 2,
+          "display_digits": 0,
+          "percent_transform": "ratio_increment"
+        }
+      ],
+      "limitations": [
+        "About 2% rounds 100 × (R − 1) to the nearest whole percentage point; R is the equal-person-year geometric adjusted/observed ratio, not an arithmetic mean or a 2% reduction in observed time.",
+        "Confirmatory under the owner-approved pre-confirmation Amendment 1; only eligible season-best final solves, successful times and the shared scramble/slot component.",
+        "Does not measure total luck, partition residual variation, isolate scramble geometry from slot conditions or attribute a specific record."
+      ]
+    },
+    {
+      "status": "proposed",
+      "exploratory": false,
+      "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
+      "result_file": "analysis/results.json",
+      "verification_evidence": [
+        "analysis/claims_check.json"
+      ],
+      "id": "SL-C145",
+      "text": "The shared scramble/slot component accounts for 4.7% of balanced-tier within-solver-round successful log-time variance, rounded from F = 4.7434%; its 95% interval is 3.9181–5.6708%.",
+      "values": [
+        {
+          "key": "primary.F_tier_aware.estimate",
+          "stated": 0.047434,
+          "digits": 6,
+          "display_percent": 4.7,
+          "display_digits": 1,
+          "percent_transform": "variance_share"
+        },
+        {
+          "key": "primary.F_tier_aware.interval_95[0]",
+          "stated": 0.039181,
+          "digits": 6
+        },
+        {
+          "key": "primary.F_tier_aware.interval_95[1]",
+          "stated": 0.056708,
+          "digits": 6
+        },
+        {
+          "key": "primary.F_tier_aware.n.tier_supported_finals",
+          "stated": 4420,
+          "digits": 0
+        },
+        {
+          "key": "primary.F_tier_aware.n.successful_cells",
+          "stated": 234525,
+          "digits": 0
+        }
+      ],
+      "limitations": [
+        "4.7% rounds 100 × F to one decimal place. This is not a percentage of seconds or total personal luck.",
+        "Tier-supported subset: 4,420 finals and 234,525 successful cells; excludes 597 finals and 67,143 successes. Do not generalize without coverage.",
+        "Success conditioning, slot confounding and scheduled-versus-actual replacement mapping remain; this variance share is not the verdict endpoint R."
+      ]
+    },
+    {
+      "status": "proposed",
+      "exploratory": false,
+      "result_file": "analysis/CONTEXT.md",
+      "verification_evidence": [
+        "analysis/claims_check.json"
+      ],
+      "id": "SL-C146",
+      "text": "WIRED’s video released 2019-05-23 says exactly: “The fact is, sometimes you just get a lucky scramble.” Ruwix’s Du article published 2018-11-25 asks exactly: “Lucky scramble? Maybe.” The latter also credits skill. These excerpts are attributed to the publications.",
+      "scope": "Historical coverage in CONTEXT.md; publication dates, not solve dates. Exact excerpts checked in hash-recorded original HTML.",
+      "values": [
+        {
+          "source_url": "https://www.wired.com/video/watch/almost-impossible-why-solving-a-rubik-s-cube-in-under-3-seconds-is-almost-impossible",
+          "label": "quote_and_release",
+          "stated": true,
+          "digits": null,
+          "source_phrases": [
+            "The fact is, sometimes you just get a lucky scramble.",
+            "Released on 05/23/2019"
+          ]
+        },
+        {
+          "source_url": "https://ruwix.com/blog/yusheng-du-record-347/",
+          "label": "quote_and_publication",
+          "stated": true,
+          "digits": null,
+          "source_phrases": [
+            "Lucky scramble? Maybe.",
+            "Published: November 25, 2018",
+            "Besides having great skills, you also need luck"
+          ]
+        }
+      ],
+      "limitations": [
+        "Quotations establish examples of luck language, not consensus, frequency of fan comments or the size of a shared advantage. No speaker attribution or current-record assertion."
+      ],
+      "context_kind": "quotation",
+      "source_parser": "exact_phrases"
+    },
+    {
+      "status": "proposed",
+      "exploratory": false,
+      "result_file": "analysis/CONTEXT.md",
+      "verification_evidence": [
+        "analysis/claims_check.json"
+      ],
+      "id": "SL-C147",
+      "text": "CFOP is a common method: Cross, First Two Layers, Orient Last Layer, Permute Last Layer. The cross solves four edges around a center with matching side colors, not a whole face. A PLL skip needs no permutation algorithm after orientation because pieces already have the correct relative positions; an upper-face alignment may remain. A scramble sequence sets up the starting state. A double extended cross additionally solves two corner-edge pairs.",
+      "scope": "Cubing definitions and explanatory inferences in CONTEXT.md, CubeSkills, the PLL guide and published Park solution; no measured stage durations.",
+      "values": [
+        {
+          "source_url": "https://www.cubeskills.com/tools/glossary",
+          "label": "definitions",
+          "stated": true,
+          "digits": null,
+          "source_phrases": [
+            "Cross-F2L-OLL-PLL",
+            "correctly solving 4 edge pieces around a center piece",
+            "First 2 Layers",
+            "Orientation of Last Layer",
+            "Permutation of Last Layer",
+            "Adjust U Face.",
+            "Solving the cross and one F2L pair"
+          ]
+        },
+        {
+          "source_url": "https://ruwix.com/the-rubiks-cube/advanced-cfop-fridrich/permutate-the-last-layer-pll/",
+          "label": "orientation_before_permutation",
+          "stated": true,
+          "digits": null,
+          "source_phrases": [
+            "permutation of the last layer (PLL)",
+            "the last layers pieces are oriented (OLL)"
+          ]
+        }
+      ],
+      "limitations": [
+        "Definitions explain a chosen solution, not how much luck it contains or an advantage shared by all finalists. No claim that CFOP is universal. Correct relative positions allow a final whole upper-face adjustment."
+      ],
+      "context_kind": "glossary",
+      "source_parser": "exact_phrases"
+    },
+    {
+      "id": "SL-C148",
+      "status": "proposed",
+      "exploratory": false,
+      "text": "The registered method centers successful log times within solver-rounds, controls global attempt position and corrects finite-peer noise. It excludes the focal solver’s entire final before estimating the shared scheduled-position contrast; selects the observed fastest successful eligible final solve per solver-season; does not select the fastest adjusted solve; and aggregates adjusted/observed ratios geometrically with equal solver-season weight. R and F answer different questions. The original gate failed; an owner-approved pre-confirmation amendment validated recentered R uncertainty under specified simulations. The fixed-selection interval is sensitivity only. F and R are success-only; the DNF endpoint is separate. Slot conditions, replacement mapping and residual variation prevent attributing total personal luck or a particular record.",
+      "scope": "Definitions, procedure and limitations of METHOD including Amendment 1; methodological description rather than an additional empirical endpoint.",
+      "result_file": "METHOD.md",
+      "values": [
+        {
+          "key": "method.story_contract",
+          "source_file": "METHOD.md",
+          "stated": true,
+          "digits": null,
+          "source_phrases": [
+            "demean within each solver-round",
+            "subtracts finite-peer noise",
+            "exclude all five of that solver’s cells",
+            "Select the fastest positive time",
+            "geometric mean",
+            "equal weight per eligible, available",
+            "It is not a causal replay",
+            "F and R are estimated from successful solves only",
+            "cannot separate personal luck from execution",
+            "Attempt number is confounded with scramble number",
+            "The pre-confirmation gate failed",
+            "revised gate",
+            "passed on the original and independent simulations",
+            "no confirmation solve time had been read",
+            "fixed-selection interval",
+            "cannot change the verdict"
+          ]
+        }
+      ],
+      "limitations": [
+        "Contract text documents the procedure; numerical recovery and gate evidence remain in their separate verification/review artifacts. Simulations do not guarantee every real-world process.",
+        "No actual-assignment audit, no counterfactual replay, no uniform cross-tier advantage and no decomposition of the residual into execution versus luck."
+      ],
+      "verification_evidence": [
+        "analysis/claims_check.json"
+      ],
+      "context_kind": "method"
     }
   ]
 }

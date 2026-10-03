@@ -36,3 +36,7 @@ All frozen-code fixture, focal exclusion, missing-pattern and squared-noise-trac
 Generated raw replicate records and timing/exposure diagnostics: data/derived/gate-*.jsonl. No simulated positive values are confused with confirmation observations.
 
 If this gate fails, confirmation remains unopened and step 4 is not run. A registered and committed amendment would be required to proceed.
+
+### Simulation wording correction — 2026-10-02
+
+Each real solver-final DNF count and DNS locations retained; Gumbel top-k implements sequential weighted sampling without replacement among started slots, with weights exp(12*shared_slot), renormalized over remaining slots at each selection. Multi-DNF subset probabilities are not exact conditional-logistic subset odds. The monotone difficulty stress and empirical gate results are unchanged.

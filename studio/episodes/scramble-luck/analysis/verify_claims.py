@@ -186,6 +186,20 @@ def independent():
     for name,mask in masks.items():
         pp=point(rows[mask].reset_index(drop=True),times[mask],roster);allpoints[name]=pp
         summary('robustness.'+name,pp,[d[name] for d in subsets])
+    # Full-window references/tier labels are independently reconstructed above.
+    # Restrict outcome panels only and refit the era's two position vectors.
+    era_draws=loadlines(DER/'analysis-era-full-window.jsonl')
+    assert len(era_draws)==2000 and sorted(d['draw'] for d in era_draws)==list(range(2000))
+    for name in ('era_2019_2022','era_2023_2025'):
+        mask=masks[name].to_numpy();tier=p['tier']
+        f=moments(a,(tier==0)&mask);ss=moments(a,(tier==1)&mask)
+        cov=(f['V']*ss['V']).sum()/(f['A']*ss['A']).sum()
+        tau=(f['b']+ss['b']+2*cov)/4;gamma=(f['b']+ss['b']-2*cov)/4;den=(f['total']+ss['total'])/2
+        keep=(tier>=0)&mask
+        n={'tier_supported_finals':len(np.unique(a['panel'][keep])),'successful_cells':int(m[keep].sum())}
+        base='robustness.'+name+'.full_window_reference'
+        metric(base+'.F_tier_aware',tau/den,[d[name]['F'] for d in era_draws],n)
+        metric(base+'.tier_interaction_share_gamma_over_D',gamma/den,[d[name]['gamma_over_D'] for d in era_draws],n)
     complete=times.copy();complete[m<5]=0
     clipped=a['y'].copy();means=np.divide(a['y'].sum(1),np.maximum(m,1));clipped=np.where(times>0,means[:,None]+np.clip(clipped-means[:,None],-.6,.6),0)
     for name,tt,yy in [('complete_success',complete,None),('clipped_centered_logs',times,clipped)]:
@@ -370,13 +384,22 @@ def source_checks(claims):
             for v in c['values']:put(c['id']+':'+v['source_url'],val,'raw official WR-flagged WCA centisecond results; historical attribution, not a current-record claim')
     sources=EP/'analysis/claim_sources';manifest=json.loads((sources/'manifest.json').read_text())
     for c in claims:
-        if c.get('context_kind') not in ('regulation','reconstruction','glossary'):continue
+        if c.get('context_kind')=='method':
+            for v in c['values']:
+                document=(EP/v['source_file']).read_text()
+                normalized=re.sub(r'\s+',' ',document)
+                value=all(phrase in normalized for phrase in v['source_phrases'])
+                put(v['key'],value,'registered contract text anchors; SHA256 '+hashlib.sha256(document.encode()).hexdigest())
+            continue
+        if c.get('context_kind') not in ('regulation','reconstruction','glossary','quotation'):continue
         for v in c['values']:
             entry=manifest[v['source_url'].split('#')[0]];raw=(sources/entry['path']).read_bytes();assert hashlib.sha256(raw).hexdigest()==entry['sha256']
             markup=raw.decode();markup=re.sub(r'<(script|style)\b.*?</\1>','',markup,flags=re.S)
             lines=html.unescape(re.sub('<[^>]+>',' ',re.sub(r'<br\s*/?>','\n',markup)))
             text=re.sub(r'\s+',' ',lines);mode=c['source_parser'];label=v.get('label','')
-            if mode=='ao5':
+            if mode=='exact_phrases':
+                value=all(phrase in text for phrase in v['source_phrases'])
+            elif mode=='ao5':
                 fragment=re.search(r'9f8\s*\).*?(?=9f9)',text).group()
                 match=re.search(r'(\d+) attempts',fragment);value=int(match.group(1)) if match else 5 if 'five' in fragment.lower() else None
                 if label=='middle':
@@ -410,7 +433,11 @@ def agrees(stated,value,digits):
     return np.isfinite(value) and abs(float(value)-float(stated))<=.5*10**(-digits)+1e-12
 
 def main():
-    claims=json.loads((EP/'CLAIMS.json').read_text())['claims'];independent();pilot_checks(claims)
+    independent()
+    # Read the claim snapshot after the lengthy raw-data computation so concurrent
+    # claim edits cannot be silently paired with a report for an older list.
+    claims_text=(EP/'CLAIMS.json').read_text()
+    claims=json.loads(claims_text)['claims'];pilot_checks(claims)
     try:source_checks(claims)
     except Exception as error:print('Source verification error:',type(error).__name__,str(error),flush=True)
     report=[]
@@ -421,11 +448,23 @@ def main():
             row={**v}
             try:
                 value=M[key];row.update(recomputed=value.item() if isinstance(value,np.generic) else value,evidence=E[key],passed=agrees(v['stated'],value,v['digits']))
+                if 'display_percent' in v:
+                    transform=v['percent_transform']
+                    assert transform in ('ratio_increment','variance_share'), 'Unknown display transform'
+                    percent=100*(float(value)-1) if transform=='ratio_increment' else 100*float(value)
+                    displayed=round(percent,v['display_digits'])
+                    row.update(recomputed_display_percent=displayed,display_passed=agrees(v['display_percent'],displayed,v['display_digits']))
+                    row['passed']=row['passed'] and row['display_passed']
             except Exception as error:row.update(passed=False,error=str(error))
             values.append(row)
+        cross_range=any(v.get('key','').startswith('optimal_cross_mechanism.') and '.interval_95[' in v.get('key','') for v in claim['values'])
+        if cross_range:
+            labelled=claim.get('interval_coverage_validated') is False and 'unvalidated bootstrap diagnostic' in claim['text'] and 'inconclusive' in claim['text']
+            values.append({'key':'cross_range_reporting_qualification','passed':labelled,'evidence':'every cross-range claim must label unvalidated bootstrap diagnostics and inconclusive inferential uncertainty'})
         report.append({'id':claim['id'],'passed':bool(values) and all(v['passed'] for v in values),'values':values})
     failed=[c for c in report if not c['passed']]
-    out={'all_passed':not failed,'claim_count':len(claims),'verified_claims':len(claims)-len(failed),'verified_values':sum(v['passed'] for c in report for v in c['values']),'claims':report,'note':__doc__,'input_hashes':{str(path.relative_to(EP)):hashlib.sha256(path.read_bytes()).hexdigest() for path in [EP/'recheck/raw_rows.pkl',EP/'recheck/raw_times.npy',EP/'recheck/extraction.json',*sorted(DER.glob('analysis-*.jsonl')),EP/'analysis/amendment/replication.jsonl',DER/'gate-population-truth.jsonl',DER/'cross.parquet',EP/'analysis/claim_sources/manifest.json']},'verifier_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'claims_sha256':hashlib.sha256((EP/'CLAIMS.json').read_bytes()).hexdigest()}
+    out={'all_passed':not failed,'claim_count':len(claims),'verified_claims':len(claims)-len(failed),'verified_values':sum(v['passed'] for c in report for v in c['values']),'claims':report,'note':__doc__,'input_hashes':{str(path.relative_to(EP)):hashlib.sha256(path.read_bytes()).hexdigest() for path in [EP/'recheck/raw_rows.pkl',EP/'recheck/raw_times.npy',EP/'recheck/extraction.json',*sorted(DER.glob('analysis-*.jsonl')),EP/'analysis/amendment/replication.jsonl',DER/'gate-population-truth.jsonl',DER/'cross.parquet',EP/'analysis/claim_sources/manifest.json']},'verifier_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'claims_sha256':hashlib.sha256(claims_text.encode()).hexdigest()}
+    assert (EP/'CLAIMS.json').read_text()==claims_text, 'Claim list changed during verification; rerun against the current snapshot'
     (EP/'analysis/claims_check.json').write_text(json.dumps(out,indent=2,ensure_ascii=False)+'\n')
     print(f"Claims: {len(claims)}; verified: {len(claims)-len(failed)}; failed: {len(failed)}.")
     for c in failed[:12]:print(c['id'],json.dumps([v for v in c['values'] if not v['passed']],ensure_ascii=False)[:450])

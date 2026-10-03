@@ -45,5 +45,13 @@
     "path": "current-regulations.html",
     "sha256": "92d7948ead7ad885ac5b7f8fdde7de889a13094afdc54340ce0d886f7db43129",
     "retrieved_date": "2026-10-02"
+  },
+  "https://www.wired.com/video/watch/almost-impossible-why-solving-a-rubik-s-cube-in-under-3-seconds-is-almost-impossible": {
+    "path": "story-wired.html",
+    "sha256": "777357ed3ddb823f2663e6710fe6af3d63af7ec4b6b6cf39f5164f5bd47983b3"
+  },
+  "https://ruwix.com/the-rubiks-cube/advanced-cfop-fridrich/permutate-the-last-layer-pll/": {
+    "path": "story-pll.html",
+    "sha256": "04bc18918d9741cdfc23cbb0ecb7a700d887e90797381d6220bf39f27bcac9ab"
   }
 }

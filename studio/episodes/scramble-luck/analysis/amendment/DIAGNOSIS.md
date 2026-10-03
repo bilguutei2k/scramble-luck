@@ -19,3 +19,7 @@ The large shared-effect downward shift disappears when original extrema are held
 holding only training beta fixed does not remove it. This directly supports the proposed
 exposure/reselection mechanism. Point-estimator bias and bootstrap-distribution bias are
 different: an unbiased point estimator does not make the percentile interval centered correctly.
+
+### Informative-DNF generator wording — 2026-10-02
+
+Each real solver-final DNF count and DNS locations retained; Gumbel top-k implements sequential weighted sampling without replacement among started slots, with weights exp(12*shared_slot), renormalized over remaining slots at each selection. Multi-DNF subset probabilities are not exact conditional-logistic subset odds. The historical empirical gate results refer to this generator and remain unchanged.

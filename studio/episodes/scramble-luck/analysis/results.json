@@ -503,6 +503,7 @@
             "F_interpretation": true,
             "R_available_extrema": true
           },
+          "reference_scope": "references restricted to the same year as outcome panels",
           "tier_interaction_share_gamma_over_D": {
             "estimate": 0.0031567926964114006,
             "interval_95": [
@@ -644,6 +645,7 @@
             "F_interpretation": false,
             "R_available_extrema": false
           },
+          "reference_scope": "references restricted to the same year as outcome panels",
           "tier_interaction_share_gamma_over_D": {
             "estimate": 0.012712838482062713,
             "interval_95": [
@@ -785,6 +787,7 @@
             "F_interpretation": false,
             "R_available_extrema": false
           },
+          "reference_scope": "references restricted to the same year as outcome panels",
           "tier_interaction_share_gamma_over_D": {
             "estimate": -0.005193857078820523,
             "interval_95": [
@@ -926,6 +929,7 @@
             "F_interpretation": false,
             "R_available_extrema": true
           },
+          "reference_scope": "references restricted to the same year as outcome panels",
           "tier_interaction_share_gamma_over_D": {
             "estimate": -0.0028348468230610093,
             "interval_95": [
@@ -1067,6 +1071,7 @@
             "F_interpretation": true,
             "R_available_extrema": true
           },
+          "reference_scope": "references restricted to the same year as outcome panels",
           "tier_interaction_share_gamma_over_D": {
             "estimate": -0.0017726234134883892,
             "interval_95": [
@@ -1208,6 +1213,7 @@
             "F_interpretation": true,
             "R_available_extrema": true
           },
+          "reference_scope": "references restricted to the same year as outcome panels",
           "tier_interaction_share_gamma_over_D": {
             "estimate": 5.989649975874614e-05,
             "interval_95": [
@@ -1349,6 +1355,7 @@
             "F_interpretation": true,
             "R_available_extrema": true
           },
+          "reference_scope": "references restricted to the same year as outcome panels",
           "tier_interaction_share_gamma_over_D": {
             "estimate": 0.0069315889352228694,
             "interval_95": [
@@ -1461,15 +1468,17 @@
     }
   },
   "code_sha256": {
-    "analysis_reports.py": "27ac595bc1fe1856bc0b588d83ce050f44d81daf2e1bc0ff320eb9433ab7649b",
-    "analyze.py": "9d279eaf2fc118d0aa90084b35299f2b7f0733a35deb95c0fb6d889ffbe41785",
+    "analysis_reports.py": "0d716d7d4a1a9c8dcde3a720adeed1464a356fadfb4a8372d801ae4c7e6cfcda",
+    "analyze.py": "25a18657d5abe01580fc85ab52873e0dcd30fd11da4b34004c118a38fc69a867",
     "common.py": "e70b307713237277aab96911879a9a5f61aaa19279d63708f57cd395446e5912",
     "compare_recheck.py": "29803a60ea3d2911c0106a4fb4494517c73322a35684944f45c1c318ca6e3bd6",
     "cross.py": "510512efe9ca347f9b433199da9209ef0ccd2204f71a36159bd90009e7c31ecd",
     "engine.py": "6dff31e780de0cf074d2b16568f973df40f0ff72995367123923d5fdb5721fae",
-    "gate.py": "0f17d7fc82d1dd3738c20d811bbb55f594276a95e688ae5db3853ca6c7068bb4",
+    "era_references.py": "38593b5b715b30aaa2cf31fed5df7f606644729742225659dfd49eb97ad6da1d",
+    "gate.py": "ca3bd0721297666f56e32965abea14b6f099102add685564a369cc5481c7f744",
     "snapshot.py": "2371d65a645b12e7980e2b352ab5517843067d3d03bbf244f8520b59db4830ad",
-    "verify.py": "70bf75837def9c83a88a7d91e599098214366cae51d8e81e1b9b63cc46c277ae"
+    "verify.py": "70bf75837def9c83a88a7d91e599098214366cae51d8e81e1b9b63cc46c277ae",
+    "verify_claims.py": "7adcbf9c742f57d4acdda7d484dfa48a2d97e3b6ec34c843848d78801bf468c5"
   },
   "common_only_comparators": {
     "all_finalists": {
@@ -1935,6 +1944,14 @@
       }
     }
   },
+  "confirmation_access_chronology": {
+    "amendment_registration_utc": "2026-10-02T15:07:31+00:00",
+    "blind_recheck_extracted_by_utc": "2026-10-02T15:11:57+00:00",
+    "blind_recheck_timestamp_evidence": "local extraction-cache filesystem metadata; upper bound on access, not exact first-read audit timestamp",
+    "decisions_7_10_timing": "reported pre-opening; first committed with confirmation results in e8880f3 at 2026-10-02T15:36:01+00:00; not independently established as committed preregistration",
+    "main_pipeline_first_magnitude_select_utc": "2026-10-02T15:17:40.383923+00:00"
+  },
+  "confirmation_first_open_scope": "main analysis pipeline first magnitude SELECT only",
   "confirmation_first_open_utc": "2026-10-02T15:17:40.383923+00:00",
   "coverage": {
     "census_measurements": {
@@ -2666,7 +2683,7 @@
     "confirmation_values_sha256": "49d4063b032da68e3d03e5b7235d5579b60c75b95d395edea18e3cec37d75348",
     "cross_parquet_sha256": "e263efe62df8686d2331d841b22bbacaccbb967d867578f75d2c335d61898c7e",
     "path": "data/derived/analysis-bulk-manifest.json",
-    "sha256": "bba04997dcb5e4822bd64b5c0d9ef2357693cc9facfca8ae2cba76cce4a3e059"
+    "sha256": "8493647562de64c07a84e5a8920e2d46d5a90b1fda89e847a971e2a95e77eb22"
   },
   "flagged_implementation_decisions": [
     7,
@@ -2675,6 +2692,7 @@
     10
   ],
   "frozen_simulation_stresses": {
+    "informative_dnf_generator": "Gumbel top-k: sequential weighted sampling without replacement among started slots with weights exp(12*shared_slot), renormalized over remaining slots; retain each solver-final DNF count and DNS positions; multi-DNF subset probabilities are not exact conditional-logistic subset odds",
     "meaning": "specified MCAR/informative-DNF/replacement processes only; no universal bound on latent DNF times or real-world attribution; slot shock is absorbed",
     "quantified_MCAR_informative_DNF_stress": {
       "informative_dnf": {
@@ -2933,6 +2951,7 @@
   },
   "optimal_cross_mechanism": {
     "definition": "Pearson correlation of weighted focal-mean leave-one-out h with cross length; centered versions subtract final mean cross length; five scheduled positions per final; half-turn metric",
+    "inference_status": "inconclusive; positive point associations are descriptive geometry evidence only",
     "six_face_centered_correlation": {
       "bootstrap_mean": 0.21317015652090912,
       "bootstrap_mean_displacement": -0.05263175371880033,
@@ -2941,8 +2960,10 @@
         0.197514691113376,
         0.22872852485048575
       ],
-      "interval_method": "percentile",
-      "measurement_status": "estimable",
+      "interval_coverage_validated": false,
+      "interval_method": "unvalidated bootstrap percentile diagnostic",
+      "interval_scope": "unvalidated bootstrap diagnostic; no calibrated full multiway cross interval; Amendment 1 validates R only",
+      "measurement_status": "descriptive point estimate; inferential uncertainty inconclusive",
       "n": {
         "identified_focal_solver_rounds": 61231,
         "scheduled_scrambles": 25085
@@ -2959,8 +2980,10 @@
         0.17643693357997609,
         0.20468162674572646
       ],
-      "interval_method": "percentile",
-      "measurement_status": "estimable",
+      "interval_coverage_validated": false,
+      "interval_method": "unvalidated bootstrap percentile diagnostic",
+      "interval_scope": "unvalidated bootstrap diagnostic; no calibrated full multiway cross interval; Amendment 1 validates R only",
+      "measurement_status": "descriptive point estimate; inferential uncertainty inconclusive",
       "n": {
         "identified_focal_solver_rounds": 61231,
         "scheduled_scrambles": 25085
@@ -2977,8 +3000,10 @@
         0.2582155212621829,
         0.2904663975299855
       ],
-      "interval_method": "percentile",
-      "measurement_status": "estimable",
+      "interval_coverage_validated": false,
+      "interval_method": "unvalidated bootstrap percentile diagnostic",
+      "interval_scope": "unvalidated bootstrap diagnostic; no calibrated full multiway cross interval; Amendment 1 validates R only",
+      "measurement_status": "descriptive point estimate; inferential uncertainty inconclusive",
       "n": {
         "identified_focal_solver_rounds": 61231,
         "scheduled_scrambles": 25085
@@ -2995,8 +3020,10 @@
         0.23123436162999406,
         0.25999168772843356
       ],
-      "interval_method": "percentile",
-      "measurement_status": "estimable",
+      "interval_coverage_validated": false,
+      "interval_method": "unvalidated bootstrap percentile diagnostic",
+      "interval_scope": "unvalidated bootstrap diagnostic; no calibrated full multiway cross interval; Amendment 1 validates R only",
+      "measurement_status": "descriptive point estimate; inferential uncertainty inconclusive",
       "n": {
         "identified_focal_solver_rounds": 61231,
         "scheduled_scrambles": 25085
@@ -3005,6 +3032,17 @@
       "requested_draws": 2000,
       "valid_draws": 2000
     }
+  },
+  "original_run_code_sha256": {
+    "analysis_reports.py": "27ac595bc1fe1856bc0b588d83ce050f44d81daf2e1bc0ff320eb9433ab7649b",
+    "analyze.py": "9d279eaf2fc118d0aa90084b35299f2b7f0733a35deb95c0fb6d889ffbe41785",
+    "common.py": "e70b307713237277aab96911879a9a5f61aaa19279d63708f57cd395446e5912",
+    "compare_recheck.py": "29803a60ea3d2911c0106a4fb4494517c73322a35684944f45c1c318ca6e3bd6",
+    "cross.py": "510512efe9ca347f9b433199da9209ef0ccd2204f71a36159bd90009e7c31ecd",
+    "engine.py": "6dff31e780de0cf074d2b16568f973df40f0ff72995367123923d5fdb5721fae",
+    "gate.py": "0f17d7fc82d1dd3738c20d811bbb55f594276a95e688ae5db3853ca6c7068bb4",
+    "snapshot.py": "2371d65a645b12e7980e2b352ab5517843067d3d03bbf244f8520b59db4830ad",
+    "verify.py": "70bf75837def9c83a88a7d91e599098214366cae51d8e81e1b9b63cc46c277ae"
   },
   "peer_prediction": {
     "changing_panels": [
@@ -4341,6 +4379,41 @@
         "F_interpretation": true,
         "R_available_extrema": true
       },
+      "full_window_reference": {
+        "F_tier_aware": {
+          "estimate": 0.04718725046336681,
+          "interval_95": [
+            0.03189124127980071,
+            0.06717900792406427
+          ],
+          "interval_method": "percentile",
+          "measurement_status": "estimable",
+          "n": {
+            "successful_cells": 68127,
+            "tier_supported_finals": 1375
+          },
+          "requested_draws": 2000,
+          "valid_draws": 2000
+        },
+        "interval_scope": "same 2,000 registered competition × solver draws; full-window references recomputed in each draw; separately refitted era tier positions",
+        "reference_scope": "full 2019–2025 confirmation window, ±2 calendar years; era outcome panels only",
+        "tier_interaction_share_gamma_over_D": {
+          "estimate": 0.0032894242065890284,
+          "interval_95": [
+            -0.013107860117256006,
+            0.01730487825246153
+          ],
+          "interval_method": "percentile",
+          "measurement_status": "estimable",
+          "n": {
+            "successful_cells": 68127,
+            "tier_supported_finals": 1375
+          },
+          "requested_draws": 2000,
+          "valid_draws": 2000
+        }
+      },
+      "reference_scope": "within-era reference restriction; separate sensitivity beyond METHOD reference definition",
       "tier_interaction_share_gamma_over_D": {
         "estimate": 0.0018197902503476531,
         "interval_95": [
@@ -4412,6 +4485,41 @@
         "F_interpretation": true,
         "R_available_extrema": true
       },
+      "full_window_reference": {
+        "F_tier_aware": {
+          "estimate": 0.0473167746395628,
+          "interval_95": [
+            0.03762717766670931,
+            0.057044858561826464
+          ],
+          "interval_method": "percentile",
+          "measurement_status": "estimable",
+          "n": {
+            "successful_cells": 166398,
+            "tier_supported_finals": 3045
+          },
+          "requested_draws": 2000,
+          "valid_draws": 2000
+        },
+        "interval_scope": "same 2,000 registered competition × solver draws; full-window references recomputed in each draw; separately refitted era tier positions",
+        "reference_scope": "full 2019–2025 confirmation window, ±2 calendar years; era outcome panels only",
+        "tier_interaction_share_gamma_over_D": {
+          "estimate": 0.003608460674187086,
+          "interval_95": [
+            -0.006192525618167296,
+            0.010217000139348563
+          ],
+          "interval_method": "percentile",
+          "measurement_status": "estimable",
+          "n": {
+            "successful_cells": 166398,
+            "tier_supported_finals": 3045
+          },
+          "requested_draws": 2000,
+          "valid_draws": 2000
+        }
+      },
+      "reference_scope": "within-era reference restriction; separate sensitivity beyond METHOD reference definition",
       "tier_interaction_share_gamma_over_D": {
         "estimate": 0.0029693094199893023,
         "interval_95": [
@@ -4483,6 +4591,7 @@
         "F_interpretation": true,
         "R_available_extrema": true
       },
+      "reference_scope": "year deleted from outcome panels and reference candidates",
       "tier_interaction_share_gamma_over_D": {
         "estimate": 0.0032932229047324796,
         "interval_95": [
@@ -4554,6 +4663,7 @@
         "F_interpretation": true,
         "R_available_extrema": true
       },
+      "reference_scope": "year deleted from outcome panels and reference candidates",
       "tier_interaction_share_gamma_over_D": {
         "estimate": 0.0031677254595731522,
         "interval_95": [
@@ -4625,6 +4735,7 @@
         "F_interpretation": true,
         "R_available_extrema": true
       },
+      "reference_scope": "year deleted from outcome panels and reference candidates",
       "tier_interaction_share_gamma_over_D": {
         "estimate": 0.0036759112240118295,
         "interval_95": [
@@ -4696,6 +4807,7 @@
         "F_interpretation": true,
         "R_available_extrema": true
       },
+      "reference_scope": "year deleted from outcome panels and reference candidates",
       "tier_interaction_share_gamma_over_D": {
         "estimate": 0.0035154032157483123,
         "interval_95": [
@@ -4767,6 +4879,7 @@
         "F_interpretation": true,
         "R_available_extrema": true
       },
+      "reference_scope": "year deleted from outcome panels and reference candidates",
       "tier_interaction_share_gamma_over_D": {
         "estimate": 0.0030168739192603117,
         "interval_95": [
@@ -4838,6 +4951,7 @@
         "F_interpretation": true,
         "R_available_extrema": true
       },
+      "reference_scope": "year deleted from outcome panels and reference candidates",
       "tier_interaction_share_gamma_over_D": {
         "estimate": 0.003296032018667199,
         "interval_95": [
@@ -4909,6 +5023,7 @@
         "F_interpretation": true,
         "R_available_extrema": true
       },
+      "reference_scope": "year deleted from outcome panels and reference candidates",
       "tier_interaction_share_gamma_over_D": {
         "estimate": 0.0008944962656919439,
         "interval_95": [
@@ -4926,7 +5041,7 @@
       }
     }
   },
-  "secondary_intervals": "pointwise; cannot change primary verdict",
+  "secondary_intervals": "pointwise; cannot change primary verdict; all cross-length ranges are unvalidated bootstrap diagnostics with inconclusive inferential uncertainty",
   "solver_deletion": {
     "deletions": 12853,
     "endpoint_intervals_scope": "conditional on deletions selected to attain observed endpoints; not simultaneous uncertainty for the range",
@@ -5053,7 +5168,7 @@
   "verdict": {
     "outcome": "Belief fails",
     "permitted_claim": "The data rule out an average shared scramble/slot boost as large as 10% for these season bests.",
-    "rule": "holds only if L > 1.10; fails if U \u2264 1.10; otherwise inconclusive; primary gates precede decision",
+    "rule": "holds only if L > 1.10; fails if U ≤ 1.10; otherwise inconclusive; primary gates precede decision",
     "threshold": 1.1
   }
 }

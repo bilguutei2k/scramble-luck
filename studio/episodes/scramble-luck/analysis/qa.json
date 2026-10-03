@@ -5,9 +5,17 @@
       "evidence": {
         "amendment_sha256": "2c8702324a964952364b40a0c1148a8bfa544e27756ada00150dc406172e7385",
         "archive_sha256": "e6b262b2ada513228a48fa221015ddc25e9041a029340778cd253f564c23427d",
+        "confirmation_access_chronology": {
+          "amendment_registration_utc": "2026-10-02T15:07:31+00:00",
+          "blind_recheck_extracted_by_utc": "2026-10-02T15:11:57+00:00",
+          "blind_recheck_timestamp_evidence": "local extraction-cache filesystem metadata; upper bound on access, not exact first-read audit timestamp",
+          "decisions_7_10_timing": "reported pre-opening; first committed with confirmation results in e8880f3 at 2026-10-02T15:36:01+00:00; not independently established as committed preregistration",
+          "main_pipeline_first_magnitude_select_utc": "2026-10-02T15:17:40.383923+00:00"
+        },
         "first_open": {
           "action": "first magnitude SELECT immediately follows this persisted timestamp",
-          "first_open_utc": "2026-10-02T15:17:40.383923+00:00"
+          "first_open_utc": "2026-10-02T15:17:40.383923+00:00",
+          "scope": "main analysis pipeline first magnitude SELECT only"
         },
         "frozen_fixture_checks": [
           {
@@ -298,6 +306,42 @@
       },
       "name": "attempt_beta_F_invariance",
       "pass": true
+    },
+    {
+      "evidence": "all four results and claims label unvalidated bootstrap diagnostics; inferential uncertainty inconclusive",
+      "name": "review_cross_uncertainty_labels",
+      "pass": true
+    },
+    {
+      "evidence": {
+        "note": "same registered draws; points and counts independently verified by verify_claims.py",
+        "path": "analysis/era-reference-results.json",
+        "sha256": "3f836a52c2a8c043b33740803e48ed9f3adc96e16c1fce5e73c936c546fee7cb"
+      },
+      "name": "review_full_window_era_references",
+      "pass": true
+    },
+    {
+      "evidence": {
+        "R": 1.0197788255872957,
+        "method_sha256": "c67cc30101d636c75db182fe8fa869e107d934425fff214f9c5440a3d572212f",
+        "verdict": "Belief fails"
+      },
+      "name": "review_primary_and_method_unchanged",
+      "pass": true
+    },
+    {
+      "evidence": {
+        "claims": 148,
+        "claims_sha256": "a2eb17f7cbbd27e0916b065b43106f4053cb931744e5ca6eb67bbf9abc7f933e",
+        "path": "analysis/claims_check.json",
+        "sha256": "7cdff71041e750892443d53e0c5d45cebc0fa77203a6059afc7f428b87ef9da7",
+        "verified_claims": 148,
+        "verified_values_and_reporting_checks": 921,
+        "verifier_sha256": "7adcbf9c742f57d4acdda7d484dfa48a2d97e3b6ec34c843848d78801bf468c5"
+      },
+      "name": "proposed_claim_verifier",
+      "pass": true
     }
   ],
   "flagged_implementation_decisions": [
@@ -306,7 +350,27 @@
     9,
     10
   ],
+  "methods_review_fixes": {
+    "METHOD_unchanged": true,
+    "date": "2026-10-02",
+    "items_done": [
+      3,
+      4,
+      5,
+      6,
+      8
+    ],
+    "primary_estimand_and_verdict_unchanged": true,
+    "review": "analysis/reviews/astra-methods-1.md"
+  },
   "non_gating_diagnostics": {
+    "confirmation_access_chronology": {
+      "amendment_registration_utc": "2026-10-02T15:07:31+00:00",
+      "blind_recheck_extracted_by_utc": "2026-10-02T15:11:57+00:00",
+      "blind_recheck_timestamp_evidence": "local extraction-cache filesystem metadata; upper bound on access, not exact first-read audit timestamp",
+      "decisions_7_10_timing": "reported pre-opening; first committed with confirmation results in e8880f3 at 2026-10-02T15:36:01+00:00; not independently established as committed preregistration",
+      "main_pipeline_first_magnitude_select_utc": "2026-10-02T15:17:40.383923+00:00"
+    },
     "cross_percentile_displacement": {
       "six_face_centered_correlation": {
         "bootstrap_mean": 0.21317015652090912,
@@ -316,8 +380,10 @@
           0.197514691113376,
           0.22872852485048575
         ],
-        "interval_method": "percentile",
-        "measurement_status": "estimable",
+        "interval_coverage_validated": false,
+        "interval_method": "unvalidated bootstrap percentile diagnostic",
+        "interval_scope": "unvalidated bootstrap diagnostic; no calibrated full multiway cross interval; Amendment 1 validates R only",
+        "measurement_status": "descriptive point estimate; inferential uncertainty inconclusive",
         "n": {
           "identified_focal_solver_rounds": 61231,
           "scheduled_scrambles": 25085
@@ -334,8 +400,10 @@
           0.17643693357997609,
           0.20468162674572646
         ],
-        "interval_method": "percentile",
-        "measurement_status": "estimable",
+        "interval_coverage_validated": false,
+        "interval_method": "unvalidated bootstrap percentile diagnostic",
+        "interval_scope": "unvalidated bootstrap diagnostic; no calibrated full multiway cross interval; Amendment 1 validates R only",
+        "measurement_status": "descriptive point estimate; inferential uncertainty inconclusive",
         "n": {
           "identified_focal_solver_rounds": 61231,
           "scheduled_scrambles": 25085
@@ -352,8 +420,10 @@
           0.2582155212621829,
           0.2904663975299855
         ],
-        "interval_method": "percentile",
-        "measurement_status": "estimable",
+        "interval_coverage_validated": false,
+        "interval_method": "unvalidated bootstrap percentile diagnostic",
+        "interval_scope": "unvalidated bootstrap diagnostic; no calibrated full multiway cross interval; Amendment 1 validates R only",
+        "measurement_status": "descriptive point estimate; inferential uncertainty inconclusive",
         "n": {
           "identified_focal_solver_rounds": 61231,
           "scheduled_scrambles": 25085
@@ -370,8 +440,10 @@
           0.23123436162999406,
           0.25999168772843356
         ],
-        "interval_method": "percentile",
-        "measurement_status": "estimable",
+        "interval_coverage_validated": false,
+        "interval_method": "unvalidated bootstrap percentile diagnostic",
+        "interval_scope": "unvalidated bootstrap diagnostic; no calibrated full multiway cross interval; Amendment 1 validates R only",
+        "measurement_status": "descriptive point estimate; inferential uncertainty inconclusive",
         "n": {
           "identified_focal_solver_rounds": 61231,
           "scheduled_scrambles": 25085
@@ -381,6 +453,7 @@
         "valid_draws": 2000
       }
     },
+    "implementation_decision_commit_timing": "reported pre-opening; first committed with confirmation results in e8880f3 at 2026-10-02T15:36:01+00:00; not independently established as committed preregistration",
     "sparse_year_measurement_gates": {
       "2020": {
         "F_interpretation": false,
@@ -397,5 +470,5 @@
     },
     "year_2020_invalid_R_draws": 6
   },
-  "review_limit": "Independent numerical re-derivations and registered preconfirmation review are recorded; external full findings review and verified filming attribution remain outstanding."
+  "review_limit": "Astra methods review completed with required reporting corrections applied; verified actual-scramble attribution remains necessary for specific record stories."
 }

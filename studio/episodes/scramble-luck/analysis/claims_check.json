@@ -1,8 +1,8 @@
 {
   "all_passed": true,
-  "claim_count": 143,
-  "verified_claims": 143,
-  "verified_values": 882,
+  "claim_count": 148,
+  "verified_claims": 148,
+  "verified_values": 921,
   "claims": [
     {
       "id": "SL-C001",
@@ -1735,6 +1735,102 @@
           "recomputed": 888,
           "evidence": "raw-cell coverage count",
           "passed": true
+        },
+        {
+          "key": "robustness.era_2019_2022.full_window_reference.F_tier_aware.estimate",
+          "stated": 0.0471872505,
+          "digits": 10,
+          "recomputed": 0.04718725046336678,
+          "evidence": "independent raw-cell point calculation",
+          "passed": true
+        },
+        {
+          "key": "robustness.era_2019_2022.full_window_reference.F_tier_aware.interval_95[0]",
+          "stated": 0.0318912413,
+          "digits": 10,
+          "recomputed": 0.03189124127980071,
+          "evidence": "linear quantiles of draw-level records",
+          "passed": true
+        },
+        {
+          "key": "robustness.era_2019_2022.full_window_reference.F_tier_aware.interval_95[1]",
+          "stated": 0.0671790079,
+          "digits": 10,
+          "recomputed": 0.06717900792406427,
+          "evidence": "linear quantiles of draw-level records",
+          "passed": true
+        },
+        {
+          "key": "robustness.era_2019_2022.full_window_reference.F_tier_aware.valid_draws",
+          "stated": 2000,
+          "digits": 0,
+          "recomputed": 2000,
+          "evidence": "finite draw count",
+          "passed": true
+        },
+        {
+          "key": "robustness.era_2019_2022.full_window_reference.F_tier_aware.n.tier_supported_finals",
+          "stated": 1375,
+          "digits": 0,
+          "recomputed": 1375,
+          "evidence": "raw-cell coverage count",
+          "passed": true
+        },
+        {
+          "key": "robustness.era_2019_2022.full_window_reference.F_tier_aware.n.successful_cells",
+          "stated": 68127,
+          "digits": 0,
+          "recomputed": 68127,
+          "evidence": "raw-cell coverage count",
+          "passed": true
+        },
+        {
+          "key": "robustness.era_2019_2022.full_window_reference.tier_interaction_share_gamma_over_D.estimate",
+          "stated": 0.0032894242,
+          "digits": 10,
+          "recomputed": 0.003289424206589003,
+          "evidence": "independent raw-cell point calculation",
+          "passed": true
+        },
+        {
+          "key": "robustness.era_2019_2022.full_window_reference.tier_interaction_share_gamma_over_D.interval_95[0]",
+          "stated": -0.0131078601,
+          "digits": 10,
+          "recomputed": -0.013107860117256006,
+          "evidence": "linear quantiles of draw-level records",
+          "passed": true
+        },
+        {
+          "key": "robustness.era_2019_2022.full_window_reference.tier_interaction_share_gamma_over_D.interval_95[1]",
+          "stated": 0.0173048783,
+          "digits": 10,
+          "recomputed": 0.01730487825246153,
+          "evidence": "linear quantiles of draw-level records",
+          "passed": true
+        },
+        {
+          "key": "robustness.era_2019_2022.full_window_reference.tier_interaction_share_gamma_over_D.valid_draws",
+          "stated": 2000,
+          "digits": 0,
+          "recomputed": 2000,
+          "evidence": "finite draw count",
+          "passed": true
+        },
+        {
+          "key": "robustness.era_2019_2022.full_window_reference.tier_interaction_share_gamma_over_D.n.tier_supported_finals",
+          "stated": 1375,
+          "digits": 0,
+          "recomputed": 1375,
+          "evidence": "raw-cell coverage count",
+          "passed": true
+        },
+        {
+          "key": "robustness.era_2019_2022.full_window_reference.tier_interaction_share_gamma_over_D.n.successful_cells",
+          "stated": 68127,
+          "digits": 0,
+          "recomputed": 68127,
+          "evidence": "raw-cell coverage count",
+          "passed": true
         }
       ]
     },
@@ -1835,6 +1931,102 @@
           "stated": 2425,
           "digits": 0,
           "recomputed": 2425,
+          "evidence": "raw-cell coverage count",
+          "passed": true
+        },
+        {
+          "key": "robustness.era_2023_2025.full_window_reference.F_tier_aware.estimate",
+          "stated": 0.0473167746,
+          "digits": 10,
+          "recomputed": 0.04731677463956277,
+          "evidence": "independent raw-cell point calculation",
+          "passed": true
+        },
+        {
+          "key": "robustness.era_2023_2025.full_window_reference.F_tier_aware.interval_95[0]",
+          "stated": 0.0376271777,
+          "digits": 10,
+          "recomputed": 0.03762717766670931,
+          "evidence": "linear quantiles of draw-level records",
+          "passed": true
+        },
+        {
+          "key": "robustness.era_2023_2025.full_window_reference.F_tier_aware.interval_95[1]",
+          "stated": 0.0570448586,
+          "digits": 10,
+          "recomputed": 0.057044858561826464,
+          "evidence": "linear quantiles of draw-level records",
+          "passed": true
+        },
+        {
+          "key": "robustness.era_2023_2025.full_window_reference.F_tier_aware.valid_draws",
+          "stated": 2000,
+          "digits": 0,
+          "recomputed": 2000,
+          "evidence": "finite draw count",
+          "passed": true
+        },
+        {
+          "key": "robustness.era_2023_2025.full_window_reference.F_tier_aware.n.tier_supported_finals",
+          "stated": 3045,
+          "digits": 0,
+          "recomputed": 3045,
+          "evidence": "raw-cell coverage count",
+          "passed": true
+        },
+        {
+          "key": "robustness.era_2023_2025.full_window_reference.F_tier_aware.n.successful_cells",
+          "stated": 166398,
+          "digits": 0,
+          "recomputed": 166398,
+          "evidence": "raw-cell coverage count",
+          "passed": true
+        },
+        {
+          "key": "robustness.era_2023_2025.full_window_reference.tier_interaction_share_gamma_over_D.estimate",
+          "stated": 0.0036084607,
+          "digits": 10,
+          "recomputed": 0.0036084606741870807,
+          "evidence": "independent raw-cell point calculation",
+          "passed": true
+        },
+        {
+          "key": "robustness.era_2023_2025.full_window_reference.tier_interaction_share_gamma_over_D.interval_95[0]",
+          "stated": -0.0061925256,
+          "digits": 10,
+          "recomputed": -0.006192525618167296,
+          "evidence": "linear quantiles of draw-level records",
+          "passed": true
+        },
+        {
+          "key": "robustness.era_2023_2025.full_window_reference.tier_interaction_share_gamma_over_D.interval_95[1]",
+          "stated": 0.0102170001,
+          "digits": 10,
+          "recomputed": 0.010217000139348563,
+          "evidence": "linear quantiles of draw-level records",
+          "passed": true
+        },
+        {
+          "key": "robustness.era_2023_2025.full_window_reference.tier_interaction_share_gamma_over_D.valid_draws",
+          "stated": 2000,
+          "digits": 0,
+          "recomputed": 2000,
+          "evidence": "finite draw count",
+          "passed": true
+        },
+        {
+          "key": "robustness.era_2023_2025.full_window_reference.tier_interaction_share_gamma_over_D.n.tier_supported_finals",
+          "stated": 3045,
+          "digits": 0,
+          "recomputed": 3045,
+          "evidence": "raw-cell coverage count",
+          "passed": true
+        },
+        {
+          "key": "robustness.era_2023_2025.full_window_reference.tier_interaction_share_gamma_over_D.n.successful_cells",
+          "stated": 166398,
+          "digits": 0,
+          "recomputed": 166398,
           "evidence": "raw-cell coverage count",
           "passed": true
         }
@@ -5575,6 +5767,11 @@
           "recomputed": -0.052631753718800384,
           "evidence": "cross draw mean minus raw point",
           "passed": true
+        },
+        {
+          "key": "cross_range_reporting_qualification",
+          "passed": true,
+          "evidence": "every cross-range claim must label unvalidated bootstrap diagnostics and inconclusive inferential uncertainty"
         }
       ]
     },
@@ -5637,6 +5834,11 @@
           "recomputed": -0.04708551074936215,
           "evidence": "cross draw mean minus raw point",
           "passed": true
+        },
+        {
+          "key": "cross_range_reporting_qualification",
+          "passed": true,
+          "evidence": "every cross-range claim must label unvalidated bootstrap diagnostics and inconclusive inferential uncertainty"
         }
       ]
     },
@@ -5699,6 +5901,11 @@
           "recomputed": -0.0682025409215461,
           "evidence": "cross draw mean minus raw point",
           "passed": true
+        },
+        {
+          "key": "cross_range_reporting_qualification",
+          "passed": true,
+          "evidence": "every cross-range claim must label unvalidated bootstrap diagnostics and inconclusive inferential uncertainty"
         }
       ]
     },
@@ -5761,6 +5968,11 @@
           "recomputed": -0.06107652296528426,
           "evidence": "cross draw mean minus raw point",
           "passed": true
+        },
+        {
+          "key": "cross_range_reporting_qualification",
+          "passed": true,
+          "evidence": "every cross-range claim must label unvalidated bootstrap diagnostics and inconclusive inferential uncertainty"
         }
       ]
     },
@@ -7934,6 +8146,179 @@
           "passed": true
         }
       ]
+    },
+    {
+      "id": "SL-C144",
+      "passed": true,
+      "values": [
+        {
+          "key": "primary.R_geometric_person_year.estimate",
+          "stated": 1.0197788256,
+          "digits": 10,
+          "display_percent": 2,
+          "display_digits": 0,
+          "percent_transform": "ratio_increment",
+          "recomputed": 1.0197788255872957,
+          "evidence": "independent raw-cell point calculation",
+          "passed": true,
+          "recomputed_display_percent": 2.0,
+          "display_passed": true
+        }
+      ]
+    },
+    {
+      "id": "SL-C145",
+      "passed": true,
+      "values": [
+        {
+          "key": "primary.F_tier_aware.estimate",
+          "stated": 0.047434,
+          "digits": 6,
+          "display_percent": 4.7,
+          "display_digits": 1,
+          "percent_transform": "variance_share",
+          "recomputed": 0.04743387660594628,
+          "evidence": "independent raw-cell point calculation",
+          "passed": true,
+          "recomputed_display_percent": 4.7,
+          "display_passed": true
+        },
+        {
+          "key": "primary.F_tier_aware.interval_95[0]",
+          "stated": 0.039181,
+          "digits": 6,
+          "recomputed": 0.0391810441007666,
+          "evidence": "linear quantiles of draw-level records",
+          "passed": true
+        },
+        {
+          "key": "primary.F_tier_aware.interval_95[1]",
+          "stated": 0.056708,
+          "digits": 6,
+          "recomputed": 0.056708336060998225,
+          "evidence": "linear quantiles of draw-level records",
+          "passed": true
+        },
+        {
+          "key": "primary.F_tier_aware.n.tier_supported_finals",
+          "stated": 4420,
+          "digits": 0,
+          "recomputed": 4420,
+          "evidence": "raw-cell coverage count",
+          "passed": true
+        },
+        {
+          "key": "primary.F_tier_aware.n.successful_cells",
+          "stated": 234525,
+          "digits": 0,
+          "recomputed": 234525,
+          "evidence": "raw-cell coverage count",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "SL-C146",
+      "passed": true,
+      "values": [
+        {
+          "source_url": "https://www.wired.com/video/watch/almost-impossible-why-solving-a-rubik-s-cube-in-under-3-seconds-is-almost-impossible",
+          "label": "quote_and_release",
+          "stated": true,
+          "digits": null,
+          "source_phrases": [
+            "The fact is, sometimes you just get a lucky scramble.",
+            "Released on 05/23/2019"
+          ],
+          "recomputed": true,
+          "evidence": "hash-checked saved source; exact_phrases parser",
+          "passed": true
+        },
+        {
+          "source_url": "https://ruwix.com/blog/yusheng-du-record-347/",
+          "label": "quote_and_publication",
+          "stated": true,
+          "digits": null,
+          "source_phrases": [
+            "Lucky scramble? Maybe.",
+            "Published: November 25, 2018",
+            "Besides having great skills, you also need luck"
+          ],
+          "recomputed": true,
+          "evidence": "hash-checked saved source; exact_phrases parser",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "SL-C147",
+      "passed": true,
+      "values": [
+        {
+          "source_url": "https://www.cubeskills.com/tools/glossary",
+          "label": "definitions",
+          "stated": true,
+          "digits": null,
+          "source_phrases": [
+            "Cross-F2L-OLL-PLL",
+            "correctly solving 4 edge pieces around a center piece",
+            "First 2 Layers",
+            "Orientation of Last Layer",
+            "Permutation of Last Layer",
+            "Adjust U Face.",
+            "Solving the cross and one F2L pair"
+          ],
+          "recomputed": true,
+          "evidence": "hash-checked saved source; exact_phrases parser",
+          "passed": true
+        },
+        {
+          "source_url": "https://ruwix.com/the-rubiks-cube/advanced-cfop-fridrich/permutate-the-last-layer-pll/",
+          "label": "orientation_before_permutation",
+          "stated": true,
+          "digits": null,
+          "source_phrases": [
+            "permutation of the last layer (PLL)",
+            "the last layers pieces are oriented (OLL)"
+          ],
+          "recomputed": true,
+          "evidence": "hash-checked saved source; exact_phrases parser",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "SL-C148",
+      "passed": true,
+      "values": [
+        {
+          "key": "method.story_contract",
+          "source_file": "METHOD.md",
+          "stated": true,
+          "digits": null,
+          "source_phrases": [
+            "demean within each solver-round",
+            "subtracts finite-peer noise",
+            "exclude all five of that solver’s cells",
+            "Select the fastest positive time",
+            "geometric mean",
+            "equal weight per eligible, available",
+            "It is not a causal replay",
+            "F and R are estimated from successful solves only",
+            "cannot separate personal luck from execution",
+            "Attempt number is confounded with scramble number",
+            "The pre-confirmation gate failed",
+            "revised gate",
+            "passed on the original and independent simulations",
+            "no confirmation solve time had been read",
+            "fixed-selection interval",
+            "cannot change the verdict"
+          ],
+          "recomputed": true,
+          "evidence": "registered contract text anchors; SHA256 c67cc30101d636c75db182fe8fa869e107d934425fff214f9c5440a3d572212f",
+          "passed": true
+        }
+      ]
     }
   ],
   "note": "Verify proposed claims without opening results.json.\n\nPoint estimates: a separate numpy/scipy implementation on the independently\nextracted raw rows and centisecond cells in recheck/. Intervals: recomputed\nfrom unsummarized draw-level derived tables, not reported result summaries.\nSource claims: raw WCA rows for historical marks; saved source HTML for rules\nand reconstructions. All comparisons use the claim's displayed precision.\nThis is an independent code path, not an independent human review. Bootstrap\nrecords remain inputs; this verifier does not claim a fresh secondary bootstrap.\nRun with ideation/.venv/bin/python. Never changes proposed claim statuses.\n",
@@ -7943,6 +8328,7 @@
     "recheck/extraction.json": "42758ad95fea2820f843b56fffcbdbf25b934e60a3be57ac337e9b1cc3117124",
     "data/derived/analysis-common-moments.jsonl": "b556459be6e776c060c0d8b29bb7b189d25618c3be3b404357ab152a8048d2db",
     "data/derived/analysis-deletion-intervals.jsonl": "bc74676d56b2f182b43768dbb9fbcb9201c72d2ba99434fe037c82b852061593",
+    "data/derived/analysis-era-full-window.jsonl": "31dab7d92ddcea0b20980d482ea2d468a78b357f5581c7ca10e221d1037c4500",
     "data/derived/analysis-permutation.jsonl": "6bf536736449976f2380ac9906281b6ba9adfa31fbe8864ab5f5eede0c3db425",
     "data/derived/analysis-primary.jsonl": "cf10203e52a7bc4263f977357910ac8b0ace97d8cf9abf332bfe11ebfbf2b5a1",
     "data/derived/analysis-solver-deletions.jsonl": "c317a8a4848a58e0d0c7bc79fffd3483b22bf0f9aeae1d28fd0352f9760b568c",
@@ -7950,8 +8336,8 @@
     "analysis/amendment/replication.jsonl": "f40741b6283329d7c8bcad084cad5a5c3e8f7a7da2728bcd0b96b14319677233",
     "data/derived/gate-population-truth.jsonl": "7374b1cffd6c931f08e7fbbc7cf5fd21ec05fa875c27f4184109bc0e4fbc03b6",
     "data/derived/cross.parquet": "e263efe62df8686d2331d841b22bbacaccbb967d867578f75d2c335d61898c7e",
-    "analysis/claim_sources/manifest.json": "87c3690fa99902aae6978e53c6ec75aaadcaa0286ed2b19b72f20dde983a9d81"
+    "analysis/claim_sources/manifest.json": "f342f113c5b7cee918ea7cc1db1ed922a39ea0eec5808cb1ad07a0c7182e5348"
   },
-  "verifier_sha256": "20ac580cc2ca6049a689a029f6abe1b66d5ab11cc2a6fc0b0cbb05108d08d3ac",
-  "claims_sha256": "24b4141719fb16e030b46456d99e12846a59f20cc1664c9c3da2357cda9107f4"
+  "verifier_sha256": "7adcbf9c742f57d4acdda7d484dfa48a2d97e3b6ec34c843848d78801bf468c5",
+  "claims_sha256": "a2eb17f7cbbd27e0916b065b43106f4053cb931744e5ca6eb67bbf9abc7f933e"
 }

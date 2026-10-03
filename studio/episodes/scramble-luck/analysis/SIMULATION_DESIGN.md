@@ -25,9 +25,11 @@ are retained. No confirmation time magnitude enters the simulations.
   independently of synthetic effects and execution; this is the empirical-mask
   MCAR stress. Single-success and all-failure solver panels remain present.
 - Informative DNF preserves each solver-final's real DNF count and DNS
-  positions. It selects DNF positions among started slots without replacement
-  with odds proportional to exp(12 × generated shared effect), using independent
-  Gumbel scores. Thus harder scheduled slots raise DNF probability. Execution
+  positions. It selects DNF positions among started slots by sequential weighted sampling
+  without replacement, with weights exp(12 × generated shared effect)
+  renormalized over remaining slots at each selection. Independent Gumbel scores
+  plus log weights implement the equivalent top-k ranking. For multiple DNFs,
+  subset probabilities are not exact conditional-logistic subset odds. Thus harder scheduled slots raise DNF probability. Execution
   errors do not enter this missingness mechanism. This is one specified
   informative mechanism, not a worst-case bound on all informative failures.
 - Random replacements independently replace 10% of solver-attempt common

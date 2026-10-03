@@ -38,7 +38,7 @@ def bulk(name,obj):
     tmp.write_text(json.dumps(clean(obj),sort_keys=True,allow_nan=False)+'\n');tmp.replace(p)
 
 def provenance_and_open():
-    """The only first-time read of observed confirmation magnitudes."""
+    """Main pipeline first-time read of observed confirmation magnitudes."""
     from gate import fixture_checks
     checks=fixture_checks()
     m=json.loads((EP/'data/wca-manifest.json').read_text())
@@ -65,8 +65,8 @@ def provenance_and_open():
         con.execute('SET threads=10')
         # Timestamp is persisted immediately before the first value SELECT.
         stamp=datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='microseconds')
-        bulk('first-confirmation-open.json',{'first_open_utc':stamp,'action':'first magnitude SELECT immediately follows this persisted timestamp'})
-        progress(f'Step 4: FIRST OPEN of confirmation solve-time magnitudes at {stamp}; approved amendment commit 5496074 verified; original and independent B gates pass.')
+        bulk('first-confirmation-open.json',{'first_open_utc':stamp,'scope':'main analysis pipeline only','action':'main pipeline first magnitude SELECT immediately follows this persisted timestamp'})
+        progress(f'Step 4: MAIN PIPELINE FIRST OPEN of confirmation solve-time magnitudes at {stamp}; approved amendment commit 5496074 verified; original and independent B gates pass.')
         src=str(raw/'WCA_export_result_attempts.tsv')
         wide=','.join(f'max(CAST(a.value AS BIGINT)) FILTER(WHERE CAST(a.attempt_number AS INTEGER)={j}) v{j}' for j in range(1,6))
         query=f"""SELECT r.result_id,{wide} FROM read_csv('{src}',delim='\\t',header=true,all_varchar=true,quote='',nullstr='') a
@@ -77,7 +77,7 @@ def provenance_and_open():
         assert (DERIVED/'first-confirmation-open.json').exists()
     dump('analysis-provenance.json',{'source_hashes_rechecked':hashes,
          'archive_sha256':m['sha256'],'split_counts':{k:len(v) for k,v in lists.items()},
-         'frozen_fixture_checks':checks,'first_open':json.loads((DERIVED/'first-confirmation-open.json').read_text()),
+         'frozen_fixture_checks':checks,'first_open':{**json.loads((DERIVED/'first-confirmation-open.json').read_text()),'scope':'main analysis pipeline first magnitude SELECT only'},
          'method_sha256':sha(EP/'METHOD.md'),'amendment_sha256':sha(OUT/'amendment/AMENDMENT-1.md')})
 
 def make_logistic(status):

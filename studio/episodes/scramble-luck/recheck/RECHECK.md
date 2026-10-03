@@ -107,12 +107,14 @@ absolute slack. Verdict text is compared without regard to capitalization.
 All eight discrepancies arise from **my interpretation of the era skill-reference
 population**. I kept the registered ±2-year references across all 2019–2025,
 then restricted panels to an era. Sol first masks out-of-era competitions, so
-those competitions cannot supply skill references. METHOD says to repeat F/R
-in each era but does not expressly settle the cross-boundary reference question.
-Sol explicitly registered the within-era choice before opening outcomes in
-`analysis/DEVIATIONS.md`, decision 9. For a self-contained era sensitivity, I
-adopt that documented choice for the harmonized check; the blind values are
-preserved rather than overwritten.
+those competitions cannot supply skill references. METHOD's explicit 2019–2025 ±2-year reference definition supports the blind
+full-window reading more directly. Sol's within-era choice is disclosed in
+`analysis/DEVIATIONS.md`, decision 9. Decisions 7–10 were reported pre-opening
+but first committed together with the confirmation results in e8880f3
+(2026-10-02 15:36:01 UTC); they are not established as committed preregistration.
+The harmonized within-era check is a separate sensitivity and does not resolve
+contract fidelity. The blind full-window values are preserved and now reported
+beside the within-era values, with their own same-draw intervals.
 
 Code evidence: `analysis/analyze.py:237`–242 constructs masked competition
 weights; `analysis/engine.py:39`–56 counts reference candidates only where the
@@ -174,3 +176,12 @@ These are not numerical disagreements and are excluded from both match counts:
 No Sol analysis code or results were edited. The only new files in analysis/
 are the requested comparison script and JSON report. Post-unblinding diagnostic
 code and results live under recheck/ and are distinct from sealed blind values.
+
+### Timestamp scope (2026-10-02 methods-review correction)
+
+The main analysis pipeline first magnitude SELECT is recorded at
+2026-10-02T15:17:40.383923+00:00. The blind recheck had already extracted
+magnitudes by 15:11:57 UTC, corroborated by local extraction-cache filesystem
+metadata; this is an upper bound on extraction access, not an exact first-read
+audit timestamp. Both follow amendment registration 5496074 at 15:07:31 UTC.
+The 15:18:34 phase seal records completion, not first access.

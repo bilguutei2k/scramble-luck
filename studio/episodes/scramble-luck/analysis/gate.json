@@ -66,7 +66,7 @@
   ],
   "frozen_model_id": "S1-r5-measurement-v1",
   "gate_passed": false,
-  "informative_dnf_stress": "Each real solver-final DNF count/DNS locations retained; conditional DNF position odds proportional to exp(12*shared_slot).",
+  "informative_dnf_stress": "Each real solver-final DNF count and DNS locations retained; Gumbel top-k implements sequential weighted sampling without replacement among started slots, with weights exp(12*shared_slot), renormalized over remaining slots at each selection. Multi-DNF subset probabilities are not exact conditional-logistic subset odds.",
   "mcar_stress": "All other cases retain observed DNF/DNS masks independently of generated times.",
   "methods": {
     "competition_only": {

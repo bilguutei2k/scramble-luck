@@ -1,0 +1,81 @@
+{
+  "eras": {
+    "era_2019_2022": {
+      "F_tier_aware": {
+        "estimate": 0.04718725046336681,
+        "n": {
+          "tier_supported_finals": 1375,
+          "successful_cells": 68127
+        },
+        "interval_95": [
+          0.03189124127980071,
+          0.06717900792406427
+        ],
+        "interval_method": "percentile",
+        "valid_draws": 2000,
+        "requested_draws": 2000,
+        "measurement_status": "estimable"
+      },
+      "tier_interaction_share_gamma_over_D": {
+        "estimate": 0.0032894242065890284,
+        "n": {
+          "tier_supported_finals": 1375,
+          "successful_cells": 68127
+        },
+        "interval_95": [
+          -0.013107860117256006,
+          0.01730487825246153
+        ],
+        "interval_method": "percentile",
+        "valid_draws": 2000,
+        "requested_draws": 2000,
+        "measurement_status": "estimable"
+      },
+      "reference_scope": "full 2019\u20132025 confirmation window, \u00b12 calendar years; era outcome panels only",
+      "interval_scope": "same 2,000 registered competition \u00d7 solver draws; full-window references recomputed in each draw; separately refitted era tier positions"
+    },
+    "era_2023_2025": {
+      "F_tier_aware": {
+        "estimate": 0.0473167746395628,
+        "n": {
+          "tier_supported_finals": 3045,
+          "successful_cells": 166398
+        },
+        "interval_95": [
+          0.03762717766670931,
+          0.057044858561826464
+        ],
+        "interval_method": "percentile",
+        "valid_draws": 2000,
+        "requested_draws": 2000,
+        "measurement_status": "estimable"
+      },
+      "tier_interaction_share_gamma_over_D": {
+        "estimate": 0.003608460674187086,
+        "n": {
+          "tier_supported_finals": 3045,
+          "successful_cells": 166398
+        },
+        "interval_95": [
+          -0.006192525618167296,
+          0.010217000139348563
+        ],
+        "interval_method": "percentile",
+        "valid_draws": 2000,
+        "requested_draws": 2000,
+        "measurement_status": "estimable"
+      },
+      "reference_scope": "full 2019\u20132025 confirmation window, \u00b12 calendar years; era outcome panels only",
+      "interval_scope": "same 2,000 registered competition \u00d7 solver draws; full-window references recomputed in each draw; separately refitted era tier positions"
+    }
+  },
+  "draw_file": "data/derived/analysis-era-full-window.jsonl",
+  "draw_sha256": "31dab7d92ddcea0b20980d482ea2d468a78b357f5581c7ca10e221d1037c4500",
+  "input_sha256": {
+    "data/derived/structure.parquet": "120b6dec3c4327c4e607fefd0e8b126abd23d1ad98607ac3b3e6638662faaf58",
+    "data/derived/confirmation-values.parquet": "49d4063b032da68e3d03e5b7235d5579b60c75b95d395edea18e3cec37d75348",
+    "data/derived/bootstrap-competition.npy": "97a33bbc399eab8e73fdead9ff3cfd79df1db56b9717c12b43315b6832d8b8ea",
+    "data/derived/bootstrap-solver.npy": "a931e3a189452de2cda744ff48b82406bb7aaaa4377548f0f8d0c7768d4e5ace"
+  },
+  "code_sha256": "38593b5b715b30aaa2cf31fed5df7f606644729742225659dfd49eb97ad6da1d"
+}

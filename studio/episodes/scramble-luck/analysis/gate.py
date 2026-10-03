@@ -61,7 +61,8 @@ def generate(st,case,rep,arrays_only=False):
     q=st.status==1
     if case=='informative_dnf':
         # Preserve each real result's DNF count and DNS positions. DNF locations
-        # favour difficult shared slots: conditional odds multiply by exp(12*s).
+        # favour difficult shared slots: Gumbel top-k is sequential weighted
+        # sampling without replacement with weights exp(12*s).
         score=12*shared[st.ridx]+rng.gumbel(size=(st.N,5))
         score[st.status==-2]=-np.inf
         dnfs=(st.status==-1).sum(1)
@@ -224,7 +225,7 @@ def report(methods,checks,benchmark,selected,complete,truths):
       'synthetic_fixture_checks':checks,'benchmark':benchmark,'complete':complete,'code_sha256':code_hashes(),
       'process_parameters':CASES,'population_truth':truths,
       'truth_definition':'Process expectation of original-selection oracle log R, integrated using 10,000 independent synthetic datasets/process; finite-oracle attribution coverage retained as diagnostic; see DEVIATIONS.md.',
-      'informative_dnf_stress':'Each real solver-final DNF count/DNS locations retained; conditional DNF position odds proportional to exp(12*shared_slot).',
+      'informative_dnf_stress':'Each real solver-final DNF count and DNS locations retained; Gumbel top-k implements sequential weighted sampling without replacement among started slots, with weights exp(12*shared_slot), renormalized over remaining slots at each selection. Multi-DNF subset probabilities are not exact conditional-logistic subset odds.',
       'mcar_stress':'All other cases retain observed DNF/DNS masks independently of generated times.'}
     dump('gate.json',out)
     lines=['# Pre-confirmation validation gate','',

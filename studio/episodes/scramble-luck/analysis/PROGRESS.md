@@ -325,7 +325,7 @@
 
 - 2026-10-02T07:54:52+00:00: COMMIT BLOCKED by filesystem policy: requested git add failed (exit 128), unable to create .git/index.lock: Operation not permitted. Repository .git is read-only. No files staged; no gate commit created. Exact requested message saved in COMMIT_MESSAGE.txt. Gate failed; confirmation magnitudes remain unopened; step 4 has not run. All reviewable analysis code/reports are ready for an authorized repository writer to commit.
 
-- 2026-10-02T15:17:40+00:00: Step 4: FIRST OPEN of confirmation solve-time magnitudes at 2026-10-02T15:17:40.383923+00:00; approved amendment commit 5496074 verified; original and independent B gates pass.
+- 2026-10-02T15:17:40+00:00: Step 4: MAIN PIPELINE FIRST OPEN of confirmation solve-time magnitudes at 2026-10-02T15:17:40.383923+00:00; approved amendment commit 5496074 verified; original and independent B gates pass.
 
 - 2026-10-02T15:17:44+00:00: Step 4 observed-point block complete: 5017 finals; 3313 available extrema; 4420 tier-supported finals. No threshold decision before intervals.
 
@@ -538,3 +538,5 @@
 - 2026-10-02T15:33:43+00:00: Step 4 peer-prediction block COMPLETE: 30 whole-solver splits and 2,000 competition draws at k=2,5,10,20; changing and fixed panels.
 
 - 2026-10-02T15:33:48+00:00: Step 4 reporting and QA COMPLETE: Belief fails; 25/25 named QA checks pass; results.json, qa.json, FINDINGS.md saved. No .git writes or commit attempted.
+
+- 2026-10-03T01:25:33+00:00: Methods-review fixes applied (items 3, 4, 5, 6 and item-8 follow-up): cross diagnostic labels, full-window era references and same-draw intervals, main-pipeline/blind-recheck timestamp scope and decisions 7–10 commit disclosure, sequential weighted informative-DNF wording. Claim verifier: 148/148 claims, 921 value/reporting checks, zero failures; QA 29/29. METHOD, primary measurements and verdict unchanged; no .git writes.

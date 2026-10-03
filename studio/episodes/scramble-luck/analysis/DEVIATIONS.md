@@ -1,6 +1,6 @@
-# Literal implementation decisions before confirmation times
+# Literal implementation decisions and timing disclosures
 
-METHOD.md is unchanged; no positive confirmation solve times have been read.
+METHOD.md is unchanged. The original entries below report outcome-blind implementation decisions; this is a historical record, not a statement that confirmation times remain unopened. Decisions 7–10 were reported as made before opening, but first committed with confirmation results in e8880f3 (2026-10-02 15:36:01 UTC), not independently established as committed preregistration. They do not override METHOD or its approved amendment.
 
 1. **Move metric.** “Fewest moves” does not specify quarter-turn or half-turn
    metric. Use the conventional face-turn/half-turn cross metric: all 18 U, U2,
@@ -65,7 +65,7 @@ METHOD.md is unchanged; no positive confirmation solve times have been read.
    55.5%); some large-shared datasets were already checkpointed. Partial datasets
    are retained but do not decide acceptance. No confirmation outcomes were read.
 
-## Step 4 implementation decisions (flagged; made before opening outcomes)
+## Step 4 implementation decisions (flagged; reported pre-opening, committed with results)
 
 7. **Secondary logistic fixed effects.** Estimate the DNF model by exact
    conditional logistic likelihood, conditioning on each solver-round's DNF
@@ -80,11 +80,17 @@ METHOD.md is unchanged; no positive confirmation solve times have been read.
    length demeaned within final, for six-face and white/yellow minima. Weight
    focal averages by solver multiplicity and scrambles by competition
    multiplicity in the bootstrap. The centered correlation is the preferred
-   mechanism description because h is a within-final contrast.
+   descriptive geometry check because h is a within-final contrast. All four
+   percentile ranges are unvalidated bootstrap diagnostics; calibrated cross
+   inference remains inconclusive. Amendment 1 validates R only.
 9. **Subsets and deletion uncertainty.** Era and year-deletion checks use the
    full registered cluster draws with excluded competitions given zero weight;
-   the original structural seasonal roster remains fixed. Reference candidates
-   are limited by the same competition mask. Delete each confirmation solver
+   the original structural seasonal roster remains fixed. The original within-era sensitivity limits reference candidates
+   by the same competition mask. The 2026-10-02 review follow-up also reports
+   era F and γ/D with full-2019–2025 ±2-year references, recomputed with full
+   competition weights in each saved draw while masking only outcome panels.
+   METHOD supports this full-window reading more directly. Year-deletion and
+   yearly-beta checks retain restricted references and are labelled accordingly. Delete each confirmation solver
    in turn (also from training); report the entire point range with its counts.
    Report bootstrap intervals for the deletions attaining each endpoint, not
    a simultaneous interval for a data-selected range. No deletion changes the
@@ -121,3 +127,17 @@ checkpoints. No estimator, seed, primary interval, threshold or eligibility
 rule changed. Sparse yearly checks are explicitly labelled diagnostic when
 the registered coverage/valid-draw gates fail. Confirmation point estimates
 and the primary interval had been seen at this correction.
+
+### Methods-review reporting corrections — 2026-10-02
+
+The informative-DNF generator uses sequential weighted sampling without
+replacement among started slots (Gumbel top-k), with weights exp(12 × shared
+effect), renormalized over remaining slots at each selection. It preserves
+each solver-final DNF count and DNS positions; for multiple DNFs it is not an
+exact conditional-logistic subset-odds process. Empirical gate results remain
+results for this generator.
+
+The 15:17:40.383923 UTC first-read timestamp belongs to the main pipeline.
+The blind recheck had extracted magnitudes by 15:11:57 UTC (local cache metadata,
+not an exact first-read audit timestamp). Both follow the 15:07:31 UTC amendment
+registration; decisions 7–10 were first committed with results at 15:36:01 UTC.
