@@ -3,7 +3,7 @@
   "claims": [
     {
       "id": "SL-C001",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Belief fails: the data rule out an average shared scramble/slot boost as large as 10% for these season bests. R = 1.0198 (1.0164–1.0231), so the estimated shared-scramble-adjusted time is about 1.98% longer than observed. The entire 95% interval lies below the registered 1.10 line.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -42,11 +42,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C002",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "The confirmation census contains 5,017 finals, 306,155 scheduled attempt slots and 301,668 successful solves; 3,313 season bests are available.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -79,11 +85,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C003",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "The scope spans 7 years, 2019–2025, 12,853 solvers and 61,231 solver-final rows; 3,313 solver-seasons meet the seasonal eligibility gate.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -126,11 +138,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C004",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "The locked hash split has 15,015 confirmation and 3,756 exploration competition IDs; the 80% label denotes the hash rule, not the eligible-final fraction.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -154,11 +172,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C005",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "The shared scramble/slot component accounts for 4.7434% (3.9181–5.6708%) of balanced-tier within-solver-round successful log-time variance. F uses 4,420 tier-supported finals and 234,525 successful cells.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -197,11 +221,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C006",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "The tier-interaction share γ/D is 0.3565% (-0.5067–0.8985%); its signed interval crosses zero.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -230,11 +260,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C007",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "The signed tau estimate for the shared scramble/slot model is 0.001101 (0.000913–0.001336) in squared log-time units.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -263,11 +299,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C008",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "The signed gamma estimate for the shared scramble/slot model is 0.000083 (-0.000118–0.000211) in squared log-time units.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -296,11 +338,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C009",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "The signed D estimate for the shared scramble/slot model is 0.023215 (0.022871–0.024025) in squared log-time units.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -329,11 +377,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C010",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "The signed fast_shared_variance estimate for the shared scramble/slot model is 0.001216 (0.000765–0.001635) in squared log-time units.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -362,11 +416,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C011",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "The signed slow_shared_variance estimate for the shared scramble/slot model is 0.001152 (0.000747–0.001540) in squared log-time units.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -395,11 +455,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C012",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "The signed cross_covariance estimate for the shared scramble/slot model is 0.001018 (0.000848–0.001315) in squared log-time units.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -428,11 +494,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C013",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "The signed fast_residual_variance estimate for the shared scramble/slot model is 0.021697 (0.021292–0.022884) in squared log-time units.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -461,11 +533,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C014",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "The signed slow_residual_variance estimate for the shared scramble/slot model is 0.022366 (0.021663–0.023367) in squared log-time units.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -494,11 +572,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C015",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Tier support excludes 597 finals and 67,143 successes; 11,557 informative solver-rounds lack a skill reference. There are 61,211 informative rows, 14 singleton-success rows and 6 no-success rows, with 0 no-success seasons and 0 unidentified original extrema.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -552,11 +636,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C016",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "In 2019, the coverage is 813 eligible finals, 603 tier-supported finals and 27,798 tier-subset successes.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -584,11 +674,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C017",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "In 2020, the coverage is 131 eligible finals, 106 tier-supported finals and 5,151 tier-subset successes.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -616,11 +712,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C018",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "In 2021, the coverage is 143 eligible finals, 127 tier-supported finals and 6,138 tier-subset successes.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -648,11 +750,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C019",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "In 2022, the coverage is 577 eligible finals, 539 tier-supported finals and 29,040 tier-subset successes.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -680,11 +788,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C020",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "In 2023, the coverage is 1,084 eligible finals, 1,018 tier-supported finals and 56,432 tier-subset successes.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -712,11 +826,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C021",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "In 2024, the coverage is 1,133 eligible finals, 1,025 tier-supported finals and 56,482 tier-subset successes.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -744,11 +864,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C022",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "In 2025, the coverage is 1,136 eligible finals, 1,002 tier-supported finals and 53,484 tier-subset successes.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -776,11 +902,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C023",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "The mutually exclusive result exclusions are: incomplete or duplicate slots results 0; invalid format final results 0; invalid regular schedule results 0; invalid status results after slot gate 0; missing schedule results 26; multigroup results 48,911; nonfinal 333 results 794,852; other event results 2,504,130.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -834,11 +966,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C024",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Procedure B uses 2,000 valid draws. Mean bootstrap log R is 0.01728889, displaced by −0.00229687 from the point. The raw percentile R interval is 1.014038–1.020723; mean translation gives the reported 1.016370–1.023071 interval.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -887,11 +1025,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C025",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "The fixed-selection procedure A sensitivity gives R = 1.0198 (1.0149–1.0246) with 2,000 valid draws.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -925,11 +1069,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C026",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Across bootstrap draws, absent seasons has mean 1225.1440, central 95% draw range 1138.0000–1311.0250, minimum 1056.0000 and maximum 1368.0000; n=2,000.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -973,11 +1123,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C027",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Across bootstrap draws, available extrema has mean 2087.0520, central 95% draw range 2000.0000–2174.0000, minimum 1945.0000 and maximum 2257.0000; n=2,000.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -1021,11 +1177,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C028",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Across bootstrap draws, distinct attempt exposure has mean 122321.2750, central 95% draw range 118935.0000–125685.1250, minimum 116695.0000 and maximum 131070.0000; n=2,000.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -1069,11 +1231,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C029",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Across bootstrap draws, distinct competition fraction has mean 0.6322, central 95% draw range 0.6235–0.6408, minimum 0.6189 and maximum 0.6472; n=2,000.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -1117,11 +1285,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C030",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Across bootstrap draws, equal tier n has mean 969.5185, central 95% draw range 853.0000–1091.0250, minimum 740.0000 and maximum 1185.0000; n=2,000.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -1165,11 +1339,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C031",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Across bootstrap draws, fixed selection n has mean 1322.3385, central 95% draw range 1249.0000–1397.0250, minimum 1188.0000 and maximum 1457.0000; n=2,000.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -1213,11 +1393,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C032",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Across bootstrap draws, no success seasons has mean 0.0010, central 95% draw range 0.0000–0.0000, minimum 0.0000 and maximum 1.0000; n=2,000.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -1261,11 +1447,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C033",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Across bootstrap draws, unidentified extrema has mean 0.8030, central 95% draw range 0.0000–3.0000, minimum 0.0000 and maximum 6.0000; n=2,000.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -1309,11 +1501,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C034",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Across bootstrap draws, weighted attempt exposure has mean 306084.7000, central 95% draw range 296752.8750–316030.7500, minimum 290660.0000 and maximum 323885.0000; n=2,000.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -1357,11 +1555,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C035",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "clipped centered logs: shared scramble/slot F 4.8220% (4.0147–5.7475%), R 1.0198 (1.0164–1.0231), γ/D 0.3722% (-0.4735–0.9056%); 4,420 tier finals, 234,525 tier successes and 3,313 available extrema. Clipping at ±0.6 affects 404 successful cells.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -1440,11 +1644,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C036",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "complete success: shared scramble/slot F 4.8514% (3.9400–5.8709%), R 1.0194 (1.0160–1.0229), γ/D 0.4391% (-0.5802–1.0383%); 4,224 tier finals, 214,820 tier successes and 3,313 available extrema. Masks 4,176 incomplete solver-rounds.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -1523,11 +1733,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C037",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Within-era reference sensitivity — era 2019 2022: shared scramble/slot F 4.8238% (2.7785–7.2652%), R 1.0186 (1.0125–1.0248), γ/D 0.1820% (-1.7683–1.9218%); 1,269 tier finals, 59,773 tier successes and 888 available extrema. Full-window 2019–2025 ±2-year reference reading: F 4.7187% (3.1891–6.7179%), γ/D 0.3289% (-1.3108–1.7305%); 1,375 tier finals and 68,127 successes; 2,000 valid draws for each interval. METHOD supports the full-window reading more directly; all-peer R is unchanged.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -1662,11 +1878,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C038",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Within-era reference sensitivity — era 2023 2025: shared scramble/slot F 4.7465% (3.7700–5.8016%), R 1.0202 (1.0162–1.0242), γ/D 0.2969% (-0.6321–1.0607%); 3,012 tier finals, 162,831 tier successes and 2,425 available extrema. Full-window 2019–2025 ±2-year reference reading: F 4.7317% (3.7627–5.7045%), γ/D 0.3608% (-0.6193–1.0217%); 3,045 tier finals and 166,398 successes; 2,000 valid draws for each interval. METHOD supports the full-window reading more directly; all-peer R is unchanged.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -1801,11 +2023,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C039",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "leave year 2019 out: shared scramble/slot F 4.7631% (3.8632–5.6939%), R 1.0198 (1.0161–1.0236), γ/D 0.3293% (-0.5462–0.9402%); 3,783 tier finals, 204,193 tier successes and 2,818 available extrema.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -1880,11 +2108,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C040",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "leave year 2020 out: shared scramble/slot F 4.7154% (3.8947–5.6510%), R 1.0197 (1.0163–1.0231), γ/D 0.3168% (-0.5393–0.9204%); 4,289 tier finals, 227,280 tier successes and 3,307 available extrema.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -1959,11 +2193,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C041",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "leave year 2021 out: shared scramble/slot F 4.7077% (3.8625–5.6561%), R 1.0199 (1.0165–1.0233), γ/D 0.3676% (-0.4853–0.9610%); 4,270 tier finals, 226,534 tier successes and 3,279 available extrema.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -2038,11 +2278,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C042",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "leave year 2022 out: shared scramble/slot F 4.7755% (3.8888–5.7673%), R 1.0200 (1.0164–1.0236), γ/D 0.3515% (-0.5763–1.0242%); 3,845 tier finals, 201,604 tier successes and 2,960 available extrema.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -2117,11 +2363,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C043",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "leave year 2023 out: shared scramble/slot F 4.6878% (3.5966–5.7644%), R 1.0191 (1.0153–1.0229), γ/D 0.3017% (-0.6947–1.1168%); 3,304 tier finals, 168,623 tier successes and 2,507 available extrema.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -2196,11 +2448,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C044",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "leave year 2024 out: shared scramble/slot F 4.8841% (3.9158–6.1362%), R 1.0200 (1.0161–1.0240), γ/D 0.3296% (-0.6967–1.0947%); 3,303 tier finals, 169,134 tier successes and 2,504 available extrema.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -2275,11 +2533,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C045",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "leave year 2025 out: shared scramble/slot F 4.7009% (3.6520–5.7689%), R 1.0199 (1.0160–1.0236), γ/D 0.0894% (-0.7380–0.9733%); 3,343 tier finals, 174,280 tier successes and 2,503 available extrema.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -2354,11 +2618,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C046",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "all finalists: the common-only shared scramble/slot share is 4.4145% (3.8002–5.0172%), using within-solver denominator 0.023123 (0.022752–0.023512); 61,211 informative rows and 301,668 successes.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -2412,11 +2682,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C047",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "clipped centered logs: the common-only shared scramble/slot share is 4.4826% (3.8878–5.0801%), using within-solver denominator 0.022757 (0.022445–0.023068); 61,211 informative rows and 301,668 successes.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -2470,11 +2746,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C048",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "complete success: the common-only shared scramble/slot share is 4.4428% (3.8241–5.0631%), using within-solver denominator 0.023087 (0.022715–0.023469); 57,055 informative rows and 285,275 successes.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -2528,11 +2810,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C049",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Deleting each of 12,853 solvers in turn gives the shared scramble/slot F_tier_aware point range 0.047274–0.047619. Delete 2019PETT01: 0.047274 (0.038988–0.056574), 3,310 extrema and 4,420 tier finals. Delete 2022CHAI02: 0.047619 (0.039433–0.057016), 3,310 extrema and 4,420 tier finals.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -2611,11 +2899,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C050",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Deleting each of 12,853 solvers in turn gives the shared scramble/slot R_geometric_person_year point range 1.019643–1.019899. Delete 2017WILL05: 1.019643 (1.016272–1.022970), 3,309 extrema and 4,420 tier finals. Delete 2018AMSB02: 1.019899 (1.016528–1.023161), 3,310 extrema and 4,417 tier finals.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -2694,11 +2988,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C051",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "all peer R on equal tier subset: estimated shared-scramble-adjusted ratio 1.0199 (1.0152–1.0247); person years 3,043. Equal-tier availability omits 270 original extrema.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -2737,11 +3037,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C052",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "arithmetic mean R: estimated shared-scramble-adjusted ratio 1.0213 (1.0179–1.0246); available person years 3,313.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -2775,11 +3081,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C053",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "equal tier R: estimated shared-scramble-adjusted ratio 1.0203 (1.0155–1.0251); person years 3,043. Equal-tier availability omits 270 original extrema.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -2818,11 +3130,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C054",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "per solver weighted R: estimated shared-scramble-adjusted ratio 1.0184 (1.0146–1.0222); person years 3,313, solvers 1,800.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -2861,11 +3179,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C055",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "confirmation beta: refitting attempt effects gives shared-scramble-adjusted R 1.0197 (1.0163–1.0230); F remains 4.7434% (3.9181–5.6708%).",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -2909,11 +3233,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C056",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "yearly beta: refitting attempt effects gives shared-scramble-adjusted R 1.0197 (1.0163–1.0229); F remains 4.7434% (3.9181–5.6708%).",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -2957,11 +3287,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C057",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "fast position: fitted log-time positions in scheduled order are -0.000780 (-0.004037–0.005087); -0.001257 (-0.005524–0.003511); -0.001929 (-0.008080–0.001360); 0.002218 (-0.001592–0.007192); 0.001748 (-0.003261–0.005696).",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -3050,11 +3386,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C058",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "slow position: fitted log-time positions in scheduled order are 0.000399 (-0.003906–0.004775); -0.003070 (-0.006452–0.002119); -0.001432 (-0.006989–0.001608); -0.000105 (-0.004290–0.004605); 0.004209 (-0.000475–0.008630).",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -3143,11 +3485,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C059",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "beta: fitted log-time positions in scheduled order are -0.000424 (-0.002333–0.001429); -0.001759 (-0.003859–0.000411); -0.001638 (-0.003664–0.000437); 0.000942 (-0.001080–0.003014); 0.002880 (0.000687–0.004824).",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -3236,11 +3584,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C060",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "2019 year-specific β: shared scramble/slot F 4.4857% (0.4473–8.2621%), R 1.0192 (1.0111–1.0275), γ/D 0.3157% (-3.4400–3.1907%); 548 tier finals, 24,336 tier successes, 495 extrema, 2,000 valid F draws and 2,000 valid R draws.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -3325,11 +3679,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C061",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "2019 year-specific nuisance log-time positions: -0.002396 (-0.007161–0.002493); -0.002450 (-0.007420–0.002536); 0.000027 (-0.004990–0.004838); 0.001773 (-0.003157–0.006849); 0.003046 (-0.001857–0.008044).",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -3419,11 +3779,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C062",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": true,
       "text": "2020 year-specific β: shared scramble/slot F 2.2008% (-34.6105–17.3792%), R 1.0449 (0.9636–1.1326), γ/D 1.2713% (-34.6105–6.9804%); 7 tier finals, 273 tier successes, 6 extrema, 394 valid F draws and 1,994 valid R draws.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -3509,11 +3875,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C063",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": true,
       "text": "2020 year-specific nuisance log-time positions: -0.002304 (-0.014387–0.010105); 0.001335 (-0.011440–0.015207); -0.000249 (-0.012782–0.012344); 0.000592 (-0.012218–0.013298); 0.000625 (-0.013326–0.013810).",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -3604,11 +3976,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C064",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": true,
       "text": "2021 year-specific β: shared scramble/slot F 7.1195% (-36.9126–19.9873%), R 1.0123 (0.9834–1.0413), γ/D -0.5194% (-36.9126–6.3577%); 40 tier finals, 1,537 tier successes, 34 extrema, 1,557 valid F draws and 2,000 valid R draws.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -3694,11 +4072,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C065",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": true,
       "text": "2021 year-specific nuisance log-time positions: -0.002082 (-0.013991–0.009619); -0.006190 (-0.018552–0.006351); 0.003107 (-0.009181–0.015621); -0.000515 (-0.012787–0.011712); 0.005680 (-0.007349–0.018904).",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -3789,11 +4173,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C066",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": true,
       "text": "2022 year-specific β: shared scramble/slot F 4.5769% (0.0669–8.3409%), R 1.0178 (1.0083–1.0275), γ/D -0.2835% (-3.7672–2.8470%); 398 tier finals, 18,610 tier successes, 353 extrema, 2,000 valid F draws and 2,000 valid R draws.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -3879,11 +4269,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C067",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": true,
       "text": "2022 year-specific nuisance log-time positions: 0.000855 (-0.004886–0.006816); -0.006314 (-0.012026–-0.000612); 0.000140 (-0.005715–0.005751); 0.002467 (-0.003174–0.008169); 0.002851 (-0.003099–0.008886).",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -3974,11 +4370,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C068",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "2023 year-specific β: shared scramble/slot F 4.9970% (2.6239–7.5061%), R 1.0220 (1.0151–1.0291), γ/D -0.1773% (-2.1247–1.8749%); 842 tier finals, 41,562 tier successes, 806 extrema, 2,000 valid F draws and 2,000 valid R draws.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -4063,11 +4465,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C069",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "2023 year-specific nuisance log-time positions: -0.000064 (-0.004317–0.004286); -0.000672 (-0.004845–0.003582); -0.002083 (-0.006359–0.002143); 0.001106 (-0.003127–0.005464); 0.001713 (-0.002660–0.006254).",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -4157,11 +4565,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C070",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "2024 year-specific β: shared scramble/slot F 4.4003% (1.4507–6.2890%), R 1.0189 (1.0119–1.0261), γ/D 0.0060% (-1.9380–2.3486%); 836 tier finals, 40,834 tier successes, 809 extrema, 2,000 valid F draws and 2,000 valid R draws.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -4246,11 +4660,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C071",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "2024 year-specific nuisance log-time positions: 0.001676 (-0.002428–0.006040); -0.002148 (-0.006322–0.002141); -0.003687 (-0.007730–0.000679); 0.000308 (-0.004053–0.004683); 0.003851 (-0.000938–0.008332).",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -4340,11 +4760,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C072",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "2025 year-specific β: shared scramble/slot F 4.9669% (2.4699–7.6515%), R 1.0194 (1.0127–1.0268), γ/D 0.6932% (-1.6327–2.4695%); 838 tier finals, 40,840 tier successes, 810 extrema, 2,000 valid F draws and 2,000 valid R draws.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -4429,11 +4855,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C073",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "2025 year-specific nuisance log-time positions: -0.001785 (-0.006071–0.002358); 0.000547 (-0.003987–0.005187); -0.001900 (-0.006250–0.002488); 0.000252 (-0.004002–0.004692); 0.002885 (-0.001556–0.007275).",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -4523,11 +4955,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C074",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Per 0.05 higher leave-one-out shared scramble/slot contrast h, the DNF odds ratio is 1.0348 (0.9777–1.0649); 61,231 identified solver-rounds include 4,154 discordant rows.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -4566,11 +5004,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C075",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Started-attempt DNF rate 1.4469% (1.3611–1.5289%); DNS slot rate 0.0189% (0.0082–0.0338%). There are 4,429 DNFs and 58 DNS slots; the started denominator is 306,097 and the all-slot denominator is 306,155.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -4634,11 +5078,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C076",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Binary DNF shared covariance is 0.0000228 (-0.0000789–0.0001490).",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -4667,11 +5117,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C077",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "six face centered correlation: correlation of optimal cross length with the shared scramble/slot contrast is 0.2658; unvalidated bootstrap diagnostic range [0.1975–0.2287] (coverage unvalidated; inferential uncertainty inconclusive) across 25,085 scheduled scrambles and 61,231 identified focal rows. Bootstrap mean 0.213170, displacement -0.052632.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -4722,11 +5178,17 @@
       "verification_evidence": [
         "analysis/claims_check.json"
       ],
-      "interval_coverage_validated": false
+      "interval_coverage_validated": false,
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C078",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "six face raw correlation: correlation of optimal cross length with the shared scramble/slot contrast is 0.2377; unvalidated bootstrap diagnostic range [0.1764–0.2047] (coverage unvalidated; inferential uncertainty inconclusive) across 25,085 scheduled scrambles and 61,231 identified focal rows. Bootstrap mean 0.190635, displacement -0.047086.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -4777,11 +5239,17 @@
       "verification_evidence": [
         "analysis/claims_check.json"
       ],
-      "interval_coverage_validated": false
+      "interval_coverage_validated": false,
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C079",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "white yellow centered correlation: correlation of optimal cross length with the shared scramble/slot contrast is 0.3429; unvalidated bootstrap diagnostic range [0.2582–0.2905] (coverage unvalidated; inferential uncertainty inconclusive) across 25,085 scheduled scrambles and 61,231 identified focal rows. Bootstrap mean 0.274691, displacement -0.068203.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -4832,11 +5300,17 @@
       "verification_evidence": [
         "analysis/claims_check.json"
       ],
-      "interval_coverage_validated": false
+      "interval_coverage_validated": false,
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C080",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "white yellow raw correlation: correlation of optimal cross length with the shared scramble/slot contrast is 0.3069; unvalidated bootstrap diagnostic range [0.2312–0.2600] (coverage unvalidated; inferential uncertainty inconclusive) across 25,085 scheduled scrambles and 61,231 identified focal rows. Bootstrap mean 0.245869, displacement -0.061077.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -4887,11 +5361,17 @@
       "verification_evidence": [
         "analysis/claims_check.json"
       ],
-      "interval_coverage_validated": false
+      "interval_coverage_validated": false,
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C081",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "F_tier_aware: independent per-solver slot permutations give reference mean -0.000031 (-0.001856–0.002060) (central 95% permutation range), plus-one upper-tail probability 0.000999, 1,000 valid permutations.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -4930,11 +5410,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C082",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "R_geometric_person_year: independent per-solver slot permutations give geometric reference mean 1.000015 (0.998561–1.001416) (central 95% permutation range), plus-one upper-tail probability 0.000999, 1,000 valid permutations.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -4974,11 +5460,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C083",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "gamma_over_D: independent per-solver slot permutations give reference mean 0.000028 (-0.001869–0.001940) (central 95% permutation range), plus-one upper-tail probability 0.001998, 1,000 valid permutations.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -5017,11 +5509,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C084",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Assuming 0% independent random replacement, shared scramble/slot τ scales to 0.001101 (0.000913–0.001336) and the share with the original D becomes 4.7434% (3.9181–5.6708%).",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -5065,11 +5563,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C085",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Assuming 1% independent random replacement, shared scramble/slot τ scales to 0.001124 (0.000931–0.001363) and the share with the original D becomes 4.8397% (3.9977–5.7860%).",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -5113,11 +5617,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C086",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Assuming 5% independent random replacement, shared scramble/slot τ scales to 0.001220 (0.001012–0.001480) and the share with the original D becomes 5.2558% (4.3414–6.2835%).",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -5161,11 +5671,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C087",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Assuming 10% independent random replacement, shared scramble/slot τ scales to 0.001359 (0.001127–0.001649) and the share with the original D becomes 5.8560% (4.8372–7.0010%).",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -5209,11 +5725,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C088",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Assuming 20% independent random replacement, shared scramble/slot τ scales to 0.001721 (0.001426–0.002087) and the share with the original D becomes 7.4115% (6.1220–8.8607%).",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -5257,11 +5779,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C089",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "All 5,017 primary finals contain an extra-scramble pool.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -5280,11 +5808,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C090",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "changing panels with k=2 peers: shared scramble/slot peer correlation 0.1544 (0.1456–0.1633), individual prediction R² 0.0036 (0.0032–0.0039); 5,017 finals, 61,211 solver-final rows, 301,654 successes, 30 whole-solver splits and 173 rank failures. Frozen-model latent reliability 0.0674.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -5358,11 +5892,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C091",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "changing panels with k=5 peers: shared scramble/slot peer correlation 0.2019 (0.1910–0.2122), individual prediction R² 0.0082 (0.0075–0.0089); 4,828 finals, 60,103 solver-final rows, 296,195 successes, 30 whole-solver splits and 0 rank failures. Frozen-model latent reliability 0.1529.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -5436,11 +5976,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C092",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "changing panels with k=10 peers: shared scramble/slot peer correlation 0.1877 (0.1769–0.1988), individual prediction R² 0.0135 (0.0120–0.0150); 3,178 finals, 45,035 solver-final rows, 221,922 successes, 30 whole-solver splits and 73 rank failures. Frozen-model latent reliability 0.2653.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -5514,11 +6060,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C093",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "changing panels with k=20 peers: shared scramble/slot peer correlation 0.3058 (0.2445–0.3657), individual prediction R² 0.0210 (0.0134–0.0303); 97 finals, 2,533 solver-final rows, 12,469 successes, 30 whole-solver splits and 0 rank failures. Frozen-model latent reliability 0.4193.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -5592,11 +6144,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C094",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "fixed panels with k=2 peers: shared scramble/slot peer correlation 0.2248 (0.1767–0.2742), individual prediction R² 0.0039 (0.0023–0.0058); 97 finals, 2,533 solver-final rows, 12,469 successes, 30 whole-solver splits and 1 rank failures. Frozen-model latent reliability 0.0674.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -5670,11 +6228,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C095",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "fixed panels with k=5 peers: shared scramble/slot peer correlation 0.3088 (0.2421–0.3725), individual prediction R² 0.0084 (0.0049–0.0125); 97 finals, 2,533 solver-final rows, 12,469 successes, 30 whole-solver splits and 0 rank failures. Frozen-model latent reliability 0.1529.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -5748,11 +6312,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C096",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "fixed panels with k=10 peers: shared scramble/slot peer correlation 0.3852 (0.3117–0.4478), individual prediction R² 0.0149 (0.0094–0.0210); 97 finals, 2,533 solver-final rows, 12,469 successes, 30 whole-solver splits and 0 rank failures. Frozen-model latent reliability 0.2653.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -5826,11 +6396,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C097",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "fixed panels with k=20 peers: shared scramble/slot peer correlation 0.3036 (0.2395–0.3640), individual prediction R² 0.0200 (0.0123–0.0289); 97 finals, 2,533 solver-final rows, 12,469 successes, 30 whole-solver splits and 0 rank failures. Frozen-model latent reliability 0.4193.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -5904,11 +6480,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C098",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": true,
       "text": "informative dnf: synthetic mean estimated shared-scramble-adjusted R 1.015945 (1.015807–1.016084), oracle R 1.015948 (1.015936–1.015960), mean log-R error -0.000003 (-0.000139–0.000134), central dataset-error range -0.000003 (-0.001882–0.001861). DNF locations use sequential weighted sampling without replacement (Gumbel top-k), weights exp(12 × shared effect) renormalized over remaining started slots, preserving each solver-final DNF count and DNS positions.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -5983,11 +6565,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C099",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": true,
       "text": "small shared: synthetic mean estimated shared-scramble-adjusted R 1.015849 (1.015705–1.015992), oracle R 1.015780 (1.015768–1.015792), mean log-R error 0.000067 (-0.000074–0.000209), central dataset-error range 0.000067 (-0.001955–0.002170).",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -6061,11 +6649,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C100",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": true,
       "text": "In 1,000 independent calibrated-boundary datasets with target R=1.10, procedure B gives 0.6% false holds and 0.9% false fails.",
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
@@ -6094,11 +6688,17 @@
       ],
       "verification_evidence": [
         "analysis/claims_check.json"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C101",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "SeungBeom Cho recorded a then-world-record 3×3 single of 4.59 seconds at ChicaGhosts 2017 (Entering 2018; set in 2017).",
       "scope": "Historical context cited in analysis/CONTEXT.md; verified separately against WR-flagged raw WCA results in the frozen 2026-09-30 export.",
@@ -6119,11 +6719,17 @@
       "context_kind": "record",
       "competition_id": "Chicago2017",
       "person_match": "SeungBeom Cho",
-      "record_type": "single"
+      "record_type": "single",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C102",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Feliks Zemdegs recorded a then-world-record 3×3 single of 4.59 seconds at Hobart Summer 2018 (2018-01-27) — a tie.",
       "scope": "Historical context cited in analysis/CONTEXT.md; verified separately against WR-flagged raw WCA results in the frozen 2026-09-30 export.",
@@ -6144,11 +6750,17 @@
       "context_kind": "record",
       "competition_id": "HobartSummer2018",
       "person_match": "Feliks Zemdegs",
-      "record_type": "single"
+      "record_type": "single",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C103",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Feliks Zemdegs recorded a then-world-record 3×3 single of 4.22 seconds at Cube for Cambodia 2018 (2018-05-06).",
       "scope": "Historical context cited in analysis/CONTEXT.md; verified separately against WR-flagged raw WCA results in the frozen 2026-09-30 export.",
@@ -6169,11 +6781,17 @@
       "context_kind": "record",
       "competition_id": "CubeforCambodia2018",
       "person_match": "Feliks Zemdegs",
-      "record_type": "single"
+      "record_type": "single",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C104",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Yusheng Du recorded a then-world-record 3×3 single of 3.47 seconds at Wuhu Open 2018 (2018-11-24–25, competition dates).",
       "scope": "Historical context cited in analysis/CONTEXT.md; verified separately against WR-flagged raw WCA results in the frozen 2026-09-30 export.",
@@ -6194,11 +6812,17 @@
       "context_kind": "record",
       "competition_id": "WuhuOpen2018",
       "person_match": "Yusheng Du",
-      "record_type": "single"
+      "record_type": "single",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C105",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Max Park recorded a then-world-record 3×3 single of 3.13 seconds at Pride in Long Beach 2023 (2023-06-11).",
       "scope": "Historical context cited in analysis/CONTEXT.md; verified separately against WR-flagged raw WCA results in the frozen 2026-09-30 export.",
@@ -6219,11 +6843,17 @@
       "context_kind": "record",
       "competition_id": "PrideInLongBeach2023",
       "person_match": "Max Park",
-      "record_type": "single"
+      "record_type": "single",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C106",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Yiheng Wang recorded a then-world-record 3×3 single of 3.08 seconds at XMUM Cube Open 2025 (2025-02-15).",
       "scope": "Historical context cited in analysis/CONTEXT.md; verified separately against WR-flagged raw WCA results in the frozen 2026-09-30 export.",
@@ -6244,11 +6874,17 @@
       "context_kind": "record",
       "competition_id": "XMUMCubeOpen2025",
       "person_match": "Yiheng Wang",
-      "record_type": "single"
+      "record_type": "single",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C107",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Xuanyi Geng recorded a then-world-record 3×3 single of 3.05 seconds at Shenyang Spring 2025 (2025-04-13).",
       "scope": "Historical context cited in analysis/CONTEXT.md; verified separately against WR-flagged raw WCA results in the frozen 2026-09-30 export.",
@@ -6269,11 +6905,17 @@
       "context_kind": "record",
       "competition_id": "ShenyangSpring2025",
       "person_match": "Xuanyi Geng",
-      "record_type": "single"
+      "record_type": "single",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C108",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Teodor Zajder recorded a then-world-record 3×3 single of 2.76 seconds at GLS Big Cubes Gdańsk 2026 (2026-02-08).",
       "scope": "Historical context cited in analysis/CONTEXT.md; verified separately against WR-flagged raw WCA results in the frozen 2026-09-30 export.",
@@ -6294,11 +6936,17 @@
       "context_kind": "record",
       "competition_id": "GLSBigCubesGdansk2026",
       "person_match": "Teodor Zajder",
-      "record_type": "single"
+      "record_type": "single",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C109",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Feliks Zemdegs recorded a then-world-record 3×3 average of 5.80 seconds at Malaysia Cube Open 2017 (Entering 2018; set in 2017).",
       "scope": "Historical context cited in analysis/CONTEXT.md; verified separately against WR-flagged raw WCA results in the frozen 2026-09-30 export.",
@@ -6319,11 +6967,17 @@
       "context_kind": "record",
       "competition_id": "MalaysiaCubeOpen2017",
       "person_match": "Feliks Zemdegs",
-      "record_type": "average"
+      "record_type": "average",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C110",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Feliks Zemdegs recorded a then-world-record 3×3 average of 5.69 seconds at Koalification Brisbane 2019 (2019-04-06).",
       "scope": "Historical context cited in analysis/CONTEXT.md; verified separately against WR-flagged raw WCA results in the frozen 2026-09-30 export.",
@@ -6344,11 +6998,17 @@
       "context_kind": "record",
       "competition_id": "KoalaficationBrisbane2019",
       "person_match": "Feliks Zemdegs",
-      "record_type": "average"
+      "record_type": "average",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C111",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Feliks Zemdegs recorded a then-world-record 3×3 average of 5.53 seconds at Odd Day in Sydney 2019 (2019-11-10).",
       "scope": "Historical context cited in analysis/CONTEXT.md; verified separately against WR-flagged raw WCA results in the frozen 2026-09-30 export.",
@@ -6369,11 +7029,17 @@
       "context_kind": "record",
       "competition_id": "OddDayinSydney2019",
       "person_match": "Feliks Zemdegs",
-      "record_type": "average"
+      "record_type": "average",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C112",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Ruihang Xu recorded a then-world-record 3×3 average of 5.48 seconds at Wuhan Open 2021 (2021-06-05).",
       "scope": "Historical context cited in analysis/CONTEXT.md; verified separately against WR-flagged raw WCA results in the frozen 2026-09-30 export.",
@@ -6394,11 +7060,17 @@
       "context_kind": "record",
       "competition_id": "WuhanOpen2021",
       "person_match": "Ruihang Xu",
-      "record_type": "average"
+      "record_type": "average",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C113",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Max Park recorded a then-world-record 3×3 average of 5.32 seconds at Missoula 2021 (2021-11-06–07, competition dates).",
       "scope": "Historical context cited in analysis/CONTEXT.md; verified separately against WR-flagged raw WCA results in the frozen 2026-09-30 export.",
@@ -6419,11 +7091,17 @@
       "context_kind": "record",
       "competition_id": "Missoula2021",
       "person_match": "Max Park",
-      "record_type": "average"
+      "record_type": "average",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C114",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Tymon Kolasiński recorded a then-world-record 3×3 average of 5.09 seconds at Cubers Eve Lubartów 2021 (2021-12-18–19, competition dates).",
       "scope": "Historical context cited in analysis/CONTEXT.md; verified separately against WR-flagged raw WCA results in the frozen 2026-09-30 export.",
@@ -6444,11 +7122,17 @@
       "context_kind": "record",
       "competition_id": "CubersEveLubartow2021",
       "person_match": "Tymon Kolasiński",
-      "record_type": "average"
+      "record_type": "average",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C115",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Tymon Kolasiński recorded a then-world-record 3×3 average of 4.86 seconds at Cube4fun in Warsaw 2022 (2022-07-30).",
       "scope": "Historical context cited in analysis/CONTEXT.md; verified separately against WR-flagged raw WCA results in the frozen 2026-09-30 export.",
@@ -6469,11 +7153,17 @@
       "context_kind": "record",
       "competition_id": "Cube4funWarsaw2022",
       "person_match": "Tymon Kolasiński",
-      "record_type": "average"
+      "record_type": "average",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C116",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Max Park recorded a then-world-record 3×3 average of 4.86 seconds at Marshall Cubing September 2022 (2022-09-24) — a tie.",
       "scope": "Historical context cited in analysis/CONTEXT.md; verified separately against WR-flagged raw WCA results in the frozen 2026-09-30 export.",
@@ -6494,11 +7184,17 @@
       "context_kind": "record",
       "competition_id": "MarshallCubingSeptember2022",
       "person_match": "Max Park",
-      "record_type": "average"
+      "record_type": "average",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C117",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Yiheng Wang recorded a then-world-record 3×3 average of 4.69 seconds at Yong Jun KL Speedcubing 2023 (2023-03-12).",
       "scope": "Historical context cited in analysis/CONTEXT.md; verified separately against WR-flagged raw WCA results in the frozen 2026-09-30 export.",
@@ -6519,11 +7215,17 @@
       "context_kind": "record",
       "competition_id": "YJKL2023",
       "person_match": "Yiheng Wang",
-      "record_type": "average"
+      "record_type": "average",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C118",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Yiheng Wang recorded a then-world-record 3×3 average of 4.48 seconds at Mofunland Cruise Open 2023 (2023-06-19–20, competition dates).",
       "scope": "Historical context cited in analysis/CONTEXT.md; verified separately against WR-flagged raw WCA results in the frozen 2026-09-30 export.",
@@ -6544,11 +7246,17 @@
       "context_kind": "record",
       "competition_id": "MofunlandCruiseOpen2023",
       "person_match": "Yiheng Wang",
-      "record_type": "average"
+      "record_type": "average",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C119",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Yiheng Wang recorded a then-world-record 3×3 average of 4.36 seconds at Philippine Championship 2024 (2024-07-05–07, competition dates).",
       "scope": "Historical context cited in analysis/CONTEXT.md; verified separately against WR-flagged raw WCA results in the frozen 2026-09-30 export.",
@@ -6569,11 +7277,17 @@
       "context_kind": "record",
       "competition_id": "PhilippineChampionship2024",
       "person_match": "Yiheng Wang",
-      "record_type": "average"
+      "record_type": "average",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C120",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Yiheng Wang recorded a then-world-record 3×3 average of 4.25 seconds at Deqing Small Cubes Summer 2024 (2024-08-25).",
       "scope": "Historical context cited in analysis/CONTEXT.md; verified separately against WR-flagged raw WCA results in the frozen 2026-09-30 export.",
@@ -6594,11 +7308,17 @@
       "context_kind": "record",
       "competition_id": "DeqingSmallCubesSummer2024",
       "person_match": "Yiheng Wang",
-      "record_type": "average"
+      "record_type": "average",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C121",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Yiheng Wang recorded a then-world-record 3×3 average of 4.09 seconds at Xuzhou Autumn 2024 (2024-09-21).",
       "scope": "Historical context cited in analysis/CONTEXT.md; verified separately against WR-flagged raw WCA results in the frozen 2026-09-30 export.",
@@ -6619,11 +7339,17 @@
       "context_kind": "record",
       "competition_id": "XuzhouAutumn2024",
       "person_match": "Yiheng Wang",
-      "record_type": "average"
+      "record_type": "average",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C122",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Yiheng Wang recorded a then-world-record 3×3 average of 4.09 seconds at Rubik's WCA Asian Championship 2024 (2024-11-01–04, competition dates) — a tie.",
       "scope": "Historical context cited in analysis/CONTEXT.md; verified separately against WR-flagged raw WCA results in the frozen 2026-09-30 export.",
@@ -6644,11 +7370,17 @@
       "context_kind": "record",
       "competition_id": "RubiksWCAAsianChampionship2024",
       "person_match": "Yiheng Wang",
-      "record_type": "average"
+      "record_type": "average",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C123",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Yiheng Wang recorded a then-world-record 3×3 average of 4.05 seconds at Zhengzhou Open 2024 (2024-12-08).",
       "scope": "Historical context cited in analysis/CONTEXT.md; verified separately against WR-flagged raw WCA results in the frozen 2026-09-30 export.",
@@ -6669,11 +7401,17 @@
       "context_kind": "record",
       "competition_id": "ZhengzhouOpen2024",
       "person_match": "Yiheng Wang",
-      "record_type": "average"
+      "record_type": "average",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C124",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Yiheng Wang recorded a then-world-record 3×3 average of 4.03 seconds at Xi'an Cherry Blossom 2025 (2025-04-04–05, competition dates).",
       "scope": "Historical context cited in analysis/CONTEXT.md; verified separately against WR-flagged raw WCA results in the frozen 2026-09-30 export.",
@@ -6694,11 +7432,17 @@
       "context_kind": "record",
       "competition_id": "XianCherryBlossom2025",
       "person_match": "Yiheng Wang",
-      "record_type": "average"
+      "record_type": "average",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C125",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Yiheng Wang recorded a then-world-record 3×3 average of 3.91 seconds at Lishui Open 2025 (2025-05-25).",
       "scope": "Historical context cited in analysis/CONTEXT.md; verified separately against WR-flagged raw WCA results in the frozen 2026-09-30 export.",
@@ -6719,11 +7463,17 @@
       "context_kind": "record",
       "competition_id": "LishuiOpen2025",
       "person_match": "Yiheng Wang",
-      "record_type": "average"
+      "record_type": "average",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C126",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Yiheng Wang recorded a then-world-record 3×3 average of 3.90 seconds at Taizhou Open 2025 (2025-07-26).",
       "scope": "Historical context cited in analysis/CONTEXT.md; verified separately against WR-flagged raw WCA results in the frozen 2026-09-30 export.",
@@ -6744,11 +7494,17 @@
       "context_kind": "record",
       "competition_id": "TaizhouOpen2025",
       "person_match": "Yiheng Wang",
-      "record_type": "average"
+      "record_type": "average",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C127",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Xuanyi Geng recorded a then-world-record 3×3 average of 3.84 seconds at Beijing Winter 2026 (2026-01-11).",
       "scope": "Historical context cited in analysis/CONTEXT.md; verified separately against WR-flagged raw WCA results in the frozen 2026-09-30 export.",
@@ -6769,11 +7525,17 @@
       "context_kind": "record",
       "competition_id": "BeijingWinter2026",
       "person_match": "Xuanyi Geng",
-      "record_type": "average"
+      "record_type": "average",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C128",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Xuanyi Geng recorded a then-world-record 3×3 average of 3.71 seconds at Deqing Small & Special 2026 (2026-04-26).",
       "scope": "Historical context cited in analysis/CONTEXT.md; verified separately against WR-flagged raw WCA results in the frozen 2026-09-30 export.",
@@ -6794,11 +7556,17 @@
       "context_kind": "record",
       "competition_id": "DeqingSmallSpecial2026",
       "person_match": "Xuanyi Geng",
-      "record_type": "average"
+      "record_type": "average",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C129",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Yiheng Wang recorded a then-world-record 3×3 average of 3.51 seconds at Hefei Cubing League 3x3 III 2026 (2026-06-17).",
       "scope": "Historical context cited in analysis/CONTEXT.md; verified separately against WR-flagged raw WCA results in the frozen 2026-09-30 export.",
@@ -6819,11 +7587,17 @@
       "context_kind": "record",
       "competition_id": "HefeiCubingLeague3x3III2026",
       "person_match": "Yiheng Wang",
-      "record_type": "average"
+      "record_type": "average",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C130",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "An average of five uses 5 attempts, discards fastest and slowest, and averages the middle 3.",
       "scope": "Source context; 2025 regulation edition where cited. The study concerns the shared scramble/slot component.",
@@ -6849,11 +7623,17 @@
         "analysis/claims_check.json"
       ],
       "context_kind": "regulation",
-      "source_parser": "ao5"
+      "source_parser": "ao5",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C131",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "In an average of five, 2 or more DNF/DNS results make the average DNF; one can be discarded.",
       "scope": "Source context; 2025 regulation edition where cited. The study concerns the shared scramble/slot component.",
@@ -6873,11 +7653,17 @@
         "analysis/claims_check.json"
       ],
       "context_kind": "regulation",
-      "source_parser": "failures"
+      "source_parser": "failures",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C132",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "The official 3×3 random-state scramble rule requires at least 2 moves to solve the generated state.",
       "scope": "Source context; 2025 regulation edition where cited. The study concerns the shared scramble/slot component.",
@@ -6897,11 +7683,17 @@
         "analysis/claims_check.json"
       ],
       "context_kind": "regulation",
-      "source_parser": "random_min"
+      "source_parser": "random_min",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C133",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "WCA rules recommend common sequences within a group and one group in finals; these are recommendations, not a universal requirement.",
       "scope": "Source context; 2025 regulation edition where cited. The study concerns the shared scramble/slot component.",
@@ -6925,11 +7717,17 @@
       "source_phrases": [
         "Competitors in the same group should use the same scramble sequences",
         "only 1 group"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C134",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "An extra attempt must use a different official scramble and replaces the original numbered result; completed attempts retain scramble-sequence order.",
       "scope": "Source context; 2025 regulation edition where cited. The study concerns the shared scramble/slot component.",
@@ -6954,11 +7752,17 @@
         "must be scrambled using a different scramble sequence",
         "must replace the original regularly numbered attempt",
         "order of scramble sequences"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C135",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Generated official sequences must not be filtered or inspected before the competition; random state does not promise equal human difficulty.",
       "scope": "Source context; 2025 regulation edition where cited. The study concerns the shared scramble/slot component.",
@@ -6983,11 +7787,17 @@
       "source_phrases": [
         "must not",
         "filter"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C136",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "The record-recognition rule dates results to the last calendar date of a round and recognizes only the best same-day record.",
       "scope": "Source context; 2025 regulation edition where cited. The study concerns the shared scramble/slot component.",
@@ -7012,11 +7822,17 @@
       "source_phrases": [
         "last calendar date",
         "only the best result"
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C137",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Du’s published 3.47 solution has an 8-token double extended cross: cross plus two pairs; this is not a bare-cross count.",
       "scope": "Source context; 2025 regulation edition where cited. The study concerns the shared scramble/slot component.",
@@ -7036,11 +7852,17 @@
         "analysis/claims_check.json"
       ],
       "context_kind": "reconstruction",
-      "source_parser": "move_tokens"
+      "source_parser": "move_tokens",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C138",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Park’s published 3.13 solution has a 13-token double extended cross and an 8-token OLL; an upper-face adjustment remains after the PLL skip.",
       "scope": "Source context; 2025 regulation edition where cited. The study concerns the shared scramble/slot component.",
@@ -7066,11 +7888,17 @@
         "analysis/claims_check.json"
       ],
       "context_kind": "reconstruction",
-      "source_parser": "move_tokens"
+      "source_parser": "move_tokens",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C139",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Geng’s published 3.05 solution starts with 5 printed cross turns and finishes with a 9-token ZBLL algorithm.",
       "scope": "Source context; 2025 regulation edition where cited. The study concerns the shared scramble/slot component.",
@@ -7096,11 +7924,17 @@
         "analysis/claims_check.json"
       ],
       "context_kind": "reconstruction",
-      "source_parser": "move_tokens"
+      "source_parser": "move_tokens",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C140",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Zajder’s published 2.76 solution has an 11-token triple extended cross and 29 total printed turns, followed by the remaining pair and ZBLL.",
       "scope": "Source context; 2025 regulation edition where cited. The study concerns the shared scramble/slot component.",
@@ -7126,11 +7960,17 @@
         "analysis/claims_check.json"
       ],
       "context_kind": "reconstruction",
-      "source_parser": "move_tokens"
+      "source_parser": "move_tokens",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C141",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "Wang’s published 3.08 reconstruction reports Cross 9 and 2 free pairs; an OLL skip is followed by a remaining U-perm finish.",
       "scope": "Source context; 2025 regulation edition where cited. The study concerns the shared scramble/slot component.",
@@ -7156,11 +7996,17 @@
         "analysis/claims_check.json"
       ],
       "context_kind": "reconstruction",
-      "source_parser": "wang_stats"
+      "source_parser": "wang_stats",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C142",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": true,
       "text": "The exposed exploration pilot’s common-only shared scramble/slot share was 3.81% (2.94%–4.70%).",
       "scope": "Locked exploration slice; pilot’s all-year structurally eligible finals.",
@@ -7188,11 +8034,17 @@
       "verification_evidence": [
         "analysis/claims_check.json"
       ],
-      "pilot_kind": "F"
+      "pilot_kind": "F",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C143",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": true,
       "text": "The exposed exploration pilot’s unshrunk seasonal shared-scramble-adjusted R was 1.0163 (1.0049–1.0225), n=180 person-years.",
       "scope": "2019–2025 exploration person-years with at least 5 eligible exploration finals; unshrunk all-peer seasonal aggregation.",
@@ -7225,10 +8077,16 @@
       "verification_evidence": [
         "analysis/claims_check.json"
       ],
-      "pilot_kind": "R"
+      "pilot_kind": "R",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
       "result_file": "analysis/results.json",
@@ -7251,10 +8109,16 @@
         "About 2% rounds 100 × (R − 1) to the nearest whole percentage point; R is the equal-person-year geometric adjusted/observed ratio, not an arithmetic mean or a 2% reduction in observed time.",
         "Confirmatory under the owner-approved pre-confirmation Amendment 1; only eligible season-best final solves, successful times and the shared scramble/slot component.",
         "Does not measure total luck, partition residual variation, isolate scramble geometry from slot conditions or attribute a specific record."
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "scope": "Eligible one-group 3×3 average-of-five finals in the locked confirmation competitions, 2019–2025; successful solves only for F and R. Seasonal roster requires at least 5 eligible finals per person-year.",
       "result_file": "analysis/results.json",
@@ -7297,10 +8161,16 @@
         "4.7% rounds 100 × F to one decimal place. This is not a percentage of seconds or total personal luck.",
         "Tier-supported subset: 4,420 finals and 234,525 successful cells; excludes 597 finals and 67,143 successes. Do not generalize without coverage.",
         "Success conditioning, slot confounding and scheduled-versus-actual replacement mapping remain; this variance share is not the verdict endpoint R."
-      ]
+      ],
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "result_file": "analysis/CONTEXT.md",
       "verification_evidence": [
@@ -7336,10 +8206,16 @@
         "Quotations establish examples of luck language, not consensus, frequency of fan comments or the size of a shared advantage. No speaker attribution or current-record assertion."
       ],
       "context_kind": "quotation",
-      "source_parser": "exact_phrases"
+      "source_parser": "exact_phrases",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "result_file": "analysis/CONTEXT.md",
       "verification_evidence": [
@@ -7379,11 +8255,17 @@
         "Definitions explain a chosen solution, not how much luck it contains or an advantage shared by all finalists. No claim that CFOP is universal. Correct relative positions allow a final whole upper-face adjustment."
       ],
       "context_kind": "glossary",
-      "source_parser": "exact_phrases"
+      "source_parser": "exact_phrases",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     },
     {
       "id": "SL-C148",
-      "status": "proposed",
+      "status": "verified",
       "exploratory": false,
       "text": "The registered method centers successful log times within solver-rounds, controls global attempt position and corrects finite-peer noise. It excludes the focal solver’s entire final before estimating the shared scheduled-position contrast; selects the observed fastest successful eligible final solve per solver-season; does not select the fastest adjusted solve; and aggregates adjusted/observed ratios geometrically with equal solver-season weight. R and F answer different questions. The original gate failed; an owner-approved pre-confirmation amendment validated recentered R uncertainty under specified simulations. The fixed-selection interval is sensitivity only. F and R are success-only; the DNF endpoint is separate. Slot conditions, replacement mapping and residual variation prevent attributing total personal luck or a particular record.",
       "scope": "Definitions, procedure and limitations of METHOD including Amendment 1; methodological description rather than an additional empirical endpoint.",
@@ -7421,7 +8303,13 @@
       "verification_evidence": [
         "analysis/claims_check.json"
       ],
-      "context_kind": "method"
+      "context_kind": "method",
+      "approved": {
+        "by": "user",
+        "date": "2026-10-03",
+        "gate": "publication",
+        "note": "Channel owner approved the script and all claims for publication."
+      }
     }
   ]
 }

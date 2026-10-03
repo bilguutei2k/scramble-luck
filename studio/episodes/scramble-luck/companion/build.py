@@ -1,4 +1,4 @@
-"""Build the pre-lock companion, with no network access or .git writes.
+"""Build the companion, with no network access or .git writes.
 
 Run: python3 studio/episodes/scramble-luck/companion/build.py
 The independent claim verifier did not read results.json, and therefore did
@@ -19,8 +19,8 @@ from pathlib import Path
 EP = Path(__file__).resolve().parent.parent
 ROOT = EP.parents[2]
 VERIFIED_RESULTS = "4cb552244944cc0194bd750c7ea088030129285491996de91a48869ba5deb334"
-VERIFIED_CLAIMS = "a2eb17f7cbbd27e0916b065b43106f4053cb931744e5ca6eb67bbf9abc7f933e"
-VERIFICATION_REPORT = "7cdff71041e750892443d53e0c5d45cebc0fa77203a6059afc7f428b87ef9da7"
+VERIFIED_CLAIMS = "8eaf1c1d1e4a7da919602a843aaaad8aa777d24326937fefdc89961837d9f61f"
+VERIFICATION_REPORT = "6e02f2752a25bb68c939b2af807bf324728eab9b88e7fef1d93decdd640c3397"
 
 
 def sha(raw):
@@ -186,11 +186,13 @@ def main():
         initial_marks += f'<text class="axis" x="{coord(tick)}" y="143" text-anchor="{"start" if tick == 1 else "middle"}">{tick:.2f}</text>'
     data = {"variants": variants, "primary": primary, "threshold": threshold, "level": level, "provenance": provenance,
             "results_sha256": sha(raw), "claims_sha256": sha(claim_raw), "verification_sha256": sha(report_raw)}
-    status = "claims locked" if all(c["status"] == "locked" for c in ledger["claims"]) else "pre-lock draft: claims proposed"
+    locked = bool(ledger["claims"]) and all(c["status"] == "verified" for c in ledger["claims"])
     replacements = {
         "__FONTS__": fonts(), "__DATA__": json.dumps(data, ensure_ascii=False).replace("<", "\\u003c"),
         "__LEVEL__": str(level),
-        "__STATUS__": status, "__SCOPE__": esc(scope), "__VERDICT__": esc(results["verdict"]["outcome"]),
+        "__CLAIM_LOCK_NOTE__": "The channel owner approved the script and all claims for publication on 2026-10-03." if locked else "Claims remain proposed until the owner locks them.",
+        "__CLAIMS_LABEL__": "verified claims" if locked else "proposed claims",
+        "__STATUS__": "claims locked" if locked else "pre-lock draft: claims proposed", "__STATUS_ROW__": "" if locked else '<p class="label build-status">pre-lock draft: claims proposed</p>', "__SCOPE__": esc(scope), "__VERDICT__": esc(results["verdict"]["outcome"]),
         "__ANSWER__": esc(results["verdict"]["permitted_claim"]), "__R__": f'{primary["estimate"]:.4f}',
         "__CI__": "–".join(f"{v:.4f}" for v in primary["interval"]), "__PERCENT__": f'{(primary["estimate"]-1)*100:.2f}',
         "__N__": f"{n:,}", "__THRESHOLD__": f"{threshold:.2f}", "__LINE_PERCENT__": f"{(threshold-1)*100:g}",

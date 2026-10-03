@@ -1,6 +1,6 @@
 {
-  "status": "pre-lock",
-  "about": "PRE-LOCK DRAFT \u00b7 STORY v1 unchanged; actual Kokoro word timings; claims proposed.",
+  "status": "locked",
+  "about": "Owner-approved 2026-10-03; unchanged narration; actual Kokoro word timings; verified claims.",
   "voice": "af_heart",
   "timing": "Every named state lands on its spoken written word; stable snapshots, hard cuts, strict captions and sample-contiguous cached PCM fragments.",
   "gap": 0.45,
@@ -15,7 +15,7 @@
   "deliverables": {
     "film": {
       "format": "landscape",
-      "title": "How lucky is a lucky scramble? \u2014 PRE-LOCK DRAFT",
+      "title": "About 2% Longer",
       "shots": [
         {
           "scene": "s01-lucky-scramble",
@@ -2332,7 +2332,7 @@
     },
     "short-a": {
       "format": "vertical",
-      "title": "short-a \u2014 PRE-LOCK DRAFT",
+      "title": "short-a",
       "shots": [
         {
           "scene": "short-a",
@@ -2576,7 +2576,7 @@
     },
     "short-b": {
       "format": "vertical",
-      "title": "short-b \u2014 PRE-LOCK DRAFT",
+      "title": "short-b",
       "shots": [
         {
           "scene": "short-b",
@@ -2772,7 +2772,7 @@
     },
     "short-c": {
       "format": "vertical",
-      "title": "short-c \u2014 PRE-LOCK DRAFT",
+      "title": "short-c",
       "shots": [
         {
           "scene": "short-c",

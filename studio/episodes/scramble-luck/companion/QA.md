@@ -1,6 +1,6 @@
-# Companion QA — 2026-10-02
+# Companion QA — 2026-10-03
 
-Status: **pre-lock draft: claims proposed**. No claim status was changed.
+Status: **locked, owner-approved 2026-10-03**. All 148 claims use the house `verified` status. Title and h1: About 2% Longer; subtitle: How much of a record-speed Rubik's Cube solve is the shared scramble? No pre-lock banner or proposed-claim label appears.
 
 ## Deliverables and build
 
@@ -28,7 +28,7 @@ Status: **pre-lock draft: claims proposed**. No claim status was changed.
 - Results SHA-256:
   `4cb552244944cc0194bd750c7ea088030129285491996de91a48869ba5deb334`.
 - Verified claims SHA-256:
-  `a2eb17f7cbbd27e0916b065b43106f4053cb931744e5ca6eb67bbf9abc7f933e`.
+  `8eaf1c1d1e4a7da919602a843aaaad8aa777d24326937fefdc89961837d9f61f`.
 - The independent verifier intentionally did not open results.json and does
   not store its hash. The companion explicitly freezes the current results,
   verified claims and verification report together, and additionally checks
@@ -76,8 +76,9 @@ diagnostic, all under `../renders/companion/`.
 
 ## Open issues
 
-Owner lock remains pending. Locking/changing claims requires current independent
-verification and a reviewed update of the frozen binding before regeneration.
+Owner lock is complete, dated 2026-10-03. The current independent verification
+and reviewed frozen claims/report binding both pass. Future claim changes require
+new verification and review before regeneration.
 Cross inference remains unvalidated and actual replacement assignments remain
 unaudited. These are disclosed evidence limits; no known layout/runtime issue
 remains. Future analytical reuse still needs checkpoint fingerprint hardening
@@ -103,3 +104,17 @@ in both themes. All option text is visible, with complete wrapped authority
 descriptions and clear gutters. Captures: `390-{paper,night}-longest-option.png`
 and the refreshed `*-control.png` files in `../renders/companion/`; measured
 option widths and verdict-authority checks are in `browser-audit.json`.
+
+## Locked build verification · 2026-10-03
+
+- Outputs: `companion/index.html` and `renders/companion/page.html`.
+- Independent claim verification: 148/148 claims, 921/921 value checks pass;
+  70 displayed numeric bindings pass. Results and analytical claim content unchanged.
+- Claims/report pins refreshed only after the approved status/approval edit and
+  independent verification; the results pin remains unchanged. Three temporary-copy
+  tamper checks still refuse altered results, claims or verification reports.
+- Browser audit: 56/56 selections pass at 390×844 and 1440×1000, Paper and Night;
+  no overflow, missing fonts, network requests, runtime errors or console output.
+  Each selection also checks the title, h1, exact subtitle and absence of lock-state labels.
+- Captures and machine report: `renders/companion/*-paper*.png`,
+  `*-night*.png`, `browser-audit.json`. Inspected both mobile tops and the desktop control.

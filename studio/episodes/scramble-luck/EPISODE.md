@@ -1,4 +1,4 @@
-# How much of a record-speed Rubik's Cube solve is the shared scramble?
+# About 2% Longer
 
 Episode ID: `scramble-luck`
 
@@ -24,6 +24,8 @@ idea-stage pilot (`data/confirmation-competition-ids.txt`). The pilot's 20%
 `../../../ideation/rounds/r3/pilot-S1/` and `../../../ideation/rounds/r5/pilot-S1/`.
 
 ## Status
+
+- 2026-10-03: locked; channel owner approved the script and all claims for publication. Working title: About 2% Longer.
 
 - 2026-10-01: idea search, pilot and measurement-validation study (`ideation/`).
 - 2026-10-01: METHOD.md v2 approved by the user after an external methods

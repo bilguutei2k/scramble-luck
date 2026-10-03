@@ -25,12 +25,13 @@ const hash=p=>createHash('sha256').update(readFileSync(p)).digest('hex');
 const dataContext=vm.createContext({window:{}});vm.runInContext(readFileSync(resolve(dir,'data.js'),'utf8'),dataContext);const data=dataContext.window.SCENE_DATA;
 assert.equal(data.results_sha256,hash(resolve(dir,'../analysis/results.json')));
 assert.equal(data.claims_sha256,hash(resolve(dir,'../CLAIMS.json')));
-for(const [key,ids] of Object.entries(data.claim_ids))for(const id of ids)assert(claims.some(c=>c.id===id&&c.status==='proposed'),'Missing proposed claim '+key);
+for(const [key,ids] of Object.entries(data.claim_ids))for(const id of ids)assert(claims.some(c=>c.id===id&&c.status===data.claims[id].status),'Missing bound claim '+key);
+assert.equal(data.locked,claims.length>0&&claims.every(c=>c.status==='verified'));
 assert(results.primary.R_geometric_person_year.interval_95[1]<results.verdict.threshold);
 assert(results.DNF_secondary.odds_ratio_per_005_h.interval_95[0]<1&&results.DNF_secondary.odds_ratio_per_005_h.interval_95[1]>1);
 const story=readFileSync(resolve(dir,'../STORY.md'),'utf8');
 for(const [page,info] of Object.entries(cues.scenes)){
- const document={body:new Element('body'),createElement:t=>new Element(t),createElementNS:(ns,t)=>new Element(t)};
+ const document={title:page,body:new Element('body'),createElement:t=>new Element(t),createElementNS:(ns,t)=>new Element(t)};
  const context=vm.createContext({document,window:{},location:{search:'?format='+info.format},URLSearchParams,console});
  for(const script of ['../../../render/system.js','data.js','episode.js']){vm.runInContext(readFileSync(resolve(dir,script),'utf8'),context,{filename:script});if(script==='../../../render/system.js')context.FT=context.window.FT;if(script==='episode.js')context.SL=context.window.SL;}
  vm.runInContext(readFileSync(resolve(dir,page),'utf8').match(/<script>\s*([\s\S]*?)<\/script>/)[1],context,{filename:page});
@@ -39,7 +40,7 @@ for(const [page,info] of Object.entries(cues.scenes)){
  assert.throws(()=>context.SL.num('source_notice'),/Unclaimed numeric value/);
  for(const s of info.states){
   assert(story.includes(s.cue),'Cue is not exact narration: '+s.cue);
-  clock.seek(s.still);const first=JSON.stringify(snapshot(document.body));clock.seek(0);clock.seek(s.still);assert.equal(first,JSON.stringify(snapshot(document.body)),page+' '+s.id+' seek not pure');
+  clock.seek(s.still);if(data.locked)assert(!/draft|proposed/i.test(JSON.stringify(snapshot(document.body))+document.title),'Lock marker leak '+page);const first=JSON.stringify(snapshot(document.body));clock.seek(0);clock.seek(s.still);assert.equal(first,JSON.stringify(snapshot(document.body)),page+' '+s.id+' seek not pure');
   assert.equal(context.window.__slState,s.id);
   const active=document.body.querySelectorAll('.sl-state').find(e=>e.dataset.state===s.id);
   if(s.phase==='exclude')active.querySelectorAll('.sl-matrix-cell').filter(e=>e.dataset.focal==='true').forEach(e=>assert.equal(e.style.opacity,.16));

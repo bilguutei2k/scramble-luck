@@ -1,4 +1,4 @@
-// Generated. PRE-LOCK DRAFT; all claims proposed.
+// Generated from results and claim lock state.
 window.SCENE_DATA = {
  "claim_ids": {
   "DNF_secondary.DNF_count.estimate": [
@@ -2212,451 +2212,451 @@ window.SCENE_DATA = {
  },
  "claims": {
   "SL-C001": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C002": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C003": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C004": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C005": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C006": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C007": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C008": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C009": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C010": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C011": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C012": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C013": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C014": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C015": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C016": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C017": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C018": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C019": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C020": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C021": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C022": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C023": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C024": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C025": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C026": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C027": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C028": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C029": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C030": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C031": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C032": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C033": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C034": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C035": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C036": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C037": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C038": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C039": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C040": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C041": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C042": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C043": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C044": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C045": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C046": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C047": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C048": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C049": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C050": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C051": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C052": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C053": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C054": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C055": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C056": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C057": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C058": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C059": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C060": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C061": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C062": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C063": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C064": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C065": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C066": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C067": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C068": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C069": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C070": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C071": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C072": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C073": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C074": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C075": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C076": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C077": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C078": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C079": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C080": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C081": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C082": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C083": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C084": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C085": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C086": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C087": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C088": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C089": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C090": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C091": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C092": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C093": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C094": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C095": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C096": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C097": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C098": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C099": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C100": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C101": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C102": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C103": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C104": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C105": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C106": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C107": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C108": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C109": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C110": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C111": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C112": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C113": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C114": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C115": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C116": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C117": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C118": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C119": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C120": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C121": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C122": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C123": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C124": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C125": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C126": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C127": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C128": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C129": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C130": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C131": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C132": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C133": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C134": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C135": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C136": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C137": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C138": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C139": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C140": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C141": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C142": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C143": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C144": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C145": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C146": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C147": {
-   "status": "proposed"
+   "status": "verified"
   },
   "SL-C148": {
-   "status": "proposed"
+   "status": "verified"
   }
  },
- "claims_sha256": "a2eb17f7cbbd27e0916b065b43106f4053cb931744e5ca6eb67bbf9abc7f933e",
+ "claims_sha256": "8eaf1c1d1e4a7da919602a843aaaad8aa777d24326937fefdc89961837d9f61f",
  "derived_from": {
   "adjustment_percent": [
    "primary.R_geometric_person_year.estimate"
@@ -2685,8 +2685,9 @@ window.SCENE_DATA = {
   ]
  },
  "historical_claim_exception": false,
+ "locked": true,
  "results_sha256": "4cb552244944cc0194bd750c7ea088030129285491996de91a48869ba5deb334",
- "status": "PRE-LOCK DRAFT — CLAIMS PROPOSED",
+ "status": "locked",
  "values": {
   "DNF_secondary": {
    "DNF_count": {

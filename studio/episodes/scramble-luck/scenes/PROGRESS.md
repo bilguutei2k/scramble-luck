@@ -1,6 +1,6 @@
 # Scramble-luck scene progress
 
-Pre-lock draft. Claims remain proposed. No .git writes.
+Locked 2026-10-03. All claims verified and owner-approved. No .git writes.
 
 - Built `s01-lucky-scramble.html`: 5 cue states; landscape composition.
 
@@ -107,7 +107,7 @@ Pending: render, seek/provenance checks and native-size PNG inspection.
   final capture hashes and per-capture inspection in visual_qa.json.
 - Open: historical Du/Park times and quote publication-date labels need
   results bindings; current historical cards remain qualitative. All claims
-  remain proposed. VISUAL_QA.md contains the delivery assessment.
+  are now verified and owner-approved 2026-10-03. VISUAL_QA.md contains the delivery assessment.
 
 - Render pass completed for `s01-lucky-scramble.html`: 5 cue PNGs.
 
@@ -290,3 +290,63 @@ Pending: render, seek/provenance checks and native-size PNG inspection.
 - Render pass completed for `short-c.html`: 4 cue PNGs.
 
 - Scoped pre-lock correction render: `short-a.html` only, six cue PNGs; interval/verdict reopened at native size.
+
+- Render pass completed for `s01-lucky-scramble.html`: 5 cue PNGs.
+
+- Render pass completed for `s02-the-basics.html`: 5 cue PNGs.
+
+- Render pass completed for `s03-the-obvious-answer.html`: 4 cue PNGs.
+
+- Render pass completed for `s04-the-flaw.html`: 3 cue PNGs.
+
+- Render pass completed for `s05-the-scope.html`: 5 cue PNGs.
+
+- Render pass completed for `s06-listen-to-the-peers.html`: 5 cue PNGs.
+
+- Render pass completed for `s07-the-seasonal-best.html`: 4 cue PNGs.
+
+- Render pass completed for `s08-the-failed-gate.html`: 5 cue PNGs.
+
+- Render pass completed for `s09-the-verdict.html`: 5 cue PNGs.
+
+- Render pass completed for `s10-the-checks.html`: 5 cue PNGs.
+
+- Render pass completed for `s11-what-remains-unknown.html`: 5 cue PNGs.
+
+- Render pass completed for `s12-the-takeaway.html`: 4 cue PNGs.
+
+- Render pass completed for `short-a.html`: 6 cue PNGs.
+
+- Render pass completed for `short-b.html`: 4 cue PNGs.
+
+- Render pass completed for `short-c.html`: 4 cue PNGs.
+
+- Render pass completed for `s01-lucky-scramble.html`: 5 cue PNGs.
+
+- Render pass completed for `s02-the-basics.html`: 5 cue PNGs.
+
+- Render pass completed for `s03-the-obvious-answer.html`: 4 cue PNGs.
+
+- Render pass completed for `s04-the-flaw.html`: 3 cue PNGs.
+
+- Render pass completed for `s05-the-scope.html`: 5 cue PNGs.
+
+- Render pass completed for `s06-listen-to-the-peers.html`: 5 cue PNGs.
+
+- Render pass completed for `s07-the-seasonal-best.html`: 4 cue PNGs.
+
+- Render pass completed for `s08-the-failed-gate.html`: 5 cue PNGs.
+
+- Render pass completed for `s09-the-verdict.html`: 5 cue PNGs.
+
+- Render pass completed for `s10-the-checks.html`: 5 cue PNGs.
+
+- Render pass completed for `s11-what-remains-unknown.html`: 5 cue PNGs.
+
+- Render pass completed for `s12-the-takeaway.html`: 4 cue PNGs.
+
+- Render pass completed for `short-a.html`: 6 cue PNGs.
+
+- Render pass completed for `short-b.html`: 4 cue PNGs.
+
+- Render pass completed for `short-c.html`: 4 cue PNGs.

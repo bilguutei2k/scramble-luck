@@ -1,7 +1,9 @@
-/* Proposed scenes. Measurements use claim-bound result keys; geometry is schematic. */
+/* Episode scenes. Measurements use claim-bound result keys; geometry is schematic. */
 (function(FT){
 'use strict';
 const SL=window.SL={},V=FT.value,F=FT.fmt;
+SL.locked=window.SCENE_DATA.locked;
+document.title=document.title+(SL.locked?'':' · proposed pre-lock draft');
 const R='primary.R_geometric_person_year',FV='primary.F_tier_aware';
 const T=(g,cls,x,y,size,html,extra={})=>FT.el(g,cls,Object.assign({left:x+'px',top:y+'px',fontSize:size+'px'},extra),html);
 const rule=(g,x,y,w,h=2,color='var(--ink)')=>FT.el(g,'',{left:x+'px',top:y+'px',width:w+'px',height:h+'px',background:color,transformOrigin:'left'});
@@ -19,7 +21,7 @@ const cap=(g,v,text,y=v?1100:760,size=v?44:44)=>T(g,'caption',v?72:96,y,size,tex
 const link=(url,title)=>'<a href="'+url+'">'+title+'</a>';
 const urls={wired:'https://www.wired.com/video/watch/almost-impossible-why-solving-a-rubik-s-cube-in-under-3-seconds-is-almost-impossible',du:'https://ruwix.com/blog/yusheng-du-record-347/',park:'https://ruwix.com/blog/max-park-rubik-single-record-313/',reco:'https://reco.nz/solve/9155',glossary:'https://www.cubeskills.com/tools/glossary',wca:'https://www.worldcubeassociation.org/regulations/history/official/2025-07-17/#9f8',replacement:'https://www.worldcubeassociation.org/regulations/history/official/2025-07-17/#11e1'};
 SL.header=(g,v,kicker,lines,{night=false,size=v?100:106}={})=>{
- const k=FT.kicker(g,kicker+' · PROPOSED',{x:v?72:96,y:v?220:96,size:v?32:30,color:night?'var(--paper)':'var(--player-a-text)'});
+ const k=FT.kicker(g,kicker+(SL.locked?'':' · PROPOSED'),{x:v?72:96,y:v?220:96,size:v?32:30,color:night?'var(--paper)':'var(--player-a-text)'});
  const h=FT.claim(g,lines,{x:v?72:96,y:v?285:156,size,color:night?'var(--paper)':'var(--ink)'});h.style.width=(v?848:1728)+'px';
  return t=>{FT.rise(k,t,0);h.at(t,.2);};
 };
@@ -28,7 +30,7 @@ SL.scope=(g,v,{claims='SL-C001 · SL-C144',source='WCA frozen results · method 
  let rows;
  if(v){
   const scope=kind==='record'?['Published historical reconstruction','Illustrative · no record attribution']:kind==='slot'?['One-group finals · '+years,'Scheduled positions · no assignment audit']:['One-group average-of-five finals',years+' · at least five finals / season'];
-  rows=[['SCOPE',scope[0]],['',scope[1]],['',kind==='record'?'Seasonal study · shared comparison':kind==='slot'?'Successful times · failures separate':'Successful times · shared scramble/slot'],['SOURCE',source],['',claims],['STATUS','PRE-LOCK DRAFT · CLAIMS PROPOSED']];
+  rows=[['SCOPE',scope[0]],['',scope[1]],['',kind==='record'?'Seasonal study · shared comparison':kind==='slot'?'Successful times · failures separate':'Successful times · shared scramble/slot'],['SOURCE',source],['',claims],...(!SL.locked?[['STATUS','PRE-LOCK DRAFT · CLAIMS PROPOSED']]:[])];
  }else rows=[['SOURCE',source],['SCOPE','One-group average-of-five finals · '+years+' · successful times'],['METHOD',note+' · '+claims]];
  return FT.source(g,rows,{x:v?72:96,y:v?1218:854,width:v?848:1728,size:v?32:24});
 };
@@ -241,7 +243,7 @@ SL.takeaway=(g,v,phase)=>{
   T(g,'caption',96,448,44,'Sources and all the checks<br>are linked with the video.',{width:'1728px'});
   const notice=V('source_notice');T(g,'source',96,718,24,'<span data-source-key="source_notice">'+notice+'</span>',{width:'1728px',paddingTop:'18px'});
  }
- SL.scope(g,v,{claims:'SL-C001 · SL-C144 · SL-C148',source:v?'WCA results · amended method':'WCA results · method · sources · review',note:'Eligible successful seasonal bests · claims proposed'});return t=>head(t);
+ SL.scope(g,v,{claims:'SL-C001 · SL-C144 · SL-C148',source:v?'WCA results · amended method':'WCA results · method · sources · review',note:'Eligible successful seasonal bests'+(SL.locked?'':' · claims proposed')});return t=>head(t);
 };
 SL.shortA=(g,v,phase)=>{
  const head=SL.header(g,true,'Shared seasonal adjustment',phase==='hook'?['How much help','was shared?']:['One record’s luck','remains unresolved']);

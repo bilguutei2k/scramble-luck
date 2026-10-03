@@ -1313,7 +1313,7 @@
           "text": "2025"
         }
       ],
-      "box_count": 19
+      "box_count": 17
     },
     {
       "page": "short-a.html",
@@ -1341,7 +1341,7 @@
           "text": "2025"
         }
       ],
-      "box_count": 19
+      "box_count": 17
     },
     {
       "page": "short-a.html",
@@ -1374,7 +1374,7 @@
           "text": "2025"
         }
       ],
-      "box_count": 20
+      "box_count": 18
     },
     {
       "page": "short-a.html",
@@ -1422,7 +1422,7 @@
           "text": "2025"
         }
       ],
-      "box_count": 27
+      "box_count": 25
     },
     {
       "page": "short-a.html",
@@ -1475,7 +1475,7 @@
           "text": "2025"
         }
       ],
-      "box_count": 33
+      "box_count": 31
     },
     {
       "page": "short-a.html",
@@ -1493,35 +1493,35 @@
           "text": "2025"
         }
       ],
-      "box_count": 19
+      "box_count": 17
     },
     {
       "page": "short-b.html",
       "state": "skip",
       "issues": [],
       "labels": [],
-      "box_count": 17
+      "box_count": 15
     },
     {
       "page": "short-b.html",
       "state": "route",
       "issues": [],
       "labels": [],
-      "box_count": 16
+      "box_count": 14
     },
     {
       "page": "short-b.html",
       "state": "peers",
       "issues": [],
       "labels": [],
-      "box_count": 43
+      "box_count": 41
     },
     {
       "page": "short-b.html",
       "state": "comparison",
       "issues": [],
       "labels": [],
-      "box_count": 17
+      "box_count": 15
     },
     {
       "page": "short-c.html",
@@ -1539,7 +1539,7 @@
           "text": "2025"
         }
       ],
-      "box_count": 19
+      "box_count": 17
     },
     {
       "page": "short-c.html",
@@ -1557,7 +1557,7 @@
           "text": "2025"
         }
       ],
-      "box_count": 20
+      "box_count": 18
     },
     {
       "page": "short-c.html",
@@ -1575,7 +1575,7 @@
           "text": "2025"
         }
       ],
-      "box_count": 46
+      "box_count": 44
     },
     {
       "page": "short-c.html",
@@ -1593,7 +1593,7 @@
           "text": "2025"
         }
       ],
-      "box_count": 22
+      "box_count": 20
     }
   ],
   "issue_count": 0

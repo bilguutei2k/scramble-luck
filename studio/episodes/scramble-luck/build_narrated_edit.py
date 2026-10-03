@@ -142,7 +142,7 @@ def main():
     args = parser.parse_args()
     narration = json.loads(args.narration.read_text())
     cues = json.loads((EP/'scenes/CUES.json').read_text())
-    edit = dict(status='pre-lock', about='PRE-LOCK DRAFT · STORY v1 unchanged; actual Kokoro word timings; claims proposed.',
+    edit = dict(status='locked', about='Owner-approved 2026-10-03; unchanged narration; actual Kokoro word timings; verified claims.',
                 voice='af_heart', timing='Every named state lands on its spoken written word; stable snapshots, hard cuts, strict captions and sample-contiguous cached PCM fragments.',
                 gap=.45, lead=.4, tail=.9, wipe=.45, bridge_word_ranges=True,
                 strict_captions=True, audio_true_peak=-1.5, calibrate_loudness=True,
@@ -194,7 +194,7 @@ def main():
                         shot['tail'] = max(.9, 6-(shot.get('lead',.4)+spoken['duration']))
                     shots.append(shot)
         edit['deliverables'][name] = dict(format='landscape' if name=='film' else 'vertical',
-                                        title='How lucky is a lucky scramble? — PRE-LOCK DRAFT' if name=='film' else name+' — PRE-LOCK DRAFT',shots=shots)
+                                        title='About 2% Longer' if name=='film' else name,shots=shots)
     args.output.write_text(json.dumps(edit,indent=2)+'\n')
     for name,spec in edit['deliverables'].items():
         plans = sequence_plans(spec['shots'],narration,edit)

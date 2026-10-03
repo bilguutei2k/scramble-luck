@@ -1,8 +1,9 @@
-# Scramble-luck visual QA — proposed pre-lock draft
+# Scramble-luck visual QA — locked 2026-10-03
 
-Inspected all 69 final cue PNGs at their native delivery sizes: twelve
-1920×1080 scenes and three 1080×1920 compositions. This is visual draft QA;
-claims remain proposed and no observations have been locked.
+Rebuilt all 69 cue PNGs at delivery size. Inspected every capture in eight
+contact sheets and reopened the landscape and portrait verdicts at native size: twelve
+1920×1080 scenes and three 1080×1920 compositions. All claims are verified
+and owner-approved for publication on 2026-10-03.
 
 ## Inspection result
 
@@ -127,3 +128,10 @@ missing selectors, runtime errors, orphan endpoint labels or verdict states
 without the registered reference. `visual_qa.json` records the refreshed Short A
 hashes and this scoped inspection; previous other-scene inspections are retained.
 Encoded-frame inspection is recorded in `../NARRATED_BUILD.md`.
+
+## Locked refresh · 2026-10-03
+
+69 semantic/seek/provenance checks and 41 precision checks pass. Native Chromium
+reports zero geometry flags and runtime errors. Every rebuilt still was inspected;
+no lock-state label appears. Illustrative, schematic and unvalidated-diagnostic
+qualifiers remain. Final capture hashes are in visual_qa.json and the still manifest.

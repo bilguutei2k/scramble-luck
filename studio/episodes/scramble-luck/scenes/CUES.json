@@ -1,6 +1,6 @@
 {
-  "status": "PRE-LOCK DRAFT \u2014 CLAIMS PROPOSED",
-  "clock": "Designed cue clocks; exact narration substrings below. Each state reveals over settle easing then holds. Voiceover/EDIT timing remains unlocked.",
+  "status": "locked",
+  "clock": "Designed cue clocks; exact narration substrings below. Each state settles then holds. EDIT.json maps states to unchanged real narration timing, owner-approved 2026-10-03.",
   "scenes": {
     "s01-lucky-scramble.html": {
       "format": "landscape",

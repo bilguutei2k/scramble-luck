@@ -1,45 +1,50 @@
-# Scramble luck — handoff
+# About 2% Longer — locked publication handoff
 
-Updated 2026-10-02, late evening, by Claude. Branch `next-investigations`
-(local only; nothing pushed).
+Updated 2026-10-03. Channel owner approved the episode, script and all claims
+for publication on 2026-10-03. Working title: **About 2% Longer**.
+Final locked build complete. No .git writes; Claude commits.
 
 ## State
 
-| Layer | Status | Evidence |
+| Layer | Final state | Evidence |
 |---|---|---|
-| Idea search and pilot | done | `../../../ideation/` (SLATE.md, rounds r1–r6) |
-| METHOD.md v2 | approved by the owner after an external review; committed before any confirmation data | `8a474d3` |
-| Pre-confirmation gate | **failed** (bootstrap mis-covered; a false "fails" 96.5% of the time at R = 1.10) | `3eca079`, `analysis/GATE.md` |
-| Amendment 1 (re-centred R interval) | investigated outcome-blind, owner-approved, registered before confirmation | `0eb88d1`, `5496074` |
-| Confirmation analysis | **belief fails**: R = 1.0198 [1.0164, 1.0231]; F = 4.74% [3.92, 5.67]; QA 29/29 | `e8880f3`, `analysis/FINDINGS.md` |
-| Blind re-derivation (Astra) | 55 values matched; 8 era-split differences explained by a reference-window reading | `recheck/RECHECK.md` |
-| Methods review (Astra) | approve with changes; all required changes applied | `analysis/review.md`, `4c3fd03` |
-| Claims | 148 proposed, 921 checks pass `verify_claims.py` | `CLAIMS.json`, `analysis/claims_check.json` |
-| Script | v1 (Sol), 12 scenes, 9:15 narration, three shorts; v0 (local Qwen) kept | `STORY.md`, `4c3fd03` |
-| Scenes | proposed, 67 cue stills, visual QA | `scenes/`, `e54116b` |
-| Narrated draft | film 11:37, shorts 46 s, 41 s, 44 s; local Kokoro voice | `NARRATED_BUILD.md`, `7565ae9`; renders local |
-| Companion page | pre-lock draft, 14 precomputed checks, browser QA passed | `companion/`, `6bd57ab` |
+| Method / Amendment 1 | owner-approved, registered before confirmation | METHOD.md; analysis/amendment/ |
+| Confirmation | belief fails; R 1.0198 [1.0164, 1.0231]; F 4.74% [3.92, 5.67] | analysis/FINDINGS.md |
+| Independent claims | 148 verified, owner approval dated 2026-10-03; 921 checks pass | CLAIMS.json; analysis/claims_check.json |
+| Script | locked, owner-approved 2026-10-03; narration unchanged; story_check no problems | STORY.md; renders/qa/final-probes/story-check.txt |
+| Scenes | 69 rebuilt/inspected stills; zero Chromium geometry/runtime flags; no visible lock markers | scenes/VISUAL_QA.md; renders/stills/ |
+| Film and Shorts | four final MP4s, captions and timing records; delivered QA passes | NARRATED_BUILD.md; renders/qa/final-assembled/checks.json |
+| Companion | locked title/subtitle; 70 numeric bindings; 56/56 browser states pass | companion/index.html; renders/companion/page.html; companion/QA.md |
 
-## Waiting on the owner
+## Final outputs
 
-1. Sign-off on STORY.md v1 and the claims; then mark all claims `verified`
-   (story_check then passes without warnings).
-2. The video title and the on-screen verdict wording ("ABOUT 2% LONGER" today).
-3. A listening review of the Kokoro narration.
+| Deliverable | Final output | Duration | Shots | SRT cues | LUFS | dBTP | Decoded frames |
+|---|---|---:|---:|---:|---:|---:|---:|
+| film | `renders/final/film.mp4` (+ `.srt`, `.json`) | 696.900 s | 72 | 181 | -14.0 | -1.1 | 20,907 |
+| short-a | `renders/final/short-a.mp4` (+ `.srt`, `.json`) | 46.000 s | 5 | 11 | -14.0 | -1.2 | 1,380 |
+| short-b | `renders/final/short-b.mp4` (+ `.srt`, `.json`) | 40.767 s | 4 | 10 | -13.9 | -1.1 | 1,223 |
+| short-c | `renders/final/short-c.mp4` (+ `.srt`, `.json`) | 43.833 s | 4 | 11 | -13.9 | -1.2 | 1,315 |
 
-## Open, not blocking
+Durations/loudness are measured from final encoded files. All delivery frames
+fully decode, without blank/corrupt frames. Exact timing, cue alignment, strict
+captions, transitions and cached-PCM preservation pass. Narration audio is reused
+unchanged. `NARRATED_BUILD.md` records the checks and reproducible commands.
+Companion captures and audit are in `renders/companion/`; all widths/themes pass.
 
-- The cross-length correlation (r = 0.266) has no validated interval; it is
-  shown only as a labelled diagnostic.
-- Replacement-scramble use is unaudited; results are scheduled-position.
-- Historical record cards stay qualitative until bound to claims.
-- Polish pass done (Short A label timing, vertical 1.10 line, companion
-  labels), 2026-10-02 23:43.
-- Shared tool change: `studio/tools/assemble.py` loudness retry (`f41f856`)
-  affects every episode's future renders.
+## Open, nonblocking
 
-## Next after sign-off
+- Optional editorial listening for pronunciation/prosody; technical audio QA
+  passes, and the authorized build preserves the approved narration audio.
+- Cross-length correlation remains an expressly unvalidated diagnostic.
+- Replacement assignments remain unaudited; results are scheduled-position.
+- Historical record cards remain qualitative: results.json lacks historical
+  Du/Park time and quote-date source-context bindings.
+- Future analytical reuse needs checkpoint fingerprint hardening, as recorded
+  in the methods review. These evidence limits stay visible in the final assets.
 
-Lock claims → re-run `story_check` → final narration listening fixes →
-final renders → publish the companion page → push the branch for the
-public repository (`studio/tools/public_repo.sh`), which needs the owner's go.
+## Publication handoff
+
+Final assets are ready. Claude owns the commit and publication steps. No branch
+push, upload or companion publication was performed as part of this build.
+Shared tool change: assemble.py accepts an optional `--out-dir`; current final
+assembly uses `renders/final/`. No open rendering or browser-check failure remains.

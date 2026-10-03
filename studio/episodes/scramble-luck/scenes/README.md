@@ -1,9 +1,9 @@
-# Scramble-luck proposed visual draft
+# Scramble-luck locked visuals
 
 Twelve landscape STORY scenes and three separately composed portrait shorts,
 with 69 cue states and matching PNGs in `../renders/stills/`.
-All claims remain proposed. Cue clocks are designed reveals and holds, not
-locked narration timing. No analytical numbers are typed into scene HTML/JS.
+All 148 claims are verified and owner-approved 2026-10-03. Cue clocks define
+scene states; EDIT.json maps them to the unchanged real narration timing. No analytical numbers are typed into scene HTML/JS.
 `build_data.py` reads results.json for observations and CLAIMS.json for IDs/keys;
 `SL.num()` records claim IDs and full input keys on each numeric label. The
 results and claims hashes accompany data and captures. No .git writes.

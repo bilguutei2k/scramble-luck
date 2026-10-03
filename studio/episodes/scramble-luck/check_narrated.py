@@ -1,4 +1,4 @@
-"""Check the delivered pre-lock MP4s, SRTs, PCM and written-word cue plans."""
+"""Check the delivered MP4s, SRTs, PCM and written-word cue plans."""
 import argparse
 import json
 import math
@@ -37,11 +37,13 @@ def main():
     parser.add_argument('--edit',type=Path,default=EP/'EDIT.json')
     parser.add_argument('--narration',type=Path,default=EP/'renders/audio/narration.json')
     parser.add_argument('--deliverables',nargs='+')
+    parser.add_argument('--render-dir',type=Path,default=EP/'renders/draft')
+    parser.add_argument('--qa-dir',type=Path,default=EP/'renders/qa/assembled')
     args = parser.parse_args()
     edit = json.loads(args.edit.read_text())
     narration = json.loads(args.narration.read_text())
     cues = json.loads((EP/'scenes/CUES.json').read_text())['scenes']
-    out = EP/'renders/qa/assembled'
+    out = args.qa_dir
     out.mkdir(parents=True,exist_ok=True)
     report = {}
     for name,spec in edit['deliverables'].items():
@@ -75,7 +77,7 @@ def main():
                 gap = round((b['start']+b['starts'][0]-a['start']-a['starts'][-1]-la['duration'])*24000)
                 assert gap==0,(name,'PCM bridge',gap)
                 bridges.append(dict(at=b['start'],gap_samples=gap))
-        with wave.open(str(EP/f'renders/draft/{name}/narration.wav')) as f:
+        with wave.open(str(args.render_dir/f'{name}/narration.wav')) as f:
             pcm = f.readframes(f.getnframes())
         assert all(pcm[2*round(at*24000):2*round(at*24000)+len(seg)]==seg for at,seg in placements)
         vals = struct.unpack('<'+'h'*(len(pcm)//2),pcm)
@@ -85,7 +87,7 @@ def main():
         for at,seg in placements:
             for sample in [round(at*24000),round(at*24000)+len(seg)//2]:
                 if 0<sample<len(vals):steps.append(abs(vals[sample]-vals[sample-1]))
-        blocks = (EP/f'renders/draft/{name}.srt').read_text().strip().split('\n\n')
+        blocks = (args.render_dir/f'{name}.srt').read_text().strip().split('\n\n')
         cursor,maxrows,maxwidth = 0,0,0
         for block in blocks:
             rows = block.splitlines();start,end = map(seconds,rows[1].split(' --> '))
@@ -94,7 +96,7 @@ def main():
             assert abs(start-chunk[0][0])<=.0011 and abs(end-chunk[-1][1])<=.0011,(name,'caption endpoints')
             maxrows = max(maxrows,len(rows)-2);maxwidth = max(maxwidth,*map(len,rows[2:]));cursor+=len(words)
         assert cursor==len(timed) and maxrows<=2 and maxwidth<=42
-        video = EP/f'renders/draft/{name}.mp4'
+        video = args.render_dir/f'{name}.mp4'
         command = ['ffmpeg','-hide_banner','-i',str(video),'-vn','-af','ebur128=peak=true','-f','null','-']
         result = subprocess.run(command,capture_output=True,text=True,check=True)
         (out/(name+'-ebur128.log')).write_text(result.stderr)

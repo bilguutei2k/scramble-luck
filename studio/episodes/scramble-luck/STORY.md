@@ -1,9 +1,7 @@
-# How lucky is a lucky scramble? — story and scenes
+# About 2% Longer
 
-Status: script v1, 2026-10-02; not locked. Revised from preserved `STORY.v0.md`.
-Claims remain proposed pending owner lock. Numerical verification is in
-`analysis/claims_check.json`; narration checking retains “not verified” warnings.
-The title remains a working title.
+Status: locked, owner-approved 2026-10-03; script v1. Revised from preserved `STORY.v0.md`.
+All claims verified; numerical verification is in `analysis/claims_check.json`.
 
 ## Argument: “A shortcut isn't a shared advantage”
 

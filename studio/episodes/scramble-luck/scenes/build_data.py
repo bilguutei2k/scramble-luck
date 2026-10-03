@@ -1,4 +1,4 @@
-"""Proposed scene data: numeric observations come only from results.json.
+"""Scene data: numeric observations come only from results.json.
 
 CLAIMS.json supplies IDs/keys and status, never numerical observations.
 Historical source-only values remain unbound until results.json supplies them.
@@ -44,9 +44,10 @@ def payload():
     derived('confidence', int(re.search(r'interval_(\d+)', next(x['key'] for x in claims[0]['values'] if 'interval_' in x.get('key',''))).group(1)), ['primary.R_geometric_person_year.interval_95'], ['SL-C001', 'SL-C005', 'SL-C074'])
     # Grammar constants are not measurements; the five-column diagram is a schematic.
     assert values['derived.scheduled_positions'] * results['coverage']['structural']['solver_final_incidence_rows'] == results['coverage']['structural']['included_attempt_slots']
-    return dict(status='PRE-LOCK DRAFT — CLAIMS PROPOSED', results_sha256=hashlib.sha256(raw).hexdigest(), claims_sha256=hashlib.sha256(claim_raw).hexdigest(), values=values, claim_ids=provenance, derived_from=derivatives, historical_claim_exception=False, claims={c['id']: dict(status=c['status']) for c in claims})
+    locked = bool(claims) and all(c['status'] == 'verified' for c in claims)
+    return dict(locked=locked, status='locked' if locked else 'PRE-LOCK DRAFT — CLAIMS PROPOSED', results_sha256=hashlib.sha256(raw).hexdigest(), claims_sha256=hashlib.sha256(claim_raw).hexdigest(), values=values, claim_ids=provenance, derived_from=derivatives, historical_claim_exception=False, claims={c['id']: dict(status=c['status']) for c in claims})
 
 if __name__ == '__main__':
     data = payload()
-    (EP / 'scenes/data.js').write_text('// Generated. PRE-LOCK DRAFT; all claims proposed.\nwindow.SCENE_DATA = ' + json.dumps(data, ensure_ascii=False, sort_keys=True, indent=1) + ';\n')
+    (EP / 'scenes/data.js').write_text('// Generated from results and claim lock state.\nwindow.SCENE_DATA = ' + json.dumps(data, ensure_ascii=False, sort_keys=True, indent=1) + ';\n')
     print('Wrote results-bound data.js; source-only historical observations omitted')
