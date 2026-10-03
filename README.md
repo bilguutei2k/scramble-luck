@@ -116,3 +116,24 @@ unchanged, so hashes differ from those quoted inside `METHOD.md` and
 
 Code is under the MIT license (`LICENSE`). Statistics are facts from the WCA's
 results, published with the notice above.
+
+| Step | Working commit | Public commit |
+|---|---|---|
+| Scramble luck: pre-registration (METHOD v2) before confirmation data; idea search | `8a474d3` | `db33119` |
+| Scramble luck: validation gate report, before confirmation times are read | `3eca079` | `ee07895` |
+| Scramble luck: AMENDMENT-1 investigation (outcome-blind), draft for approval | `0eb88d1` | `13fe592` |
+| Scramble luck: register Amendment 1 (re-centred R interval), approved by the owner | `5496074` | `6be3dff` |
+| Scramble luck: confirmation analysis (belief fails) and blind re-derivation | `e8880f3` | `7713980` |
+| Scramble luck: claim ledger (143 claims, all verified) and Astra's methods review | `d0c8f9e` | `6d5de88` |
+| Scramble luck: script draft v0 by local Qwen 3.8 (unverified; for Sol's revision) | `b6360f1` | `7b0fe67` |
+| Scramble luck: methods-review fixes applied; script v1 (fact-checked) and shorts | `4c3fd03` | `0033789` |
+| Scramble luck: proposed scenes (12 landscape, 3 portrait shorts), 67 cue stills, visual QA | `e54116b` | `cf5d5f0` |
+| Scramble luck: narrated pre-lock draft (film 11:37, three shorts), edit cues, spoken forms | `7565ae9` | `e999e28` |
+| Tools: scramble-luck spoken forms; halve the loudness retry correction | `f41f856` | `7e679ba` |
+| Scramble luck: companion page (pre-lock draft) with 14 precomputed assumption checks | `6bd57ab` | `9c9ab3a` |
+| Scramble luck: handoff (state, owner decisions pending, open items) | `b1c1e89` | `2ed798d` |
+| Scramble luck: polish — Short A paired interval reveals and 1.10 line; companion labels | `0c43aff` | `cf0bac5` |
+| Scramble luck: handoff updated after the polish pass | `3f5df44` | `6370098` |
+| Scramble luck: claims locked (owner-approved 2026-10-03), title "About 2% Longer", final r | `0c7d877` | `3d45569` |
+| Tools: assemble.py --out-dir (default unchanged), used for the scramble-luck final renders | `7458e98` | `966c653` |
+| Scramble luck: keep saved third-party source pages out of the public history | `5ff88f5` | `e483212` |
