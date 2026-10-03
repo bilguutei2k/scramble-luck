@@ -1,0 +1,28 @@
+.sl-state { position:absolute; inset:0; }
+.sl-state > * { position:absolute; }
+.sl-state .label { line-height:1.25; letter-spacing:0; }
+.sl-state .caption { max-width:100%; }
+.sl-state .source a { color:inherit; text-decoration:none; }
+.sl-state .source { letter-spacing:0; }
+.night .sl-state .tick,.night .sl-state .source { color:var(--field); }
+.sl-state .ft-measure-content { gap:14px; }
+.sl-state .ft-measure-card { height:430px; }
+.sl-state .ft-measure-name { min-height:66px; font-size:52px; }
+.sl-state .ft-measure-value { font-size:60px; }
+.sl-state .ft-measure-stamp { font-size:32px; }
+.sl-state .ft-measure-unit,.sl-state .ft-measure-leader { font-size:26px; }
+.sl-state .ft-measure-vertical { height:180px; }
+.sl-state .ft-measure-vertical .ft-measure-content { inset:22px; }
+.sl-state .ft-measure-vertical .ft-measure-name { width:740px; font-size:48px; min-height:0; }
+.sl-state .ft-measure-vertical .ft-measure-value { display:none; }
+.sl-state .ft-measure-vertical .ft-measure-unit { position:static; font-size:32px; color:var(--ink); }
+.sl-state .ft-measure-vertical .ft-measure-index { display:none; }
+.sl-state .ft-measure-vertical .ft-measure-stamp { display:none; }
+.sl-state .ft-measure-vertical .ft-measure-leader { display:none; }
+.sl-matrix-cell { box-sizing:border-box; border:2px solid var(--rule-light); }
+.sl-stage-name { color:var(--field-text); }
+.sl-state .ft-measure-index { letter-spacing:0; }
+.sl-value { font-variant-numeric:tabular-nums; }
+.sl-portrait .grain { background-position:var(--grain-shift,0px) var(--grain-shift,0px); }
+
+.sl-state a { color:inherit; text-decoration:none; }

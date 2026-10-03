@@ -1,0 +1,1821 @@
+{
+  "status": "PRE-LOCK DRAFT \u2014 CLAIMS PROPOSED",
+  "clock": "Designed cue clocks; exact narration substrings below. Each state reveals over settle easing then holds. Voiceover/EDIT timing remains unlocked.",
+  "scenes": {
+    "s01-lucky-scramble.html": {
+      "format": "landscape",
+      "duration": 35,
+      "claims": [
+        "SL-C104",
+        "SL-C146",
+        "SL-C148"
+      ],
+      "states": [
+        {
+          "id": "hook",
+          "component": "open",
+          "phase": "hook",
+          "cue": "A timer stops. A record falls.",
+          "claims": [
+            "SL-C148"
+          ],
+          "at": 0,
+          "still": 6.95,
+          "path": "renders/stills/s01-lucky-scramble-hook.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "A timer stops. A record falls.",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "A timer stops. A record falls.",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "wired",
+          "component": "open",
+          "phase": "wired",
+          "cue": "WIRED put the intuition plainly",
+          "claims": [
+            "SL-C146"
+          ],
+          "at": 7,
+          "still": 13.95,
+          "path": "renders/stills/s01-lucky-scramble-wired.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "WIRED put the intuition plainly",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "WIRED put the intuition plainly",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "ruwix",
+          "component": "open",
+          "phase": "ruwix",
+          "cue": "Ruwix asked",
+          "claims": [
+            "SL-C146"
+          ],
+          "at": 14,
+          "still": 20.95,
+          "path": "renders/stills/s01-lucky-scramble-ruwix.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "Ruwix asked",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "Ruwix asked",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "du",
+          "component": "open",
+          "phase": "record",
+          "cue": "Yusheng Du's then-record",
+          "claims": [
+            "SL-C104"
+          ],
+          "at": 21,
+          "still": 27.95,
+          "path": "renders/stills/s01-lucky-scramble-du.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "Yusheng Du's then-record",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "Yusheng Du's then-record",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "question",
+          "component": "open",
+          "phase": "question",
+          "cue": "I want to test a narrower question",
+          "claims": [
+            "SL-C148"
+          ],
+          "at": 28,
+          "still": 34.95,
+          "path": "renders/stills/s01-lucky-scramble-question.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "I want to test a narrower question",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "I want to test a narrower question",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        }
+      ],
+      "final_still": "renders/stills/s01-lucky-scramble-question.png"
+    },
+    "s02-the-basics.html": {
+      "format": "landscape",
+      "duration": 35,
+      "claims": [
+        "SL-C130",
+        "SL-C135",
+        "SL-C147"
+      ],
+      "states": [
+        {
+          "id": "scramble",
+          "component": "stages",
+          "phase": "scramble",
+          "cue": "A scramble is the move sequence",
+          "claims": [
+            "SL-C135",
+            "SL-C147"
+          ],
+          "at": 0,
+          "still": 6.95,
+          "path": "renders/stills/s02-the-basics-scramble.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "A scramble is the move sequence",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "A scramble is the move sequence",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "cfop",
+          "component": "stages",
+          "phase": "cfop",
+          "cue": "Here's a common solving method: CFOP",
+          "claims": [
+            "SL-C147"
+          ],
+          "at": 7,
+          "still": 13.95,
+          "path": "renders/stills/s02-the-basics-cfop.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "Here's a common solving method: CFOP",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "Here's a common solving method: CFOP",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "cross",
+          "component": "stages",
+          "phase": "cross",
+          "cue": "The cross solves the edge pieces",
+          "claims": [
+            "SL-C147"
+          ],
+          "at": 14,
+          "still": 20.95,
+          "path": "renders/stills/s02-the-basics-cross.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "The cross solves the edge pieces",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "The cross solves the edge pieces",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "pll",
+          "component": "stages",
+          "phase": "pll",
+          "cue": "A PLL skip means that",
+          "claims": [
+            "SL-C147"
+          ],
+          "at": 21,
+          "still": 27.95,
+          "path": "renders/stills/s02-the-basics-pll.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "A PLL skip means that",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "A PLL skip means that",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "average",
+          "component": "stages",
+          "phase": "average",
+          "cue": "An average of five drops the fastest and slowest",
+          "claims": [
+            "SL-C130"
+          ],
+          "at": 28,
+          "still": 34.95,
+          "path": "renders/stills/s02-the-basics-average.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "An average of five drops the fastest and slowest",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "An average of five drops the fastest and slowest",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        }
+      ],
+      "final_still": "renders/stills/s02-the-basics-average.png"
+    },
+    "s03-the-obvious-answer.html": {
+      "format": "landscape",
+      "duration": 28,
+      "claims": [
+        "SL-C105",
+        "SL-C138",
+        "SL-C147",
+        "SL-C148"
+      ],
+      "states": [
+        {
+          "id": "route",
+          "component": "stages",
+          "phase": "park-route",
+          "cue": "The obvious way to investigate luck is a reconstruction",
+          "claims": [
+            "SL-C105",
+            "SL-C138"
+          ],
+          "at": 0,
+          "still": 6.95,
+          "path": "renders/stills/s03-the-obvious-answer-route.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "The obvious way to investigate luck is a reconstruction",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "The obvious way to investigate luck is a reconstruction",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "skip",
+          "component": "stages",
+          "phase": "park-skip",
+          "cue": "Ruwix's published solution includes a double extended cross and a PLL skip",
+          "claims": [
+            "SL-C138",
+            "SL-C147"
+          ],
+          "at": 7,
+          "still": 13.95,
+          "path": "renders/stills/s03-the-obvious-answer-skip.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "Ruwix's published solution includes a double extended cross and a PLL skip",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "Ruwix's published solution includes a double extended cross and a PLL skip",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "alignment",
+          "component": "stages",
+          "phase": "park-align",
+          "cue": "The reconstruction still includes last-layer orientation and a final top-face adjustment",
+          "claims": [
+            "SL-C138"
+          ],
+          "at": 14,
+          "still": 20.95,
+          "path": "renders/stills/s03-the-obvious-answer-alignment.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "The reconstruction still includes last-layer orientation and a final top-face adjustment",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "The reconstruction still includes last-layer orientation and a final top-face adjustment",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "peers",
+          "component": "paths",
+          "phase": "paths",
+          "cue": "what happened to the other finalists?",
+          "claims": [
+            "SL-C148"
+          ],
+          "at": 21,
+          "still": 27.95,
+          "path": "renders/stills/s03-the-obvious-answer-peers.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "what happened to the other finalists?",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "what happened to the other finalists?",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        }
+      ],
+      "final_still": "renders/stills/s03-the-obvious-answer-peers.png"
+    },
+    "s04-the-flaw.html": {
+      "format": "landscape",
+      "duration": 21,
+      "claims": [
+        "SL-C148"
+      ],
+      "states": [
+        {
+          "id": "paths",
+          "component": "paths",
+          "phase": "paths",
+          "cue": "Imagine the diagram shows different paths",
+          "claims": [
+            "SL-C148"
+          ],
+          "at": 0,
+          "still": 6.95,
+          "path": "renders/stills/s04-the-flaw-paths.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "Imagine the diagram shows different paths",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "Imagine the diagram shows different paths",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "execution",
+          "component": "paths",
+          "phase": "execution",
+          "cue": "And even the same solver can execute",
+          "claims": [
+            "SL-C148"
+          ],
+          "at": 7,
+          "still": 13.95,
+          "path": "renders/stills/s04-the-flaw-execution.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "And even the same solver can execute",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "And even the same solver can execute",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "fairer",
+          "component": "matrix",
+          "phase": "center",
+          "cue": "whether peers also ran faster than their own usual pace",
+          "claims": [
+            "SL-C148"
+          ],
+          "at": 14,
+          "still": 20.95,
+          "path": "renders/stills/s04-the-flaw-fairer.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "whether peers also ran faster than their own usual pace",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "whether peers also ran faster than their own usual pace",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        }
+      ],
+      "final_still": "renders/stills/s04-the-flaw-fairer.png"
+    },
+    "s05-the-scope.html": {
+      "format": "landscape",
+      "duration": 35,
+      "claims": [
+        "SL-C002",
+        "SL-C003",
+        "SL-C004",
+        "SL-C133",
+        "SL-C148"
+      ],
+      "states": [
+        {
+          "id": "eligibility",
+          "component": "population",
+          "phase": "eligibility",
+          "cue": "I used official WCA results",
+          "claims": [
+            "SL-C003",
+            "SL-C133",
+            "SL-C148"
+          ],
+          "at": 0,
+          "still": 6.95,
+          "path": "renders/stills/s05-the-scope-eligibility.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "I used official WCA results",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "I used official WCA results",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "split",
+          "component": "population",
+          "phase": "split",
+          "cue": "The confirmation sample was held out",
+          "claims": [
+            "SL-C004"
+          ],
+          "at": 7,
+          "still": 13.95,
+          "path": "renders/stills/s05-the-scope-split.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "The confirmation sample was held out",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "The confirmation sample was held out",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "finals",
+          "component": "population",
+          "phase": "finals",
+          "cue": "The included sample has 5,017 finals",
+          "claims": [
+            "SL-C002"
+          ],
+          "at": 14,
+          "still": 20.95,
+          "path": "renders/stills/s05-the-scope-finals.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "The included sample has 5,017 finals",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "The included sample has 5,017 finals",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "slots",
+          "component": "population",
+          "phase": "slots",
+          "cue": "306,155 scheduled attempt slots",
+          "claims": [
+            "SL-C002"
+          ],
+          "at": 21,
+          "still": 27.95,
+          "path": "renders/stills/s05-the-scope-slots.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "306,155 scheduled attempt slots",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "306,155 scheduled attempt slots",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "seasons",
+          "component": "population",
+          "phase": "seasons",
+          "cue": "3,313 solver-seasons",
+          "claims": [
+            "SL-C002",
+            "SL-C003"
+          ],
+          "at": 28,
+          "still": 34.95,
+          "path": "renders/stills/s05-the-scope-seasons.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "3,313 solver-seasons",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "3,313 solver-seasons",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        }
+      ],
+      "final_still": "renders/stills/s05-the-scope-seasons.png"
+    },
+    "s06-listen-to-the-peers.html": {
+      "format": "landscape",
+      "duration": 35,
+      "claims": [
+        "SL-C148"
+      ],
+      "states": [
+        {
+          "id": "matrix",
+          "component": "matrix",
+          "phase": "rows",
+          "cue": "Each row here is a finalist",
+          "claims": [
+            "SL-C148"
+          ],
+          "at": 0,
+          "still": 6.95,
+          "path": "renders/stills/s06-listen-to-the-peers-matrix.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "Each row here is a finalist",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "Each row here is a finalist",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "center",
+          "component": "matrix",
+          "phase": "center",
+          "cue": "First, compare each peer with their own pace",
+          "claims": [
+            "SL-C148"
+          ],
+          "at": 7,
+          "still": 13.95,
+          "path": "renders/stills/s06-listen-to-the-peers-center.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "First, compare each peer with their own pace",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "First, compare each peer with their own pace",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "columns",
+          "component": "matrix",
+          "phase": "columns",
+          "cue": "Then look down a column",
+          "claims": [
+            "SL-C148"
+          ],
+          "at": 14,
+          "still": 20.95,
+          "path": "renders/stills/s06-listen-to-the-peers-columns.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "Then look down a column",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "Then look down a column",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "exclude",
+          "component": "matrix",
+          "phase": "exclude",
+          "cue": "I remove the focal solver's entire row",
+          "claims": [
+            "SL-C148"
+          ],
+          "at": 21,
+          "still": 27.95,
+          "path": "renders/stills/s06-listen-to-the-peers-exclude.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "I remove the focal solver's entire row",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "I remove the focal solver's entire row",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "noise",
+          "component": "matrix",
+          "phase": "noise",
+          "cue": "I correct for noise from having a finite set of peers",
+          "claims": [
+            "SL-C148"
+          ],
+          "at": 28,
+          "still": 34.95,
+          "path": "renders/stills/s06-listen-to-the-peers-noise.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "I correct for noise from having a finite set of peers",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "I correct for noise from having a finite set of peers",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        }
+      ],
+      "final_still": "renders/stills/s06-listen-to-the-peers-noise.png"
+    },
+    "s07-the-seasonal-best.html": {
+      "format": "landscape",
+      "duration": 28,
+      "claims": [
+        "SL-C002",
+        "SL-C148"
+      ],
+      "states": [
+        {
+          "id": "select",
+          "component": "adjust",
+          "phase": "select",
+          "cue": "select each eligible solver's fastest successful final solve",
+          "claims": [
+            "SL-C148"
+          ],
+          "at": 0,
+          "still": 6.95,
+          "path": "renders/stills/s07-the-seasonal-best-select.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "select each eligible solver's fastest successful final solve",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "select each eligible solver's fastest successful final solve",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "remove",
+          "component": "adjust",
+          "phase": "remove",
+          "cue": "remove the estimated shared contrast",
+          "claims": [
+            "SL-C148"
+          ],
+          "at": 7,
+          "still": 13.95,
+          "path": "renders/stills/s07-the-seasonal-best-remove.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "remove the estimated shared contrast",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "remove the estimated shared contrast",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "weight",
+          "component": "adjust",
+          "phase": "weight",
+          "cue": "I combine the adjusted-to-observed ratios geometrically",
+          "claims": [
+            "SL-C002",
+            "SL-C148"
+          ],
+          "at": 14,
+          "still": 20.95,
+          "path": "renders/stills/s07-the-seasonal-best-weight.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "I combine the adjusted-to-observed ratios geometrically",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "I combine the adjusted-to-observed ratios geometrically",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "measures",
+          "component": "adjust",
+          "phase": "measures",
+          "cue": "A separate measure asks how much successful log-time variation is shared",
+          "claims": [
+            "SL-C148"
+          ],
+          "at": 21,
+          "still": 27.95,
+          "path": "renders/stills/s07-the-seasonal-best-measures.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "A separate measure asks how much successful log-time variation is shared",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "A separate measure asks how much successful log-time variation is shared",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        }
+      ],
+      "final_still": "renders/stills/s07-the-seasonal-best-measures.png"
+    },
+    "s08-the-failed-gate.html": {
+      "format": "landscape",
+      "duration": 28,
+      "claims": [
+        "SL-C024",
+        "SL-C025",
+        "SL-C148"
+      ],
+      "states": [
+        {
+          "id": "failed",
+          "component": "gate",
+          "phase": "failed",
+          "cue": "The original gate failed",
+          "claims": [
+            "SL-C148"
+          ],
+          "at": 0,
+          "still": 6.95,
+          "path": "renders/stills/s08-the-failed-gate-failed.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "The original gate failed",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "The original gate failed",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "amendment",
+          "component": "gate",
+          "phase": "amend",
+          "cue": "an owner-approved amendment changed how the interval was centered",
+          "claims": [
+            "SL-C148"
+          ],
+          "at": 7,
+          "still": 13.95,
+          "path": "renders/stills/s08-the-failed-gate-amendment.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "an owner-approved amendment changed how the interval was centered",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "an owner-approved amendment changed how the interval was centered",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "passed",
+          "component": "gate",
+          "phase": "passed",
+          "cue": "The amended procedure passed its specified simulation checks",
+          "claims": [
+            "SL-C024",
+            "SL-C148"
+          ],
+          "at": 14,
+          "still": 20.95,
+          "path": "renders/stills/s08-the-failed-gate-passed.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "The amended procedure passed its specified simulation checks",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "The amended procedure passed its specified simulation checks",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "fixed",
+          "component": "gate",
+          "phase": "fixed",
+          "cue": "A fixed-selection interval is reported separately",
+          "claims": [
+            "SL-C025",
+            "SL-C148"
+          ],
+          "at": 21,
+          "still": 27.95,
+          "path": "renders/stills/s08-the-failed-gate-fixed.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "A fixed-selection interval is reported separately",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "A fixed-selection interval is reported separately",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        }
+      ],
+      "final_still": "renders/stills/s08-the-failed-gate-fixed.png"
+    },
+    "s09-the-verdict.html": {
+      "format": "landscape",
+      "duration": 28,
+      "claims": [
+        "SL-C001",
+        "SL-C144"
+      ],
+      "states": [
+        {
+          "id": "line",
+          "component": "ratio",
+          "phase": "line",
+          "cue": "The line on this chart was fixed",
+          "claims": [
+            "SL-C001"
+          ],
+          "at": 0,
+          "still": 6.95,
+          "path": "renders/stills/s09-the-verdict-line.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "The line on this chart was fixed",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "The line on this chart was fixed",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "estimate",
+          "component": "ratio",
+          "phase": "point",
+          "cue": "The measured R is 1.0198",
+          "claims": [
+            "SL-C001",
+            "SL-C144"
+          ],
+          "at": 7,
+          "still": 13.95,
+          "path": "renders/stills/s09-the-verdict-estimate.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "The measured R is 1.0198",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "The measured R is 1.0198",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "interval",
+          "component": "ratio",
+          "phase": "estimate",
+          "cue": "with an amended 95% interval from 1.0164 to 1.0231",
+          "claims": [
+            "SL-C001",
+            "SL-C144"
+          ],
+          "at": 14,
+          "still": 20.95,
+          "path": "renders/stills/s09-the-verdict-interval.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "with an amended 95% interval from 1.0164 to 1.0231",
+              "kind": "interval state"
+            },
+            {
+              "at": 0.7,
+              "cue": "with an amended 95% interval from 1.0164 to 1.0231",
+              "kind": "bar grows from the observed dot"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "component": "ratio",
+          "phase": "verdict",
+          "cue": "The entire interval is below the decision line. Belief fails.",
+          "claims": [
+            "SL-C001"
+          ],
+          "at": 21,
+          "still": 27.95,
+          "path": "renders/stills/s09-the-verdict-verdict.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "The entire interval is below the decision line. Belief fails.",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "The entire interval is below the decision line. Belief fails.",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        }
+      ],
+      "final_still": "renders/stills/s09-the-verdict-verdict.png"
+    },
+    "s10-the-checks.html": {
+      "format": "landscape",
+      "duration": 35,
+      "claims": [
+        "SL-C005",
+        "SL-C015",
+        "SL-C035",
+        "SL-C036",
+        "SL-C050",
+        "SL-C051",
+        "SL-C053",
+        "SL-C077",
+        "SL-C145"
+      ],
+      "states": [
+        {
+          "id": "variance",
+          "component": "checks",
+          "phase": "F",
+          "cue": "There is a detectable shared component",
+          "claims": [
+            "SL-C005",
+            "SL-C145"
+          ],
+          "at": 0,
+          "still": 6.95,
+          "path": "renders/stills/s10-the-checks-variance.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "There is a detectable shared component",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "There is a detectable shared component",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "coverage",
+          "component": "checks",
+          "phase": "coverage",
+          "cue": "This tier comparison excludes 597 finals",
+          "claims": [
+            "SL-C005",
+            "SL-C015"
+          ],
+          "at": 7,
+          "still": 13.95,
+          "path": "renders/stills/s10-the-checks-coverage.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "This tier comparison excludes 597 finals",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "This tier comparison excludes 597 finals",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "robust",
+          "component": "checks",
+          "phase": "robust",
+          "cue": "The seasonal result stays below the decision line",
+          "claims": [
+            "SL-C035",
+            "SL-C036",
+            "SL-C050"
+          ],
+          "at": 14,
+          "still": 20.95,
+          "path": "renders/stills/s10-the-checks-robust.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "The seasonal result stays below the decision line",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "The seasonal result stays below the decision line",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "matched",
+          "component": "checks",
+          "phase": "matched",
+          "cue": "Equal weighting of the skill tiers gives a similar ratio",
+          "claims": [
+            "SL-C051",
+            "SL-C053"
+          ],
+          "at": 21,
+          "still": 27.95,
+          "path": "renders/stills/s10-the-checks-matched.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "Equal weighting of the skill tiers gives a similar ratio",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "Equal weighting of the skill tiers gives a similar ratio",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "cross",
+          "component": "checks",
+          "phase": "cross",
+          "cue": "A geometry check links optimal cross length positively",
+          "claims": [
+            "SL-C077"
+          ],
+          "at": 28,
+          "still": 34.95,
+          "path": "renders/stills/s10-the-checks-cross.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "A geometry check links optimal cross length positively",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "A geometry check links optimal cross length positively",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        }
+      ],
+      "final_still": "renders/stills/s10-the-checks-cross.png"
+    },
+    "s11-what-remains-unknown.html": {
+      "format": "landscape",
+      "duration": 35,
+      "claims": [
+        "SL-C074",
+        "SL-C075",
+        "SL-C134",
+        "SL-C148"
+      ],
+      "states": [
+        {
+          "id": "slot",
+          "component": "limits",
+          "phase": "slot",
+          "cue": "The biggest naming limitation is the slot",
+          "claims": [
+            "SL-C148"
+          ],
+          "at": 0,
+          "still": 6.95,
+          "path": "renders/stills/s11-what-remains-unknown-slot.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "The biggest naming limitation is the slot",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "The biggest naming limitation is the slot",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "replacement",
+          "component": "limits",
+          "phase": "replacement",
+          "cue": "An extra attempt uses a different scramble",
+          "claims": [
+            "SL-C134",
+            "SL-C148"
+          ],
+          "at": 7,
+          "still": 13.95,
+          "path": "renders/stills/s11-what-remains-unknown-replacement.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "An extra attempt uses a different scramble",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "An extra attempt uses a different scramble",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "success",
+          "component": "limits",
+          "phase": "success",
+          "cue": "Then there are failures. F and R use successful solves only",
+          "claims": [
+            "SL-C148"
+          ],
+          "at": 14,
+          "still": 20.95,
+          "path": "renders/stills/s11-what-remains-unknown-success.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "Then there are failures. F and R use successful solves only",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "Then there are failures. F and R use successful solves only",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "dnf",
+          "component": "limits",
+          "phase": "dnf",
+          "cue": "Its estimated association is positive",
+          "claims": [
+            "SL-C074",
+            "SL-C075"
+          ],
+          "at": 21,
+          "still": 27.95,
+          "path": "renders/stills/s11-what-remains-unknown-dnf.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "Its estimated association is positive",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "Its estimated association is positive",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "personal",
+          "component": "limits",
+          "phase": "personal",
+          "cue": "Finally, the remaining variation includes execution",
+          "claims": [
+            "SL-C148"
+          ],
+          "at": 28,
+          "still": 34.95,
+          "path": "renders/stills/s11-what-remains-unknown-personal.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "Finally, the remaining variation includes execution",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "Finally, the remaining variation includes execution",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        }
+      ],
+      "final_still": "renders/stills/s11-what-remains-unknown-personal.png"
+    },
+    "s12-the-takeaway.html": {
+      "format": "landscape",
+      "duration": 28,
+      "claims": [
+        "SL-C001",
+        "SL-C144",
+        "SL-C148"
+      ],
+      "states": [
+        {
+          "id": "record",
+          "component": "takeaway",
+          "phase": "record",
+          "cue": "This aggregate study can't settle that particular solve",
+          "claims": [
+            "SL-C148"
+          ],
+          "at": 0,
+          "still": 6.95,
+          "path": "renders/stills/s12-the-takeaway-record.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "This aggregate study can't settle that particular solve",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "This aggregate study can't settle that particular solve",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "adjustment",
+          "component": "takeaway",
+          "phase": "adjustment",
+          "cue": "makes the time about 2% longer on average",
+          "claims": [
+            "SL-C144"
+          ],
+          "at": 7,
+          "still": 13.95,
+          "path": "renders/stills/s12-the-takeaway-adjustment.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "makes the time about 2% longer on average",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "makes the time about 2% longer on average",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "component": "takeaway",
+          "phase": "verdict",
+          "cue": "The data rule out an average shared scramble/slot boost as large as 10%",
+          "claims": [
+            "SL-C001"
+          ],
+          "at": 14,
+          "still": 20.95,
+          "path": "renders/stills/s12-the-takeaway-verdict.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "The data rule out an average shared scramble/slot boost as large as 10%",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "The data rule out an average shared scramble/slot boost as large as 10%",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "evidence",
+          "component": "takeaway",
+          "phase": "notice",
+          "cue": "The method, sources and all the checks are linked with this video.",
+          "claims": [
+            "SL-C001",
+            "SL-C144",
+            "SL-C148"
+          ],
+          "at": 21,
+          "still": 27.95,
+          "path": "renders/stills/s12-the-takeaway-evidence.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "The method, sources and all the checks are linked with this video.",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "The method, sources and all the checks are linked with this video.",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        }
+      ],
+      "final_still": "renders/stills/s12-the-takeaway-evidence.png"
+    },
+    "short-a.html": {
+      "format": "vertical",
+      "duration": 36,
+      "claims": [
+        "SL-C001",
+        "SL-C144",
+        "SL-C148"
+      ],
+      "states": [
+        {
+          "id": "hook",
+          "component": "shortA",
+          "phase": "hook",
+          "cue": "A lucky scramble sounds like an explanation for a record.",
+          "claims": [
+            "SL-C148"
+          ],
+          "at": 0,
+          "still": 5.95,
+          "path": "renders/stills/short-a-hook.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "A lucky scramble sounds like an explanation for a record.",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "A lucky scramble sounds like an explanation for a record.",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "adjustment",
+          "component": "takeaway",
+          "phase": "adjustment",
+          "cue": "The estimated adjustment is about 2%.",
+          "claims": [
+            "SL-C144"
+          ],
+          "at": 6,
+          "still": 11.95,
+          "path": "renders/stills/short-a-adjustment.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "The estimated adjustment is about 2%.",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "The estimated adjustment is about 2%.",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "ratio",
+          "component": "ratio",
+          "phase": "point",
+          "cue": "The ratio is 1.0198",
+          "claims": [
+            "SL-C001",
+            "SL-C144"
+          ],
+          "at": 12,
+          "still": 17.95,
+          "path": "renders/stills/short-a-ratio.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "The ratio is 1.0198",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "The ratio is 1.0198",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "interval",
+          "component": "ratio",
+          "phase": "estimate",
+          "cue": "with an amended 95% interval of 1.0164 to 1.0231",
+          "claims": [
+            "SL-C001",
+            "SL-C144"
+          ],
+          "at": 18,
+          "still": 23.95,
+          "path": "renders/stills/short-a-interval.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "with an amended 95% interval of 1.0164 to 1.0231",
+              "kind": "interval state"
+            },
+            {
+              "at": 0.7,
+              "cue": "with an amended 95% interval of 1.0164 to 1.0231",
+              "kind": "bar grows from the observed dot"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "component": "takeaway",
+          "phase": "verdict",
+          "cue": "The data rule out an average shared scramble/slot boost as large as 10%",
+          "claims": [
+            "SL-C001"
+          ],
+          "at": 24,
+          "still": 29.95,
+          "path": "renders/stills/short-a-verdict.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "The data rule out an average shared scramble/slot boost as large as 10%",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "The data rule out an average shared scramble/slot boost as large as 10%",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "limits",
+          "component": "shortA",
+          "phase": "limits",
+          "cue": "That doesn't measure a particular record's luck.",
+          "claims": [
+            "SL-C148"
+          ],
+          "at": 30,
+          "still": 35.95,
+          "path": "renders/stills/short-a-limits.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "That doesn't measure a particular record's luck.",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "That doesn't measure a particular record's luck.",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        }
+      ],
+      "final_still": "renders/stills/short-a-limits.png"
+    },
+    "short-b.html": {
+      "format": "vertical",
+      "duration": 24,
+      "claims": [
+        "SL-C105",
+        "SL-C138",
+        "SL-C148"
+      ],
+      "states": [
+        {
+          "id": "skip",
+          "component": "stages",
+          "phase": "park-skip",
+          "cue": "Max Park's then-record 3.13-second solve included a PLL skip",
+          "claims": [
+            "SL-C105",
+            "SL-C138"
+          ],
+          "at": 0,
+          "still": 5.95,
+          "path": "renders/stills/short-b-skip.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "Max Park's then-record 3.13-second solve included a PLL skip",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "Max Park's then-record 3.13-second solve included a PLL skip",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "route",
+          "component": "paths",
+          "phase": "paths",
+          "cue": "That's a shortcut in the solution he chose.",
+          "claims": [
+            "SL-C148"
+          ],
+          "at": 6,
+          "still": 11.95,
+          "path": "renders/stills/short-b-route.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "That's a shortcut in the solution he chose.",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "That's a shortcut in the solution he chose.",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "peers",
+          "component": "matrix",
+          "phase": "exclude",
+          "cue": "excluding the focal solver entirely",
+          "claims": [
+            "SL-C148"
+          ],
+          "at": 12,
+          "still": 17.95,
+          "path": "renders/stills/short-b-peers.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "excluding the focal solver entirely",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "excluding the focal solver entirely",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "comparison",
+          "component": "shortB",
+          "phase": "comparison",
+          "cue": "A reconstruction explains a route.",
+          "claims": [
+            "SL-C148"
+          ],
+          "at": 18,
+          "still": 23.95,
+          "path": "renders/stills/short-b-comparison.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "A reconstruction explains a route.",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "A reconstruction explains a route.",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        }
+      ],
+      "final_still": "renders/stills/short-b-comparison.png"
+    },
+    "short-c.html": {
+      "format": "vertical",
+      "duration": 24,
+      "claims": [
+        "SL-C134",
+        "SL-C148"
+      ],
+      "states": [
+        {
+          "id": "slot",
+          "component": "limits",
+          "phase": "slot",
+          "cue": "scramble number and attempt number travel together",
+          "claims": [
+            "SL-C148"
+          ],
+          "at": 0,
+          "still": 5.95,
+          "path": "renders/stills/short-c-slot.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "scramble number and attempt number travel together",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "scramble number and attempt number travel together",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "component",
+          "component": "shortC",
+          "phase": "component",
+          "cue": "That's why I call it the shared scramble/slot component.",
+          "claims": [
+            "SL-C148"
+          ],
+          "at": 6,
+          "still": 11.95,
+          "path": "renders/stills/short-c-component.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "That's why I call it the shared scramble/slot component.",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "That's why I call it the shared scramble/slot component.",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "replacement",
+          "component": "matrix",
+          "phase": "replacement",
+          "cue": "An extra attempt also uses a different scramble",
+          "claims": [
+            "SL-C134",
+            "SL-C148"
+          ],
+          "at": 12,
+          "still": 17.95,
+          "path": "renders/stills/short-c-replacement.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "An extra attempt also uses a different scramble",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "An extra attempt also uses a different scramble",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        },
+        {
+          "id": "success",
+          "component": "shortC",
+          "phase": "success",
+          "cue": "The primary estimate uses successful solves; failures are a separate endpoint.",
+          "claims": [
+            "SL-C148"
+          ],
+          "at": 18,
+          "still": 23.95,
+          "path": "renders/stills/short-c-success.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "The primary estimate uses successful solves; failures are a separate endpoint.",
+              "kind": "state"
+            },
+            {
+              "at": 0.7,
+              "cue": "The primary estimate uses successful solves; failures are a separate endpoint.",
+              "kind": "visual settle; align to spoken words during assembly"
+            }
+          ]
+        }
+      ],
+      "final_still": "renders/stills/short-c-success.png"
+    }
+  }
+}
