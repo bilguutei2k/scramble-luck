@@ -1,0 +1,2912 @@
+{
+  "status": "pre-lock",
+  "about": "PRE-LOCK DRAFT \u00b7 STORY v1 unchanged; actual Kokoro word timings; claims proposed.",
+  "voice": "af_heart",
+  "timing": "Every named state lands on its spoken written word; stable snapshots, hard cuts, strict captions and sample-contiguous cached PCM fragments.",
+  "gap": 0.45,
+  "lead": 0.4,
+  "tail": 0.9,
+  "wipe": 0.45,
+  "bridge_word_ranges": true,
+  "strict_captions": true,
+  "audio_true_peak": -1.5,
+  "calibrate_loudness": true,
+  "settled_visuals": true,
+  "deliverables": {
+    "film": {
+      "format": "landscape",
+      "title": "How lucky is a lucky scramble? \u2014 PRE-LOCK DRAFT",
+      "shots": [
+        {
+          "scene": "s01-lucky-scramble",
+          "bg": "night",
+          "in": "cut",
+          "lines": [
+            "S01",
+            [
+              0
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              15
+            ]
+          ],
+          "about": "S01 \u00b7 line 0 \u00b7 words 0\u201315",
+          "cues": [
+            {
+              "t": 0,
+              "line": 0
+            },
+            {
+              "t": 0,
+              "line": 0,
+              "word": "A",
+              "nth": 1
+            }
+          ],
+          "end_t": 6.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s01-lucky-scramble",
+          "bg": "night",
+          "in": "cut",
+          "lines": [
+            "S01",
+            [
+              1
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              15
+            ]
+          ],
+          "about": "S01 \u00b7 line 1 \u00b7 words 0\u201315",
+          "cues": [
+            {
+              "t": 0,
+              "line": 0
+            },
+            {
+              "t": 7,
+              "line": 0,
+              "word": "WIRED",
+              "nth": 1,
+              "jump_from": 0
+            }
+          ],
+          "end_t": 13.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s01-lucky-scramble",
+          "bg": "night",
+          "in": "cut",
+          "lines": [
+            "S01",
+            [
+              2
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              22
+            ]
+          ],
+          "about": "S01 \u00b7 line 2 \u00b7 words 0\u201322",
+          "cues": [
+            {
+              "t": 13.95,
+              "line": 0
+            },
+            {
+              "t": 14,
+              "line": 0,
+              "word": "Ruwix",
+              "nth": 1,
+              "jump_from": 13.95
+            },
+            {
+              "t": 21,
+              "line": 0,
+              "word": "Yusheng",
+              "nth": 1,
+              "jump_from": 20.95
+            }
+          ],
+          "end_t": 27.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s01-lucky-scramble",
+          "bg": "night",
+          "in": "cut",
+          "lines": [
+            "S01",
+            [
+              3
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              30
+            ]
+          ],
+          "about": "S01 \u00b7 line 3 \u00b7 words 0\u201330",
+          "cues": [
+            {
+              "t": 27.95,
+              "line": 0
+            },
+            {
+              "t": 28,
+              "line": 0,
+              "word": "narrower",
+              "nth": 1,
+              "jump_from": 27.95
+            }
+          ],
+          "end_t": 34.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s01-lucky-scramble",
+          "bg": "night",
+          "in": "cut",
+          "lines": [
+            "S01",
+            [
+              4
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              21
+            ]
+          ],
+          "about": "S01 \u00b7 line 4 \u00b7 words 0\u201321",
+          "cues": [
+            {
+              "t": 34.95,
+              "line": 0
+            }
+          ],
+          "end_t": 34.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s02-the-basics",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S02",
+            [
+              0
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              23
+            ]
+          ],
+          "about": "S02 \u00b7 line 0 \u00b7 words 0\u201323",
+          "cues": [
+            {
+              "t": 0,
+              "line": 0
+            },
+            {
+              "t": 0,
+              "line": 0,
+              "word": "scramble",
+              "nth": 1
+            }
+          ],
+          "end_t": 6.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s02-the-basics",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S02",
+            [
+              1
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              24
+            ]
+          ],
+          "about": "S02 \u00b7 line 1 \u00b7 words 0\u201324",
+          "cues": [
+            {
+              "t": 0,
+              "line": 0
+            },
+            {
+              "t": 7,
+              "line": 0,
+              "word": "CFOP.",
+              "nth": 1,
+              "jump_from": 0
+            }
+          ],
+          "end_t": 13.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s02-the-basics",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S02",
+            [
+              2
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              23
+            ]
+          ],
+          "about": "S02 \u00b7 line 2 \u00b7 words 0\u201323",
+          "cues": [
+            {
+              "t": 13.95,
+              "line": 0
+            },
+            {
+              "t": 14,
+              "line": 0,
+              "word": "cross",
+              "nth": 1,
+              "jump_from": 13.95
+            }
+          ],
+          "end_t": 20.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s02-the-basics",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S02",
+            [
+              3
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              15
+            ]
+          ],
+          "about": "S02 \u00b7 line 3 \u00b7 words 0\u201315",
+          "cues": [
+            {
+              "t": 20.95,
+              "line": 0
+            },
+            {
+              "t": 21,
+              "line": 0,
+              "word": "PLL",
+              "nth": 1,
+              "jump_from": 20.95
+            }
+          ],
+          "end_t": 27.95
+        },
+        {
+          "scene": "s02-the-basics",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S02",
+            [
+              3
+            ]
+          ],
+          "word_ranges": [
+            [
+              15,
+              27
+            ]
+          ],
+          "about": "S02 \u00b7 line 3 \u00b7 words 15\u201327",
+          "cues": [
+            {
+              "t": 27.95,
+              "line": 0
+            }
+          ],
+          "end_t": 27.95
+        },
+        {
+          "scene": "s02-the-basics",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S02",
+            [
+              4
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              29
+            ]
+          ],
+          "about": "S02 \u00b7 line 4 \u00b7 words 0\u201329",
+          "cues": [
+            {
+              "t": 27.95,
+              "line": 0
+            },
+            {
+              "t": 28,
+              "line": 0,
+              "word": "average",
+              "nth": 1,
+              "jump_from": 27.95
+            }
+          ],
+          "end_t": 34.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s03-the-obvious-answer",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S03",
+            [
+              0
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              16
+            ]
+          ],
+          "about": "S03 \u00b7 line 0 \u00b7 words 0\u201316",
+          "cues": [
+            {
+              "t": 0,
+              "line": 0
+            },
+            {
+              "t": 0,
+              "line": 0,
+              "word": "reconstruction:",
+              "nth": 1
+            }
+          ],
+          "end_t": 6.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s03-the-obvious-answer",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S03",
+            [
+              1
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              21
+            ]
+          ],
+          "about": "S03 \u00b7 line 1 \u00b7 words 0\u201321",
+          "cues": [
+            {
+              "t": 0,
+              "line": 0
+            },
+            {
+              "t": 7,
+              "line": 0,
+              "word": "skip.",
+              "nth": 1,
+              "jump_from": 0
+            }
+          ],
+          "end_t": 13.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s03-the-obvious-answer",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S03",
+            [
+              2
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              19
+            ]
+          ],
+          "about": "S03 \u00b7 line 2 \u00b7 words 0\u201319",
+          "cues": [
+            {
+              "t": 13.95,
+              "line": 0
+            }
+          ],
+          "end_t": 13.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s03-the-obvious-answer",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S03",
+            [
+              3
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              16
+            ]
+          ],
+          "about": "S03 \u00b7 line 3 \u00b7 words 0\u201316",
+          "cues": [
+            {
+              "t": 13.95,
+              "line": 0
+            },
+            {
+              "t": 14,
+              "line": 0,
+              "word": "adjustment.",
+              "nth": 1,
+              "jump_from": 13.95
+            }
+          ],
+          "end_t": 20.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s03-the-obvious-answer",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S03",
+            [
+              4
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              28
+            ]
+          ],
+          "about": "S03 \u00b7 line 4 \u00b7 words 0\u201328",
+          "cues": [
+            {
+              "t": 20.95,
+              "line": 0
+            },
+            {
+              "t": 21,
+              "line": 0,
+              "word": "other",
+              "nth": 1,
+              "jump_from": 20.95
+            }
+          ],
+          "end_t": 27.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s04-the-flaw",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S04",
+            [
+              0
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              18
+            ]
+          ],
+          "about": "S04 \u00b7 line 0 \u00b7 words 0\u201318",
+          "cues": [
+            {
+              "t": 0,
+              "line": 0
+            },
+            {
+              "t": 0,
+              "line": 0,
+              "word": "diagram",
+              "nth": 1
+            }
+          ],
+          "end_t": 6.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s04-the-flaw",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S04",
+            [
+              1
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              29
+            ]
+          ],
+          "about": "S04 \u00b7 line 1 \u00b7 words 0\u201329",
+          "cues": [
+            {
+              "t": 0,
+              "line": 0
+            }
+          ],
+          "end_t": 6.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s04-the-flaw",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S04",
+            [
+              2
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              23
+            ]
+          ],
+          "about": "S04 \u00b7 line 2 \u00b7 words 0\u201323",
+          "cues": [
+            {
+              "t": 0,
+              "line": 0
+            },
+            {
+              "t": 7,
+              "line": 0,
+              "word": "execute",
+              "nth": 1,
+              "jump_from": 0
+            }
+          ],
+          "end_t": 13.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s04-the-flaw",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S04",
+            [
+              3
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              32
+            ]
+          ],
+          "about": "S04 \u00b7 line 3 \u00b7 words 0\u201332",
+          "cues": [
+            {
+              "t": 13.95,
+              "line": 0
+            },
+            {
+              "t": 14,
+              "line": 0,
+              "word": "peers",
+              "nth": 1,
+              "jump_from": 13.95
+            }
+          ],
+          "end_t": 20.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s05-the-scope",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S05",
+            [
+              0
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              14
+            ]
+          ],
+          "about": "S05 \u00b7 line 0 \u00b7 words 0\u201314",
+          "cues": [
+            {
+              "t": 0,
+              "line": 0
+            },
+            {
+              "t": 0,
+              "line": 0,
+              "word": "WCA",
+              "nth": 1
+            }
+          ],
+          "end_t": 6.95
+        },
+        {
+          "scene": "s05-the-scope",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S05",
+            [
+              0
+            ]
+          ],
+          "word_ranges": [
+            [
+              14,
+              34
+            ]
+          ],
+          "about": "S05 \u00b7 line 0 \u00b7 words 14\u201334",
+          "cues": [
+            {
+              "t": 0,
+              "line": 0
+            }
+          ],
+          "end_t": 6.95
+        },
+        {
+          "scene": "s05-the-scope",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S05",
+            [
+              1
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              15
+            ]
+          ],
+          "about": "S05 \u00b7 line 1 \u00b7 words 0\u201315",
+          "cues": [
+            {
+              "t": 0,
+              "line": 0
+            },
+            {
+              "t": 7,
+              "line": 0,
+              "word": "held",
+              "nth": 1,
+              "jump_from": 0
+            }
+          ],
+          "end_t": 13.95
+        },
+        {
+          "scene": "s05-the-scope",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S05",
+            [
+              1
+            ]
+          ],
+          "word_ranges": [
+            [
+              15,
+              30
+            ]
+          ],
+          "about": "S05 \u00b7 line 1 \u00b7 words 15\u201330",
+          "cues": [
+            {
+              "t": 13.95,
+              "line": 0
+            }
+          ],
+          "end_t": 13.95
+        },
+        {
+          "scene": "s05-the-scope",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S05",
+            [
+              2
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              11
+            ]
+          ],
+          "about": "S05 \u00b7 line 2 \u00b7 words 0\u201311",
+          "cues": [
+            {
+              "t": 13.95,
+              "line": 0
+            },
+            {
+              "t": 14,
+              "line": 0,
+              "word": "5,017",
+              "nth": 1,
+              "jump_from": 13.95
+            },
+            {
+              "t": 21,
+              "line": 0,
+              "word": "306,155",
+              "nth": 1,
+              "jump_from": 20.95
+            }
+          ],
+          "end_t": 27.95
+        },
+        {
+          "scene": "s05-the-scope",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S05",
+            [
+              2
+            ]
+          ],
+          "word_ranges": [
+            [
+              11,
+              24
+            ]
+          ],
+          "about": "S05 \u00b7 line 2 \u00b7 words 11\u201324",
+          "cues": [
+            {
+              "t": 27.95,
+              "line": 0
+            },
+            {
+              "t": 28,
+              "line": 0,
+              "word": "3,313",
+              "nth": 1,
+              "jump_from": 27.95
+            }
+          ],
+          "end_t": 34.95
+        },
+        {
+          "scene": "s05-the-scope",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S05",
+            [
+              3
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              17
+            ]
+          ],
+          "about": "S05 \u00b7 line 3 \u00b7 words 0\u201317",
+          "cues": [
+            {
+              "t": 34.95,
+              "line": 0
+            }
+          ],
+          "end_t": 34.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s06-listen-to-the-peers",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S06",
+            [
+              0
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              17
+            ]
+          ],
+          "about": "S06 \u00b7 line 0 \u00b7 words 0\u201317",
+          "cues": [
+            {
+              "t": 0,
+              "line": 0
+            },
+            {
+              "t": 0,
+              "line": 0,
+              "word": "row",
+              "nth": 1
+            }
+          ],
+          "end_t": 6.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s06-listen-to-the-peers",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S06",
+            [
+              1
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              25
+            ]
+          ],
+          "about": "S06 \u00b7 line 1 \u00b7 words 0\u201325",
+          "cues": [
+            {
+              "t": 0,
+              "line": 0
+            },
+            {
+              "t": 7,
+              "line": 0,
+              "word": "compare",
+              "nth": 1,
+              "jump_from": 0
+            }
+          ],
+          "end_t": 13.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s06-listen-to-the-peers",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S06",
+            [
+              2
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              32
+            ]
+          ],
+          "about": "S06 \u00b7 line 2 \u00b7 words 0\u201332",
+          "cues": [
+            {
+              "t": 13.95,
+              "line": 0
+            },
+            {
+              "t": 14,
+              "line": 0,
+              "word": "favorable",
+              "nth": 1,
+              "jump_from": 13.95
+            }
+          ],
+          "end_t": 20.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s06-listen-to-the-peers",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S06",
+            [
+              3
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              27
+            ]
+          ],
+          "about": "S06 \u00b7 line 3 \u00b7 words 0\u201327",
+          "cues": [
+            {
+              "t": 20.95,
+              "line": 0
+            },
+            {
+              "t": 21,
+              "line": 0,
+              "word": "remove",
+              "nth": 1,
+              "jump_from": 20.95
+            }
+          ],
+          "end_t": 27.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s06-listen-to-the-peers",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S06",
+            [
+              4
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              19
+            ]
+          ],
+          "about": "S06 \u00b7 line 4 \u00b7 words 0\u201319",
+          "cues": [
+            {
+              "t": 27.95,
+              "line": 0
+            },
+            {
+              "t": 28,
+              "line": 0,
+              "word": "noise",
+              "nth": 1,
+              "jump_from": 27.95
+            }
+          ],
+          "end_t": 34.95
+        },
+        {
+          "scene": "s06-listen-to-the-peers",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S06",
+            [
+              4
+            ]
+          ],
+          "word_ranges": [
+            [
+              19,
+              34
+            ]
+          ],
+          "about": "S06 \u00b7 line 4 \u00b7 words 19\u201334",
+          "cues": [
+            {
+              "t": 34.95,
+              "line": 0
+            }
+          ],
+          "end_t": 34.95
+        },
+        {
+          "scene": "s07-the-seasonal-best",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S07",
+            [
+              0
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              26
+            ]
+          ],
+          "about": "S07 \u00b7 line 0 \u00b7 words 0\u201326",
+          "cues": [
+            {
+              "t": 0,
+              "line": 0
+            },
+            {
+              "t": 0,
+              "line": 0,
+              "word": "select",
+              "nth": 1
+            }
+          ],
+          "end_t": 6.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s07-the-seasonal-best",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S07",
+            [
+              1
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              26
+            ]
+          ],
+          "about": "S07 \u00b7 line 1 \u00b7 words 0\u201326",
+          "cues": [
+            {
+              "t": 0,
+              "line": 0
+            },
+            {
+              "t": 7,
+              "line": 0,
+              "word": "remove",
+              "nth": 1,
+              "jump_from": 0
+            }
+          ],
+          "end_t": 13.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s07-the-seasonal-best",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S07",
+            [
+              2
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              17
+            ]
+          ],
+          "about": "S07 \u00b7 line 2 \u00b7 words 0\u201317",
+          "cues": [
+            {
+              "t": 13.95,
+              "line": 0
+            }
+          ],
+          "end_t": 13.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s07-the-seasonal-best",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S07",
+            [
+              3
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              12
+            ]
+          ],
+          "about": "S07 \u00b7 line 3 \u00b7 words 0\u201312",
+          "cues": [
+            {
+              "t": 13.95,
+              "line": 0
+            },
+            {
+              "t": 14,
+              "line": 0,
+              "word": "geometrically,",
+              "nth": 1,
+              "jump_from": 13.95
+            }
+          ],
+          "end_t": 20.95
+        },
+        {
+          "scene": "s07-the-seasonal-best",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S07",
+            [
+              3
+            ]
+          ],
+          "word_ranges": [
+            [
+              12,
+              25
+            ]
+          ],
+          "about": "S07 \u00b7 line 3 \u00b7 words 12\u201325",
+          "cues": [
+            {
+              "t": 20.95,
+              "line": 0
+            }
+          ],
+          "end_t": 20.95
+        },
+        {
+          "scene": "s07-the-seasonal-best",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S07",
+            [
+              4
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              28
+            ]
+          ],
+          "about": "S07 \u00b7 line 4 \u00b7 words 0\u201328",
+          "cues": [
+            {
+              "t": 20.95,
+              "line": 0
+            },
+            {
+              "t": 21,
+              "line": 0,
+              "word": "separate",
+              "nth": 1,
+              "jump_from": 20.95
+            }
+          ],
+          "end_t": 27.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s08-the-failed-gate",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S08",
+            [
+              0
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              18
+            ]
+          ],
+          "about": "S08 \u00b7 line 0 \u00b7 words 0\u201318",
+          "cues": [
+            {
+              "t": 0,
+              "line": 0
+            },
+            {
+              "t": 0,
+              "line": 0,
+              "word": "Before",
+              "nth": 1
+            }
+          ],
+          "end_t": 6.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s08-the-failed-gate",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S08",
+            [
+              1
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              12
+            ]
+          ],
+          "about": "S08 \u00b7 line 1 \u00b7 words 0\u201312",
+          "cues": [
+            {
+              "t": 0,
+              "line": 0
+            },
+            {
+              "t": 7,
+              "line": 0,
+              "word": "failed.",
+              "nth": 1,
+              "jump_from": 0
+            }
+          ],
+          "end_t": 13.95,
+          "tail": 1.5249999999999995
+        },
+        {
+          "scene": "s08-the-failed-gate",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S08",
+            [
+              2
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              19
+            ]
+          ],
+          "about": "S08 \u00b7 line 2 \u00b7 words 0\u201319",
+          "cues": [
+            {
+              "t": 13.95,
+              "line": 0
+            },
+            {
+              "t": 14,
+              "line": 0,
+              "word": "amendment",
+              "nth": 1,
+              "jump_from": 13.95
+            }
+          ],
+          "end_t": 20.95
+        },
+        {
+          "scene": "s08-the-failed-gate",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S08",
+            [
+              2
+            ]
+          ],
+          "word_ranges": [
+            [
+              19,
+              37
+            ]
+          ],
+          "about": "S08 \u00b7 line 2 \u00b7 words 19\u201337",
+          "cues": [
+            {
+              "t": 20.95,
+              "line": 0
+            },
+            {
+              "t": 21,
+              "line": 0,
+              "word": "passed",
+              "nth": 1,
+              "jump_from": 20.95
+            }
+          ],
+          "end_t": 27.95
+        },
+        {
+          "scene": "s08-the-failed-gate",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S08",
+            [
+              3
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              19
+            ]
+          ],
+          "about": "S08 \u00b7 line 3 \u00b7 words 0\u201319",
+          "cues": [
+            {
+              "t": 27.95,
+              "line": 0
+            }
+          ],
+          "end_t": 27.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s08-the-failed-gate",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S08",
+            [
+              4
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              14
+            ]
+          ],
+          "about": "S08 \u00b7 line 4 \u00b7 words 0\u201314",
+          "cues": [
+            {
+              "t": 27.95,
+              "line": 0
+            },
+            {
+              "t": 28,
+              "line": 0,
+              "word": "fixed-selection",
+              "nth": 1,
+              "jump_from": 27.95
+            }
+          ],
+          "end_t": 34.95
+        },
+        {
+          "scene": "s08-the-failed-gate",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S08",
+            [
+              4
+            ]
+          ],
+          "word_ranges": [
+            [
+              14,
+              29
+            ]
+          ],
+          "about": "S08 \u00b7 line 4 \u00b7 words 14\u201329",
+          "cues": [
+            {
+              "t": 34.95,
+              "line": 0
+            }
+          ],
+          "end_t": 34.95
+        },
+        {
+          "scene": "s09-the-verdict",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S09",
+            [
+              0
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              26
+            ]
+          ],
+          "about": "S09 \u00b7 line 0 \u00b7 words 0\u201326",
+          "cues": [
+            {
+              "t": 0,
+              "line": 0
+            },
+            {
+              "t": 0,
+              "line": 0,
+              "word": "line",
+              "nth": 1
+            }
+          ],
+          "end_t": 6.95,
+          "reveals": [
+            {
+              "selector": ".sl-state[data-state=\"line\"] .sl-reference",
+              "line": 0,
+              "word": "1.10,",
+              "nth": 1
+            },
+            {
+              "selector": ".sl-state[data-state=\"line\"] .caption",
+              "line": 0,
+              "word": "10%",
+              "nth": 1
+            },
+            {
+              "selector": ".sl-state[data-state=\"interval\"] .caption",
+              "hidden": true
+            },
+            {
+              "selector": ".sl-state[data-state=\"interval\"] [data-value-key=\"primary.R_geometric_person_year.interval_95[0]\"]",
+              "hidden": true
+            },
+            {
+              "selector": ".sl-state[data-state=\"interval\"] [data-value-key=\"primary.R_geometric_person_year.interval_95[1]\"]",
+              "hidden": true
+            },
+            {
+              "selector": ".sl-state[data-state=\"interval\"] .sl-interval",
+              "hidden": true
+            }
+          ],
+          "tail": 0.9
+        },
+        {
+          "scene": "s09-the-verdict",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S09",
+            [
+              1
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              12
+            ]
+          ],
+          "about": "S09 \u00b7 line 1 \u00b7 words 0\u201312",
+          "cues": [
+            {
+              "t": 0,
+              "line": 0
+            },
+            {
+              "t": 7,
+              "line": 0,
+              "word": "1.0198,",
+              "nth": 1,
+              "jump_from": 0
+            },
+            {
+              "t": 14,
+              "line": 0,
+              "word": "95%",
+              "nth": 1,
+              "jump_from": 13.95
+            }
+          ],
+          "end_t": 20.95,
+          "reveals": [
+            {
+              "selector": ".sl-state[data-state=\"interval\"] .caption",
+              "hidden": true
+            },
+            {
+              "selector": ".sl-state[data-state=\"interval\"] [data-value-key=\"primary.R_geometric_person_year.interval_95[0]\"]",
+              "line": 0,
+              "word": "1.0164",
+              "nth": 1
+            },
+            {
+              "selector": ".sl-state[data-state=\"interval\"] [data-value-key=\"primary.R_geometric_person_year.interval_95[1]\"]",
+              "hidden": true
+            },
+            {
+              "selector": ".sl-state[data-state=\"interval\"] .sl-interval",
+              "hidden": true
+            }
+          ]
+        },
+        {
+          "scene": "s09-the-verdict",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S09",
+            [
+              1
+            ]
+          ],
+          "word_ranges": [
+            [
+              12,
+              23
+            ]
+          ],
+          "about": "S09 \u00b7 line 1 \u00b7 words 12\u201323",
+          "cues": [
+            {
+              "t": 20.95,
+              "line": 0
+            },
+            {
+              "t": 21,
+              "line": 0,
+              "word": "2%.",
+              "nth": 1,
+              "jump_from": 20.95
+            }
+          ],
+          "end_t": 27.95,
+          "reveals": [
+            {
+              "selector": ".sl-state[data-state=\"interval\"] .caption",
+              "hidden": true
+            },
+            {
+              "selector": ".sl-state[data-state=\"interval\"] [data-value-key=\"primary.R_geometric_person_year.interval_95[1]\"]",
+              "line": 0,
+              "word": "1.0231.",
+              "nth": 1
+            },
+            {
+              "selector": ".sl-state[data-state=\"interval\"] .sl-interval",
+              "line": 0,
+              "word": "1.0231.",
+              "nth": 1
+            }
+          ]
+        },
+        {
+          "scene": "s09-the-verdict",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S09",
+            [
+              2
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              10
+            ]
+          ],
+          "about": "S09 \u00b7 line 2 \u00b7 words 0\u201310",
+          "cues": [
+            {
+              "t": 27.95,
+              "line": 0
+            },
+            {
+              "t": 28,
+              "line": 0,
+              "word": "fails.",
+              "nth": 1,
+              "jump_from": 27.95
+            }
+          ],
+          "end_t": 34.95,
+          "reveals": [
+            {
+              "selector": ".sl-state[data-state=\"interval\"] .caption",
+              "line": 0,
+              "word": "below",
+              "nth": 1
+            }
+          ],
+          "tail": 1.1749999999999998
+        },
+        {
+          "scene": "s09-the-verdict",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S09",
+            [
+              3
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              17
+            ]
+          ],
+          "about": "S09 \u00b7 line 3 \u00b7 words 0\u201317",
+          "cues": [
+            {
+              "t": 34.95,
+              "line": 0
+            }
+          ],
+          "end_t": 34.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s09-the-verdict",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S09",
+            [
+              4
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              26
+            ]
+          ],
+          "about": "S09 \u00b7 line 4 \u00b7 words 0\u201326",
+          "cues": [
+            {
+              "t": 34.95,
+              "line": 0
+            }
+          ],
+          "end_t": 34.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s10-the-checks",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S10",
+            [
+              0
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              11
+            ]
+          ],
+          "about": "S10 \u00b7 line 0 \u00b7 words 0\u201311",
+          "cues": [
+            {
+              "t": 0,
+              "line": 0
+            },
+            {
+              "t": 0,
+              "line": 0,
+              "word": "4.7%",
+              "nth": 1
+            }
+          ],
+          "end_t": 6.95,
+          "reveals": [
+            {
+              "selector": ".sl-state[data-state=\"variance\"] .number",
+              "line": 0,
+              "word": "4.7%",
+              "nth": 1
+            },
+            {
+              "selector": ".sl-state[data-state=\"variance\"] .label:has([data-value-key*=\"interval_95\"])",
+              "hidden": true
+            }
+          ]
+        },
+        {
+          "scene": "s10-the-checks",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S10",
+            [
+              0
+            ]
+          ],
+          "word_ranges": [
+            [
+              11,
+              27
+            ]
+          ],
+          "about": "S10 \u00b7 line 0 \u00b7 words 11\u201327",
+          "cues": [
+            {
+              "t": 0,
+              "line": 0
+            }
+          ],
+          "end_t": 6.95,
+          "reveals": [
+            {
+              "selector": ".sl-state[data-state=\"variance\"] .label:has([data-value-key*=\"interval_95\"])",
+              "line": 0,
+              "word": "interval",
+              "nth": 1
+            }
+          ]
+        },
+        {
+          "scene": "s10-the-checks",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S10",
+            [
+              1
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              13
+            ]
+          ],
+          "about": "S10 \u00b7 line 1 \u00b7 words 0\u201313",
+          "cues": [
+            {
+              "t": 0,
+              "line": 0
+            },
+            {
+              "t": 7,
+              "line": 0,
+              "word": "597",
+              "nth": 1,
+              "jump_from": 0
+            }
+          ],
+          "end_t": 13.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s10-the-checks",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S10",
+            [
+              2
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              22
+            ]
+          ],
+          "about": "S10 \u00b7 line 2 \u00b7 words 0\u201322",
+          "cues": [
+            {
+              "t": 13.95,
+              "line": 0
+            },
+            {
+              "t": 14,
+              "line": 0,
+              "word": "below",
+              "nth": 1,
+              "jump_from": 13.95
+            }
+          ],
+          "end_t": 20.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s10-the-checks",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S10",
+            [
+              3
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              28
+            ]
+          ],
+          "about": "S10 \u00b7 line 3 \u00b7 words 0\u201328",
+          "cues": [
+            {
+              "t": 20.95,
+              "line": 0
+            },
+            {
+              "t": 21,
+              "line": 0,
+              "word": "similar",
+              "nth": 1,
+              "jump_from": 20.95
+            }
+          ],
+          "end_t": 27.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s10-the-checks",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S10",
+            [
+              4
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              16
+            ]
+          ],
+          "about": "S10 \u00b7 line 4 \u00b7 words 0\u201316",
+          "cues": [
+            {
+              "t": 27.95,
+              "line": 0
+            },
+            {
+              "t": 28,
+              "line": 0,
+              "word": "geometry",
+              "nth": 1,
+              "jump_from": 27.95
+            }
+          ],
+          "end_t": 34.95
+        },
+        {
+          "scene": "s10-the-checks",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S10",
+            [
+              4
+            ]
+          ],
+          "word_ranges": [
+            [
+              16,
+              31
+            ]
+          ],
+          "about": "S10 \u00b7 line 4 \u00b7 words 16\u201331",
+          "cues": [
+            {
+              "t": 34.95,
+              "line": 0
+            }
+          ],
+          "end_t": 34.95
+        },
+        {
+          "scene": "s11-what-remains-unknown",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S11",
+            [
+              0
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              21
+            ]
+          ],
+          "about": "S11 \u00b7 line 0 \u00b7 words 0\u201321",
+          "cues": [
+            {
+              "t": 0,
+              "line": 0
+            },
+            {
+              "t": 0,
+              "line": 0,
+              "word": "slot.",
+              "nth": 1
+            }
+          ],
+          "end_t": 6.95
+        },
+        {
+          "scene": "s11-what-remains-unknown",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S11",
+            [
+              0
+            ]
+          ],
+          "word_ranges": [
+            [
+              21,
+              41
+            ]
+          ],
+          "about": "S11 \u00b7 line 0 \u00b7 words 21\u201341",
+          "cues": [
+            {
+              "t": 0,
+              "line": 0
+            }
+          ],
+          "end_t": 6.95
+        },
+        {
+          "scene": "s11-what-remains-unknown",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S11",
+            [
+              1
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              25
+            ]
+          ],
+          "about": "S11 \u00b7 line 1 \u00b7 words 0\u201325",
+          "cues": [
+            {
+              "t": 0,
+              "line": 0
+            },
+            {
+              "t": 7,
+              "line": 0,
+              "word": "extra",
+              "nth": 1,
+              "jump_from": 0
+            }
+          ],
+          "end_t": 13.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s11-what-remains-unknown",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S11",
+            [
+              2
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              20
+            ]
+          ],
+          "about": "S11 \u00b7 line 2 \u00b7 words 0\u201320",
+          "cues": [
+            {
+              "t": 13.95,
+              "line": 0
+            },
+            {
+              "t": 14,
+              "line": 0,
+              "word": "failures.",
+              "nth": 1,
+              "jump_from": 13.95
+            }
+          ],
+          "end_t": 20.95
+        },
+        {
+          "scene": "s11-what-remains-unknown",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S11",
+            [
+              2
+            ]
+          ],
+          "word_ranges": [
+            [
+              20,
+              34
+            ]
+          ],
+          "about": "S11 \u00b7 line 2 \u00b7 words 20\u201334",
+          "cues": [
+            {
+              "t": 20.95,
+              "line": 0
+            }
+          ],
+          "end_t": 20.95
+        },
+        {
+          "scene": "s11-what-remains-unknown",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S11",
+            [
+              3
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              13
+            ]
+          ],
+          "about": "S11 \u00b7 line 3 \u00b7 words 0\u201313",
+          "cues": [
+            {
+              "t": 20.95,
+              "line": 0
+            },
+            {
+              "t": 21,
+              "line": 0,
+              "word": "positive,",
+              "nth": 1,
+              "jump_from": 20.95
+            }
+          ],
+          "end_t": 27.95
+        },
+        {
+          "scene": "s11-what-remains-unknown",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S11",
+            [
+              3
+            ]
+          ],
+          "word_ranges": [
+            [
+              13,
+              28
+            ]
+          ],
+          "about": "S11 \u00b7 line 3 \u00b7 words 13\u201328",
+          "cues": [
+            {
+              "t": 27.95,
+              "line": 0
+            }
+          ],
+          "end_t": 27.95
+        },
+        {
+          "scene": "s11-what-remains-unknown",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S11",
+            [
+              4
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              17
+            ]
+          ],
+          "about": "S11 \u00b7 line 4 \u00b7 words 0\u201317",
+          "cues": [
+            {
+              "t": 27.95,
+              "line": 0
+            },
+            {
+              "t": 28,
+              "line": 0,
+              "word": "remaining",
+              "nth": 1,
+              "jump_from": 27.95
+            }
+          ],
+          "end_t": 34.95
+        },
+        {
+          "scene": "s11-what-remains-unknown",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "S11",
+            [
+              4
+            ]
+          ],
+          "word_ranges": [
+            [
+              17,
+              39
+            ]
+          ],
+          "about": "S11 \u00b7 line 4 \u00b7 words 17\u201339",
+          "cues": [
+            {
+              "t": 34.95,
+              "line": 0
+            }
+          ],
+          "end_t": 34.95
+        },
+        {
+          "scene": "s12-the-takeaway",
+          "bg": "night",
+          "in": "cut",
+          "lines": [
+            "S12",
+            [
+              0
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              15
+            ]
+          ],
+          "about": "S12 \u00b7 line 0 \u00b7 words 0\u201315",
+          "cues": [
+            {
+              "t": 0,
+              "line": 0
+            },
+            {
+              "t": 0,
+              "line": 0,
+              "word": "aggregate",
+              "nth": 1
+            }
+          ],
+          "end_t": 6.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s12-the-takeaway",
+          "bg": "night",
+          "in": "cut",
+          "lines": [
+            "S12",
+            [
+              1
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              23
+            ]
+          ],
+          "about": "S12 \u00b7 line 1 \u00b7 words 0\u201323",
+          "cues": [
+            {
+              "t": 0,
+              "line": 0
+            },
+            {
+              "t": 7,
+              "line": 0,
+              "word": "2%",
+              "nth": 1,
+              "jump_from": 0
+            }
+          ],
+          "end_t": 13.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s12-the-takeaway",
+          "bg": "night",
+          "in": "cut",
+          "lines": [
+            "S12",
+            [
+              2
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              17
+            ]
+          ],
+          "about": "S12 \u00b7 line 2 \u00b7 words 0\u201317",
+          "cues": [
+            {
+              "t": 13.95,
+              "line": 0
+            },
+            {
+              "t": 14,
+              "line": 0,
+              "word": "rule",
+              "nth": 1,
+              "jump_from": 13.95
+            }
+          ],
+          "end_t": 20.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "s12-the-takeaway",
+          "bg": "night",
+          "in": "cut",
+          "lines": [
+            "S12",
+            [
+              3
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              35
+            ]
+          ],
+          "about": "S12 \u00b7 line 3 \u00b7 words 0\u201335",
+          "cues": [
+            {
+              "t": 20.95,
+              "line": 0
+            },
+            {
+              "t": 21,
+              "line": 0,
+              "word": "linked",
+              "nth": 1,
+              "jump_from": 20.95
+            }
+          ],
+          "end_t": 27.95,
+          "tail": 0.9
+        }
+      ]
+    },
+    "short-a": {
+      "format": "vertical",
+      "title": "short-a \u2014 PRE-LOCK DRAFT",
+      "shots": [
+        {
+          "scene": "short-a",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "Short A",
+            [
+              0
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              27
+            ]
+          ],
+          "about": "Short A \u00b7 line 0 \u00b7 words 0\u201327",
+          "cues": [
+            {
+              "t": 0,
+              "line": 0
+            },
+            {
+              "t": 0,
+              "line": 0,
+              "word": "A",
+              "nth": 1
+            }
+          ],
+          "lead": 0.15,
+          "end_t": 5.95,
+          "reveals": [
+            {
+              "selector": ".sl-reference",
+              "hidden": true
+            },
+            {
+              "selector": ".sl-state[data-state=\"interval\"] [data-value-key=\"primary.R_geometric_person_year.interval_95[0]\"]",
+              "hidden": true
+            },
+            {
+              "selector": ".sl-state[data-state=\"interval\"] [data-value-key=\"primary.R_geometric_person_year.interval_95[1]\"]",
+              "hidden": true
+            },
+            {
+              "selector": ".sl-state[data-state=\"interval\"] .sl-interval",
+              "hidden": true
+            }
+          ],
+          "tail": 0.9
+        },
+        {
+          "scene": "short-a",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "Short A",
+            [
+              1
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              10
+            ]
+          ],
+          "about": "Short A \u00b7 line 1 \u00b7 words 0\u201310",
+          "cues": [
+            {
+              "t": 0,
+              "line": 0
+            },
+            {
+              "t": 6,
+              "line": 0,
+              "word": "2%.",
+              "nth": 1,
+              "jump_from": 0
+            },
+            {
+              "t": 12,
+              "line": 0,
+              "word": "1.0198,",
+              "nth": 1,
+              "jump_from": 11.95
+            }
+          ],
+          "end_t": 17.95,
+          "reveals": [
+            {
+              "selector": ".sl-reference",
+              "hidden": true
+            },
+            {
+              "selector": ".sl-state[data-state=\"interval\"] [data-value-key=\"primary.R_geometric_person_year.interval_95[0]\"]",
+              "hidden": true
+            },
+            {
+              "selector": ".sl-state[data-state=\"interval\"] [data-value-key=\"primary.R_geometric_person_year.interval_95[1]\"]",
+              "hidden": true
+            },
+            {
+              "selector": ".sl-state[data-state=\"interval\"] .sl-interval",
+              "hidden": true
+            }
+          ]
+        },
+        {
+          "scene": "short-a",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "Short A",
+            [
+              1
+            ]
+          ],
+          "word_ranges": [
+            [
+              10,
+              19
+            ]
+          ],
+          "about": "Short A \u00b7 line 1 \u00b7 words 10\u201319",
+          "cues": [
+            {
+              "t": 17.95,
+              "line": 0
+            },
+            {
+              "t": 18,
+              "line": 0,
+              "word": "95%",
+              "nth": 1,
+              "jump_from": 17.95
+            }
+          ],
+          "end_t": 23.95,
+          "reveals": [
+            {
+              "selector": ".sl-reference",
+              "hidden": true
+            },
+            {
+              "selector": ".sl-state[data-state=\"interval\"] [data-value-key=\"primary.R_geometric_person_year.interval_95[0]\"]",
+              "line": 0,
+              "word": "1.0164",
+              "nth": 1
+            },
+            {
+              "selector": ".sl-state[data-state=\"interval\"] [data-value-key=\"primary.R_geometric_person_year.interval_95[1]\"]",
+              "line": 0,
+              "word": "1.0231.",
+              "nth": 1
+            },
+            {
+              "selector": ".sl-state[data-state=\"interval\"] .sl-interval",
+              "line": 0,
+              "word": "1.0231.",
+              "nth": 1
+            }
+          ]
+        },
+        {
+          "scene": "short-a",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "Short A",
+            [
+              2
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              17
+            ]
+          ],
+          "about": "Short A \u00b7 line 2 \u00b7 words 0\u201317",
+          "cues": [
+            {
+              "t": 23.95,
+              "line": 0
+            },
+            {
+              "t": 24,
+              "line": 0,
+              "word": "rule",
+              "nth": 1,
+              "jump_from": 23.95
+            }
+          ],
+          "end_t": 29.95,
+          "reveals": [
+            {
+              "selector": ".sl-reference",
+              "line": 0,
+              "word": "10%",
+              "nth": 1
+            }
+          ],
+          "tail": 0.9
+        },
+        {
+          "scene": "short-a",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "Short A",
+            [
+              3
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              22
+            ]
+          ],
+          "about": "Short A \u00b7 line 3 \u00b7 words 0\u201322",
+          "cues": [
+            {
+              "t": 29.95,
+              "line": 0
+            },
+            {
+              "t": 30,
+              "line": 0,
+              "word": "doesn't",
+              "nth": 1,
+              "jump_from": 29.95
+            }
+          ],
+          "end_t": 35.95,
+          "tail": 0.9
+        }
+      ]
+    },
+    "short-b": {
+      "format": "vertical",
+      "title": "short-b \u2014 PRE-LOCK DRAFT",
+      "shots": [
+        {
+          "scene": "short-b",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "Short B",
+            [
+              0
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              18
+            ]
+          ],
+          "about": "Short B \u00b7 line 0 \u00b7 words 0\u201318",
+          "cues": [
+            {
+              "t": 0,
+              "line": 0
+            },
+            {
+              "t": 0,
+              "line": 0,
+              "word": "Max",
+              "nth": 1
+            }
+          ],
+          "lead": 0.15,
+          "end_t": 5.95,
+          "reveals": [
+            {
+              "selector": ".sl-state[data-state=\"skip\"] .ft-measure-card:first-child .ft-measure-content",
+              "line": 0,
+              "word": "PLL",
+              "nth": 1
+            },
+            {
+              "selector": ".sl-state[data-state=\"skip\"] .ft-measure-card:last-child .ft-measure-content",
+              "line": 0,
+              "word": "alignment",
+              "nth": 1
+            },
+            {
+              "selector": ".sl-state[data-state=\"skip\"] .sl-pending-skip",
+              "line": 0,
+              "word": "PLL",
+              "nth": 1,
+              "hide_after": true
+            },
+            {
+              "selector": ".sl-state[data-state=\"skip\"] .sl-pending-align",
+              "line": 0,
+              "word": "alignment",
+              "nth": 1,
+              "hide_after": true
+            }
+          ],
+          "tail": 0.9
+        },
+        {
+          "scene": "short-b",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "Short B",
+            [
+              1
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              20
+            ]
+          ],
+          "about": "Short B \u00b7 line 1 \u00b7 words 0\u201320",
+          "cues": [
+            {
+              "t": 0,
+              "line": 0
+            },
+            {
+              "t": 6,
+              "line": 0,
+              "word": "shortcut",
+              "nth": 1,
+              "jump_from": 0
+            }
+          ],
+          "end_t": 11.95,
+          "reveals": [
+            {
+              "selector": ".sl-state[data-state=\"skip\"] .sl-pending-skip",
+              "hidden": true
+            },
+            {
+              "selector": ".sl-state[data-state=\"skip\"] .sl-pending-align",
+              "hidden": true
+            }
+          ],
+          "tail": 0.9
+        },
+        {
+          "scene": "short-b",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "Short B",
+            [
+              2
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              21
+            ]
+          ],
+          "about": "Short B \u00b7 line 2 \u00b7 words 0\u201321",
+          "cues": [
+            {
+              "t": 11.95,
+              "line": 0
+            },
+            {
+              "t": 12,
+              "line": 0,
+              "word": "excluding",
+              "nth": 1,
+              "jump_from": 11.95
+            }
+          ],
+          "end_t": 17.95,
+          "reveals": [
+            {
+              "selector": ".sl-state[data-state=\"skip\"] .sl-pending-skip",
+              "hidden": true
+            },
+            {
+              "selector": ".sl-state[data-state=\"skip\"] .sl-pending-align",
+              "hidden": true
+            }
+          ],
+          "tail": 0.9
+        },
+        {
+          "scene": "short-b",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "Short B",
+            [
+              3
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              22
+            ]
+          ],
+          "about": "Short B \u00b7 line 3 \u00b7 words 0\u201322",
+          "cues": [
+            {
+              "t": 17.95,
+              "line": 0
+            },
+            {
+              "t": 18,
+              "line": 0,
+              "word": "reconstruction",
+              "nth": 1,
+              "jump_from": 17.95
+            }
+          ],
+          "end_t": 23.95,
+          "reveals": [
+            {
+              "selector": ".sl-state[data-state=\"skip\"] .sl-pending-skip",
+              "hidden": true
+            },
+            {
+              "selector": ".sl-state[data-state=\"skip\"] .sl-pending-align",
+              "hidden": true
+            }
+          ],
+          "tail": 0.9
+        }
+      ]
+    },
+    "short-c": {
+      "format": "vertical",
+      "title": "short-c \u2014 PRE-LOCK DRAFT",
+      "shots": [
+        {
+          "scene": "short-c",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "Short C",
+            [
+              0
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              22
+            ]
+          ],
+          "about": "Short C \u00b7 line 0 \u00b7 words 0\u201322",
+          "cues": [
+            {
+              "t": 0,
+              "line": 0
+            },
+            {
+              "t": 0,
+              "line": 0,
+              "word": "scramble",
+              "nth": 2
+            }
+          ],
+          "lead": 0.15,
+          "end_t": 5.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "short-c",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "Short C",
+            [
+              1
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              19
+            ]
+          ],
+          "about": "Short C \u00b7 line 1 \u00b7 words 0\u201319",
+          "cues": [
+            {
+              "t": 0,
+              "line": 0
+            },
+            {
+              "t": 6,
+              "line": 0,
+              "word": "shared",
+              "nth": 2,
+              "jump_from": 0
+            }
+          ],
+          "end_t": 11.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "short-c",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "Short C",
+            [
+              2
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              23
+            ]
+          ],
+          "about": "Short C \u00b7 line 2 \u00b7 words 0\u201323",
+          "cues": [
+            {
+              "t": 11.95,
+              "line": 0
+            },
+            {
+              "t": 12,
+              "line": 0,
+              "word": "extra",
+              "nth": 1,
+              "jump_from": 11.95
+            }
+          ],
+          "end_t": 17.95,
+          "tail": 0.9
+        },
+        {
+          "scene": "short-c",
+          "bg": "paper",
+          "in": "cut",
+          "lines": [
+            "Short C",
+            [
+              3
+            ]
+          ],
+          "word_ranges": [
+            [
+              0,
+              26
+            ]
+          ],
+          "about": "Short C \u00b7 line 3 \u00b7 words 0\u201326",
+          "cues": [
+            {
+              "t": 17.95,
+              "line": 0
+            },
+            {
+              "t": 18,
+              "line": 0,
+              "word": "successful",
+              "nth": 1,
+              "jump_from": 17.95
+            }
+          ],
+          "end_t": 23.95,
+          "tail": 0.9
+        }
+      ]
+    }
+  }
+}

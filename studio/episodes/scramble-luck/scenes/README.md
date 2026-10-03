@@ -1,7 +1,7 @@
 # Scramble-luck proposed visual draft
 
 Twelve landscape STORY scenes and three separately composed portrait shorts,
-with 67 cue states and matching PNGs in `../renders/stills/`.
+with 69 cue states and matching PNGs in `../renders/stills/`.
 All claims remain proposed. Cue clocks are designed reveals and holds, not
 locked narration timing. No analytical numbers are typed into scene HTML/JS.
 `build_data.py` reads results.json for observations and CLAIMS.json for IDs/keys;
@@ -18,8 +18,8 @@ New episode components, recorded before renderer use (also in DIRECTION.md):
 
 - **Finalist × scheduled-position matrix.** Five columns extend the dot/slope
   grammar beyond the small-table cap. Orange focal row, grey peers, Ink rules,
-  Plex labels. Cells show qualitative up/down/level marks, never invented
-  times or calibrated difficulty. Row-centering, column-reading and full-row
+  Plex labels. Cells show qualitative up/down/level marks; later columns use explicitly
+  illustrative peer-contrast shading, never invented times or calibrated difficulty. Row-centering, column-reading and full-row
   exclusion are distinct cue states. Hollow replacement cell is separately
   tagged as illustrative, without an audited assignment claim.
 - **Seasonal-best adjustment strip.** Observed-best selection remains fixed;

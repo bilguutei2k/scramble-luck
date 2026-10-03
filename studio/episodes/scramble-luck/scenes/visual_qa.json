@@ -1,9 +1,7 @@
 {
   "status": "delivery-size visual inspection passed; source-only numeric bindings open",
   "inspected_at": "2026-10-02 America/Los_Angeles",
-  "cue_count": 67,
-  "unchanged_previously_inspected": 45,
-  "changed_or_new_reinspected": 22,
+  "cue_count": 69,
   "open_issues": [
     {
       "kind": "source-binding",
@@ -309,7 +307,7 @@
       "state": "columns",
       "t": 20.95,
       "path": "renders/stills/s06-listen-to-the-peers-columns.png",
-      "sha256": "f9ad22ab1047343f6fe183ca64a48b43eccf042fd2e5096db09da57e528ad787",
+      "sha256": "9ecd76967f0f29ed083abe306c1c80ab9f6b42224800742bbdbc44a07fb17846",
       "native_size_inspected": true,
       "clipping": false,
       "unintended_overlap": false,
@@ -321,7 +319,7 @@
       "state": "exclude",
       "t": 27.95,
       "path": "renders/stills/s06-listen-to-the-peers-exclude.png",
-      "sha256": "0f4b4296eb3f25e9aef4c38700c3309bf8d9dbd1c08432a026e0d5914cb384da",
+      "sha256": "a1cf8cad8ce34181a658ff4d75dc5ba518ba157c63bfcdaa3af0a53f83700b51",
       "native_size_inspected": true,
       "clipping": false,
       "unintended_overlap": false,
@@ -333,7 +331,7 @@
       "state": "noise",
       "t": 34.95,
       "path": "renders/stills/s06-listen-to-the-peers-noise.png",
-      "sha256": "a613cf8cc80a9170e9ee839bf24a8e1ce7a07a3059b0efb8f5b5761afcd64b82",
+      "sha256": "1618d5ca99f6043a26348995e0f188c82843bd9ea9a9ef1da2efe9bd27d9f76a",
       "native_size_inspected": true,
       "clipping": false,
       "unintended_overlap": false,
@@ -389,9 +387,21 @@
       "legible": true
     },
     {
+      "native_size_inspected": true,
+      "clipping": false,
+      "unintended_overlap": false,
+      "safe_edges": true,
+      "legible": true,
+      "page": "s08-the-failed-gate.html",
+      "state": "setup",
+      "t": 6.95,
+      "path": "renders/stills/s08-the-failed-gate-setup.png",
+      "sha256": "db94a46ab46dc8f87e44f854b0e1feebe4bb6f2ad9fabf7ce8e4058ae3bf2b25"
+    },
+    {
       "page": "s08-the-failed-gate.html",
       "state": "failed",
-      "t": 6.95,
+      "t": 13.95,
       "path": "renders/stills/s08-the-failed-gate-failed.png",
       "sha256": "39de36dddc0c81a9025f6a97e95f96ed2219ac2249539e9912f92e05a6dc931f",
       "native_size_inspected": true,
@@ -403,7 +413,7 @@
     {
       "page": "s08-the-failed-gate.html",
       "state": "amendment",
-      "t": 13.95,
+      "t": 20.95,
       "path": "renders/stills/s08-the-failed-gate-amendment.png",
       "sha256": "2fff48d095f51d084aa5a1de0badd26af6e712baf45dd9e247a05dc863ab0cf4",
       "native_size_inspected": true,
@@ -415,7 +425,7 @@
     {
       "page": "s08-the-failed-gate.html",
       "state": "passed",
-      "t": 20.95,
+      "t": 27.95,
       "path": "renders/stills/s08-the-failed-gate-passed.png",
       "sha256": "0a8d6d62a3523ea13ca35853ad338cbad63ec8b7eef8aefa44a26b3530b7e225",
       "native_size_inspected": true,
@@ -427,7 +437,7 @@
     {
       "page": "s08-the-failed-gate.html",
       "state": "fixed",
-      "t": 27.95,
+      "t": 34.95,
       "path": "renders/stills/s08-the-failed-gate-fixed.png",
       "sha256": "91105152a0b0d93f51d88e3b861edb89f95f0b5c035e72930b653b13f248babe",
       "native_size_inspected": true,
@@ -473,11 +483,23 @@
       "legible": true
     },
     {
+      "native_size_inspected": true,
+      "clipping": false,
+      "unintended_overlap": false,
+      "safe_edges": true,
+      "legible": true,
+      "page": "s09-the-verdict.html",
+      "state": "plain",
+      "t": 27.95,
+      "path": "renders/stills/s09-the-verdict-plain.png",
+      "sha256": "64f74f3576dcc2c3874bfb31dc741168327b0be04a900c40e04193f4a6b55cfd"
+    },
+    {
       "page": "s09-the-verdict.html",
       "state": "verdict",
-      "t": 27.95,
+      "t": 34.95,
       "path": "renders/stills/s09-the-verdict-verdict.png",
-      "sha256": "e2ba2d4132f52a372d6a8cb7fff2ecbd46fe22d59282454389c2255f38562cb0",
+      "sha256": "722246970eca5ed1c770c16e0fb9e9176601fc23df866583c84ee786e40b309c",
       "native_size_inspected": true,
       "clipping": false,
       "unintended_overlap": false,
@@ -705,7 +727,7 @@
       "state": "verdict",
       "t": 29.95,
       "path": "renders/stills/short-a-verdict.png",
-      "sha256": "8f8229c096d04aea3ba61558482ac7a9cff4318161c32d0627cb7fcbb31a3051",
+      "sha256": "69a4745bf85d65fe4bf5dafcff16f0e041338fa2204b0ac74acbd80c84e6e38b",
       "native_size_inspected": true,
       "clipping": false,
       "unintended_overlap": false,
@@ -753,7 +775,7 @@
       "state": "peers",
       "t": 17.95,
       "path": "renders/stills/short-b-peers.png",
-      "sha256": "8bc3d5ea0ba66ac81471ffbf037ed71b2100906edc604a3c942c44b1a3304d62",
+      "sha256": "9466d34ba6868f20e79794897126b269f5c1b815cd05fcc12c477e4a470386fe",
       "native_size_inspected": true,
       "clipping": false,
       "unintended_overlap": false,
@@ -820,5 +842,15 @@
       "safe_edges": true,
       "legible": true
     }
-  ]
+  ],
+  "narrated_review": "Verdict hierarchy, one chip, illustrative peer shading, neutral gate setup and plain-language state inspected.",
+  "final_refresh_note": "All 69 stills regenerated from final episode source; four changed color-token captures reopened at native size; remaining hashes match the previously inspected captures.",
+  "episode_source_sha256": {
+    "episode.js": "08d0fa05aa99524494c2483c21cae58e4b6d441657a8396b197b858ea03bca92",
+    "episode.css": "c93c959519ebda6acf70317e185d7c14da4fa245687d81211c74efb3c9916898",
+    "build_data.py": "d70423669420bac04e3437f3a94563701b71cfe25abfe6b3b752d216d5b02e5e",
+    "CUES.json": "b0324cb5b3ed0b7bc1ec93b72f9b28679d8fd000afc4c35073bd3b29af7c81c5"
+  },
+  "identical_to_prior_inspection_on_final_refresh": 65,
+  "reopened_on_final_refresh": 4
 }

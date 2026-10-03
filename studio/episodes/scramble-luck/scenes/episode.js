@@ -87,6 +87,9 @@ SL.stages=(g,v,phase)=>{
   const units=park?['Cross + additional pairs','Finish first two layers','Orientation still used',skip?'Permutation algorithm skipped':'Check permutation stage']:['Edge pieces + center','First two layers','Orient last layer','Permute last layer'];
   if(v){
    const c=SL.cards(g,true,[{id:'SL-C138',name:'PLL skip',unit:'No permutation algorithm'},{id:'SL-C138',name:'Top alignment',unit:'Final face adjustment remains'}],{y:750});
+   if(window.__narratedAssembly){
+    [['skip',780,'PERMUTATION?','REPLAY THE CHOSEN ROUTE'],['align',980,'FINAL ALIGNMENT?','CHECK THE REMAINING MOVE']].forEach(([id,y,title,note])=>{const q=FT.el(g,'sl-pending-'+id,{inset:'0'});T(q,'claim',104,y,48,title,{width:'780px',position:'absolute'});T(q,'label',104,y+70,32,note,{width:'780px',position:'absolute'});});
+   }
    if(window.SCENE_DATA.values['context.park.seconds']===undefined)T(g,'label',72,570,32,'MAX PARK · THEN-WORLD-RECORD');
    if(window.SCENE_DATA.values['context.park.seconds']!==undefined)n(g,true,'context.park.seconds','SECONDS · MAX PARK · THEN-RECORD',{y:535,size:140,digits:2});
    SL.scope(g,true,{kind:'record',claims:'SL-C105 · SL-C138',source:link(urls.park,'Ruwix reconstruction')});return t=>{head(t);c(t);};
@@ -120,22 +123,22 @@ SL.population=(g,v,phase)=>{
 // Five-column matrix: categorical teaching marks, never synthetic observations.
 SL.matrix=(g,v,phase)=>{
  const replacement=phase==='replacement',centered=phase==='center'||phase==='columns'||phase==='exclude'||phase==='noise';
- const excluded=phase==='exclude'||phase==='noise',head=SL.header(g,v,'The peer comparison',replacement?['Scheduled ≠ actual']:excluded?['Remove the entire focal row']:phase==='columns'?['Read down each column']:centered?['Compare peers with themselves']:['Listen to the peers'],{size:v?92:100});
+ const contrasted=['columns','exclude','noise'].includes(phase),excluded=phase==='exclude'||phase==='noise',head=SL.header(g,v,'The peer comparison',replacement?['Scheduled ≠ actual']:excluded?['Remove the entire focal row']:phase==='columns'?['Read down each column']:centered?['Compare peers with themselves']:['Listen to the peers'],{size:v?92:100});
  const x=v?72:96,y=v?660:350,labelW=v?205:360,colW=v?128:250,rowH=v?80:76,count=V('derived.scheduled_positions');
  const letters=['A','B','C','D','E'],rows=['FOCAL','PEER A','PEER B','PEER C'];
- T(g,'label',x,y-54,v?32:28,'SCHEMATIC · SCHEDULED POSITIONS');
+ T(g,'label',x,y-54,v?32:28,contrasted?'ILLUSTRATIVE · PEER-MEASURED CONTRAST':'SCHEMATIC · SCHEDULED POSITIONS');
  letters.slice(0,count).forEach((s,i)=>T(g,'label',x+labelW+i*colW,y,v?32:30,s,{width:colW+'px',textAlign:'center'}));
  const cells=[];rows.forEach((name,r)=>{
   const yy=y+52+r*rowH,focal=r===0;T(g,'label',x,yy+20,v?28:30,name,{color:focal?'var(--player-a-text)':'var(--field-text)'});
   rule(g,x,yy+rowH-2,labelW+count*colW,2,'var(--rule-light)');
   for(let c=0;c<count;c++){
-   const xx=x+labelW+c*colW,cell=FT.el(g,'sl-matrix-cell',{left:(xx+10)+'px',top:(yy+8)+'px',width:(colW-20)+'px',height:(rowH-18)+'px',background:focal?'var(--player-a)':'var(--paper-2)'});cell.dataset.focal=String(focal);cells.push({cell,r,c});
-   T(cell,'label',0,10,v?32:36,replacement&&r===2&&c===3?'○':centered?(c===1?'↓':c===3?'↑':'—'):'•',{width:'100%',textAlign:'center',color:focal?'var(--ink)':'var(--field-text)'});
+   const xx=x+labelW+c*colW,cell=FT.el(g,'sl-matrix-cell',{left:(xx+10)+'px',top:(yy+8)+'px',width:(colW-20)+'px',height:(rowH-18)+'px',background:focal?'var(--player-a)':contrasted?(c===1?'var(--paper)':c===3?'var(--field)':'color-mix(in srgb, var(--paper) 60%, var(--field) 40%)'):'var(--paper-2)'});cell.dataset.focal=String(focal);if(contrasted&&!focal)cell.dataset.contrast='illustrative';cells.push({cell,r,c});
+   T(cell,'label',0,10,v?32:36,replacement&&r===2&&c===3?'○':centered?(c===1?'↓':c===3?'↑':'—'):'•',{width:'100%',textAlign:'center',color:focal||contrasted?'var(--ink)':'var(--field-text)'});
    if(replacement&&r===2&&c===3){cell.style.background='transparent';cell.style.border='3px dashed var(--ink)';cell.dataset.replacement='illustrative';}
   }
  });
  if(excluded){rule(g,x,y+90,labelW+count*colW,6,'var(--ink)');if(phase==='exclude')T(g,'label',x,y+52+rows.length*rowH+22,v?32:30,'FOCAL ROW EXCLUDED · NOT JUST ITS BEST CELL');}
- if(phase==='columns'){T(g,'label',x,y+52+rows.length*rowH+20,28,'SHARED CONTRAST');letters.slice(0,count).forEach((letter,i)=>T(g,'label',x+labelW+i*colW,y+52+rows.length*rowH+20,26,i===1?'↓ FAVORABLE':i===3?'↑ UNFAVORABLE':'—',{width:colW+'px',textAlign:'center'}));}
+ if(phase==='columns'){T(g,'label',x,y+52+rows.length*rowH+20,28,'ILLUSTRATIVE');letters.slice(0,count).forEach((letter,i)=>T(g,'label',x+labelW+i*colW,y+52+rows.length*rowH+20,26,i===1?'↓ FAVORABLE':i===3?'↑ UNFAVORABLE':'—',{width:colW+'px',textAlign:'center'}));}
  if(phase==='noise')T(g,'label',96,730,30,'FINITE-PEER NOISE CORRECTED · UNCERTAINTY RETAINED');
  if(centered&&!v)cap(g,false,'Shared scramble/slot component · finite-peer noise corrected.',786,40);
  if(replacement)T(g,'label',x,y+52+rows.length*rowH+24,v?32:30,'○ ILLUSTRATIVE REPLACEMENT · DIFFERENT SCRAMBLE',{width:(v?848:1728)+'px'});
@@ -153,6 +156,7 @@ SL.adjust=(g,v,phase)=>{
  SL.scope(g,false,{claims:'SL-C002 · SL-C148',note:'Estimated shared-scramble-adjusted time · not a causal replay'});return t=>{head(t);FT.rise(left,t,.7,0);FT.rise(arrow,t,1.1,0);FT.rise(right,t,1.4,0);};
 };
 SL.gate=(g,v,phase)=>{
+ if(phase==='setup'){const head=SL.header(g,false,'Honest uncertainty',['Validate the uncertainty']);const c=SL.cards(g,false,[{id:'SL-C148',name:'Simulation gate',unit:'Recover known truths in simulations',stamp:'Before confirmation'},{id:'SL-C148',name:'Uncertainty procedure',unit:'Check the method before the verdict',stamp:'Specified processes'}]);SL.scope(g,false,{claims:'SL-C148',note:'Simulation validation precedes use of confirmation results'});return t=>{head(t);c(t);};}
  const head=SL.header(g,false,'Honest uncertainty',phase==='fixed'?['A separate sensitivity']:['The original gate failed']);
  const cards=phase==='fixed'?[{id:'SL-C025',name:'Fixed selection',unit:'Reported as a sensitivity',stamp:'No verdict authority'},{id:'SL-C024 · SL-C148',name:'Primary interval',unit:'Reselect bests in resampling',stamp:'Amended procedure'}]:[{id:'SL-C148',name:'Original gate',unit:'Did not recover specified truths',stamp:'Failed',color:'var(--player-a)'},{id:'SL-C148',name:'Amendment registered',unit:'Owner-approved before confirmation times',stamp:'Revised gate'},{id:'SL-C024 · SL-C148',name:'Confirmation',unit:'Specified simulation checks passed',stamp:'Amended contract'}];
  const c=SL.cards(g,false,cards,{height:395});const show=phase==='failed'?1:phase==='amend'?2:cards.length;const nodes=g.querySelectorAll('.ft-measure-card');nodes.forEach((e,i)=>e.style.display=i<show?'block':'none');
@@ -161,23 +165,24 @@ SL.gate=(g,v,phase)=>{
 };
 // N grammar with an explicit nonzero reference; real coordinates, separate label lanes.
 SL.ratio=(g,v,phase)=>{
- const lineOnly=phase==='line',pointOnly=phase==='point',verdict=phase==='verdict',head=SL.header(g,v,'The decision scale',verdict?['Belief fails']:lineOnly?['The registered line']:['The shared adjustment']);
+ const lineOnly=phase==='line',pointOnly=phase==='point',verdict=phase==='verdict',plain=phase==='plain'||verdict,head=SL.header(g,v,'The decision scale',verdict?['The shared adjustment']:lineOnly?['The registered line']:['The shared adjustment']);
  const key=R,lo=V('derived.neutral_ratio'),reference=V('verdict.threshold'),hi=reference+(reference-lo)*.12;
  const x0=v?100:216,w=v?780:1450,y=v?1025:590,h=v?54:56,X=n=>x0+(n-lo)/(hi-lo)*w;
- const axis=rule(g,x0,y+125,w),ref=rule(g,X(reference),y-88,4,230);
- T(g,'label',v?72:1370,v?885:455,v?32:28,'REGISTERED LINE '+SL.num('verdict.threshold',{digits:2}),{width:(v?848:450)+'px'});
+ const axis=rule(g,x0,y+125,w),ref=rule(g,X(reference),y-88,4,230);ref.classList.add('sl-reference');
+ T(g,'label sl-reference',v?72:1370,v?(plain?950:885):455,v?32:28,'REGISTERED LINE '+SL.num('verdict.threshold',{digits:2}),{width:(v?848:450)+'px'});
  T(g,'tick',x0,y+144,v?32:26,SL.num('derived.neutral_ratio',{digits:2}));
  const bar=rule(g,X(V(key+'.estimate')),y,0,h,'var(--player-a)'),dot=FT.el(g,'dot ft-observed-dot',{left:(X(V(key+'.estimate'))-17)+'px',top:(y+h/2-17)+'px',width:'34px',height:'34px'});
+ bar.classList.add('sl-interval');dot.classList.add('sl-point');
  const elements=[];
  if(!lineOnly){
-  elements.push(T(g,'number',v?72:96,v?550:350,v?130:130,SL.num(key+'.estimate',{digits:4}),{color:'var(--player-a)'}));
-  elements.push(T(g,'label',v?72:96,v?708:505,v?32:30,'R · ADJUSTED / OBSERVED'));
-  if(!pointOnly)elements.push(T(g,'label',v?72:780,v?775:375,v?32:28,'LOW '+SL.num(key+'.interval_95[0]',{digits:4})+' · HIGH '+SL.num(key+'.interval_95[1]',{digits:4}),{width:(v?848:1044)+'px'}));
-  if(!pointOnly)elements.push(T(g,'label',v?72:780,v?838:438,v?32:28,'AMENDED '+SL.num('derived.confidence')+'% INTERVAL',{width:(v?848:1044)+'px'}));
+  elements.push(T(g,'number sl-primary',v?72:96,v?550:350,plain?(v?104:110):130,plain?'ABOUT '+SL.num('derived.adjustment_percent',{integer:true})+'%'+(v?'<br>':' ')+'LONGER':SL.num(key+'.estimate',{digits:4}),{color:'var(--player-a)',width:(v?848:1728)+'px'}));
+  elements.push(T(g,'label',v?72:96,v?(plain?795:708):505,v?32:30,(plain?'R = '+SL.num(key+'.estimate',{digits:4})+' · ':'R · ')+'ADJUSTED / OBSERVED'));
+  if(!pointOnly)elements.push(T(g,'label',v?72:780,v?(plain?847:775):(plain?490:375),v?32:28,'LOW '+SL.num(key+'.interval_95[0]',{digits:4})+' · HIGH '+SL.num(key+'.interval_95[1]',{digits:4}),{width:(v?848:1044)+'px'}));
+  if(!pointOnly)elements.push(T(g,'label',v?72:780,v?(plain?899:838):(plain?540:438),v?32:28,'AMENDED '+SL.num('derived.confidence')+'% INTERVAL',{width:(v?848:1044)+'px'}));
  }
  if(verdict){
-  const mint=T(g,'claim chip',v?72:96,v?1140:775,v?46:54,'BELIEF FAILS',{padding:'5px 14px'});elements.push(mint);
- }else if(!v)cap(g,false,lineOnly?'Estimated adjusted time '+SL.num('derived.threshold_percent',{integer:true})+'% longer.':pointOnly?'Point estimate · amended interval follows.':'The whole amended interval sits below the line.',778,40);
+  const mint=T(g,'claim chip',v?620:96,v?1155:775,v?40:54,'BELIEF FAILS',{padding:'5px 14px'});elements.push(mint);
+ }else if(!v)cap(g,false,lineOnly?'Estimated adjusted time '+SL.num('derived.threshold_percent',{integer:true})+'% longer.':pointOnly?'Point estimate · amended interval follows.':plain?'Equal-person-year seasonal adjustment · estimated, not a replay.':'The whole amended interval sits below the line.',778,40);
  SL.scope(g,v,{claims:'SL-C001 · SL-C144',note:'Amended confirmatory interval · registered decision rule'});
  return t=>{head(t);axis.style.transform='scaleX('+FT.p(t,.7,.6)+')';FT.rise(ref,t,.7,0);const a=lineOnly||pointOnly?0:FT.p(t,1,.7),low=V(key+'.interval_95[0]'),high=V(key+'.interval_95[1]');bar.style.left=X(FT.lerp(V(key+'.estimate'),low,a))+'px';bar.style.width=((high-low)*a/(hi-lo)*w)+'px';bar.style.opacity=a;dot.style.opacity=lineOnly?0:FT.p(t,.7,.3);elements.forEach(e=>FT.rise(e,t,.7,0));};
 };

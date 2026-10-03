@@ -51,7 +51,7 @@ for(const [page,info] of Object.entries(cues.scenes)){
  }
  console.log(page+': '+info.states.length+' states passed');
 }
-assert.equal(total,67);
+assert.equal(total,69);
 const built=JSON.parse(execFileSync('python3',['-B','-c',`import importlib.util,json; s=importlib.util.spec_from_file_location('bindings',${JSON.stringify(resolve(dir,'build_data.py'))}); m=importlib.util.module_from_spec(s);s.loader.exec_module(m);print(json.dumps(m.payload()))`]).toString());
 assert.deepEqual(JSON.parse(JSON.stringify(data)),built);
 const browser=existsSync(resolve(dir,'browser_qa.json'))?JSON.parse(readFileSync(resolve(dir,'browser_qa.json'))):{checks:[]};

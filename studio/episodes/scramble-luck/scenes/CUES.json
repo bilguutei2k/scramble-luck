@@ -837,13 +837,32 @@
     },
     "s08-the-failed-gate.html": {
       "format": "landscape",
-      "duration": 28,
+      "duration": 35,
       "claims": [
         "SL-C024",
         "SL-C025",
         "SL-C148"
       ],
       "states": [
+        {
+          "id": "setup",
+          "component": "gate",
+          "phase": "setup",
+          "cue": "Before using the confirmation results",
+          "claims": [
+            "SL-C148"
+          ],
+          "at": 0,
+          "still": 6.95,
+          "path": "renders/stills/s08-the-failed-gate-setup.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "Before using the confirmation results",
+              "kind": "state"
+            }
+          ]
+        },
         {
           "id": "failed",
           "component": "gate",
@@ -852,8 +871,8 @@
           "claims": [
             "SL-C148"
           ],
-          "at": 0,
-          "still": 6.95,
+          "at": 7,
+          "still": 13.95,
           "path": "renders/stills/s08-the-failed-gate-failed.png",
           "reveals": [
             {
@@ -876,8 +895,8 @@
           "claims": [
             "SL-C148"
           ],
-          "at": 7,
-          "still": 13.95,
+          "at": 14,
+          "still": 20.95,
           "path": "renders/stills/s08-the-failed-gate-amendment.png",
           "reveals": [
             {
@@ -901,8 +920,8 @@
             "SL-C024",
             "SL-C148"
           ],
-          "at": 14,
-          "still": 20.95,
+          "at": 21,
+          "still": 27.95,
           "path": "renders/stills/s08-the-failed-gate-passed.png",
           "reveals": [
             {
@@ -926,8 +945,8 @@
             "SL-C025",
             "SL-C148"
           ],
-          "at": 21,
-          "still": 27.95,
+          "at": 28,
+          "still": 34.95,
           "path": "renders/stills/s08-the-failed-gate-fixed.png",
           "reveals": [
             {
@@ -947,7 +966,7 @@
     },
     "s09-the-verdict.html": {
       "format": "landscape",
-      "duration": 28,
+      "duration": 35,
       "claims": [
         "SL-C001",
         "SL-C144"
@@ -1028,6 +1047,26 @@
           ]
         },
         {
+          "id": "plain",
+          "component": "ratio",
+          "phase": "plain",
+          "cue": "In plain language, the estimated adjustment is about 2%",
+          "claims": [
+            "SL-C001",
+            "SL-C144"
+          ],
+          "at": 21,
+          "still": 27.95,
+          "path": "renders/stills/s09-the-verdict-plain.png",
+          "reveals": [
+            {
+              "at": 0,
+              "cue": "In plain language, the estimated adjustment is about 2%",
+              "kind": "state"
+            }
+          ]
+        },
+        {
           "id": "verdict",
           "component": "ratio",
           "phase": "verdict",
@@ -1035,8 +1074,8 @@
           "claims": [
             "SL-C001"
           ],
-          "at": 21,
-          "still": 27.95,
+          "at": 28,
+          "still": 34.95,
           "path": "renders/stills/s09-the-verdict-verdict.png",
           "reveals": [
             {
@@ -1551,7 +1590,7 @@
         },
         {
           "id": "verdict",
-          "component": "takeaway",
+          "component": "ratio",
           "phase": "verdict",
           "cue": "The data rule out an average shared scramble/slot boost as large as 10%",
           "claims": [
