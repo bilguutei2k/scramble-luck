@@ -78,6 +78,14 @@ notice:
 
 (The notice's spelling is the WCA's own.)
 
+The quotes, dates and regulations the script cites were checked against saved
+copies of their web pages. Those pages belong to their publishers (WIRED,
+Ruwix, the WCA and others) and are **not redistributed** here;
+`analysis/claim_sources/manifest.json` lists each page's address, retrieval
+date and SHA-256. To rerun the quote checks, save the listed pages to the
+paths in the manifest; `analysis/verify_claims.py` checks every file against
+its hash and reports a mismatch.
+
 ## Running the checks
 
 ```sh
