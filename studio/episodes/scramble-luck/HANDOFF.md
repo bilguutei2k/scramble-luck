@@ -33,8 +33,8 @@ Updated 2026-10-02, late evening, by Claude. Branch `next-investigations`
   shown only as a labelled diagnostic.
 - Replacement-scramble use is unaudited; results are scheduled-position.
 - Historical record cards stay qualitative until bound to claims.
-- Polish pass (Short A label timing, vertical 1.10 line, companion labels)
-  launched 2026-10-02 23:36; check `ideation/logs/ep-s7-polish.last.md`.
+- Polish pass done (Short A label timing, vertical 1.10 line, companion
+  labels), 2026-10-02 23:43.
 - Shared tool change: `studio/tools/assemble.py` loudness retry (`f41f856`)
   affects every episode's future renders.
 
