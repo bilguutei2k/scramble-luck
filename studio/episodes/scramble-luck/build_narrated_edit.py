@@ -97,7 +97,7 @@ def word_gates(shot, page, lines, i, a, b):
                   (2, 'below', '.sl-state[data-state="interval"] .caption')]
         interval_id, interval_line = 'interval', 1
     elif page == 'short-a.html':
-        rules += [(2, '10%', '.sl-reference')]
+        rules += [(2, 'rule', '.sl-reference')]
         interval_id, interval_line = 'interval', 1
     else:
         interval_id = None
@@ -116,6 +116,8 @@ def word_gates(shot, page, lines, i, a, b):
         rules += [(interval_line, '1.0164', root+'[data-value-key="'+key+'.interval_95[0]"]'),
                   (interval_line, '1.0231', root+'[data-value-key="'+key+'.interval_95[1]"]'),
                   (interval_line, '1.0231', root+'.sl-interval')]
+    if page == 'short-a.html':
+        rules = [(li, word, selector.replace('[data-value-key="'+key+'.interval_95[0]"]', '.sl-endpoint-low').replace('[data-value-key="'+key+'.interval_95[1]"]', '.sl-endpoint-high')) for li, word, selector in rules]
     reveals = []
     for rule in rules:
         line_index, target, selector = rule[:3]

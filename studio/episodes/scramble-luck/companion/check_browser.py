@@ -37,8 +37,11 @@ for(const v of d.variants){select.value=v.id;select.dispatchEvent(new Event('cha
  const geometries=v.rows.every((r,i)=>Math.abs(Number(points[i].getAttribute('cx'))-scale(r.estimate))<1e-9);
  const overflow=[...document.querySelectorAll('.shell *')].filter(e=>{const s=getComputedStyle(e),b=e.getBoundingClientRect();return s.display!=='none'&&b.width>0&&(b.left < -1||b.right>innerWidth+1)}).map(e=>e.tagName+'#'+e.id);
  const replacement=v.kind==='replacement';
- const ok=document.getElementById('point').textContent===expectedPoint && (v.kind==='range'||document.getElementById('interval').textContent===ci(v.rows[0])) && points.length===v.rows.length && geometries && overflow.length===0 && document.documentElement.scrollWidth===innerWidth && document.querySelector('.verdict').textContent==='Belief fails' && document.getElementById('selection-label').textContent.includes('cannot change verdict') && document.getElementById('replacement').hidden!==replacement && (!replacement||document.getElementById('replacement').textContent.includes((v.replacement.estimate*100).toFixed(4)+'%'));
- checks.push({id:v.id,passed:ok,point:expectedPoint,plottedPoints:points.length,overflow});details.open=false;
+ const style=getComputedStyle(select),canvas=document.createElement('canvas'),ctx=canvas.getContext('2d');ctx.font=style.fontWeight+' '+style.fontSize+' '+style.fontFamily;
+ const optionWidth=ctx.measureText(select.selectedOptions[0].textContent).width,availableWidth=select.clientWidth-parseFloat(style.paddingLeft)-parseFloat(style.paddingRight);
+ const optionFits=optionWidth<=availableWidth;
+ const ok=document.getElementById('point').textContent===expectedPoint && (v.kind==='range'||document.getElementById('interval').textContent===ci(v.rows[0])) && optionFits && points.length===v.rows.length && geometries && overflow.length===0 && document.documentElement.scrollWidth===innerWidth && document.querySelector('.verdict').textContent==='Belief fails' && document.getElementById('selection-label').textContent===v.label && v.label.endsWith(v.id==='registered'?'decides the verdict':'cannot change the verdict') && document.getElementById('replacement').hidden!==replacement && (!replacement||document.getElementById('replacement').textContent.includes((v.replacement.estimate*100).toFixed(4)+'%'));
+ checks.push({id:v.id,passed:ok,point:expectedPoint,plottedPoints:points.length,optionFits,optionWidth,availableWidth,overflow});details.open=false;
 }
 select.value='registered';select.dispatchEvent(new Event('change',{bubbles:true}));
 const bounds=document.querySelector('.shell').getBoundingClientRect();

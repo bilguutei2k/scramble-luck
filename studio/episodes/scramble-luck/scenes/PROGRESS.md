@@ -288,3 +288,5 @@ Pending: render, seek/provenance checks and native-size PNG inspection.
 - Render pass completed for `short-b.html`: 4 cue PNGs.
 
 - Render pass completed for `short-c.html`: 4 cue PNGs.
+
+- Scoped pre-lock correction render: `short-a.html` only, six cue PNGs; interval/verdict reopened at native size.

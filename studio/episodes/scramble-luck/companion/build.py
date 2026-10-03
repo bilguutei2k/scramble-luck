@@ -123,7 +123,7 @@ def main():
     def variant(key, label, change, path, kind="R"):
         if path not in flat:
             return
-        variants.append({"id": key, "label": label + " · cannot change verdict", "change": change,
+        variants.append({"id": key, "option": label, "label": label + (" · decides the verdict" if key == "registered" else " · cannot change the verdict"), "change": change,
                          "kind": kind, "rows": [measurement(path)]})
 
     variant("registered", "Registered estimate", "Equal weight per available person-year; geometric ratio. The amended reselecting interval is the only decision interval.", "primary.R_geometric_person_year")
@@ -144,7 +144,7 @@ def main():
             row["label"] = "Omit " + key.split("_")[2]
             deletions.append(row)
     if deletions:
-        variants.append({"id": "years", "label": "Leave-one-year-out range · cannot change verdict", "kind": "range",
+        variants.append({"id": "years", "option": "Leave-one-year-out range", "label": "Leave-one-year-out range · cannot change the verdict", "kind": "range",
                          "change": "Deletes one year and its reference information at a time, retaining the original roster. Each dot has its own pointwise interval. The span of dots is a point-estimate range, not a simultaneous confidence interval.", "rows": deletions})
     variant("fixed", "Fixed-selection interval", "Keeps the originally selected extrema fixed instead of reselecting the seasonal best in each draw. Procedure A is a percentile-interval sensitivity; its point estimate is unchanged.", "primary.R_fixed_selection_A_sensitivity")
     for key, block in results.get("replacement_sensitivity", {}).items():
@@ -194,7 +194,7 @@ def main():
         "__ANSWER__": esc(results["verdict"]["permitted_claim"]), "__R__": f'{primary["estimate"]:.4f}',
         "__CI__": "–".join(f"{v:.4f}" for v in primary["interval"]), "__PERCENT__": f'{(primary["estimate"]-1)*100:.2f}',
         "__N__": f"{n:,}", "__THRESHOLD__": f"{threshold:.2f}", "__LINE_PERCENT__": f"{(threshold-1)*100:g}",
-        "__OPTIONS__": "".join(f'<option value="{esc(v["id"])}">{esc(v["label"])}</option>' for v in variants),
+        "__OPTIONS__": "".join(f'<option value="{esc(v["id"])}">{esc(v["option"])}</option>' for v in variants),
         "__CROSS_ROWS__": "".join(crosses), "__NOTICE__": esc(notice), "__HASH__": sha(raw),
         "__CLAIMS_HASH__": sha(claim_raw), "__INITIAL_CHANGE__": esc(variants[0]["change"]),
         "__INITIAL_MARKS__": initial_marks,

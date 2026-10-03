@@ -11,8 +11,8 @@ Status: **pre-lock draft: claims proposed**. No claim status was changed.
 - One analytical select offers 14 precomputed selections: registered R,
   arithmetic R, per-solver R, equal-tier R, its matched all-peer comparator,
   both eras, the leave-one-year-out range, fixed-selection A, and all five
-  available replacement assumptions. Every choice names its change and says
-  it cannot change the verdict. The theme button is separate.
+  available replacement assumptions. The registered choice says “decides the verdict”;
+  alternatives alone say “cannot change the verdict”. The theme button is separate.
 - Replacement assumptions change shared variance, **not R**: results.json
   contains no replacement-adjusted R. The registered point/interval stay put.
 - Year deletion shows seven individual points and pointwise intervals; the
@@ -53,7 +53,7 @@ a disposable socket directory, and `--single-process,--no-sandbox,
   and Night, including the expanded provenance disclosure.
 - At 390px, document scroll width is exactly 390px and both gutters are 16px.
   At 1440px the centered column has 160px gutters. No element spills beyond
-  either viewport. The long native-select label has a wrapping visible copy.
+  either viewport. Short native-select labels fit completely; the full authority description wraps below.
 - Point/interval readouts match bound values; SVG coordinates use unrounded
   measurements, a stable linear domain and the fixed registered reference.
 - Replacement variance readouts and unchanged R pass; every year deletion
@@ -82,3 +82,24 @@ Cross inference remains unvalidated and actual replacement assignments remain
 unaudited. These are disclosed evidence limits; no known layout/runtime issue
 remains. Future analytical reuse still needs checkpoint fingerprint hardening
 and less hard-coded registration QA, as recorded in the methods review.
+
+## Four pre-lock corrections · 2026-10-02
+
+Rebuilt with `companion/build.py`: fourteen selections and all 70 independently
+verified numeric bindings pass. The default visible description reads
+“Registered estimate · decides the verdict”; only alternative descriptions
+retain “cannot change the verdict”. Native options use concise names, while
+the complete authority text wraps in the visible description below the select.
+
+Re-ran `check_browser.py` in disposable Chromium: 56/56 selection/theme/viewport
+states pass at 390×844 and 1440×1000 in Paper and Night. Every selected option
+was measured with its actual loaded font against the select’s available width
+and fits completely. Zero horizontal overflow, runtime errors, console messages
+or network resources. Numeric readouts and SVG positions continue to pass.
+
+Personally opened registered-control screenshots at both widths in both themes,
+plus the longest-option (“All-peer R on equal-tier subset”) control at 390px
+in both themes. All option text is visible, with complete wrapped authority
+descriptions and clear gutters. Captures: `390-{paper,night}-longest-option.png`
+and the refreshed `*-control.png` files in `../renders/companion/`; measured
+option widths and verdict-authority checks are in `browser-audit.json`.

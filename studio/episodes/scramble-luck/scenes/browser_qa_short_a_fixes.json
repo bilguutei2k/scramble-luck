@@ -1,0 +1,205 @@
+{
+  "status": "captured",
+  "errors": [],
+  "checks": [
+    {
+      "page": "short-a.html",
+      "state": "hook",
+      "issues": [],
+      "labels": [
+        {
+          "key": "derived.first_year",
+          "claims": "SL-C003",
+          "text": "2019"
+        },
+        {
+          "key": "derived.last_year",
+          "claims": "SL-C003",
+          "text": "2025"
+        }
+      ],
+      "box_count": 19
+    },
+    {
+      "page": "short-a.html",
+      "state": "adjustment",
+      "issues": [],
+      "labels": [
+        {
+          "key": "derived.adjustment_percent",
+          "claims": "SL-C144",
+          "text": "2"
+        },
+        {
+          "key": "derived.adjustment_percent",
+          "claims": "SL-C144",
+          "text": "2"
+        },
+        {
+          "key": "derived.first_year",
+          "claims": "SL-C003",
+          "text": "2019"
+        },
+        {
+          "key": "derived.last_year",
+          "claims": "SL-C003",
+          "text": "2025"
+        }
+      ],
+      "box_count": 19
+    },
+    {
+      "page": "short-a.html",
+      "state": "ratio",
+      "issues": [],
+      "labels": [
+        {
+          "key": "verdict.threshold",
+          "claims": "SL-C001",
+          "text": "1.10"
+        },
+        {
+          "key": "derived.neutral_ratio",
+          "claims": "SL-C001 SL-C074",
+          "text": "1.00"
+        },
+        {
+          "key": "primary.R_geometric_person_year.estimate",
+          "claims": "SL-C001 SL-C144",
+          "text": "1.0198"
+        },
+        {
+          "key": "derived.first_year",
+          "claims": "SL-C003",
+          "text": "2019"
+        },
+        {
+          "key": "derived.last_year",
+          "claims": "SL-C003",
+          "text": "2025"
+        }
+      ],
+      "box_count": 20
+    },
+    {
+      "page": "short-a.html",
+      "state": "interval",
+      "issues": [],
+      "labels": [
+        {
+          "key": "verdict.threshold",
+          "claims": "SL-C001",
+          "text": "1.10"
+        },
+        {
+          "key": "derived.neutral_ratio",
+          "claims": "SL-C001 SL-C074",
+          "text": "1.00"
+        },
+        {
+          "key": "primary.R_geometric_person_year.estimate",
+          "claims": "SL-C001 SL-C144",
+          "text": "1.0198"
+        },
+        {
+          "key": "primary.R_geometric_person_year.interval_95[0]",
+          "claims": "SL-C001 SL-C024",
+          "text": "1.0164"
+        },
+        {
+          "key": "primary.R_geometric_person_year.interval_95[1]",
+          "claims": "SL-C001 SL-C024",
+          "text": "1.0231"
+        },
+        {
+          "key": "derived.confidence",
+          "claims": "SL-C001 SL-C005 SL-C074",
+          "text": "95"
+        },
+        {
+          "key": "derived.first_year",
+          "claims": "SL-C003",
+          "text": "2019"
+        },
+        {
+          "key": "derived.last_year",
+          "claims": "SL-C003",
+          "text": "2025"
+        }
+      ],
+      "box_count": 27
+    },
+    {
+      "page": "short-a.html",
+      "state": "verdict",
+      "issues": [],
+      "labels": [
+        {
+          "key": "verdict.threshold",
+          "claims": "SL-C001",
+          "text": "1.10"
+        },
+        {
+          "key": "derived.neutral_ratio",
+          "claims": "SL-C001 SL-C074",
+          "text": "1.00"
+        },
+        {
+          "key": "derived.adjustment_percent",
+          "claims": "SL-C144",
+          "text": "2"
+        },
+        {
+          "key": "primary.R_geometric_person_year.estimate",
+          "claims": "SL-C001 SL-C144",
+          "text": "1.0198"
+        },
+        {
+          "key": "primary.R_geometric_person_year.interval_95[0]",
+          "claims": "SL-C001 SL-C024",
+          "text": "1.0164"
+        },
+        {
+          "key": "primary.R_geometric_person_year.interval_95[1]",
+          "claims": "SL-C001 SL-C024",
+          "text": "1.0231"
+        },
+        {
+          "key": "derived.confidence",
+          "claims": "SL-C001 SL-C005 SL-C074",
+          "text": "95"
+        },
+        {
+          "key": "derived.first_year",
+          "claims": "SL-C003",
+          "text": "2019"
+        },
+        {
+          "key": "derived.last_year",
+          "claims": "SL-C003",
+          "text": "2025"
+        }
+      ],
+      "box_count": 33
+    },
+    {
+      "page": "short-a.html",
+      "state": "limits",
+      "issues": [],
+      "labels": [
+        {
+          "key": "derived.first_year",
+          "claims": "SL-C003",
+          "text": "2019"
+        },
+        {
+          "key": "derived.last_year",
+          "claims": "SL-C003",
+          "text": "2025"
+        }
+      ],
+      "box_count": 19
+    }
+  ],
+  "issue_count": 0
+}

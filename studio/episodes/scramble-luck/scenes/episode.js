@@ -177,7 +177,7 @@ SL.ratio=(g,v,phase)=>{
  if(!lineOnly){
   elements.push(T(g,'number sl-primary',v?72:96,v?550:350,plain?(v?104:110):130,plain?'ABOUT '+SL.num('derived.adjustment_percent',{integer:true})+'%'+(v?'<br>':' ')+'LONGER':SL.num(key+'.estimate',{digits:4}),{color:'var(--player-a)',width:(v?848:1728)+'px'}));
   elements.push(T(g,'label',v?72:96,v?(plain?795:708):505,v?32:30,(plain?'R = '+SL.num(key+'.estimate',{digits:4})+' · ':'R · ')+'ADJUSTED / OBSERVED'));
-  if(!pointOnly)elements.push(T(g,'label',v?72:780,v?(plain?847:775):(plain?490:375),v?32:28,'LOW '+SL.num(key+'.interval_95[0]',{digits:4})+' · HIGH '+SL.num(key+'.interval_95[1]',{digits:4}),{width:(v?848:1044)+'px'}));
+  if(!pointOnly)elements.push(T(g,'label',v?72:780,v?(plain?847:775):(plain?490:375),v?32:28,(v?'<span class="sl-endpoint-low">LOW '+SL.num(key+'.interval_95[0]',{digits:4})+'</span><span class="sl-endpoint-high"> · HIGH '+SL.num(key+'.interval_95[1]',{digits:4})+'</span>':'LOW '+SL.num(key+'.interval_95[0]',{digits:4})+' · HIGH '+SL.num(key+'.interval_95[1]',{digits:4})),{width:(v?848:1044)+'px'}));
   if(!pointOnly)elements.push(T(g,'label',v?72:780,v?(plain?899:838):(plain?540:438),v?32:28,'AMENDED '+SL.num('derived.confidence')+'% INTERVAL',{width:(v?848:1044)+'px'}));
  }
  if(verdict){

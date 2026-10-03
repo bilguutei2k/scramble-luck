@@ -852,5 +852,20 @@
     "CUES.json": "b0324cb5b3ed0b7bc1ec93b72f9b28679d8fd000afc4c35073bd3b29af7c81c5"
   },
   "identical_to_prior_inspection_on_final_refresh": 65,
-  "reopened_on_final_refresh": 4
+  "reopened_on_final_refresh": 4,
+  "pre_lock_corrections": {
+    "date": "2026-10-02",
+    "scope": "Short A only; prior other-scene inspections retained",
+    "native_stills_reopened": [
+      "short-a-interval.png",
+      "short-a-verdict.png"
+    ],
+    "browser_report": "browser_qa_short_a_fixes.json",
+    "states": 6,
+    "geometry_flags": 0,
+    "runtime_errors": 0,
+    "endpoint_gates": "Each LOW/HIGH label and its number reveal together",
+    "reference_gate": "Registered 1.10 line and label reveal on rule, at the verdict cue",
+    "episode_js_sha256": "ba9bb6355238429d9e650bf92082d64f56a5b3f308d5ed00eb67ae150b407605"
+  }
 }

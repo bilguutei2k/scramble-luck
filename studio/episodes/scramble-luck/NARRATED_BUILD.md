@@ -21,7 +21,7 @@ No .git writes. Pipeline: local Kokoro af_heart at speed 1.0; word-cued HTML sce
 
 Spoken forms are in `renders/audio/spoken_forms.json`. Episode-scoped transformations leave other episodes unchanged. Percent signs become percent; R is spoken ar, F eff; PLL/CFOP/DNF/WCA are spelled aloud; scramble/slot is spoken scramble slot; standalone calendar years use year forms. Decimals retain every written decimal digit: 1.0198 becomes one point zero one nine eight; 1.0164 to 1.0231 is one point zero one six four to one point zero two three one. Claim tags are removed before synthesis, while written tokens remain unchanged in captions and cue lookup.
 
-All 69 named states have a stressed written-word cue. New interval endpoint labels and the interval bar have separate number gates. Short A's registered reference waits for 10%; S09's reference waits for 1.10. Every script word is retained once in order. Long cached lines use half-open written-word ranges and exact sample bridges. Hard cuts, completed headings and established figures follow super-subs assembled QA. First Short lead is 0.15 seconds; film lead 0.4, ordinary line gap 0.45, tail at least 0.9. Shot bounds are checked against actual speech before assembly.
+All 69 named states have a stressed written-word cue. New interval endpoint labels and the interval bar have separate number gates. Short A's registered reference appears on “rule” with the verdict; S09's reference waits for 1.10. Every script word is retained once in order. Long cached lines use half-open written-word ranges and exact sample bridges. Hard cuts, completed headings and established figures follow super-subs assembled QA. First Short lead is 0.15 seconds; film lead 0.4, ordinary line gap 0.45, tail at least 0.9. Shot bounds are checked against actual speech before assembly.
 
 The same narrate.py functions ran in four independent CPU processes on disjoint scenes, then narrate.py consolidated the completed cache. No alternate TTS, artificial final timings, new model or changed voice is used. A float32 speed probe showed no useful improvement and was discarded; final narration retains the cached bf16 model. Artificial preflight timings are isolated in `renders/qa/estimated-narration.json`, never in the audio cache.
 
@@ -68,7 +68,7 @@ All paths below are relative to this episode. Film is 1920×1080; Shorts are 108
 | Deliverable | MP4 | Duration | Shots | SRT cues | LUFS / dBTP |
 | --- | --- | ---: | ---: | ---: | --- |
 | film | `renders/draft/film.mp4` | 696.900 s | 72 | 181 | -14.0 / -1.1 |
-| short-a | `renders/draft/short-a.mp4` | 46.000 s | 5 | 11 | -14.0 / -1.1 |
+| short-a | `renders/draft/short-a.mp4` | 46.000 s | 5 | 11 | -14.0 / -1.2 |
 | short-b | `renders/draft/short-b.mp4` | 40.767 s | 4 | 10 | -13.9 / -1.1 |
 | short-c | `renders/draft/short-c.mp4` | 43.833 s | 4 | 11 | -13.9 / -1.2 |
 
@@ -76,7 +76,7 @@ Original assembled PCM is `renders/draft/<deliverable>/narration.wav`; cached Ko
 
 ## Final checks
 
-- `renders/qa/assembled/checks.json` combines the final film check with the independently checked final Shorts and stores artifact/edit hashes. Film was checked again after its caption-gate change. No changes followed those checks.
+- `renders/qa/assembled/checks.json` combines the final film check with the independently checked final Shorts and stores artifact/edit hashes. Film was checked again after its caption-gate change. The later scoped Short A corrections and refreshed checks are recorded below.
 - Every written word appears once in the original order: film 1,388; A 85; B 81; C 90. SRT text, timestamps and endpoints match those words exactly; zero failures. Maximum two rows; widths 42 / 37 / 42 / 41 characters. Captions end on the final spoken word rather than extending into holds.
 - Cached PCM slices match byte-for-byte, with zero clipped samples. Fifteen film bridges and one A bridge have zero inserted gap and preserve adjacent half-open word ranges from the same original line. No fragments were synthesized separately.
 - Full decoded-frame scan: film 20,907; A 1,380; B 1,223; C 1,315. Zero blank frames in 24,825 decoded frames. ffprobe durations match the frame grid; the rounded B/C record durations differ by less than one millisecond from their exact frame durations.
@@ -91,3 +91,30 @@ Original assembled PCM is `renders/draft/<deliverable>/narration.wav`; cached Ko
 Run `studio/tools/narrate.py` with the cached model/voice, then `build_narrated_edit.py`, `studio/tools/assemble.py` for film/short-a/short-b/short-c with `--jobs 4`, then `check_narrated.py`. Assembly used `scenes/render_stills.py`’s disposable `offline_chrome()` environment around the original assembler CLI. The CPU-only MLX library path is `/tmp/scramble-mlx-build`; process-local `DYLD_LIBRARY_PATH` was required only for fresh synthesis. `HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1` keeps the cached model pass offline. Installed .venv was unchanged.
 
 Open review items: listen for pronunciation/prosody (especially Yusheng Du, Ruwix, acronyms and long decimals); listening approval is not claimed by these technical checks. Existing historical Du/Park times and quote publication dates lack results.json source-context bindings, so their cards remain qualitative as documented in VISUAL_QA.md. Claims remain proposed and this is not a locked release. No open render, cue, caption or measured-loudness failure remains.
+
+## Four pre-lock corrections · 2026-10-02
+
+Short A now gates each complete LOW/HIGH endpoint phrase with its spoken value.
+The registered 1.10 line and label reveal on “rule” at 28.4667 s, together with
+the portrait verdict, rather than waiting until “10%”. Regenerated `EDIT.json`;
+only its Short A deliverable changed. Reassembled only Short A through the
+existing `studio/tools/assemble.py studio/episodes/scramble-luck short-a` CLI
+inside `render_stills.py`’s disposable offline Chromium environment.
+
+`check_narrated.py --deliverables short-a` passes: 46.000 s, five shots, eleven
+SRT cues, all 85 written words/caption endpoints in order, cached PCM matches,
+zero clipped PCM samples, zero early/late state failures, 1,380 decoded frames
+and zero blank frames. Independent encoded measurement: −14.0 LUFS / −1.2 dBTP.
+Refreshed `renders/qa/assembled/checks-short-a.json` and the Short A entry and
+artifact/edit hashes in `checks.json`; other deliverable checks are retained.
+
+Actual-timing Chromium probes: 35 samples, zero missing headings, unsafe bounds,
+missing selectors or runtime errors; endpoint phrases and their values always
+share visibility, and every verdict sample includes the line and label. Results
+and the scoped probe script are in `renders/qa/assembly-probes-short-a-fixes/`.
+Extracted 36 encoded cut/cue/gate samples. Personally inspected the 16 interval
+and verdict samples in contact sheets 03–04, and opened frames 0019, 0021 and
+0029 at native size: no LOW/HIGH before their values; LOW 1.0164 appears alone
+on its cue; both endpoints persist into the verdict, with the registered line
+and label. Stills and companion inspection are in their respective QA notes.
+No .git writes; narration, STORY, method, observations and claim status preserved.

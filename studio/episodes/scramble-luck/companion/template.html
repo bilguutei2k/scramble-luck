@@ -21,7 +21,7 @@ __FONTS__
 </div></div>
 <section class="explorer" aria-labelledby="test-title">
 <div class="explorer-head"><div><span class="label">Test an assumption</span><h2 id="test-title">Does the answer depend on the averaging?</h2><p>Choose a precomputed check. Watch the ratio and its uncertainty relative to the registered line.</p></div>
-<div class="control"><label class="label" for="version">Which assumption changes?</label><select id="version" aria-describedby="change authority">__OPTIONS__</select><p id="selection-label" class="meta" style="margin:10px 0 0">Registered estimate · cannot change verdict</p></div></div>
+<div class="control"><label class="label" for="version">Which assumption changes?</label><select id="version" aria-describedby="change authority">__OPTIONS__</select><p id="selection-label" class="meta" style="margin:10px 0 0">Registered estimate · decides the verdict</p></div></div>
 <p id="change" class="change">__INITIAL_CHANGE__</p>
 <div aria-live="polite" aria-atomic="true" id="readout"><div class="readouts"><div><span class="label" id="point-label">Estimated adjusted / observed</span><span class="number point" id="point">__R__</span></div><div><span class="label" id="interval-label">Amended __LEVEL__% interval</span><span class="number" id="interval">__CI__</span></div></div><p id="range-note" class="meta" hidden></p><div id="replacement" class="extra" hidden></div></div>
 <svg class="plot" id="plot" viewBox="0 0 700 168" role="img" aria-labelledby="plot-title plot-desc"><title id="plot-title">Registered ratio against the decision line</title><desc id="plot-desc">R __R__, amended interval __CI__, below the registered __THRESHOLD__ line.</desc><g id="marks">__INITIAL_MARKS__</g></svg>

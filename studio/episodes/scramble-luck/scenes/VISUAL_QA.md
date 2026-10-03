@@ -109,3 +109,21 @@ Narrated-film timing/transition QA is recorded in ../NARRATED_BUILD.md separatel
 Added and inspected neutral simulation setup and separate about-2% state; latest native Chromium audit covers 69 states with zero geometry/runtime flags. Peer exclusion and finite-noise captures were opened individually; illustrative column shading persists while the focal row is removed.
 
 Final refresh: regenerated all 69 cue PNGs from the final source. The four color-token changes (S06 columns/exclude/noise and Short B peers) were re-opened at native size; all remaining PNG hashes match the previous inspections. Updated visual_qa.json and the full still manifest. Final native Chromium audit again reports 69 states, zero geometry flags and zero runtime errors.
+
+## Four pre-lock corrections · 2026-10-02
+
+Re-rendered only the six Short A stills with `render_stills.py --pages short-a.html`.
+Opened the interval and verdict PNGs at 1080×1920. Portrait LOW/HIGH labels
+now share their numeric reveal gates; no empty endpoint labels remain. The
+registered 1.10 rule and its label appear together on “rule”, coincident with
+the portrait verdict cue, and remain visible throughout that state. The
+landscape S09 composition and its edit remain unchanged.
+
+The existing native Chromium audit was restricted to Short A: six states,
+zero geometry flags and zero runtime errors (`browser_qa_short_a_fixes.json`).
+Actual-timing probes checked 35 Short A samples, including adjacent delivery
+frames at endpoint/reference gates: zero missing headings, unsafe bounds,
+missing selectors, runtime errors, orphan endpoint labels or verdict states
+without the registered reference. `visual_qa.json` records the refreshed Short A
+hashes and this scoped inspection; previous other-scene inspections are retained.
+Encoded-frame inspection is recorded in `../NARRATED_BUILD.md`.

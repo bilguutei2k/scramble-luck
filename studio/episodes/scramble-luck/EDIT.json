@@ -2371,11 +2371,11 @@
               "hidden": true
             },
             {
-              "selector": ".sl-state[data-state=\"interval\"] [data-value-key=\"primary.R_geometric_person_year.interval_95[0]\"]",
+              "selector": ".sl-state[data-state=\"interval\"] .sl-endpoint-low",
               "hidden": true
             },
             {
-              "selector": ".sl-state[data-state=\"interval\"] [data-value-key=\"primary.R_geometric_person_year.interval_95[1]\"]",
+              "selector": ".sl-state[data-state=\"interval\"] .sl-endpoint-high",
               "hidden": true
             },
             {
@@ -2429,11 +2429,11 @@
               "hidden": true
             },
             {
-              "selector": ".sl-state[data-state=\"interval\"] [data-value-key=\"primary.R_geometric_person_year.interval_95[0]\"]",
+              "selector": ".sl-state[data-state=\"interval\"] .sl-endpoint-low",
               "hidden": true
             },
             {
-              "selector": ".sl-state[data-state=\"interval\"] [data-value-key=\"primary.R_geometric_person_year.interval_95[1]\"]",
+              "selector": ".sl-state[data-state=\"interval\"] .sl-endpoint-high",
               "hidden": true
             },
             {
@@ -2479,13 +2479,13 @@
               "hidden": true
             },
             {
-              "selector": ".sl-state[data-state=\"interval\"] [data-value-key=\"primary.R_geometric_person_year.interval_95[0]\"]",
+              "selector": ".sl-state[data-state=\"interval\"] .sl-endpoint-low",
               "line": 0,
               "word": "1.0164",
               "nth": 1
             },
             {
-              "selector": ".sl-state[data-state=\"interval\"] [data-value-key=\"primary.R_geometric_person_year.interval_95[1]\"]",
+              "selector": ".sl-state[data-state=\"interval\"] .sl-endpoint-high",
               "line": 0,
               "word": "1.0231.",
               "nth": 1
@@ -2533,7 +2533,7 @@
             {
               "selector": ".sl-reference",
               "line": 0,
-              "word": "10%",
+              "word": "rule",
               "nth": 1
             }
           ],
